@@ -32,15 +32,15 @@ Ce document est la **référence suprême et immuable** régissant l'intégralit
 | **D-002** | **CQRS Léger** | Séparation des flux d'écriture transactionnels (Commands via sqlx) et des flux de lecture rapides (Queries via cache sémantique `scy_llm_cache_meta` ou cache partagé). | MVP |
 | **D-003** | **Event Sourcing ciblé** | Appliqué aux modules d'Ingestion et d'APEX FSRS : les mutations d'états de mémorisation sont enregistrées comme un flux d'événements immuables et rejouables. | MVP |
 | **D-004** | **Monolithe Unifié** | Déploiement sous forme d'un processus unique (Single-Process Monolith) où le serveur Node.js/TS (Mastra) et le moteur de calcul Rust cohabitent localement (appel par IPC, socket UNIX ou bindings FFI), éliminant toute complexité de microservices ou latence réseau. | MVP |
-| **D-005** | **Repository Pattern** | Utilisation de traits génériques en Rust (`pub trait Repository<T>`) pour encapsuler l'accès aux données PostgreSQL Insforge, facilitant le mock pour les tests. | MVP |
+| **D-005** | **Repository Pattern** | Utilisation de traits génériques en Rust (`pub trait Repository<T>`) pour encapsuler l'accès aux données PostgreSQL Northflank, facilitant le mock pour les tests. | MVP |
 | **D-006** | **GraphQL + DataLoader** | Pour l'exploration relationnelle de concepts, regroupement des requêtes N+1 via un mécanisme de traitement par lots (batching) et de mise en cache temporaire. | MVP |
-| **D-007** | **Temporal Queries PG** | Utilisation d'historiques temporels sur Insforge PostgreSQL pour permettre de rejouer et de visualiser l'état de la base de connaissances de l'étudiant à n'importe quelle date passée. | V1 |
+| **D-007** | **Temporal Queries PG** | Utilisation d'historiques temporels sur Northflank PostgreSQL pour permettre de rejouer et de visualiser l'état de la base de connaissances de l'étudiant à n'importe quelle date passée. | V1 |
 | **D-008** | **Unit of Work Pattern** | Tout cas d'utilisation (Use Case) modifiant l'état d'apprentissage s'exécute au sein d'une transaction de base de données PostgreSQL atomique et isolée. | MVP |
 | **D-009** | **Pipeline MapReduce L0-L4**| La synthèse documentaire de NEURON-CHAINS s'exécute de façon séquentielle de L0 (brute) à L4 (export final) avec retry et cache sur chaque segment. | MVP |
 | **D-010** | **Observer Pattern / EventBus**| Découplage total des 13 agents ASCENT : communication asynchrone par messages via un EventBus local/cloud de production. | MVP |
 | **D-011** | **Typestate Pattern ASCENT**| Représentation des états de la machine à états de cours (`Locked`, `Ready`, `Studying`, `Mastered`) sous forme de types Rust stricts, empêchant les transitions invalides à la compilation. | MVP |
 | **D-012** | **Distributed Tracing** | Intégration de traces OpenTelemetry exportées en direct vers le cockpit d'observabilité open-core **Langfuse** sous Docker. | V1 |
-| **D-013** | **Polars + DuckDB Analytics**| Pour le calcul lourd d'analytics de cohorte en tâche de fond, utilisation de Polars/DuckDB in-memory sans surcharger Insforge PostgreSQL. | V1 |
+| **D-013** | **Polars + DuckDB Analytics**| Pour le calcul lourd d'analytics de cohorte en tâche de fond, utilisation de Polars/DuckDB in-memory sans surcharger Northflank PostgreSQL. | V1 |
 | **D-014** | **SAGA Pattern Workflows** | Orchestration distribuée des processus d'onboarding sur Mastra TypeScript, appliquant des compensations de nettoyage en cas d'échec ou de rejet d'agent. | Phase 3 |
 | **D-015** | **ISR Dashboard** | Régénération statique incrémentale du tableau de bord de progression pour des temps d'affichage instantanés (<10ms). | MVP |
 | **D-016** | **Specification Pattern** | Utilisation de filtres de requêtes composables et typés en Rust pour extraire les cartes APEX dues selon des critères d'urgences variables. | V1 |
@@ -60,10 +60,10 @@ Ce document est la **référence suprême et immuable** régissant l'intégralit
 | **ARC-005** | **Bulkhead (Sémaphores)** | Isolation étanche des ressources d'exécution sur le backend Rust (via les sémaphores Tokio). Une panne d'ingestion (Core) ne peut pas geler les révisions d'APEX. | MVP+ |
 | **ARC-006** | **Graceful Shutdown (5 phases)**| Au redémarrage d'un serveur ou conteneur Docker, phase de vidange (Drain) des files d'attente sur 30s avant déconnexion, garantissant zéro perte d'état. | MVP |
 | **ARC-007** | **Outbox Pattern** | Les écritures en base de données et l'enregistrement de l'événement dans `scy_outbox` s'exécutent de manière atomique au sein de la même transaction PostgreSQL. | MVP+ |
-| **ARC-008** | **Materialized Views PG** | Utilisation de 4 vues matérialisées sur Insforge PostgreSQL pour accélérer de 80% les requêtes d'analytics de cohorte ou d'historiques FSRS. | V1 |
-| **ARC-009** | **Health Checks (3 niveaux)** | Exposition des routes techniques de diagnostic d'état `/live` (Liveness), `/ready` (Readiness), et `/deep` (Vérification des connexions Insforge et Zilliz). | MVP |
+| **ARC-008** | **Materialized Views PG** | Utilisation de 4 vues matérialisées sur Northflank PostgreSQL pour accélérer de 80% les requêtes d'analytics de cohorte ou d'historiques FSRS. | V1 |
+| **ARC-009** | **Health Checks (3 niveaux)** | Exposition des routes techniques de diagnostic d'état `/live` (Liveness), `/ready` (Readiness), et `/deep` (Vérification des connexions Northflank et Zilliz). | MVP |
 | **ARC-010** | **Feature Flags** | Déploiement progressif des nouveaux modes SCY-COSMOS ou d'agents de manière graduelle (5% $	o$ 25% $	o$ 100% des utilisateurs) par configuration dynamique. | V1 |
-| **ARC-011** | **Blue/Green Deployment** | Déploiement Zeabur / Vercel sans interruption de service avec possibilité de rollback instantané en moins de 2 minutes. | V1 |
+| **ARC-011** | **Blue/Green Deployment** | Déploiement Northflank / Vercel sans interruption de service avec possibilité de rollback instantané en moins de 2 minutes. | V1 |
 | **ARC-012** | **Property-Based Testing** | Utilisation du crate Rust `proptest` pour simuler des millions de combinaisons d'entrées d'intervalles FSRS et valider l'absence de NaN. | MVP+ |
 | **ARC-013** | **Chaos Engineering** | Injection planifiée de 4 scénarios de pannes (déconnexion PostgreSQL, ralentissement Zilliz, crash API) pour valider l'auto-réparation de notre file locale. | V2 |
 | **ARC-014** | **Strangler Fig Pattern** | Migration progressive des micro-services existants de la version v2 vers la version v3 sans interrompre le trafic utilisateur. | V1 |
@@ -127,7 +127,7 @@ Ces invariants de pointe ont été testés, validés et auto-optimisés de mani�
 * **`D-OPT-022` : Socratic Progressive Prompting** :  
   Le Professor AI limite ses réponses à un maximum de 2 paragraphes socratiques par turn et doit obligatoirement terminer par une question ciblée de rappel actif, stimulant l'auto-découverte et économisant 40% de tokens d'output.
 * **`D-OPT-026` : Offline-First Local Sync Queue** :  
-  Gère les déconnexions du réseau par un mécanisme d'IndexedDB local se synchronisant par lots asynchrones dès le retour du réseau (table `scy_sync_queue` sur Insforge PostgreSQL).
+  Gère les déconnexions du réseau par un mécanisme d'IndexedDB local se synchronisant par lots asynchrones dès le retour du réseau (table `scy_sync_queue` sur Northflank PostgreSQL).
 * **`D-OPT-029` : GDPR Anonymization (k-anonymat)** :  
   Masquage de la console d'administration Créateur par un filtre de k-anonymat ($k \ge 10$), protégeant la vie privée et les textes des conversations privées des élèves.
 * **`D-OPT-031` : Persistent IndexedDB WAL\n* **`D-OPT-032` : ASCENT-QA Validation Board** :  \n  Intégrer un sous-pipeline d'audit pédagogique de 6 agents (SME, Curriculum Designer, etc.) évaluant à coût de licence nul (0$) de manière asynchrone le contenu généré avant de débloquer l'éligibilité à la certification Proof of Skill (seuil de validation PQS >= 88/100).

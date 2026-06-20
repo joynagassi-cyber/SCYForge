@@ -85,6 +85,6 @@ Pour industrialiser ces processus et s'assurer qu'ils supportent des millions d'
 ## 7. AXE RIGUEUR : Traçabilité et Métacognition
 
 * **Pattern 18 : Trajectory Logging (Audit Trail complet)** :  
-  Il est interdit de debugger des agents par des logs textuels informels. Toutes les décisions, les invites d'entrées, les arguments d'outils appelés, les latences p95, et les jetons réels consommés sont journalisés de manière structurée dans les tables d'audits d'Insforge (`scy_agent_decisions`, `scy_llm_spend_log`).
+  Il est interdit de debugger des agents par des logs textuels informels. Toutes les décisions, les invites d'entrées, les arguments d'outils appelés, les latences p95, et les jetons réels consommés sont journalisés de manière structurée dans les tables d'audits d'Northflank (`scy_agent_decisions`, `scy_llm_spend_log`).
 * **Pattern 19 : Méta-Axiomatisation (Induction & Curation)** :  
   Pour éviter le dérapage de mémorisation et le déclin d'erreurs (model collapse), l'agent **`AXIOMATIZER (AGENT-15)`** exécute une curation cyclique tous les 7 jours. Il synthétise les traces brutes réussies de cohortes d'élèves en Lois et Méthodes Fondamentales uniques, et purge l'intégralité du cache de micro-compétences d'origine.

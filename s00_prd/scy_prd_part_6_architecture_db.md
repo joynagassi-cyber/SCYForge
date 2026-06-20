@@ -425,8 +425,8 @@ YouTube Data API v3, Google Drive API v3, Reddit API v2, Twitter/X API v2, Media
 
 | Service | Rôle | Pricing Phase 0-1 |
 |---------|------|-------------------|
-| Zeabur | Backend Rust deployment | $0/mois (tier gratuit) |
-| Insforge | PostgreSQL + pgvector + Auth + Storage | $0/mois (tier gratuit 500MB) |
+| Northflank | Backend Rust deployment | $0/mois (tier gratuit) |
+| Northflank | PostgreSQL + pgvector + Auth + Storage | $0/mois (tier gratuit 500MB) |
 | Vercel | Frontend React deployment | $0/mois (tier gratuit) |
 | Netlify | Fallback frontend | $0/mois |
 | Sentry | Error tracking | $0/mois (<5K events/mois) |
@@ -625,8 +625,8 @@ Alertes automatiques si seuils dépassés :
 | Embeddings | $1-2/mois | $0.50/mois | -$1.50 |
 | Cache (Redis) | $15/mois | $0 (SQLite D-002) | -$15 |
 | NER (Hugging Face) | $9/mois | $0 (GLiNER local D-011) | -$9 |
-| Storage Insforge | $0/mois | $0/mois | $0 |
-| Compute Zeabur | $0-5/mois | $0-5/mois | $0 |
+| Storage Northflank | $0/mois | $0/mois | $0 |
+| Compute Northflank | $0-5/mois | $0-5/mois | $0 |
 | Monitoring | $0/mois | $0/mois | $0 |
 | **TOTAL** | **$29-34/mois** | **$5-10/mois** | **-$24/mois** |
 
@@ -677,7 +677,7 @@ Alertes automatiques si seuils dépassés :
 
 | Poste | Phase 0-2 | Phase 3 | Delta |
 |-------|----------|---------|-------|
-| Cache | $0 (SQLite) | $15/mois (Redis Zeabur) | +$15 |
+| Cache | $0 (SQLite) | $15/mois (Redis Northflank) | +$15 |
 | Storage | $0/mois | $10-15/mois | +$10 |
 | LLM (économie mutualisée) | $3-6/mois | $1-3/mois | -$3 |
 | **TOTAL** | **$5-10/mois** | **$26-33/mois** | +$20 |
@@ -810,7 +810,7 @@ Alertes automatiques si seuils dépassés :
 
 ### 13.2 Sécurité — Points Critiques
 
-- JWT rotation automatique (SDK Insforge)
+- JWT rotation automatique (SDK Northflank)
 - RLS PostgreSQL (isolation native DB-level)
 - Rate limiting par endpoint et tier
 - keyring OS pour secrets Desktop
@@ -835,7 +835,7 @@ Alertes automatiques si seuils dépassés :
 - ❌ **HypergraphRAG** : Construction N-aires coûteuse, algorithmes immatures → Phase 3 si graphe standard insuffisant
 - ❌ **MKGL Fine-Tuning KG** : Fine-tuning complexe, coût entraînement → Phase 3+ si COSMOS auto-construction insuffisante
 - ❌ **Memory Dynamics Optimization (IEEE TKDE 2023)** : Modèle différentiel stochastique, complexité élevée → Phase 3 si FSRS limitant
-- ❌ **Passkeys/WebAuthn** : Adoption progressive, dépend support Insforge → Phase 2 (vérification API requise, AUTH-001)
+- ❌ **Passkeys/WebAuthn** : Adoption progressive, dépend support Northflank → Phase 2 (vérification API requise, AUTH-001)
 
 ### Features Déprioritisées (Post-MVP)
 
@@ -955,7 +955,7 @@ Alertes automatiques si seuils dépassés :
 | ARC-008 | Materialized Views PostgreSQL (4 vues) | -80% temps requêtes dashboard | V1 |
 | ARC-009 | Health Checks 3 niveaux (/live, /ready, /deep) | Kubernetes-native, détection proactive | MVP |
 | ARC-010 | Feature Flags avec RolloutStrategy graduel | Déploiement progressif, rollback instantané sans redeploy | V1 |
-| ARC-011 | Blue/Green Deployment (Zeabur + Vercel) | Zéro downtime, rollback < 2 min | V1 |
+| ARC-011 | Blue/Green Deployment (Northflank + Vercel) | Zéro downtime, rollback < 2 min | V1 |
 | ARC-012 | Property-Based Testing (proptest Rust) | Couverture exhaustive cas limites, FSRS + Circuit Breaker | MVP+ |
 | ARC-013 | Chaos Engineering (4 scénarios) | Validation résilience en conditions réelles | V2 |
 | ARC-014 | Strangler Fig Pattern (migration v2→v3) | Migration progressive sans risque, rollback immédiat | V1 |
@@ -977,7 +977,7 @@ Alertes automatiques si seuils dépassés :
 | PERF-001 | SQLite-VSS pour vector store Desktop | Intégré rusqlite existant, 0 dépendance externe Desktop | Phase 1 Desktop |
 | PERF-002 | Qdrant si pgvector p99 > 50ms (>5M vecteurs) | Trigger explicite décision migration, pas migration anticipée | Phase 3 |
 | PERF-003 | ColPali uniquement Cloud GPU Enterprise | GPU requis = pas Desktop, pas Free tier | Phase 3 |
-| AUTH-001 | Passkeys/WebAuthn Phase 2 (si Insforge supporte) | Standard 2025 mais adoption progressive, vérifier API d'abord | Phase 2 |
+| AUTH-001 | Passkeys/WebAuthn Phase 2 (si Northflank supporte) | Standard 2025 mais adoption progressive, vérifier API d'abord | Phase 2 |
 
 ### 15.8 Nouvelles Décisions d'Optimisation ASCENT & DeepSeek (session v2.5)
 
@@ -1010,13 +1010,13 @@ Alertes automatiques si seuils dépassés :
 | D-OPT-017 | Creator-to-Student Synaptic Loop | Mettre en place une boucle de feedback créateur automatisée. Si l'Agent-13 (Cognitive-Validator) détecte qu'un seuil critique de 80% des étudiants d'une cohorte échouent ou restent bloqués sur un concept, une alerte est déclenchée. Le créateur peut alors enregistrer une micro-clarification sémantique (audio/vidéo de 1 min) ré-indexée instantanément dans Zilliz pour mettre à jour la formation en temps réel. | Phase 1 (Web) |
 | D-OPT-018 | Lazy Physics Suspension | Mettre en pause complète la simulation physique (2D/3D) dès que le graphe de forces de Verlet a convergé (vitesse de déplacement des nœuds $\le 0.05$ pixel/frame), ramenant l'utilisation CPU à 0% et préservant la batterie mobile. | Phase 1 (Web) |
 | D-OPT-019 | Quadtree Object Pooling | Utiliser un pool statique de nœuds Quadtree pré-alloués en mémoire (`Memory Pool`) pour éliminer tout temps de pause du ramasse-miettes (Garbage Collection) lors du rendu de millions de nœuds sur mobile. | Phase 1 (Web) |
-| D-OPT-020 | Local Telemetry Debouncing | Accumuler et regrouper (debouncer) sur 5 secondes les mises à jour de vitalité synaptique $V_n(t)$ sur le client avant de les transmettre par lots asynchrones à la base de données relationnelle Insforge. | Phase 1 (Web) |
+| D-OPT-020 | Local Telemetry Debouncing | Accumuler et regrouper (debouncer) sur 5 secondes les mises à jour de vitalité synaptique $V_n(t)$ sur le client avant de les transmettre par lots asynchrones à la base de données relationnelle Northflank. | Phase 1 (Web) |
 | D-OPT-021 | Fail-Safe Backup AI Clarification | Si un créateur de cohorte n'enregistre pas de micro-clarification sous 24h face à une alerte de goulot d'étranglement, le `Professor AI` génère automatiquement un contenu socratique transitoire pour débloquer les élèves. | Phase 1 (Web) |
 | D-OPT-022 | Socratic Progressive Prompting | Limiter les explications du Professor AI à un maximum de 2 paragraphes et forcer l'inclusion d'une question socratique ciblée à la fin de chaque réponse, stimulant l'auto-découverte et réduisant de 40% les coûts de tokens. | Phase 1 (Web) |
 | D-OPT-023 | Prerequisite Booster Schedule | Si un nœud requis (ancêtre) pour le nœud courant est en dormance sémantique (V < 20 dans le vault), planifier automatiquement un booster de révision de ce prérequis *avant* de lancer la session d'étude active. | Phase 1 (Web) |
 | D-OPT-024 | ELI5 Micro-Remediation Overlay | Si un étudiant échoue deux fois consécutivement au test FORGE d'un nœud difficile, déclencher un affichage d'aide instantané (explication simplifiée ELI5) pour neutraliser la frustration et le risque d'abandon. | Phase 1 (Web) |
 | D-OPT-025 | Adversarial RAG Context Guardrail | Filtrer détermistiquement et assainir tous les fragments de textes (chunks) récupérés du RAG vectoriel Zilliz pour strip-détecter les injections de prompts malveillantes avant de les injecter à l'APEX-AGENT. | Phase 1 (Web) |
-| D-OPT-026 | Offline-First Local Sync Queue | Enregistrer toutes les interactions et progressions FSRS locales dans la table `scy_sync_queue` de l'IndexedDB locale du navigateur. Un service worker pousse asynchronement les lots à Insforge dès le retour du réseau. | Phase 1 (Web) |
+| D-OPT-026 | Offline-First Local Sync Queue | Enregistrer toutes les interactions et progressions FSRS locales dans la table `scy_sync_queue` de l'IndexedDB locale du navigateur. Un service worker pousse asynchronement les lots à Northflank dès le retour du réseau. | Phase 1 (Web) |
 | D-OPT-027 | Thread-of-Thought Scaffolding | Reconstruire une narration d'explication logique et chronologique dans le RAG de BRAIN en tissant des liaisons sémantiques entre le nœud courant et ses parents sémantiques immédiats pour éviter les explications fragmentées. | Phase 1 (Web) |
 | D-OPT-028 | FSRS Self-Consistency Checker | Planifier des simulations de Monte Carlo hebdomadaires (10,000 runs virtuels par user) pour auditer la dérive de l'algorithme APEX FSRS et auto-calibrer les 17 constantes pour s'adapter à la vitesse réelle de l'utilisateur. | Phase 1 (Web) |
 | D-OPT-029 | GDPR Anonymization & Cohort Milestones | Sécuriser la console Créateur en appliquant un masque de k-anonymat (k >= 10) sur tous les profils d'élèves (exclusion de la matière brute des chats), tout en permettant de débloquer des quêtes et lives collectifs selon l'SMI de cohorte. | Phase 1 (Web) |
@@ -1225,7 +1225,7 @@ Avant tout développement, valider dans l'ordre :
 |---------|---------|--------|---------|
 | **Prompt Caching DeepSeek** | Économie -90% tokens system prompts | VALIDÉ ET ACTIVÉ ✅ (DeepSeek V4/R1, économie -90% sur input, plus support Batch API à -50%) | 🟢 Validé |
 | **Mode Guest Onboarding** | Conversion trial→signup, impact funnel complet | Valider si SCY Forge veut permettre essai sans compte | 🟠 Haute |
-| **Passkeys/WebAuthn** | Insforge supporte-t-il WebAuthn nativement ? | Vérifier documentation API Insforge | 🟡 Moyenne |
+| **Passkeys/WebAuthn** | Northflank supporte-t-il WebAuthn nativement ? | Vérifier documentation API Northflank | 🟡 Moyenne |
 | **Leaderboards** | Opt-in motivant vs risque toxicité comparaison | Décider politique : opt-in uniquement ou absent Phase 3 | 🟡 Moyenne |
 | **Marketplace Timing** | >50 decks qualité requis, qui crée les premiers ? | Planifier stratégie contenu starter (équipe ou premium users) | 🟢 Basse |
 

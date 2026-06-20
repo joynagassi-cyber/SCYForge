@@ -7,7 +7,7 @@
 
 ## 🧭 Fiche de Synthèse
 * **Description Fonctionnelle** : La pipeline multi-agents gérant le parcours de formation adaptatif.
-* **Stack Technique Officielle** : Mastra TS, Vercel AI SDK, Zod Validation, Insforge PostgreSQL
+* **Stack Technique Officielle** : Mastra TS, Vercel AI SDK, Zod Validation, Northflank PostgreSQL
 * **Patterns d'Ingénierie à Respecter** : Orchestrateur ASCENT, 13 Agents autonomes, EventBus, State Machine durable
 
 ---
@@ -45,6 +45,6 @@ export const ascentWorkflow = new Workflow({
 ## 🛑 DIRECTIVES STRICTES CONTRE L'HALLUCINATION (AI DE CODELING)
 Pour garantir la réussite absolue du codage de ce module par nos agents de développement :
 1. **Ne jamais inventer d'APIs tierces** : Utilise scrupuleusement les bibliothèques et connecteurs listés dans la stack.
-2. **Ne pas modifier les structures de données** : Référence-toi à l'index SQL consolidé de la base de données Insforge.
+2. **Ne pas modifier les structures de données** : Référence-toi à l'index SQL consolidé de la base de données Northflank.
 3. **Respecter la palette de couleurs spatiale** : Ne jamais introduire de rouge ou de bleu fade en dehors des tokens d'interface fixés dans `design.md`.
 4. **Validation des schémas** : Tout retour JSON d'agent s'appuie sur la validation stricte de modèles **Zod** avec gestion de retries.

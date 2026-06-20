@@ -67,7 +67,7 @@ Il existe un marché gigantesque de plusieurs milliards de dollars dans l'EdTech
 
 ### C. Le Support Multi-Tenant & Isolation Native (RLS)
 * **Description** : Garantir l'étanchéité absolue des données de chaque entreprise cliente.
-* **Technologie** : Géré nativement au niveau de la base de données PostgreSQL (Insforge) à l'aide des règles de sécurité **RLS (Row Level Security)** filtrant par `tenant_id`.
+* **Technologie** : Géré nativement au niveau de la base de données PostgreSQL (Northflank) à l'aide des règles de sécurité **RLS (Row Level Security)** filtrant par `tenant_id`.
   * **Multi-tenant Vectoriel (Zilliz Serverless & Partition Keys)** : 
     * **Partition Keys** : Nous utilisons la fonctionnalité native de **Zilliz Cloud Partition Keys** (`partition_key = tenant_id`). Milvus gère le cloisonnement logique de manière 100% étanche à coût nul au sein d'une seule collection, évitant la multiplication de collections facturées.
     * **Dynamic Schema & JSON Type** : Permet d'insérer des métadonnées d'apprentissage floues (SMI, Bloom, source_id) sous forme d'objets JSON flexibles sans figer la structure de la collection de base.
@@ -114,12 +114,12 @@ Pour bootstraper le B2B à coût minimal sans lever de fonds, voici le découpag
 
 ### A. Ce qui est GRATUIT (0$ — Lean Bootstrap)
 * **La Console Manager & Analytics d'Examens** : Développée en combinant notre bibliothèque graphique **Recharts** et la **Form Library de SurveyJS (licence MIT gratuite)**. 
-* **Le Multi-Tenant & RLS** : Configuré au niveau de notre base PostgreSQL Insforge (gratuite).
+* **Le Multi-Tenant & RLS** : Configuré au niveau de notre base PostgreSQL Northflank (gratuite).
 * **La Marque Blanche** : Changement d'assets de logos et de variables CSS Tailwind.
 * **L'Onboarding Corporate** : Notre pipeline d'agents existante (`AGENT-02 CONTENT-SCOUT` + `NEURON-CHAINS`) traite les documents internes. Le coût API unitaire de génération par parcours reste dérisoire (**$0.006**) et est entièrement absorbé par les marges d'abonnements des entreprises clientes.
 
 ### B. Ce qui COÛTE de l'argent ($$)
-* **L'Hébergement de Production & SLA (Mois 1+)** : Basculer d'une instance cloud gratuite (Zeabur / Insforge) vers des plans professionnels payants à ressources dédiées pour garantir les temps d'accès (SLA) : **$50 à $150 / mois** (financé dès le premier client B2B signé).
+* **L'Hébergement de Production & SLA (Mois 1+)** : Basculer d'une instance cloud gratuite (Northflank / Northflank) vers des plans professionnels payants à ressources dédiées pour garantir les temps d'accès (SLA) : **$50 à $150 / mois** (financé dès le premier client B2B signé).
 * **L'Intégration SSO d'Entreprise (Mois 3+)** : Nécessite l'intégration de fournisseurs d'authentification professionnels ou du temps de développement pour l'implémentation de clés SAML.
 * **L'Accréditation Officielle (Mois 3 à 9)** : Les audits Qualiopi (CPF en France, ~$1000) et les frais de candidature IACET (~$1500) pour émettre des crédits professionnels CEU officiels.
 * **Les Audits de Sécurité tiers (Optionnels, Grands Comptes)** : Les certifications SOC 2 ou les tests de pénétration par des auditeurs externes ($5K à $15K). *Note : Non requis pour les PME ou les phases de pilotes B2B initiaux.*

@@ -72,7 +72,7 @@ Nous conservons et renforçons notre charte de couleurs premium contrastée :
 ## 5. Invariants d'Intégration Produit (User Copy) {#5-integration}
 
 Pour des raisons de cohérence de code et de sûreté :
-1. **Les Préfixes Techniques** : Le préfixe technique `scy_` (SCY Forge) peut être conservé au sein du code source backend, des tables SQL d'Insforge et des fichiers de configurations pour éviter des refactorings de code lourds ou des casses de dépendances d'API.
+1. **Les Préfixes Techniques** : Le préfixe technique `scy_` (SCY Forge) peut être conservé au sein du code source backend, des tables SQL d'Northflank et des fichiers de configurations pour éviter des refactorings de code lourds ou des casses de dépendances d'API.
 2. **Le Contenu Utilisateur (User-facing Copy)** : Toutes les mentions textuelles affichées à l'utilisateur final dans l'interface React, dans les e-mails, dans l'onboarding, et sur la console Créateur doivent utiliser exclusivement l'appellation **`SCY Forge`** ou **`SCY`**.
 3. **Le Rapprochement** : Les sous-dossiers de spécifications de `features/` sont mis à jour pour que l'index général pointe vers cette nouvelle charte de marque.
 

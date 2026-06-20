@@ -822,7 +822,7 @@ keyring             = "2"      # Secrets OS keychain
 #### Database
 ```toml
 rusqlite            = "0.31"   # SQLite Desktop (WAL mode)
-# sqlx ou client PostgreSQL pour Cloud Insforge
+# sqlx ou client PostgreSQL pour Cloud Northflank
 ```
 
 #### Monitoring
@@ -855,7 +855,7 @@ once_cell           = "1.19"   # Lazy static (registres statiques)
   "zustand": "4.5",
   "react-router-dom": "6.22",
   "tailwindcss": "3.4",
-  "@insforge/sdk": "latest"
+  "@northflank/sdk": "latest"
 }
 ```
 
@@ -926,13 +926,13 @@ once_cell           = "1.19"   # Lazy static (registres statiques)
 
 ### 6.3 Infrastructure `[Rôle : DevOps & SRE]`
 
-#### Backend : Zeabur (Primaire)
+#### Backend : Northflank (Primaire)
 - Support Rust natif (zbpack auto-détecte Cargo.toml)
 - Cold start <500ms, binary caching intelligent
 - Tier gratuit : 512MB RAM, 1 vCPU (Phase 0-1)
 - Backup : Railway (Docker, 60min pivot) / Fly.io (fallback)
 
-#### Database & Auth : Insforge
+#### Database & Auth : Northflank
 - PostgreSQL 15+ (pgvector extension, RLS multi-tenant)
 - Auth JWT + OAuth2 (Google, GitHub)
 - Storage objets (audio MP3, exports PDF)

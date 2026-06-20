@@ -4,7 +4,7 @@
 **Document ID** : PRD-SCY-NEURO-CONSOLIDATION-V3.0  
 **Date** : 2026-06-12  
 **Statut** : 🟢 DOCUMENT DE RÉFÉRENCE DE PRODUCTION (CONSOLIDATION GLOBALE)  
-**Périmètre** : Intégration complète des 5 Piliers Neuroscientifiques, du Modèle Mathématique "Force-Cerveau", de l'Ingestion Mode Normal (11 Cores), et de la Stack Hybride de Sûreté (Mastra, Rust Axum, Insforge, Zilliz, Harmonist, Langfuse).  
+**Périmètre** : Intégration complète des 5 Piliers Neuroscientifiques, du Modèle Mathématique "Force-Cerveau", de l'Ingestion Mode Normal (11 Cores), et de la Stack Hybride de Sûreté (Mastra, Rust Axum, Northflank, Zilliz, Harmonist, Langfuse).  
 **Charte de Rendu** : Style Spatial Premium (Règle 60-30-10, Noir d'encre `#020205`, Violet sémantique `#1E1B4B`, Bleu électrique `#2563EB`, Émeraude consolidée `#10B981`, Or impérial `#D97706`).
 
 ---
@@ -14,7 +14,7 @@
 2. [Les 5 Piliers Neuroscientifiques : Spécifications Mathématiques](#2-neuro-piliers)
 3. [Le Modèle Géométrique de Morphing "Force-Cerveau"](#3-force-brain)
 4. [Consolidation de l'Ingestion en Mode Normal (11 Cores)](#4-normal-mode)
-5. [Le Schéma Relationnel SQL Unifié (Insforge PostgreSQL)](#5-sql-schema)
+5. [Le Schéma Relationnel SQL Unifié (Northflank PostgreSQL)](#5-sql-schema)
 6. [L'Écosystème de Sûreté et Télémétrie en Production](#6-safety-monitoring)
 7. [Matrice de Traçabilité des Exigences Consolidées](#7-traceability)
 
@@ -124,13 +124,13 @@ Les nœuds d'arrière-plan ($z_2 > 0$) sont atténués en opacité et en rayon d
 #### A. Améliorations de Robustesse Validées par MIA :
 - **Lazy Physics Suspension (D-OPT-018)** : Dès que l'énergie cinétique moyenne du système descend sous un seuil critique $\langle E_k \rangle < 0.005$, la boucle de simulation de forces Axum/Verlet s'interrompt. Le Canvas se contente de réagir aux rotations de caméras, supprimant toute charge CPU inutile.
 - **Quadtree Object Pooling (D-OPT-019)** : Évite d'allouer de nouveaux objets QuadtreeNode à chaque frame du moteur de physique. Un tableau à taille fixe pré-alloué en mémoire (`Memory Pool`) est recyclé à chaque frame, ramenant l'impact du Garbage Collection JS/WASM à **0ms**.
-- **Local Telemetry Debouncing (D-OPT-020)** : Bloque les écritures excessives sur Insforge PostgreSQL en appliquant un debouncing de 5 secondes sur les métriques $V_n(t)$ locales de l'utilisateur.
+- **Local Telemetry Debouncing (D-OPT-020)** : Bloque les écritures excessives sur Northflank PostgreSQL en appliquant un debouncing de 5 secondes sur les métriques $V_n(t)$ locales de l'utilisateur.
 - **Backup AI Clarification (D-OPT-021)** : Résout la frustration des élèves en générant un déblocage socratique de secours automatique sous 24h si le créateur est indisponible.
 - **Socratic Progressive Prompting (D-OPT-022)** : Élimine la surcharge cognitive de l'utilisateur en bridant la génération du Professor AI à un maximum de 2 paragraphes socratiques par interaction.
 - **Prerequisite Booster Schedule (D-OPT-023)** : Élimine la faille d'oubli de bases : si un concept parent d'un nœud à étudier est dormant dans `scy_engram_vault`, une carte de révision de ce concept parent est planifiée d'office en début de session.
 - **ELI5 Micro-Remediation Overlay (D-OPT-024)** : En cas d'échec répété au test FORGE d'un nœud difficile, une fenêtre modale d'analogie ELI5 est déployée pour ramener la charge cognitive sous un seuil tolérable.
 - **Adversarial RAG Context Guardrail (D-OPT-025)** : Assainit le RAG vectoriel en éliminant les injections de prompts sémantiques ou le bruit sémantique.
-- **Offline-First Local Sync Queue (D-OPT-026)** : Gère les déconnexions du réseau par un mécanisme d'IndexedDB local se synchronisant par lots asynchrones dès le retour du réseau (table `scy_sync_queue` sur Insforge PostgreSQL).
+- **Offline-First Local Sync Queue (D-OPT-026)** : Gère les déconnexions du réseau par un mécanisme d'IndexedDB local se synchronisant par lots asynchrones dès le retour du réseau (table `scy_sync_queue` sur Northflank PostgreSQL).
 - **Thread-of-Thought Scaffolding (D-OPT-027)** : Construit un pont sémantique continu entre les anciens concepts maîtrisés de l'élève et la nouvelle explication du Professor AI pour éviter les explications hachées.
 - **FSRS Self-Consistency Checker (D-OPT-028)** : Auto-réglage asynchrone des poids de mémorisation via des simulations Monte Carlo hebdomadaires pour neutraliser la fatigue des cartes.
 - **GDPR Anonymization & Cohort Milestones (D-OPT-029)** : Anonymisation stricte de la console d'administration Créateur (k-anonymat >= 10) et gamification collective de la cohorte selon l'SMI de groupe.
@@ -138,7 +138,7 @@ Les nœuds d'arrière-plan ($z_2 > 0$) sont atténués en opacité et en rayon d
 - **Persistent IndexedDB WAL (D-OPT-031)** : Sécurise la persistance de l'IndexedDB par un journal des transactions (Write-Ahead Log) pour parer aux pannes de crash de batterie ou du navigateur.
 - **Lazy Physics Suspension (D-OPT-018)** : Dès que l'énergie cinétique moyenne du système descend sous un seuil critique $\langle E_k \rangle < 0.005$, la boucle de simulation de forces Axum/Verlet s'interrompt. Le Canvas se contente de réagir aux rotations de caméras, supprimant toute charge CPU inutile.
 - **Quadtree Object Pooling (D-OPT-019)** : Évite d'allouer de nouveaux objets QuadtreeNode à chaque frame du moteur de physique. Un tableau à taille fixe pré-alloué en mémoire (`Memory Pool`) est recyclé à chaque frame, ramenant l'impact du Garbage Collection JS/WASM à **0ms**.
-- **Local Telemetry Debouncing (D-OPT-020)** : Bloque les écritures excessives sur Insforge PostgreSQL en appliquant un debouncing de 5 secondes sur les métriques $V_n(t)$ locales de l'utilisateur.
+- **Local Telemetry Debouncing (D-OPT-020)** : Bloque les écritures excessives sur Northflank PostgreSQL en appliquant un debouncing de 5 secondes sur les métriques $V_n(t)$ locales de l'utilisateur.
 - **Backup AI Clarification (D-OPT-021)** : Résout la frustration des élèves en générant un déblocage socratique de secours automatique sous 24h si le créateur est indisponible.
 
 
@@ -169,14 +169,14 @@ Dès que l'ingestion se termine, le **`NORMAL-MODE-DEFAULT-ORCHESTRATOR`** lance
 
 ---
 
-## 5. Le Schéma Relationnel SQL Unifié (Insforge PostgreSQL) {#5-sql-schema}
+## 5. Le Schéma Relationnel SQL Unifié (Northflank PostgreSQL) {#5-sql-schema}
 
-Le schéma de base de données d'**Insforge PostgreSQL** s'unifie de façon transparente. Il évite tout doublon de persistance et sécurise l'étanchéité multi-tenant :
+Le schéma de base de données d'**Northflank PostgreSQL** s'unifie de façon transparente. Il évite tout doublon de persistance et sécurise l'étanchéité multi-tenant :
 
 ```sql
 -- =========================================================================
 -- MINDFORGE DATABASE SCHEMA CONSOLIDATION — V3.0
--- Platform: Insforge PostgreSQL (RLS enabled, default tenant partitioning)
+-- Platform: Northflank PostgreSQL (RLS enabled, default tenant partitioning)
 -- =========================================================================
 
 -- == COUCHE COMMUNE & UTILISATEURS ==
@@ -384,7 +384,7 @@ Même lors de générations par lots massives du **Pack Neural par Défaut**, l'
 2. **Harmonist Validation Protocol** :  
    Protocole mécanique interceptant les écritures de base de données. Si la structure JSON ou géométrique de COSMOS échoue à la validation Zod par `AGENT-12` (Visual-Critic), la transaction est rejetée avec un auto-retry immédiat ciblé.
 3. **Langfuse Open-Core** :  
-   Déployé sur Zeabur sous Docker. Trace chaque étape d'exécution de nos 13 agents ASCENT et du Mode Normal, mesure la latence p95, et remplit en direct la table de coûts `scy_llm_spend_log` pour éliminer le goulot financier (Token Bleeding).
+   Déployé sur Northflank sous Docker. Trace chaque étape d'exécution de nos 13 agents ASCENT et du Mode Normal, mesure la latence p95, et remplit en direct la table de coûts `scy_llm_spend_log` pour éliminer le goulot financier (Token Bleeding).
 
 ---
 
@@ -410,7 +410,7 @@ Même lors de générations par lots massives du **Pack Neural par Défaut**, l'
 
 Ce **Master Blueprint de Consolidation v3.0** dote SCY Forge d'une spécification d'ingénierie absolue, validée scientifiquement et architecturalement infaillible. 
 
-En éliminant tout doublon de persistance ou conflit d'orchestration entre le Mode Normal et ASCENT, et en reliant l'intégralité du traitement de données au socle relationnel d'**Insforge**, nous sommes prêts à coder le premier sprint de la **Phase 1 (Web-First)** de SCY Forge. L'aventure de l'apprentissage cybernétique et symbiotique commence maintenant.
+En éliminant tout doublon de persistance ou conflit d'orchestration entre le Mode Normal et ASCENT, et en reliant l'intégralité du traitement de données au socle relationnel d'**Northflank**, nous sommes prêts à coder le premier sprint de la **Phase 1 (Web-First)** de SCY Forge. L'aventure de l'apprentissage cybernétique et symbiotique commence maintenant.
 
 
 -- == PIPELINE DE PORTAIL DE VALIDATION PÉDAGOGIQUE ASCENT-QA ==

@@ -13,7 +13,7 @@ Cette spécification définit le comportement sémantique et fonctionnel du **Co
 ## 2. Tech Stack & Dependencies
 * **Framework d'Orchestration** : Mastra TypeScript (Orchestration des pipelines)
 * **Moteur d'Extraction & Traitement** : Rust Axum (Moteur de calcul ultra-rapide)
-* **Dépendances d'Extraction Physique** : **Docling** (Exécuté dans un conteneur sidecar Docker sur Zeabur pour le parsing structurel des PDFs)
+* **Dépendances d'Extraction Physique** : **Docling** (Exécuté dans un conteneur sidecar Docker sur Northflank pour le parsing structurel des PDFs)
 * **APIs de Résolution de Métadonnées (Fallback asynchrone gratuit)** : Crossref API, Semantic Scholar API, arXiv API (0$ Coût).
 
 ---

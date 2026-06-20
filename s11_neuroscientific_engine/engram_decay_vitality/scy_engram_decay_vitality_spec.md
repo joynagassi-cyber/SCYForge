@@ -13,7 +13,7 @@ Cette spécification régit le comportement du cycle de vie des connaissances de
 ## 2. Tech Stack & Dependencies
 * **Framework d'Orchestration** : Mastra TypeScript (Workflows de transition et gestion d'UI)
 * **Moteur d'Évaluation Sémantique & Mathématique** : Rust Core (calcul vectoriel haute performance, similarité cosinus locale avec Candle/ONNX, et arithmétique de vitalité stabilisée contre les overflows)
-* **Base de Données** : Insforge PostgreSQL (tables `scy_synaptic_vitality`, `scy_engram_vault`, `scy_forge_attempts`)
+* **Base de Données** : Northflank PostgreSQL (tables `scy_synaptic_vitality`, `scy_engram_vault`, `scy_forge_attempts`)
 
 ---
 

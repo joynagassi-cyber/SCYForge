@@ -12,7 +12,7 @@
                     ┌─────────────────────────┴─────────────────────────┐
                     ▼                                                   ▼
        [Miss: Appel Docker Sidecar]                       [Extraction DOI & Références]
-       [Conteneur Docling (Zeabur)]                       [Regex Parser sur 2 premières pages]
+       [Conteneur Docling (Northflank)]                       [Regex Parser sur 2 premières pages]
                     │                                                   │
                     ▼                                                   ▼
        [Parsing structurel complet]                       [Requête API Crossref/Semantic Scholar]
@@ -37,7 +37,7 @@
 
 ## 2. Dépendances Techniques Strictes
 * **Environnement Serveur** :
-  - **Docker Sidecar Docling** : Image `quay.io/sds_sandbox/docling:latest` configurée pour s'exécuter localement sur Zeabur.
+  - **Docker Sidecar Docling** : Image `quay.io/sds_sandbox/docling:latest` configurée pour s'exécuter localement sur Northflank.
   - **Rust Core (Axum)** : Traitement rapide des expressions régulières de DOI et extraction de citations.
 * **Packages Node.js (Mastra TS)** :
   - `@mastra/core` pour l'orchestration du workflow d'ingestion.

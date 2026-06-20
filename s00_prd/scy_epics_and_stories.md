@@ -28,7 +28,7 @@ Ce document fournit la décomposition complète des exigences et des décisions 
 * **NFR-MATH-01** : Protection anti-NaN via une constante de softening $\epsilon = 10^{-6}$ et anti-overflow d'exposants de vitalité.
 
 ### Additional Requirements (Architecture & Tech)
-* **ARCH-001** : Double-moteur d'orchestration (Mastra TS sur Zeabur pour l'expérience, Rust Axum pour les calculs physiques lourds et le RAG).
+* **ARCH-001** : Double-moteur d'orchestration (Mastra TS sur Northflank pour l'expérience, Rust Axum pour les calculs physiques lourds et le RAG).
 * **ARCH-002** : Ingestion sémantique via **Docling Docker** (0$ infrastructure) et vectorisation isolée sur **Zilliz Cloud Serverless** (`partition_key = tenant_id`).
 
 ### UX Design Requirements (DESIGN & EXPERIENCE)
@@ -38,7 +38,7 @@ Ce document fournit la décomposition complète des exigences et des décisions 
 ---
 
 ## Epic List
-1. **Epic 1 : Noyau Infrastructure, Base de Données et Sûreté (Insforge & Zilliz)**
+1. **Epic 1 : Noyau Infrastructure, Base de Données et Sûreté (Northflank & Zilliz)**
 2. **Epic 2 : Le Moteur Neuroscientifique et Algorithmique (Rust Backend)**
 3. **Epic 3 : La Constellation Graphique Bi-Modale 2D/3D (AntV G6, Cosmos & Three.js)**
 4. **Epic 4 : L'Orchestration Ingestion Mode Normal & Pack par Défaut (Mastra TS)**
@@ -50,13 +50,13 @@ Ce document fournit la décomposition complète des exigences et des décisions 
 
 Cette Épique pose les fondations de la persistance relationnelle, de l'isolation vectorielle et de la surveillance de nos marges de tokens.
 
-### Story 1.1 : Initialisation de la Base Relationnelle (Insforge PostgreSQL)
+### Story 1.1 : Initialisation de la Base Relationnelle (Northflank PostgreSQL)
 **En tant que** Développeur Backend,  
-**Je veux** instancier les tables SQL consolidées sur Insforge avec règles de Row Level Security (RLS),  
+**Je veux** instancier les tables SQL consolidées sur Northflank avec règles de Row Level Security (RLS),  
 **Afin que** les données sémantiques et d'apprentissages soient stockées de manière hermétique par `tenant_id`.
 
 * **Critères d'Acceptation :**
-  - **Given** Une instance active d'Insforge PostgreSQL.
+  - **Given** Une instance active d'Northflank PostgreSQL.
   - **When** J'exécute le script DDL consolidé contenant `scy_users`, `scy_synaptic_vitality` et `scy_project_deliverables`.
   - **Then** Les tables sont créées sans erreurs et les index d'optimisations sont actifs.
   - **And** Toutes les requêtes `SELECT` ou `UPDATE` filtrent de manière déterministe via la politique RLS `tenant_id`.
@@ -159,4 +159,4 @@ Cette Épique sécurise la vie privée des étudiants et blinde la synchronisati
   - **Given** Une file `scy_sync_queue` contenant 50 révisions FSRS locales en attente de synchronisation.
   - **When** Le navigateur subit un crash brutal ou une déconnexion.
   - **Then** Le WAL récupère et sécurise l'intégralité des transactions saines de mémorisation.
-  - **And** Dès le retour de la connexion, le service worker rejoue le WAL et transmet les lots asynchrones à Insforge PostgreSQL sans perte de données.
+  - **And** Dès le retour de la connexion, le service worker rejoue le WAL et transmet les lots asynchrones à Northflank PostgreSQL sans perte de données.

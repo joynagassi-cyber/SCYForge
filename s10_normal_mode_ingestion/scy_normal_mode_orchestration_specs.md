@@ -5,7 +5,7 @@
 **Date** : 2026-06-12  
 **Statut** : 🟢 SPÉCIFICATION TECHNIQUE COMPLÈTE & VALIDÉE  
 **Périmètre** : Ingestion, routage, suggestions déterministes, génération par lots par défaut (Multi-Output) et traitement des consignes de formatage utilisateur (Custom Description).  
-**Stack de Référence** : Mastra TypeScript (Orchestration) + Rust Axum (Moteur de Synthèse APEX) + Insforge PostgreSQL (Data) + Zilliz Cloud Serverless (RAG Vectoriel)
+**Stack de Référence** : Mastra TypeScript (Orchestration) + Rust Axum (Moteur de Synthèse APEX) + Northflank PostgreSQL (Data) + Zilliz Cloud Serverless (RAG Vectoriel)
 
 ---
 
@@ -16,7 +16,7 @@
 4. [La Consigne de Sortie Utilisateur (Custom Description Input)](#4-custom-description)
 5. [Le "Pack Neural par Défaut" Généré Automatiquement](#5-default-pack)
 6. [La Plomberie des 11 Cores d'Ingestion à la Demande](#6-11-cores)
-7. [Schéma de Base de Données Unifié & Mappage (Insforge PostgreSQL)](#7-db-schema)
+7. [Schéma de Base de Données Unifié & Mappage (Northflank PostgreSQL)](#7-db-schema)
 8. [L'Expérience Utilisateur (D-UX) & Allumage Neural Instantané](#8-ux-ignition)
 9. [Garde-fous de Sûreté (Harmonist) & Télémétrie (Langfuse)](#9-safety)
 
@@ -35,7 +35,7 @@ Pour maximiser la valeur perçue dès les 10 premières secondes (TTFV < 10s), l
 
 ## 2. L'Orchestrateur Multi-Output (NORMAL-MODE-DEFAULT-ORCHESTRATOR) {#2-orchestrator}
 
-Le **NORMAL-MODE-DEFAULT-ORCHESTRATOR** s'exécute sur le backend Mastra TypeScript (Zeabur). Il supervise le cycle de vie de l'ingestion d'un document ou d'un lot de documents et coordonne de manière parallèle les appels vers le moteur Rust et les APIs d'ingestion.
+Le **NORMAL-MODE-DEFAULT-ORCHESTRATOR** s'exécute sur le backend Mastra TypeScript (Northflank). Il supervise le cycle de vie de l'ingestion d'un document ou d'un lot de documents et coordonne de manière parallèle les appels vers le moteur Rust et les APIs d'ingestion.
 
 ```
                   [ SOURCE DE L'UTILISATEUR (Fichier, URL, Ticker...) ]
@@ -208,9 +208,9 @@ Le parsing s'appuie sur le microservice **Docling** (IBM/Mozilla Docker) pour la
 
 ---
 
-## 7. Schéma de Base de Données Unifié & Mappage (Insforge PostgreSQL) {#7-db-schema}
+## 7. Schéma de Base de Données Unifié & Mappage (Northflank PostgreSQL) {#7-db-schema}
 
-Le schéma relationnel d'**Insforge PostgreSQL** s'enrichit pour supporter la description personnalisée, la journalisation des suggestions de l'agent déterministe et le statut de traitement par lots du Pack par Défaut :
+Le schéma relationnel d'**Northflank PostgreSQL** s'enrichit pour supporter la description personnalisée, la journalisation des suggestions de l'agent déterministe et le statut de traitement par lots du Pack par Défaut :
 
 ```sql
 -- == EXTENSION DU SCHÉMA BDD POUR LE MODE NORMAL ==

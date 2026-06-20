@@ -59,7 +59,7 @@ server.tool(
 
 ---
 
-## 3. Schéma de Base de Données Unifié d'Insforge PostgreSQL
+## 3. Schéma de Base de Données Unifié d'Northflank PostgreSQL
 Les arêtes de relations entre les différents nœuds d'apprentissage de SCY Forge sont stockées dans une table relationnelle unique et hautement indexée :
 
 ```sql

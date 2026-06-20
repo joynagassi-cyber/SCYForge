@@ -498,7 +498,7 @@ Dans l'écosystème d'apprentissage de SCY Forge, les deux moteurs d'illustratio
 |------------|---------|------|
 | **fsrs** | 0.6 | Algorithme FSRS 5.0 Rust natif (0 LLM) |
 | **rusqlite** | 0.31 | Historique révisions Desktop (WAL mode) |
-| **PostgreSQL** | 15+ | Historique révisions Cloud (Insforge) |
+| **PostgreSQL** | 15+ | Historique révisions Cloud (Northflank) |
 | **tiktoken-rs** | 0.6 | Comptage tokens cartes |
 | **async-openai** | 0.29 | Génération cartes via NEURON-CHAINS |
 

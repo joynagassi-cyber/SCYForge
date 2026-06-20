@@ -1020,7 +1020,7 @@ CREATE TABLE scy_skill_proof_submissions (
   title TEXT NOT NULL,
   description TEXT,                    -- Contexte user (500 mots max)
   submission_url TEXT,                 -- Lien GitHub, YouTube, Figma...
-  file_storage_path TEXT,             -- Si upload direct (Insforge Storage)
+  file_storage_path TEXT,             -- Si upload direct (Northflank Storage)
   work_mode TEXT NOT NULL,            -- 'traditional','ai_assisted','ai_native'
   
   -- Évaluation automatique (LLM)

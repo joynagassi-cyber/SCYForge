@@ -7,7 +7,7 @@
 
 ## 🧭 Fiche de Synthèse
 * **Description Fonctionnelle** : Le moteur de révision espacée et de calcul d'index d'expertise.
-* **Stack Technique Officielle** : Rust (APEX-FSRS Crate), TypeScript (FSRS.js fallback), Insforge PostgreSQL
+* **Stack Technique Officielle** : Rust (APEX-FSRS Crate), TypeScript (FSRS.js fallback), Northflank PostgreSQL
 * **Patterns d'Ingénierie à Respecter** : Algorithme FSRS 5.0, STUDENT AI Teach-Back Engine, SMI Calculator
 
 ---
@@ -42,7 +42,7 @@ impl SmiProfile {
 ## 🛑 DIRECTIVES STRICTES CONTRE L'HALLUCINATION (AI DE CODELING)
 Pour garantir la réussite absolue du codage de ce module par nos agents de développement :
 1. **Ne jamais inventer d'APIs tierces** : Utilise scrupuleusement les bibliothèques et connecteurs listés dans la stack.
-2. **Ne pas modifier les structures de données** : Référence-toi à l'index SQL consolidé de la base de données Insforge.
+2. **Ne pas modifier les structures de données** : Référence-toi à l'index SQL consolidé de la base de données Northflank.
 3. **Respecter la palette de couleurs spatiale** : Ne jamais introduire de rouge ou de bleu fade en dehors des tokens d'interface fixés dans `design.md`.
 4. **Validation des schémas** : Tout retour JSON d'agent s'appuie sur la validation stricte de modèles **Zod** avec gestion de retries.
 

@@ -258,7 +258,7 @@ Pour asseoir sa rentabilité et conquérir le marché des entreprises, SCY Forge
                                │
 ┌──────────────────────────────▼──────────────────────────────────────┐
 │                   INFRASTRUCTURE LAYER                                │
-│  SQLite (Desktop) │ PostgreSQL/Insforge (Cloud) │ Zilliz Cloud (Serverless) │
+│  SQLite (Desktop) │ PostgreSQL/Northflank (Cloud) │ Zilliz Cloud (Serverless) │
 │  PostgreSQL FTS   │ Milvus Lite (Local Vector)  │ Redis (Phase 3)    │
 │  Attu Web GUI     │ Milvus Backup & Sizing Tool │ Web locks API      │
 │  DeepSeek/Claude  │ Candle (ML local)           │ ONNX/GLiNER (NER)  │
@@ -971,7 +971,7 @@ impl OpenAiAcl {
 | ARC-008 | Materialized Views PostgreSQL (4 vues) | -80% temps requêtes dashboard | V1 |
 | ARC-009 | Health Checks 3 niveaux (/live, /ready, /deep) | Kubernetes-native, détection proactive | MVP |
 | ARC-010 | Feature Flags avec RolloutStrategy graduel | Déploiement progressif, rollback instantané | V1 |
-| ARC-011 | Blue/Green Deployment (Zeabur + Vercel) | Zéro downtime, rollback < 2 min | V1 |
+| ARC-011 | Blue/Green Deployment (Northflank + Vercel) | Zéro downtime, rollback < 2 min | V1 |
 | ARC-012 | Property-Based Testing (proptest) | Couverture exhaustive cas limites | MVP+ |
 | ARC-013 | Chaos Engineering (4 scénarios) | Validation résilience en conditions réelles | V2 |
 | ARC-014 | Strangler Fig Pattern (migration v2→v3) | Migration sans risque, rollback immédiat | V1 |

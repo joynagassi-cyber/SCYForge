@@ -14,7 +14,7 @@
 2. [L'Abstraction des 100 Documents en 8 Squelettes Structurels (Familles A à H)](#2-skeletons)
 3. [L'Abstraction des 50 Tons en 5 Régimes Émotivo-Cognitifs](#3-tones)
 4. [L'Algorithme d'Injection par Gabarit (The Structural Template Injector)](#4-algorithm)
-5. [Schémas de Base de Données de Référence (Insforge PostgreSQL)](#5-db-schema)
+5. [Schémas de Base de Données de Référence (Northflank PostgreSQL)](#5-db-schema)
 
 ---
 
@@ -116,7 +116,7 @@ Adopte scrupuleusement ce ton éditorial tout au long de ta rédaction :
 
 ---
 
-## 5. Schémas de Base de Données de Référence (Insforge PostgreSQL) {#5-db-schema}
+## 5. Schémas de Base de Données de Référence (Northflank PostgreSQL) {#5-db-schema}
 
 Pour stocker et appeler ces squelettes de manière dynamique en production, les tables suivantes sont prêtes :
 

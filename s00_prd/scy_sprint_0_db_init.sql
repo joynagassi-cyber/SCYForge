@@ -1,6 +1,6 @@
 -- =========================================================================
 -- SCY FORGE — DATABASE SCHEMA & RLS CONSOLIDATION (SPRINT 0)
--- Platform: Insforge PostgreSQL (RLS enabled, default tenant partitioning)
+-- Platform: Northflank PostgreSQL (RLS enabled, default tenant partitioning)
 -- Date: 2026-06-20
 -- Status: 🟢 SPRINT 0 IMMUABLE INITIALIZATION SCRIPT
 -- =========================================================================

@@ -25,7 +25,7 @@ review-synthesis: review-synthesis.md
 
 **6 plateformes supportées :**
 
-1. **Web SaaS** : React 18 SPA, cloud-native, PostgreSQL Insforge
+1. **Web SaaS** : React 18 SPA, cloud-native, PostgreSQL Northflank
 2. **Desktop Windows** : Electron 33, SQLite local, offline-first
 3. **Desktop macOS** : Electron 33, SQLite local, offline-first
 4. **Desktop Linux** : Electron 33, SQLite local, offline-first

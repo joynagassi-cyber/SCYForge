@@ -16,7 +16,7 @@
 4. [L'Algorithme Mathématique du Graphe "Force-Cerveau" (Force-Directed WebGL)](#4-algorithm)
 5. [La Charte Graphique Spatiale Élite (L'Esthétique Synaptique)](#5-color-palette)
 6. [Code Source de Rendu : Composant React Canvas Biologiquement Animé](#6-code-implementation)
-7. [Intégration d'État (Insforge & COSMOS Mode 26)](#7-integration)
+7. [Intégration d'État (Northflank & COSMOS Mode 26)](#7-integration)
 
 ---
 
@@ -447,9 +447,9 @@ export const BrainForceGraph: React.FC<BrainGraphProps> = ({ nodes: initialNodes
 
 ---
 
-## 7. Intégration d'État (Insforge & COSMOS Mode 26) {#7-integration}
+## 7. Intégration d'État (Northflank & COSMOS Mode 26) {#7-integration}
 
-Ce modèle visuel est câblé directement sur les données physiques stockées dans la base unifiée **Insforge PostgreSQL** :
+Ce modèle visuel est câblé directement sur les données physiques stockées dans la base unifiée **Northflank PostgreSQL** :
 - Le composant tire sa liste de nœuds de la table `scy_synaptic_vitality`. Le flag `isConsolidated` est activé de manière déterministe si le score de rétention d'APEX (`retention_score`) est supérieur à **90/100**.
 - La température et la vitalité sont extraites en temps réel pour piloter les ombres WebGL, les halos de lueurs et le rayon physique des particules synaptiques.
 - À mesure que l'utilisateur accumule des connaissances et débloque de nouveaux concepts, les nouveaux nœuds sont injectés dans le Canvas et trouvent instantanément leur place anatomique grâce à la simulation de forces, **faisant "grandir" le cerveau numérique de l'utilisateur sous ses yeux**.

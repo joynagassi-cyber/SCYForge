@@ -35,7 +35,7 @@
 Pour que la pipeline à **13 agents autonomes d'ASCENT** fonctionne comme un organisme vivant cohérent et sans faille, SCY Forge unifie ses briques open-source d'élite au sein d'une **architecture de raccordement sémantique unique (Unified Agentic Pipeline)** :
 
 ```
-[Onboarding Request] ──► [Mastra Workflows Engine (Zeabur)] ──► [Langfuse Trace (0$)]
+[Onboarding Request] ──► [Mastra Workflows Engine (Northflank)] ──► [Langfuse Trace (0$)]
                                     │
          ┌──────────────────────────┼──────────────────────────┐
          ▼                          ▼                          ▼
@@ -46,9 +46,9 @@ Pour que la pipeline à **13 agents autonomes d'ASCENT** fonctionne comme un org
 1. **L'Orchestrateur Durable (Mastra Workflows — TS/Node)** : Tous nos agents (de `AGENT-01` à `AGENT-13`) et leurs transitions d'états d'apprentissage sont structurés sous la forme de **graphes de machines à états durables (Workflows)** à l'aide de Mastra.
 2. **L'Enforcement Mécanique (Harmonist - MIT)** : Chaque transition de step dans la pipeline Mastra est interceptée par des crochets logiciels (hooks). Si le `VISUAL-CRITIC (AGENT-12)` n'a pas validé l'intégrité du graphe, la transaction est rejetée de manière mécanique, empêchant tout affichage d'hallucination à l'utilisateur.
 3. **L'Ingestion Universelle (Composio SDK - 0$)** : `AGENT-02` (CONTENT-SCOUT) n'écrit plus de code d'APIs tierces. Il s'appuie sur le SDK de Composio pour connecter Google Drive, Notion et Slack en 1 ligne de code avec gestion d'OAuth automatique hébergée sur nos serveurs.
-4. **La Mémoire Temporelle (Graphiti / Zep - 0$)** : Le `PERFORMANCE-ANALYZER` (`AGENT-05`) pousse chaque événement en base Graphiti raccordée à **Insforge PostgreSQL** pour suivre l'évolution chronologique du modèle mental de l'utilisateur, ajustant dynamiquement le FSRS d'APEX.
+4. **La Mémoire Temporelle (Graphiti / Zep - 0$)** : Le `PERFORMANCE-ANALYZER` (`AGENT-05`) pousse chaque événement en base Graphiti raccordée à **Northflank PostgreSQL** pour suivre l'évolution chronologique du modèle mental de l'utilisateur, ajustant dynamiquement le FSRS d'APEX.
 5. **La Sûreté de Schémas (Zod-Mastra Validation - 0$)** : Les sorties de `AGENT-12` et `AGENT-13` sont définies comme des schémas Zod stricts. Si l'IA produit une erreur de format, Mastra intercepte l'erreur en local et effectue un auto-retry ciblé immédiat.
-6. **L'Observabilité Globale (Langfuse - 0$)** : Déployé sous forme de conteneur Docker léger à ressources isolées connecté à Insforge, il trace, indexe et logue chaque appel de jeton, de latence et de coût de nos 13 agents sur un cockpit de pilotage en direct.
+6. **L'Observabilité Globale (Langfuse - 0$)** : Déployé sous forme de conteneur Docker léger à ressources isolées connecté à Northflank, il trace, indexe et logue chaque appel de jeton, de latence et de coût de nos 13 agents sur un cockpit de pilotage en direct.
 
 ---
 
@@ -1307,7 +1307,7 @@ Voici comment chaque agent orchestre TOUTES les features de SCY Forge :
 │ CERTIFIER      │ • SMI Calculator → score global 5 dimensions              │
 │ (Agent-09)     │ • NEURON-CHAINS → génération certificat (B01)              │
 │                │ • Typst → PDF certificat professionnel                     │
-│                │ • Insforge Storage → stockage certificat                   │
+│                │ • Northflank Storage → stockage certificat                   │
 │                │ • Next Goal Suggester → continuité apprentissage           │
 └────────────────┴────────────────────────────────────────────────────────────┘
 ```

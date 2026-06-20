@@ -5,7 +5,7 @@
 **Date** : 2026-06-12  
 **Statut** : 🟢 SPÉCIFICATION STRATÉGIQUE DE PRODUCTION  
 **Périmètre** : Implémentation des 5 piliers neurocognitifs validés empiriquement au sein du moteur hybride (Rust Axum & Mastra TS).  
-**Stack de Référence** : Rust Core (Mathématiques & Vecteurs) + Mastra TypeScript (Orchestration & UI) + Insforge PostgreSQL + Zilliz Cloud Serverless
+**Stack de Référence** : Rust Core (Mathématiques & Vecteurs) + Mastra TypeScript (Orchestration & UI) + Northflank PostgreSQL + Zilliz Cloud Serverless
 
 ---
 
@@ -16,7 +16,7 @@
 4. [Pilier 3 : Le Protocole FORGE (L'Effet de Génération obligatoire)](#4-forge)
 5. [Pilier 4 : Le Mode FRICTION (Interleaving Intelligent & Anti-Fluidité)](#5-friction)
 6. [Pilier 5 : La Carte Thermique du Graphe (Thermodynamique Entropique)](#6-thermal)
-7. [Schémas de Base de Données Unifiés (Insforge PostgreSQL)](#7-db-schema)
+7. [Schémas de Base de Données Unifiés (Northflank PostgreSQL)](#7-db-schema)
 8. [Orchestration Backend (Mastra Workflows & Rust Axum APIs)](#8-orchestration)
 
 ---
@@ -252,9 +252,9 @@ Où :
 
 ---
 
-## 7. Schémas de Base de Données Unifiés (Insforge PostgreSQL) {#7-db-schema}
+## 7. Schémas de Base de Données Unifiés (Northflank PostgreSQL) {#7-db-schema}
 
-Le moteur neuroscientifique s'appuie sur ces tables hautement structurées sur **Insforge PostgreSQL** :
+Le moteur neuroscientifique s'appuie sur ces tables hautement structurées sur **Northflank PostgreSQL** :
 
 ```sql
 -- == TABLE CENTRALISÉE DE VITALITÉ SYNAPTIQUE ==

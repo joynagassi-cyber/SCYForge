@@ -15,7 +15,7 @@
 3. [Le Pipeline de Validation Pédagogique "ASCENT-QA" (6 Rôles Spécialisés)](#3-qa-pipeline)
 4. [L'Algorithme de l'Alignement Constructif (Constructive Alignment Loop)](#4-constructive-alignment)
 5. [Le Calcul du Score de Qualité Pédagogique (PQS)](#5-pqs-formula)
-6. [Schémas de Base de Données de Traçabilité (Insforge PostgreSQL)](#6-db-schema)
+6. [Schémas de Base de Données de Traçabilité (Northflank PostgreSQL)](#6-db-schema)
 
 ---
 
@@ -155,9 +155,9 @@ Où :
 
 ---
 
-## 6. Schémas de Base de Données de Traçabilité (Insforge PostgreSQL) {#6-db-schema}
+## 6. Schémas de Base de Données de Traçabilité (Northflank PostgreSQL) {#6-db-schema}
 
-Pour consigner de manière transparente les décisions de notre Comité d'agents et rassurer les certificateurs externes, de nouvelles tables d'audits sont planifiées sur **Insforge PostgreSQL** :
+Pour consigner de manière transparente les décisions de notre Comité d'agents et rassurer les certificateurs externes, de nouvelles tables d'audits sont planifiées sur **Northflank PostgreSQL** :
 
 ```sql
 -- == PIPELINE DE PORTAIL DE VALIDATION PÉDAGOGIQUE ASCENT-QA ==

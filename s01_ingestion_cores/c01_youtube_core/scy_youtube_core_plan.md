@@ -29,7 +29,7 @@
 
 ## 2. Dépendances Techniques Strictes
 * **Runtimes serveurs** :
-  - `yt-dlp` installé globalement dans le conteneur Docker Zeabur.
+  - `yt-dlp` installé globalement dans le conteneur Docker Northflank.
   - `ffmpeg` version $\ge 6.0$.
 * **Packages Node.js (Mastra)** :
   - `youtube-transcript-api` ou `yt-transcript-rs`

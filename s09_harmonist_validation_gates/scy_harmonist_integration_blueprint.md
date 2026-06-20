@@ -9,7 +9,7 @@
 1. [La Révolution Harmonist : Le Protocole Mécanique vs L'Invite Polie](#1-vision)
 2. [L'Intégration dans ASCENT : L'Enforcement de Portes de Validation (Gates)](#2-integration)
 3. [L'Architecture de Mémoire Persistante d'Étude (Session Handoff)](#3-memoire)
-4. [Raccordement Technique à notre API Mastra (TypeScript) & Insforge (Postgres)](#4-raccordement)
+4. [Raccordement Technique à notre API Mastra (TypeScript) & Northflank (Postgres)](#4-raccordement)
 
 ---
 
@@ -85,9 +85,9 @@ Pour garantir la continuité de l'apprentissage (notamment pour l'agent `CHRONIC
 
 ---
 
-## 4. Raccordement Technique à notre API Mastra (TypeScript) & Insforge (Postgres) {#4-raccordement}
+## 4. Raccordement Technique à notre API Mastra (TypeScript) & Northflank (Postgres) {#4-raccordement}
 
-Puisque nous utilisons le framework d'agents **Mastra** [1] hébergé sur Zeabur et notre base de données **Insforge**, le raccordement d'Harmonist s'effectue sous la forme de **Mastra Step Hooks** :
+Puisque nous utilisons le framework d'agents **Mastra** [1] hébergé sur Northflank et notre base de données **Northflank**, le raccordement d'Harmonist s'effectue sous la forme de **Mastra Step Hooks** :
 
 ```typescript
 import { Step } from '@mastra/core';
@@ -103,13 +103,13 @@ export const validateVisualsStep = new Step({
       schema: 'ascent-visual-v2'
     });
     
-    // 2. Si l'audit échoue (score < 85), rejeter la transaction et enregistrer l'échec dans Insforge
+    // 2. Si l'audit échoue (score < 85), rejeter la transaction et enregistrer l'échec dans Northflank
     if (auditResult.score < 85) {
       await db.save_failed_audit(context.goal_id, auditResult);
       throw new Error(`[Harmonist Hook] Échec de la porte de validation sémantique visuelle. Score : ${auditResult.score}/100.`);
     }
     
-    // 3. Si succès, enregistrer l'approbation de l'agent dans Insforge et autoriser la transaction
+    // 3. Si succès, enregistrer l'approbation de l'agent dans Northflank et autoriser la transaction
     await db.save_approved_audit(context.goal_id, auditResult);
     return { auditResult };
   }

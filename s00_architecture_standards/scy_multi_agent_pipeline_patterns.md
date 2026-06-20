@@ -1,4 +1,4 @@
-# 🏗️ PATTERNS MULTI-AGENTS EN PRODUCTION — MINDFORGE v3.5
+# 🏗️ PATTERNS MULTI-AGENTS EN PRODUCTION — SCY FORGE v3.5
 ## Guide d'Ingénierie pour le Codage, l'Optimisation, la Sécurité, le Contrôle des Coûts, la Qualité et la Résilience
 
 **Document ID** : ARCH-MULTI-AGENT-PATTERNS-V3.5  

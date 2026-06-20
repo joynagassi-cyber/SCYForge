@@ -788,7 +788,7 @@ Alertes automatiques si seuils dépassés :
 │  Réglementation européenne sur l'IA                            │
 │  Entrée en vigueur progressive 2024-2026                      │
 │                                                                  │
-│  CE QUI CONCERNE MINDFORGE :                                   │
+│  CE QUI CONCERNE SCY FORGE :                                   │
 │                                                                  │
 │  RISQUE FAIBLE (ton cas) :                                    │
 │  Système d'éducation et d'apprentissage                       │
@@ -1243,7 +1243,7 @@ Avant tout développement, valider dans l'ordre :
 **Document Finalisé Par** : Architecture Team SCY Forge  
 **Date** : 2026-06-08  
 **Version** : 2.5 (COSMOS v4 + 20 Patterns Résilience + 35 Compléments Analyse + SCY-READER SUITE + 19 Solutions COSMOS + 5 Opportunités Différenciation + CHRONICLE Agent-10 + ARENA Agent-11 + 10 Papers Rétention Science)  
-**Remplace** : PRD-MINDFORGE-V2.3 (2026-06-08)  
+**Remplace** : PRD-SCY FORGE-V2.3 (2026-06-08)  
 **Score Confiance** : **98.9%** ✅ (↑ +0.2% — solutions terrain validées + opportunités différenciation documentées)  
 **Statut** : ✅ DOCUMENT DE RÉFÉRENCE UNIQUE  
 **Prochaine Révision** : Après exécution Sprint 0 COSMOS (7j) + POC Jour 4  

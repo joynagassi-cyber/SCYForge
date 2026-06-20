@@ -1,5 +1,5 @@
 # Feuille de Route d'Accréditation Globale — SCY Forge Certifications
-**Document ID** : ROADMAP-MINDFORGE-ACCREDITATION-V1  
+**Document ID** : ROADMAP-SCY FORGE-ACCREDITATION-V1  
 **Date** : 2026-06-09  
 **Statut** : STRATÉGIE DE PRODUCTION & BUSINESS MODEL  
 **Objectif** : Transformer les certificats de SCY Forge de simples PDF de complétion en **diplômes accrédités d'une validité académique et professionnelle universelle**.  

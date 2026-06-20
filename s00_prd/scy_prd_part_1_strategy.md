@@ -3,7 +3,7 @@
 
 ---
 
-**Document ID** : PRD-MINDFORGE-V2-CONSOLIDATED  
+**Document ID** : PRD-SCY FORGE-V2-CONSOLIDATED  
 **Date** : 2026-06-09  
 **Version** : 2.4 (COSMOS v4 + 19 Solutions Terrain + 5 Opportunités Différenciation)  
 **Langue** : Français  
@@ -72,7 +72,7 @@ Pour maximiser l'efficacité de l'équipe technique, ce document de référence 
 ## 1. Executive Summary `[Rôle : Product Owner & PM]`
 
 ### 1.1 Charte de Marque & Storytelling Officiel (v1.0)
-MindForge est officiellement rebrandé sous l'appellation unique et brevetée : **SCY Forge (Synapse Cognitive Yield Forge)**.
+SCY Forge est officiellement rebrandé sous l'appellation unique et brevetée : **SCY Forge (Synapse Cognitive Yield Forge)**.
 
 #### A. Slogans Officiels de Lancement :
 * **Version Française (Scientifique & Moderne) :**  
@@ -829,7 +829,7 @@ enum RolloutStrategy {
 
 ```
 ┌──────────────────────────────────────────────┐
-│            PYRAMIDE DE TEST MINDFORGE          │
+│            PYRAMIDE DE TEST SCY FORGE          │
 │                                                │
 │              ┌───────────┐                    │
 │              │    E2E    │  5-10%             │

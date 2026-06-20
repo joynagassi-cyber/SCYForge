@@ -1,7 +1,7 @@
 # SCY Forge — Architecture COSMOS Complète v4
 ## Version 4.0 — 26 Modes + Patterns Résilience + Solutions Complètes + 5 Opportunités Différenciation
 
-**Document ID** : MINDFORGE-ARCH-COSMOS-V4  
+**Document ID** : SCY FORGE-ARCH-COSMOS-V4  
 **Date** : 2026-06-09  
 **Sources fusionnées** :
 - `cosmos-architecture.md` v3 (D-RENDER-001→009, D-DATA-001→004, D-RESILIENCE-001→006, D-VALIDATION-001→006, D-STRATEGY-001→006, D-PERF-001→005, D-PREMORTEM-001→008)

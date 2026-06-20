@@ -944,7 +944,7 @@ Avantages :
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║           MINDFORGE — PROOF OF SKILL CERTIFICATE             ║
+║           SCY FORGE — PROOF OF SKILL CERTIFICATE             ║
 ╠══════════════════════════════════════════════════════════════╣
 ║                                                               ║
 ║  👤 [Nom Utilisateur]                                        ║

@@ -1,5 +1,5 @@
 # Stratégie d'Expansion B2B — SCY Forge Enterprise
-**Document ID** : STRATEGY-MINDFORGE-B2B-V1  
+**Document ID** : STRATEGY-SCY FORGE-B2B-V1  
 **Date** : 2026-06-09  
 **Statut** : STRATÉGIE DE PRODUCTION & BUSINESS MODEL  
 **Objectif** : Vendre SCY Forge aux entreprises comme l'unique outil de formation interne capable de **prouver mathématiquement le retour sur investissement (ROI) de la montée en compétences** de leurs collaborateurs grâce au SMI.

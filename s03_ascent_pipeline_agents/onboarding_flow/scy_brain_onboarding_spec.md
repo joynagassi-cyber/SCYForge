@@ -1,4 +1,4 @@
-# 🧠 MINDFORGE — SCY-BRAIN, PROFESSOR AI & ONBOARDING ASCENT
+# 🧠 SCY FORGE — SCY-BRAIN, PROFESSOR AI & ONBOARDING ASCENT
 ## Spécification Fonctionnelle : Clarification, Starter Evaluator, Professor AI & BRAIN Advanced Chat Gen
 
 ---
@@ -113,7 +113,7 @@ SCY Forge expose **deux modes principaux** que l'utilisateur perçoit clairement
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║   BIENVENUE DANS MINDFORGE — QUE VOULEZ-VOUS FAIRE ?            ║
+║   BIENVENUE DANS SCY FORGE — QUE VOULEZ-VOUS FAIRE ?            ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                  ║
 ║   ┌────────────────────────┐    ┌────────────────────────┐      ║

@@ -1,4 +1,4 @@
-# 🧠 LE MOTEUR NEUROSCIENTIFIQUE DE MINDFORGE — SPÉCIFICATIONS TECHNIQUES
+# 🧠 LE MOTEUR NEUROSCIENTIFIQUE DE SCY FORGE — SPÉCIFICATIONS TECHNIQUES
 ## Architecture d'Ingénierie Biologique de l'Apprentissage : ENGRAM, Compétition Synaptique, Protocole FORGE, Mode FRICTION et Carte Thermique
 
 **Document ID** : SPEC-SCY-NEUROSCIENTIFIC-ENGINE-V1.0  

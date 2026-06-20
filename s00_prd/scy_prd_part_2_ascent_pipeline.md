@@ -11,7 +11,7 @@ Pour réduire la latence initiale de génération et la surcharge cognitive de l
 
 **Sous-fonctionnalités d'entrée** *(v2 — voir SPEC-BRAIN-ONBOARDING-V1)* :
 
-**[LE SERMENT DE RIGUEUR & TRANSPARENCE DE MINDFORGE]** :
+**[LE SERMENT DE RIGUEUR & TRANSPARENCE DE SCY FORGE]** :
 SCY Forge refuse d'éditer des formations "miracles" superficielles. Si l'utilisateur a 0 prérequis et veut un objectif massif (ex: "Data Scientist"), `AGENT-01` refuse d'instancier un cours unique mensonger. Il décompose le cursus de 3 ans en un enchaînement de **Micro-Goals / Micro-Certifications précis (max 120h d'apprentissage actif par jalon)**. Il affiche un avertissement de transparence : *"Pour atteindre ce niveau pro, vous devez valider ces 4 jalons successifs sur 12 mois. La maîtrise s'acquiert par la pratique et l'espacement temporel."* L'utilisateur valide cet engagement avant de démarrer.
 
 *A. Clarification (Intent Elucidator)* — tout début du parcours :

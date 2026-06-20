@@ -1,5 +1,5 @@
 # Manifeste Pédagogique — L'Ère de la Conception Systémique
-**Document ID** : MANIFESTO-MINDFORGE-PEDAGOGY-2026  
+**Document ID** : MANIFESTO-SCY FORGE-PEDAGOGY-2026  
 **Date** : 2026-06-10  
 **Statut** : PHILOSOPHIE DIRECTRICE DU PRODUIT (VISION GO-TO-MARKET)  
 

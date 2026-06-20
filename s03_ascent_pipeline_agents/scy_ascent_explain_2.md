@@ -1,4 +1,4 @@
-# 🎓 MINDFORGE — ASCENT COURSE DISPLAY ENGINE
+# 🎓 SCY FORGE — ASCENT COURSE DISPLAY ENGINE
 ## L'Interface d'Affichage des Cours de Formation — Spécification d'Expérience Interactive & Cognitive
 
 ---
@@ -884,4 +884,4 @@ RÉSULTAT : un affichage intuitif, interactif, aligné cognitivement —
 **Date** : 2026-06-08
 **Version** : 1.0
 **Statut** : ✅ PRÊT POUR PROTOTYPAGE UI
-**Aligné avec** : PRD-MINDFORGE-V2 (COSMOS v3, APEX, BRAIN, NEURON-CHAINS) + ASCENT Autonomous Pipeline
+**Aligné avec** : PRD-SCY FORGE-V2 (COSMOS v3, APEX, BRAIN, NEURON-CHAINS) + ASCENT Autonomous Pipeline

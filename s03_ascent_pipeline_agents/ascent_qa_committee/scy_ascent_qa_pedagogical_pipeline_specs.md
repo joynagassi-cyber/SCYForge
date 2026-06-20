@@ -1,4 +1,4 @@
-# 🎓 PIPELINE DE VALIDATION PÉDAGOGIQUE ASCENT-QA — MINDFORGE v3.5
+# 🎓 PIPELINE DE VALIDATION PÉDAGOGIQUE ASCENT-QA — SCY FORGE v3.5
 ## Spécification de la Couche d'Audit Éditorial, d'Intégrité du Savoir et de Garantie de Certification
 
 **Document ID** : SPEC-SCY-ASCENT-QA-PIPELINE-V1.0  

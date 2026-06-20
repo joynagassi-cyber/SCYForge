@@ -1,4 +1,4 @@
-# 🚀 MINDFORGE — ASCENT AUTONOMOUS PIPELINE
+# 🚀 SCY FORGE — ASCENT AUTONOMOUS PIPELINE
 ## Architecture Agentique Autonome : SCY Forge comme Machine à Compétences
 
 ---
@@ -114,7 +114,7 @@ L'ASCENT-ORCHESTRATOR sait à chaque instant :
 
 ```
 ╔═══════════════════════════════════════════════════════════════════════════════╗
-║              MINDFORGE — ASCENT AUTONOMOUS PIPELINE v1                        ║
+║              SCY FORGE — ASCENT AUTONOMOUS PIPELINE v1                        ║
 ║         "Une seule entrée, un seul objectif : la compétence"                  ║
 ╠═══════════════════════════════════════════════════════════════════════════════╣
 ║                                                                               ║
@@ -1585,7 +1585,7 @@ Pour permettre à nos concepteurs de cours d'évaluations et d'examens d'éditer
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
-║                    MINDFORGE PROOF OF SKILL                           ║
+║                    SCY FORGE PROOF OF SKILL                           ║
 ║                                                                        ║
 ║  ┌─────────────────────────────────────────────────────────────────┐  ║
 ║  │  👤 Jean-Baptiste Doe                                           │  ║
@@ -2225,7 +2225,7 @@ RÈGLE DE COUVERTURE :
   Avant tout Goal : couverture domaine ≥ 85%
   Minimum 3 sources Gold (SQS ≥ 80)
   Si < 85% → ASCENT refuse de démarrer
-# MINDFORGE — DOCUMENTATION FEATURES & STRATÉGIE
+# SCY FORGE — DOCUMENTATION FEATURES & STRATÉGIE
 # Analyse et Recommandations Stratégiques
 
 ## Diagnostic du problème identifié
@@ -3162,7 +3162,7 @@ pub struct AgentPipelineMetrics {
 ## Résumé — Ce que cette Architecture Change
 
 ```
-MINDFORGE AVANT                        MINDFORGE APRÈS
+SCY FORGE AVANT                        SCY FORGE APRÈS
 ────────────────────────────────────   ────────────────────────────────────
 User pilote les features               Features pilotées par 13 agents
 

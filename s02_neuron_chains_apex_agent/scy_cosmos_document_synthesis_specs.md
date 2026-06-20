@@ -1,4 +1,4 @@
-# 🎨 ALGORITHME DE SYNTHÈSE DOCUMENTAIRE ET DES 50 TONS — MINDFORGE v3.5
+# 🎨 ALGORITHME DE SYNTHÈSE DOCUMENTAIRE ET DES 50 TONS — SCY FORGE v3.5
 ## Spécification de la Matrice d'Abstraction en 8 Squelettes Formels et 5 Régimes Éditoriaux pour Petits Modèles (0$ Hallucinations)
 
 **Document ID** : PROPOSAL-SCY-DOCUMENT-SYNTHESIS-V1.0  

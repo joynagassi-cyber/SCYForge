@@ -1,4 +1,4 @@
-# 📋 STANDARDS DE DÉVELOPPEMENT AGENTIQUE (AI-SDLC) — MINDFORGE v3.5
+# 📋 STANDARDS DE DÉVELOPPEMENT AGENTIQUE (AI-SDLC) — SCY FORGE v3.5
 ## Spécifications de Structure, de Formats d'Écriture et de livrables pour le codage sans hallucination par les agents IA
 
 **Document ID** : ARCH-AGENTIC-SDLC-V1.0  

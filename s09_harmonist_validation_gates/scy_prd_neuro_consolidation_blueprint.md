@@ -1,4 +1,4 @@
-# 🚀 MINDFORGE — PRD NEURO-CONSOLIDATION MASTER BLUEPRINT v3.0
+# 🚀 SCY FORGE — PRD NEURO-CONSOLIDATION MASTER BLUEPRINT v3.0
 ## Spécification Globale d'Ingénierie Cognitive, Algorithmique et d'Architecture Système Unifiée
 
 **Document ID** : PRD-SCY-NEURO-CONSOLIDATION-V3.0  
@@ -175,7 +175,7 @@ Le schéma de base de données d'**Northflank PostgreSQL** s'unifie de façon tr
 
 ```sql
 -- =========================================================================
--- MINDFORGE DATABASE SCHEMA CONSOLIDATION — V3.0
+-- SCY FORGE DATABASE SCHEMA CONSOLIDATION — V3.0
 -- Platform: Northflank PostgreSQL (RLS enabled, default tenant partitioning)
 -- =========================================================================
 
@@ -460,7 +460,7 @@ ADD COLUMN pathway_type TEXT NOT NULL DEFAULT 'assimilation_active', -- 'assimil
 ADD COLUMN is_certified BOOLEAN DEFAULT false,
 ADD COLUMN certified_at INTEGER;
 
--- == LE VOLANT D'ÉVOLUTION AXIOMATIQUE DE MINDFORGE (SCY-AXIOM) ==
+-- == LE VOLANT D'ÉVOLUTION AXIOMATIQUE DE SCY FORGE (SCY-AXIOM) ==
 
 -- Table de capture des traces expérimentales unitaires réussies
 CREATE TABLE scy_procedural_traces (

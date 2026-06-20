@@ -1037,7 +1037,12 @@ Alertes automatiques si seuils dépassés :
 | D-OPT-053 | Hippocampal Spatial Zoom (COSMOS) | Intégration du mode 'Semantic Zoom Graph' (COSMOS Mode 22) forçant l'élève à naviguer spatialement entre le micro-concept et la galaxie globale, stimulant les cellules de lieu de l'hippocampe. | Phase 1 (Web) |
 | D-OPT-054 | Dunning-Kruger Calibration | Si la confiance déclarée de l'élève est élevée mais son recall FSRS est bas, l'agent `DRIFT-GUARDIAN (AGENT-07)` force une session Teach-Back immédiate pour briser l'illusion de savoir. | Phase 1 (Web) |
 | D-OPT-055 | Tiny Habit Re-entry Protocol | En cas d'absence > 3 jours, masquer le backlog total de cartes en retard et présenter exclusivement un 'Mode Minimal' de 3 cartes prioritaires pour éliminer le stress de surcharge. | Phase 1 (Web) |
+
 | D-OPT-056 | STUDENT-AI Socratic Teach-Back | Optimisation de la session Teach-Back pour les concepts spirituels et avancés (Hagah). L'IA élève adopte un rôle d'interlocuteur socratique calibré sur l'SMI de l'élève, exigeant la verbalisation d'imageries mentales, d'analyses contrastives et d'applications pratiques (Bloom 3), ré-ajustant directement la stabilité FSRS. | Phase 1 (Web) |
+| D-OPT-057 | Rig Framework for LLM Abstractions | Intégration de la bibliothèque Rust **Rig** pour l'unification des modèles et des outils. L'utilisation de ses traits composables (`CompletionModel`, `Tool`, `VectorStore`) permet d'écrire nos propres briques d'outils de manière ultra-légère (<1.1 Go RAM) et type-safe. | Phase 1 (Web) |
+| D-OPT-058 | RRAG for Enterprise Knowledge | Déploiement de **RRAG** comme moteur d'indexation et de récupération. Son architecture "async-first" sur Tokio et ses composants interchangeables sécurisent la couche RAG hybride de MindGraph. | Phase 1 (Web) |
+| D-OPT-059 | Custom Concurrency Orchestrator | Développement de notre propre orchestrateur multi-agents asynchrone Rust utilisant les primitives `JoinSet` et `CancellationToken` de Tokio, éliminant les fuites de ressources et sécurisant la propagation des erreurs. | Phase 1 (Web) |
+| D-OPT-060 | WASM Tool Sandboxing | Standardisation de l'exécution des scripts d'outils tiers au sein de bacs à sable WebAssembly (WASM) isolés, garantissant une étanchéité de sécurité absolue au runtime. | Phase 1 (Web) |
 
 ## 16. Fondation Recherche `[Rôle : AI & LLM Engineer]` — 44 Papers (27 initiaux + 12 COSMOS v3 + 5 nouveaux)
 

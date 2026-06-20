@@ -52,3 +52,77 @@ Pour garantir la réussite absolue du codage de ce module par nos agents de dév
 2. **Ne pas modifier les structures de données** : Référence-toi à l'index SQL consolidé de la base de données Insforge.
 3. **Respecter la palette de couleurs spatiale** : Ne jamais introduire de rouge ou de bleu fade en dehors des tokens d'interface fixés dans `design.md`.
 4. **Validation des schémas** : Tout retour JSON d'agent s'appuie sur la validation stricte de modèles **Zod** avec gestion de retries.
+
+
+## 4. Architecture de Rendu & d'Orchestration Rust (Rig, RRAG & Concurrence Structurée)
+
+### 4.1 Intégration de Rig & RRAG
+Le moteur s'appuie sur la bibliothèque légère **Rig** pour unifier les appels de LLMs, et sur **RRAG** pour orchestrer le triplet de recherche RAG hybride :
+- Les outils d'audits ou de compressions implémentent le trait composable `Tool` de Rig.
+- L'APEX-AGENT est instancié via les abstractions de `CompletionModel` de Rig, garantissant un typage strict au moment de la compilation.
+
+### 4.2 L'Orchestrateur Custom avec Concurrence Structurée (JoinSet & CancellationToken)
+Pour exécuter les Neuron-Chains en parallèle (ex: générer simultanément les fiches concepts et l'examen) sans risque de fuites de mémoire, de zombies ou de blocages de threads, nous codons notre propre orchestrateur à l'aide des primitives de **Tokio** :
+
+```rust
+// backend_rust/src/neurochain/orchestration/custom_orchestrator.rs
+use tokio::task::JoinSet;
+use tokio_util::sync::CancellationToken;
+use std::sync::Arc;
+use uuid::Uuid;
+
+pub struct AgentTask {
+    pub id: Uuid,
+    pub agent_name: String,
+}
+
+pub async fn run_parallel_neuron_chains(
+    tasks: Vec<AgentTask>,
+    payload: Arc<serde_json::Value>,
+) -> Result<Vec<serde_json::Value>, String> {
+    // 1. Initialiser le jeton d'annulation (Sûreté de SAGA)
+    let cancel_token = CancellationToken::new();
+    let mut join_set = JoinSet::new();
+    
+    for task in tasks {
+        let token = cancel_token.clone();
+        let task_payload = Arc::clone(&payload);
+        
+        // Fanner chaque agent au sein d'une tâche de thread Tokio isolée
+        join_set.spawn(async move {
+            tokio::select! {
+                // Écoute active de l'annulation en cas de panne d'une autre branche (SAGA fallback)
+                _ = token.cancelled() => {
+                    Err(format!("Tâche {} annulée de manière préventive.", task.id))
+                }
+                result = execute_agent_chain(task, task_payload) => {
+                    result
+                }
+            }
+        });
+    }
+
+    let mut completed_results = Vec::new();
+    
+    // Écoulement et surveillance de la concurrence
+    while let Some(res) = join_set.join_next().await {
+        match res {
+            Ok(Ok(success_payload)) => {
+                completed_results.push(success_payload);
+            }
+            _ => {
+                // EN CAS D'ÉCHEC D'UNE SEULE BRANCHE : Annuler immédiatement tous les autres threads actifs !
+                cancel_token.cancel();
+                return Err("Échec critique d'une Neuron-Chain. Annulation globale de la transaction.".to_string());
+            }
+        }
+    }
+
+    Ok(completed_results)
+}
+
+async fn execute_agent_chain(task: AgentTask, payload: Arc<serde_json::Value>) -> Result<serde_json::Value, String> {
+    // Implémentation réelle de l'outil d'appel Rig de l'agent
+    Ok(serde_json::json!({ "status": "completed", "agent": task.agent_name }))
+}
+```

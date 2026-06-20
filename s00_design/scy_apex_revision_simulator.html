@@ -62,8 +62,25 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 520px;
+            min-height: 540px;
             position: relative;
+            overflow: hidden;
+        }
+
+        /* Subtle organic grid background overlay on card */
+        .panel::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(2, 2, 5, 0) 95%, rgba(124, 58, 237, 0.02) 5%);
+            background-size: 20px 20px;
+            pointer-events: none;
+            z-index: 1;
         }
 
         .header {
@@ -73,6 +90,7 @@
             margin-bottom: 20px;
             border-bottom: 1px solid var(--border-default);
             padding-bottom: 12px;
+            z-index: 2;
         }
 
         .logo-section {
@@ -85,6 +103,7 @@
             color: var(--color-ai);
             font-weight: bold;
             font-size: 20px;
+            animation: pulse-glow 3s infinite ease-in-out;
         }
 
         .logo-text {
@@ -115,6 +134,7 @@
             align-items: center;
             text-align: center;
             padding: 20px 0;
+            z-index: 2;
         }
 
         .card-question {
@@ -137,30 +157,94 @@
             text-transform: uppercase;
         }
 
+        /* HOLOGRAPHIC ORGANIC ANSWER BLOCK */
         .answer-block {
             display: none;
             width: 100%;
-            animation: fadeIn 0.3s ease;
+            position: relative;
+            margin-top: 10px;
         }
 
+        .hologram-box {
+            position: relative;
+            background: linear-gradient(135deg, rgba(26, 26, 37, 0.6) 0%, rgba(13, 13, 21, 0.8) 100%);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: left;
+            overflow: hidden;
+            box-shadow: 
+                0 0 25px rgba(124, 58, 237, 0.1),
+                inset 0 0 15px rgba(124, 58, 237, 0.05);
+            backdrop-filter: blur(8px);
+            animation: holo-ignite 0.6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        }
+
+        /* Scanning laser line */
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--color-ai), #C084FC, var(--color-ai), transparent);
+            box-shadow: 
+                0 0 8px #C084FC,
+                0 0 18px var(--color-ai);
+            opacity: 0;
+            z-index: 3;
+        }
+
+        .scanning .scan-line {
+            animation: scan-sweep 1.2s ease-in-out forwards;
+        }
+
+        /* Holographic flickering text content */
         .answer-text {
             font-size: 16px;
             line-height: 1.6;
-            color: var(--text-secondary);
-            background-color: rgba(2, 2, 5, 0.4);
-            padding: 16px;
-            border-radius: 8px;
-            border-left: 3px solid var(--color-ai);
-            text-align: left;
-            margin-bottom: 16px;
+            color: var(--text-primary);
+            opacity: 0;
+        }
+
+        .scanning .answer-text {
+            animation: holo-text-reveal 0.8s ease-out 0.3s forwards, holo-flicker 4s infinite 1.2s;
         }
 
         .explanation-block {
-            font-size: 13px;
-            color: var(--color-alert);
-            font-style: italic;
-            text-align: left;
-            margin-bottom: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            color: #C084FC;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--font-mono);
+            opacity: 0;
+        }
+
+        .scanning .explanation-block {
+            animation: fadeIn 0.4s ease forwards 0.2s;
+        }
+
+        /* ORGANIC PULSE AMBIENT AURA */
+        .organic-aura {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(20px);
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .panel:hover .organic-aura {
+            opacity: 1;
         }
 
         /* ACTIONS */
@@ -169,6 +253,7 @@
             justify-content: center;
             width: 100%;
             margin-top: 24px;
+            z-index: 2;
         }
 
         .btn-reveal {
@@ -182,11 +267,30 @@
             cursor: pointer;
             transition: all 0.2s ease;
             box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-reveal::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 30%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.15);
+            transform: rotate(30deg);
+            transition: all 0.5s ease;
+        }
+
+        .btn-reveal:hover::after {
+            left: 130%;
         }
 
         .btn-reveal:hover {
             background-color: #6D28D9;
             transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(124, 58, 237, 0.5);
         }
 
         .fsrs-buttons {
@@ -240,7 +344,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 520px;
+            min-height: 540px;
         }
 
         .panel-title {
@@ -316,9 +420,80 @@
             background-color: transparent;
         }
 
+        /* ANIMATIONS DEFINITIONS */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(5px); }
-            to { opacity: 1; transform: translateY(0); }
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { filter: drop-shadow(0 0 2px var(--color-ai)); opacity: 0.8; }
+            50% { filter: drop-shadow(0 0 8px var(--color-ai)); opacity: 1; }
+        }
+
+        /* Holographic Box Ignition */
+        @keyframes holo-ignite {
+            0% {
+                transform: scaleY(0.01) scaleX(0.9);
+                box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+                border-color: #C084FC;
+                opacity: 0.5;
+            }
+            50% {
+                transform: scaleY(1.05) scaleX(1.02);
+                border-color: var(--color-ai);
+                box-shadow: 0 0 15px rgba(124, 58, 237, 0.2);
+                opacity: 0.9;
+            }
+            100% {
+                transform: scaleY(1) scaleX(1);
+                border-color: rgba(124, 58, 237, 0.3);
+                opacity: 1;
+            }
+        }
+
+        /* Scan Laser sweeping from top to bottom */
+        @keyframes scan-sweep {
+            0% {
+                top: 0;
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+        /* Organic fade in for the socratic response */
+        @keyframes holo-text-reveal {
+            0% {
+                opacity: 0;
+                filter: blur(8px);
+                transform: translateY(2px);
+            }
+            100% {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateY(0);
+            }
+        }
+
+        /* Gentle organic flicker simulating neural connection */
+        @keyframes holo-flicker {
+            0%, 100% { opacity: 1; }
+            32% { opacity: 0.98; }
+            33% { opacity: 0.95; }
+            34% { opacity: 0.99; }
+            64% { opacity: 1; }
+            65% { opacity: 0.92; }
+            66% { opacity: 0.97; }
+            80% { opacity: 1; }
         }
 
         .confetti-canvas {
@@ -344,8 +519,11 @@
 
     <div class="container">
         <!-- CARD INTERACTIVE PANEL -->
-        <div class="panel">
+        <div class="panel" id="main-panel" onmousemove="updateAura(event)">
             <canvas class="confetti-canvas" id="confetti"></canvas>
+            
+            <!-- Organic ambient aura backdrop -->
+            <div class="organic-aura" id="ambient-aura"></div>
             
             <div class="header">
                 <div class="logo-section">
@@ -362,9 +540,14 @@
                 <p class="card-question" id="card-question">Comment fonctionne le mécanisme de Polling dans les Futures en Rust ?</p>
                 
                 <div class="answer-block" id="answer-block">
-                    <p class="explanation-block">🧠 Révélation d'Ancrage Cognitif :</p>
-                    <div class="answer-text" id="card-answer">
-                        Les Futures en Rust sont passives. L'exécuteur appelle répétitivement la méthode <code>poll()</code>. Si la ressource est prête, elle renvoie <code>Poll::Ready(val)</code>. Sinon, elle enregistre un signal d'éveil via le <code>Waker</code> et renvoie <code>Poll::Pending</code>.
+                    <div class="hologram-box" id="hologram-box">
+                        <div class="scan-line"></div>
+                        <div class="explanation-block">
+                            <span>⚡ Synapse Activée :</span>
+                        </div>
+                        <div class="answer-text" id="card-answer">
+                            Les Futures en Rust sont passives. L'exécuteur appelle la méthode <code>poll()</code>. Si la ressource est prête, elle renvoie <code>Poll::Ready(val)</code>. Sinon, elle enregistre un signal d'éveil via le <code>Waker</code> et renvoie <code>Poll::Pending</code>.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -467,8 +650,7 @@
             document.getElementById('stat-stability').textContent = stability.toFixed(1) + 'j';
             document.getElementById('stat-difficulty').textContent = difficulty.toFixed(1) + '/10';
             
-            // Standard decay calculation at day current t=0 (instantaneous R is 100%)
-            // Let's assume elapsed t = interval selected to show dynamic retrievability
+            // Standard decay calculation
             let intervalDays = Math.max(1, Math.round(stability));
             let currentR = Math.exp(Math.log(0.9) * (intervalDays / stability)) * 100;
             document.getElementById('stat-retention').textContent = currentR.toFixed(1) + '%';
@@ -484,12 +666,28 @@
             drawChart();
         }
 
+        // AMBIENT ORGANIC AURA POSITION UPDATE
+        function updateAura(e) {
+            const aura = document.getElementById('ambient-aura');
+            const panel = document.getElementById('main-panel');
+            const rect = panel.getBoundingClientRect();
+            const x = e.clientX - rect.left - 75; // Center aura
+            const y = e.clientY - rect.top - 75;
+            aura.style.left = x + 'px';
+            aura.style.top = y + 'px';
+        }
+
         function revealAnswer() {
             if (isRevealed) return;
             isRevealed = true;
             document.getElementById('btn-reveal').style.display = 'none';
             document.getElementById('fsrs-buttons').style.display = 'grid';
-            document.getElementById('answer-block').style.display = 'block';
+            
+            // Display container and fire Holographic Scan sweep
+            const container = document.getElementById('answer-block');
+            const box = document.getElementById('hologram-box');
+            container.style.display = 'block';
+            box.classList.add('scanning');
         }
 
         function submitFSRS(rating) {
@@ -520,8 +718,9 @@
                 document.getElementById('card-question').textContent = cards[currentCardIndex].question;
                 document.getElementById('card-answer').innerHTML = cards[currentCardIndex].answer;
                 
-                // Hide answer
+                // Hide answer & reset scanning states
                 document.getElementById('answer-block').style.display = 'none';
+                document.getElementById('hologram-box').classList.remove('scanning');
                 document.getElementById('fsrs-buttons').style.display = 'none';
                 document.getElementById('btn-reveal').style.display = 'block';
                 
@@ -584,7 +783,7 @@
             }
         }
 
-        // DECAY CHART DRAWING (using HTML5 Canvas)
+        // DECAY CHART DRAWING
         const canvas = document.getElementById('decayChart');
         const ctx = canvas.getContext('2d');
 
@@ -596,7 +795,6 @@
 
             ctx.clearRect(0, 0, width, height);
 
-            // Chart metrics boundaries
             const paddingLeft = 35;
             const paddingBottom = 25;
             const paddingTop = 10;
@@ -605,13 +803,11 @@
             const graphWidth = width - paddingLeft - paddingRight;
             const graphHeight = height - paddingTop - paddingBottom;
 
-            // Draw Grid Lines (Y: Retrievability 0% - 100%)
             ctx.strokeStyle = '#222530';
             ctx.lineWidth = 1;
             ctx.fillStyle = '#6B7280';
             ctx.font = '10px monospace';
 
-            // Draw Y-axis labels
             const yLabels = [100, 90, 75, 50, 0];
             yLabels.forEach(val => {
                 let y = paddingTop + graphHeight * (1 - val/100);
@@ -622,16 +818,14 @@
                 ctx.fillText(val + '%', 5, y + 4);
             });
 
-            // Draw X-axis label (Time t in Days up to 30 days)
             const maxDays = Math.max(30, Math.round(stability * 1.5));
             for (let d = 0; d <= maxDays; d += Math.round(maxDays / 5)) {
                 let x = paddingLeft + graphWidth * (d / maxDays);
                 ctx.fillText(d + 'j', x - 6, height - 8);
             }
 
-            // Draw Forgetting Curve R(t) = exp(ln(0.9) * t / S)
             ctx.beginPath();
-            ctx.strokeStyle = '#2563EB'; // Electric Blue
+            ctx.strokeStyle = '#2563EB';
             ctx.lineWidth = 3;
 
             for (let t = 0; t <= maxDays; t += 0.5) {
@@ -644,24 +838,22 @@
             }
             ctx.stroke();
 
-            // Highlight standard FSRS review threshold at R = 90%
             let thresholdY = paddingTop + graphHeight * (1 - 0.90);
             ctx.beginPath();
-            ctx.strokeStyle = '#10B981'; // Emerald Green
+            ctx.strokeStyle = '#10B981';
             ctx.lineWidth = 1.5;
             ctx.setLineDash([5, 5]);
             ctx.moveTo(paddingLeft, thresholdY);
             ctx.lineTo(width - paddingRight, thresholdY);
             ctx.stroke();
-            ctx.setLineDash([]); // Reset line dash
+            ctx.setLineDash([]);
 
-            // Highlight current scheduled interval intersection
             let currentI = Math.max(1, Math.round(stability));
             let intersectX = paddingLeft + graphWidth * (currentI / maxDays);
             let intersectY = paddingTop + graphHeight * (1 - Math.exp(Math.log(0.9) * (currentI / stability)));
 
             ctx.beginPath();
-            ctx.fillStyle = '#7C3AED'; // Violet focus dot
+            ctx.fillStyle = '#7C3AED';
             ctx.arc(intersectX, intersectY, 6, 0, Math.PI * 2);
             ctx.fill();
             ctx.strokeStyle = '#F3F4F6';
@@ -669,10 +861,8 @@
             ctx.stroke();
         }
 
-        // INITIALIZE
         updateFSRSUI();
 
-        // KEYBOARD EVENT LISTENERS FOR FLUID WORKFLOW
         window.addEventListener('keydown', (e) => {
             if (e.code === 'Space') {
                 e.preventDefault();

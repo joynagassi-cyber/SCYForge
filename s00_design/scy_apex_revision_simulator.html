@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCY Forge — APEX Interactive FSRS 5.0 Revision Console</title>
+    <title>SCY Forge — APEX 3D Socratic Holographic Card Flip</title>
     <style>
         :root {
             --bg-main: #020205;
@@ -44,6 +44,7 @@
             display: grid;
             grid-template-columns: 1.2fr 1fr;
             gap: 24px;
+            align-items: center;
         }
 
         @media (max-width: 850px) {
@@ -52,23 +53,48 @@
             }
         }
 
-        /* CARD PANEL */
-        .panel {
-            background-color: var(--bg-card);
+        /* 3D PERSPECTIVE CONTAINER */
+        .perspective-wrapper {
+            perspective: 1500px;
+            width: 100%;
+            height: 560px;
+        }
+
+        /* THE 3D CARD */
+        .card-3d {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1.4s cubic-bezier(0.25, 1, 0.5, 1); /* Slow, organic trigonometric flip */
+            cursor: pointer;
+        }
+
+        /* TRIGONOMETRIC ROTATION (Flipped State) */
+        .card-3d.flipped {
+            transform: rotateY(180deg); /* Horizontal trigonometric Y-axis flip */
+        }
+
+        /* COMMON STYLES FOR BOTH FACES */
+        .card-face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide the back when flipped */
+            border-radius: 16px;
             border: 1px solid var(--border-default);
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            padding: 32px 24px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 540px;
-            position: relative;
             overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         }
 
-        /* Subtle organic grid background overlay on card */
-        .panel::before {
+        /* Subtle organic grid background overlay on faces */
+        .card-face::before {
             content: "";
             position: absolute;
             top: 0;
@@ -76,21 +102,38 @@
             right: 0;
             bottom: 0;
             background-image: 
-                radial-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(2, 2, 5, 0) 95%, rgba(124, 58, 237, 0.02) 5%);
-            background-size: 20px 20px;
+                radial-gradient(rgba(124, 58, 237, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(2, 2, 5, 0) 95%, rgba(124, 58, 237, 0.01) 5%);
+            background-size: 24px 24px;
             pointer-events: none;
             z-index: 1;
         }
 
+        /* FRONT FACE (Question) */
+        .card-front {
+            background-color: var(--bg-card);
+            z-index: 2;
+        }
+
+        /* BACK FACE (Answer & FSRS Controls) */
+        .card-back {
+            background: linear-gradient(145deg, #090911 0%, var(--bg-card) 100%);
+            transform: rotateY(180deg); /* Pre-rotated for the flip */
+            border-color: rgba(124, 58, 237, 0.4);
+            box-shadow: 
+                0 0 30px rgba(124, 58, 237, 0.1),
+                inset 0 0 20px rgba(124, 58, 237, 0.05);
+        }
+
+        /* HEADER */
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
             border-bottom: 1px solid var(--border-default);
             padding-bottom: 12px;
             z-index: 2;
+            width: 100%;
         }
 
         .logo-section {
@@ -107,7 +150,7 @@
         }
 
         .logo-text {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             letter-spacing: 1px;
             color: var(--text-primary);
@@ -121,12 +164,10 @@
             border-radius: 9999px;
             font-size: 12px;
             font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 4px;
         }
 
-        .card-body {
+        /* CARD CORE CONTENT */
+        .card-content {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -135,15 +176,6 @@
             text-align: center;
             padding: 20px 0;
             z-index: 2;
-        }
-
-        .card-question {
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 1.5;
-            color: var(--text-primary);
-            max-width: 90%;
-            margin-bottom: 16px;
         }
 
         .card-category {
@@ -155,32 +187,27 @@
             border-radius: 4px;
             margin-bottom: 24px;
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* HOLOGRAPHIC ORGANIC ANSWER BLOCK */
-        .answer-block {
-            display: none;
+        .card-question {
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1.55;
+            color: var(--text-primary);
+            max-width: 90%;
+        }
+
+        /* HOLOGRAPHIC SCANNING & SHIMMER EFFECTS ON REVEAL */
+        .hologram-wrapper {
             width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             position: relative;
-            margin-top: 10px;
         }
 
-        .hologram-box {
-            position: relative;
-            background: linear-gradient(135deg, rgba(26, 26, 37, 0.6) 0%, rgba(13, 13, 21, 0.8) 100%);
-            border: 1px solid rgba(124, 58, 237, 0.3);
-            border-radius: 8px;
-            padding: 16px;
-            text-align: left;
-            overflow: hidden;
-            box-shadow: 
-                0 0 25px rgba(124, 58, 237, 0.1),
-                inset 0 0 15px rgba(124, 58, 237, 0.05);
-            backdrop-filter: blur(8px);
-            animation: holo-ignite 0.6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        }
-
-        /* Scanning laser line */
         .scan-line {
             position: absolute;
             top: 0;
@@ -195,20 +222,8 @@
             z-index: 3;
         }
 
-        .scanning .scan-line {
-            animation: scan-sweep 1.2s ease-in-out forwards;
-        }
-
-        /* Holographic flickering text content */
-        .answer-text {
-            font-size: 16px;
-            line-height: 1.6;
-            color: var(--text-primary);
-            opacity: 0;
-        }
-
-        .scanning .answer-text {
-            animation: holo-text-reveal 0.8s ease-out 0.3s forwards, holo-flicker 4s infinite 1.2s;
+        .flipped .scan-line {
+            animation: scan-sweep 1.4s ease-in-out 0.4s forwards;
         }
 
         .explanation-block {
@@ -217,42 +232,53 @@
             letter-spacing: 0.5px;
             color: #C084FC;
             text-transform: uppercase;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
             gap: 6px;
             font-family: var(--font-mono);
+        }
+
+        .answer-text {
+            font-size: 16px;
+            line-height: 1.65;
+            color: var(--text-primary);
+            text-align: left;
+            background-color: rgba(2, 2, 5, 0.4);
+            padding: 18px;
+            border-radius: 8px;
+            border-left: 3px solid var(--color-ai);
+            box-shadow: inset 0 0 15px rgba(124, 58, 237, 0.05);
             opacity: 0;
         }
 
-        .scanning .explanation-block {
-            animation: fadeIn 0.4s ease forwards 0.2s;
+        .flipped .answer-text {
+            animation: holo-text-reveal 1s ease-out 0.6s forwards, holo-flicker 4s infinite 1.6s;
         }
 
         /* ORGANIC PULSE AMBIENT AURA */
         .organic-aura {
             position: absolute;
-            width: 150px;
-            height: 150px;
-            background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.16) 0%, transparent 70%);
             border-radius: 50%;
-            filter: blur(20px);
+            filter: blur(25px);
             z-index: 1;
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.5s ease;
         }
 
-        .panel:hover .organic-aura {
+        .card-face:hover .organic-aura {
             opacity: 1;
         }
 
-        /* ACTIONS */
+        /* CTAS */
         .action-area {
             display: flex;
             justify-content: center;
             width: 100%;
-            margin-top: 24px;
             z-index: 2;
         }
 
@@ -261,12 +287,12 @@
             color: var(--text-primary);
             border: none;
             border-radius: 8px;
-            padding: 12px 32px;
+            padding: 14px 36px;
             font-size: 15px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease;
-            box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3);
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
             position: relative;
             overflow: hidden;
         }
@@ -290,11 +316,11 @@
         .btn-reveal:hover {
             background-color: #6D28D9;
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(124, 58, 237, 0.5);
+            box-shadow: 0 6px 18px rgba(124, 58, 237, 0.5);
         }
 
         .fsrs-buttons {
-            display: none;
+            display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 8px;
             width: 100%;
@@ -344,7 +370,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 540px;
+            min-height: 560px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         }
 
         .panel-title {
@@ -420,80 +447,32 @@
             background-color: transparent;
         }
 
-        /* ANIMATIONS DEFINITIONS */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
+        /* ANIMATIONS KEYFRAMES */
         @keyframes pulse-glow {
             0%, 100% { filter: drop-shadow(0 0 2px var(--color-ai)); opacity: 0.8; }
             50% { filter: drop-shadow(0 0 8px var(--color-ai)); opacity: 1; }
         }
 
-        /* Holographic Box Ignition */
-        @keyframes holo-ignite {
-            0% {
-                transform: scaleY(0.01) scaleX(0.9);
-                box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
-                border-color: #C084FC;
-                opacity: 0.5;
-            }
-            50% {
-                transform: scaleY(1.05) scaleX(1.02);
-                border-color: var(--color-ai);
-                box-shadow: 0 0 15px rgba(124, 58, 237, 0.2);
-                opacity: 0.9;
-            }
-            100% {
-                transform: scaleY(1) scaleX(1);
-                border-color: rgba(124, 58, 237, 0.3);
-                opacity: 1;
-            }
-        }
-
-        /* Scan Laser sweeping from top to bottom */
         @keyframes scan-sweep {
-            0% {
-                top: 0;
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                top: 100%;
-                opacity: 0;
-            }
+            0% { top: 0; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
         }
 
-        /* Organic fade in for the socratic response */
         @keyframes holo-text-reveal {
-            0% {
-                opacity: 0;
-                filter: blur(8px);
-                transform: translateY(2px);
-            }
-            100% {
-                opacity: 1;
-                filter: blur(0);
-                transform: translateY(0);
-            }
+            0% { opacity: 0; filter: blur(10px); transform: translateY(5px); }
+            100% { opacity: 1; filter: blur(0); transform: translateY(0); }
         }
 
-        /* Gentle organic flicker simulating neural connection */
         @keyframes holo-flicker {
             0%, 100% { opacity: 1; }
-            32% { opacity: 0.98; }
-            33% { opacity: 0.95; }
-            34% { opacity: 0.99; }
-            64% { opacity: 1; }
-            65% { opacity: 0.92; }
-            66% { opacity: 0.97; }
-            80% { opacity: 1; }
+            45% { opacity: 0.98; }
+            46% { opacity: 0.94; }
+            47% { opacity: 0.99; }
+            78% { opacity: 1; }
+            79% { opacity: 0.91; }
+            80% { opacity: 0.96; }
         }
 
         .confetti-canvas {
@@ -518,65 +497,84 @@
 <body>
 
     <div class="container">
-        <!-- CARD INTERACTIVE PANEL -->
-        <div class="panel" id="main-panel" onmousemove="updateAura(event)">
-            <canvas class="confetti-canvas" id="confetti"></canvas>
-            
-            <!-- Organic ambient aura backdrop -->
-            <div class="organic-aura" id="ambient-aura"></div>
-            
-            <div class="header">
-                <div class="logo-section">
-                    <span class="logo-symbol">⬢</span>
-                    <span class="logo-text">SCY FORGE : APEX</span>
-                </div>
-                <div class="streak-badge">
-                    🔥 <span>Streak: 15j</span>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <span class="card-category" id="card-category">PROG · RUST ASYNC</span>
-                <p class="card-question" id="card-question">Comment fonctionne le mécanisme de Polling dans les Futures en Rust ?</p>
+        <!-- 3D CARD PERSPECTIVE CONTAINER -->
+        <div class="perspective-wrapper">
+            <div class="card-3d" id="card-3d" onclick="revealAnswerOnCard()">
+                <canvas class="confetti-canvas" id="confetti"></canvas>
                 
-                <div class="answer-block" id="answer-block">
-                    <div class="hologram-box" id="hologram-box">
-                        <div class="scan-line"></div>
-                        <div class="explanation-block">
-                            <span>⚡ Synapse Activée :</span>
-                        </div>
-                        <div class="answer-text" id="card-answer">
-                            Les Futures en Rust sont passives. L'exécuteur appelle la méthode <code>poll()</code>. Si la ressource est prête, elle renvoie <code>Poll::Ready(val)</code>. Sinon, elle enregistre un signal d'éveil via le <code>Waker</code> et renvoie <code>Poll::Pending</code>.
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <!-- FRONT FACE (QUESTION) -->
+                <div class="card-face card-front" id="front-face" onmousemove="updateAura(event, 'front-aura')">
+                    <!-- Organic ambient aura backdrop -->
+                    <div class="organic-aura" id="front-aura"></div>
 
-            <div>
-                <div class="action-area">
-                    <button class="btn-reveal" id="btn-reveal" onclick="revealAnswer()">RÉVÉLER LA RÉPONSE [Espace]</button>
-                    
-                    <div class="fsrs-buttons" id="fsrs-buttons">
-                        <button class="fsrs-btn btn-hard" onclick="submitFSRS(1)">
-                            <span class="btn-title" style="color: #EF4444;">Difficile</span>
-                            <span class="btn-interval" id="int-1">1j</span>
-                        </button>
-                        <button class="fsrs-btn btn-good" onclick="submitFSRS(2)">
-                            <span class="btn-title" style="color: var(--color-alert);">Moyen</span>
-                            <span class="btn-interval" id="int-2">3j</span>
-                        </button>
-                        <button class="fsrs-btn btn-easy" onclick="submitFSRS(3)">
-                            <span class="btn-title" style="color: var(--color-primary);">Facile</span>
-                            <span class="btn-interval" id="int-3">7j</span>
-                        </button>
-                        <button class="fsrs-btn btn-great" onclick="submitFSRS(4)">
-                            <span class="btn-title" style="color: var(--color-success);">Très Facile</span>
-                            <span class="btn-interval" id="int-4">15j</span>
-                        </button>
+                    <div class="header">
+                        <div class="logo-section">
+                            <span class="logo-symbol">⬢</span>
+                            <span class="logo-text">SCY FORGE : APEX</span>
+                        </div>
+                        <div class="streak-badge">
+                            🔥 <span>Streak: 15j</span>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="card-category" id="card-category">PROG · RUST ASYNC</span>
+                        <p class="card-question" id="card-question">Comment fonctionne le mécanisme de Polling dans les Futures en Rust ?</p>
+                    </div>
+
+                    <div class="action-area">
+                        <button class="btn-reveal" id="btn-reveal">RÉVÉLER LA RÉPONSE [Espace]</button>
                     </div>
                 </div>
-                <p class="shortcuts-tip">Shortcuts : [Espace] Révéler · Touches [1, 2, 3, 4] Évaluation</p>
+
+                <!-- BACK FACE (ANSWER & CONTROLS) -->
+                <div class="card-face card-back" id="back-face" onmousemove="updateAura(event, 'back-aura')">
+                    <!-- Organic ambient aura backdrop -->
+                    <div class="organic-aura" id="back-aura"></div>
+                    <div class="scan-line"></div>
+
+                    <div class="hologram-wrapper">
+                        <div class="header" style="margin-bottom: 10px;">
+                            <div class="logo-section">
+                                <span class="logo-symbol" style="color: var(--color-success);">⬢</span>
+                                <span class="logo-text" style="color: var(--color-success);">SYNAPSE ACTIVÉE</span>
+                            </div>
+                            <span class="card-category" style="margin-bottom: 0; background-color: rgba(16, 185, 129, 0.1); color: var(--color-success);" id="card-category-back">RUST ASYNC</span>
+                        </div>
+
+                        <div class="card-content" style="align-items: flex-start; justify-content: flex-start; padding: 10px 0;">
+                            <div class="explanation-block">
+                                <span>⚡ Révélation Holographique :</span>
+                            </div>
+                            <div class="answer-text" id="card-answer">
+                                Les Futures en Rust sont passives. L'exécuteur appelle la méthode <code>poll()</code>. Si la ressource est prête, elle renvoie <code>Poll::Ready(val)</code>. Sinon, elle enregistre un signal d'éveil via le <code>Waker</code> et renvoie <code>Poll::Pending</code>.
+                            </div>
+                        </div>
+
+                        <div class="action-area" onclick="event.stopPropagation()">
+                            <div class="fsrs-buttons" id="fsrs-buttons">
+                                <button class="fsrs-btn btn-hard" onclick="submitFSRS(1)">
+                                    <span class="btn-title" style="color: #EF4444;">Difficile</span>
+                                    <span class="btn-interval" id="int-1">1j</span>
+                                </button>
+                                <button class="fsrs-btn btn-good" onclick="submitFSRS(2)">
+                                    <span class="btn-title" style="color: var(--color-alert);">Moyen</span>
+                                    <span class="btn-interval" id="int-2">3j</span>
+                                </button>
+                                <button class="fsrs-btn btn-easy" onclick="submitFSRS(3)">
+                                    <span class="btn-title" style="color: var(--color-primary);">Facile</span>
+                                    <span class="btn-interval" id="int-3">7j</span>
+                                </button>
+                                <button class="fsrs-btn btn-great" onclick="submitFSRS(4)">
+                                    <span class="btn-title" style="color: var(--color-success);">Très Facile</span>
+                                    <span class="btn-interval" id="int-4">15j</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <p class="shortcuts-tip">Shortcuts : [Espace] Retourner · Touches [1, 2, 3, 4] Évaluation</p>
         </div>
 
         <!-- MATHEMATICAL METRICS PANEL -->
@@ -667,27 +665,23 @@
         }
 
         // AMBIENT ORGANIC AURA POSITION UPDATE
-        function updateAura(e) {
-            const aura = document.getElementById('ambient-aura');
-            const panel = document.getElementById('main-panel');
-            const rect = panel.getBoundingClientRect();
-            const x = e.clientX - rect.left - 75; // Center aura
-            const y = e.clientY - rect.top - 75;
+        function updateAura(e, auraId) {
+            const aura = document.getElementById(auraId);
+            const face = aura.parentElement;
+            const rect = face.getBoundingClientRect();
+            const x = e.clientX - rect.left - 90; // Center aura
+            const y = e.clientY - rect.top - 90;
             aura.style.left = x + 'px';
             aura.style.top = y + 'px';
         }
 
-        function revealAnswer() {
+        // REVEAL LOGIC WITH Horizontal Trigonometric 3D Flip
+        function revealAnswerOnCard() {
             if (isRevealed) return;
             isRevealed = true;
-            document.getElementById('btn-reveal').style.display = 'none';
-            document.getElementById('fsrs-buttons').style.display = 'grid';
             
-            // Display container and fire Holographic Scan sweep
-            const container = document.getElementById('answer-block');
-            const box = document.getElementById('hologram-box');
-            container.style.display = 'block';
-            box.classList.add('scanning');
+            const card = document.getElementById('card-3d');
+            card.classList.add('flipped');
         }
 
         function submitFSRS(rating) {
@@ -712,20 +706,18 @@
             currentCardIndex = (currentCardIndex + 1) % cards.length;
             isRevealed = false;
             
-            // Apply delay before reset to let user notice animation
+            // Apply delay before reset to let user notice flip back
+            const card = document.getElementById('card-3d');
+            card.classList.remove('flipped');
+            
             setTimeout(() => {
                 document.getElementById('card-category').textContent = cards[currentCardIndex].category;
+                document.getElementById('card-category-back').textContent = cards[currentCardIndex].category.split(' · ')[1] || cards[currentCardIndex].category;
                 document.getElementById('card-question').textContent = cards[currentCardIndex].question;
                 document.getElementById('card-answer').innerHTML = cards[currentCardIndex].answer;
                 
-                // Hide answer & reset scanning states
-                document.getElementById('answer-block').style.display = 'none';
-                document.getElementById('hologram-box').classList.remove('scanning');
-                document.getElementById('fsrs-buttons').style.display = 'none';
-                document.getElementById('btn-reveal').style.display = 'block';
-                
                 updateFSRSUI();
-            }, 400);
+            }, 800); // Wait for the transition to finish halfway before swapping content
         }
 
         // CONFETTI ANIMATION
@@ -866,7 +858,7 @@
         window.addEventListener('keydown', (e) => {
             if (e.code === 'Space') {
                 e.preventDefault();
-                revealAnswer();
+                revealAnswerOnCard();
             } else if (e.key === '1') {
                 if (isRevealed) submitFSRS(1);
             } else if (e.key === '2') {

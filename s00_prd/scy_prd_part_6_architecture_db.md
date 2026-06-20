@@ -542,17 +542,17 @@ Tier 1 : Free (0 $ / mois)
   - Fonctionnalités : Mode Normal, APEX (FSRS), COSMOS (limitations de rendu)
   - Marge d'infrastructure : Couverte par l'attrait de conversion Freemium.
 
-Tier 2 : Lite (5 $ / mois)
+Tier 2 : Lite (10 $ / mois)
   - Modèles : Claude Sonnet 4.6 (bridé), DeepSeek V4 Pro/Flash (Pas d'Opus 4.8)
   - Coût LLM estimé : ~0,38 $ / mois / utilisateur
   - Fonctionnalités : 10 sources, 50 requêtes BRAIN/jour, 2 parcours ASCENT (max 8 nœuds)
-  - Marge Brute LLM : >92% (Marge nette de ~4,62 $) ✅
+  - Marge Brute LLM : >96% (Marge nette de ~9,62 $) ✅
 
-Tier 3 : Pro (15 $ / mois)
+Tier 3 : Pro (20 $ / mois)
   - Modèles : Claude Opus 4.8 (DAG, AGENT-16, QA), Claude Sonnet 4.6, DeepSeek Pro
   - Coût LLM estimé : ~2,16 $ / mois / utilisateur (usage intensif)
   - Fonctionnalités : 50 sources, 5 parcours (max 15 nœuds), 3 sessions ARENA, CHRONICLE
-  - Marge Brute LLM : >85% (Marge nette de ~12,84 $) ✅
+  - Marge Brute LLM : >89% (Marge nette de ~17,84 $) ✅
 
 Tier 4 : Ultra (45 $ / mois)
   - Modèles : Claude Opus 4.8 (tâches critiques et rédaction complexe), Sonnet, DeepSeek Pro

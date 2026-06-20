@@ -168,7 +168,7 @@ OUTPUT : SMI 84/100 + Proof of Skill Certificate ✅
 
 **Pour le business :**
 - **Coût LLM maîtrisé** : $0.006/parcours vs $1.78 pipeline naïve (-99.7%)
-- **Marge préservée** : >85% sur le tier Pro à 15 $/mois, et >90% sur le tier Ultra à 45 $/mois
+- **Marge préservée** : >89% sur le tier Pro à 20 $/mois, et >90% sur le tier Ultra à 45 $/mois
 - **Différenciation unique** : Aucun concurrent avec pipeline DAG → compétence autonome
 - **Moats solides** : 4 couches compétitives (7 Powers framework)
 

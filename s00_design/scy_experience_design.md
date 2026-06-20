@@ -457,6 +457,26 @@ SCY Forge intègre un assistant IA contextuel (BRAIN) inspiré de NotebookLM, ac
 - `in_progress` : {color-alert}, icône en cours
 - `completed` : {color-success}, icône checkmark
 
+#### APEX 3D Holographic Socratic Card (APEX Module)
+
+**Concept de design** :  
+Une carte physique, lourde, tactile et immersive. Elle est conçue comme un projecteur holographique que l'utilisateur pourrait virtuellement "tenir dans sa main".
+
+**Comportement 3D & Parallaxe** :
+- **Perspective Wrapper** : Conteneur doté d'une perspective de `1500px`.
+- **Interactions 3D au pointeur** : Le survol de la souris incline légèrement la carte de manière bidirectionnelle selon les coordonnées relatives du curseur (angles de tangage et de roulis calculés dynamiquement), renforçant l'effet de présence tridimensionnelle.
+- **Retournement Trigonométrique 3D** : Cliquer sur la carte ou appuyer sur la touche [Espace] déclenche une rotation horizontale complète lente de `180deg` (autour de l'axe vertical Y) en `1.4s` avec une transition organique d'amortissement (`cubic-bezier(0.2, 1, 0.3, 1)`).
+- **Feuilles Multi-Couches en 3D (translateZ)** :
+  - Les éléments textuels et fonctionnels sont projetés vers l'avant à l'aide de la translation d'axe Z pour flotter virtuellement au-dessus du verre de la carte :
+    - Catégorie / Métadonnées : `translateZ(40px)`
+    - Question / Réponse socratique : `translateZ(75px)` (projection maximale)
+    - Bouton "Révéler" / Boutons d'intervalles FSRS : `translateZ(50px)`
+
+**Arrière-plan Neural Actif** :
+- Un arrière-plan de l'écran composé d'une constellation 3D de particules neuronales tourne lentement (Canvas 3D).
+- **Rétroaction Synaptique** : Lors du retournement de la carte ou de la validation d'une révision APEX, les synapses du cerveau d'arrière-plan subissent une décharge de luminosité (flash) et une accélération de rotation de manière organique.
+- **Balayage Laser (Scanline)** : Au moment de la révélation, une ligne laser néon émeraude (`box-shadow` émeraude) balaie de haut en bas le texte de la réponse pour dissiper un léger effet de flou sémantique d'arrière-plan.
+
 ### Modal Patterns
 
 #### Progress Modal (Opérations Longues)

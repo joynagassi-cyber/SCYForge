@@ -77,6 +77,26 @@ Cette spécification définit le comportement de l'**AGENT-01 : GOAL-INTERPRETER
 * 🚫 **MUST NOT** : Modifier la palette de couleurs de l'interface hors des tokens définis dans `design.md`.
 * ⚠️ **MUST** : Tout retour JSON s'appuie sur la validation stricte de modèles **Zod** avec gestion de retries.
 
+### Requirement : Le Serment de Rigueur & Transparence
+
+#### Scénario : Refus des cursus miracles
+- **GIVEN** Un utilisateur avec 0 prérequis déclarant un objectif massif (ex : « Data Scientist »).
+- **WHEN** L'objectif dépasse un volume réaliste pour un parcours unique.
+- **THEN** le système SHALL refuser d'instancier un cours unique mensonger.
+- **AND** le système SHALL décomposer le cursus en **Micro-Goals / Micro-Certifications** (max 120h d'apprentissage actif par jalon).
+- **AND** le système SHALL afficher un avertissement de transparence : *« Pour atteindre ce niveau pro, vous devez valider ces N jalons successifs sur X mois. La maîtrise s'acquiert par la pratique et l'espacement temporel. »*
+- **AND** l'utilisateur SHALL valider cet engagement avant de démarrer.
+
+### Requirement : Dynamic Graph Splitting (D-OPT-005)
+
+#### Scénario : Résolution hiérarchique progressive
+- **GIVEN** Un objectif estimé à > 15h d'apprentissage.
+- **WHEN** Le système génère le graphe macro-conceptuel.
+- **THEN** le système SHALL produire un graphe de haut niveau (3 à 5 grands jalons).
+- **AND** le système SHALL détailler uniquement le premier jalon actif (5 à 8 nœuds concrets).
+- **AND** les jalons suivants restent des « nœuds enveloppes » (haute abstraction), détaillés à la volée quand l'utilisateur s'en approche.
+- **AND** le TTFV (Time to First Value) SHALL être < 20 secondes.
+
 ---
 
 ## 5. Test cases & Validation

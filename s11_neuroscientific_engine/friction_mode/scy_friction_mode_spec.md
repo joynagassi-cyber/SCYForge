@@ -47,6 +47,17 @@ Cette spécification définit le **Mode FRICTION** (D-OPT-015). Il **casse l'ill
 
 ---
 
+### Requirement : Reflection Delay (Délai de Réflexion 3s)
+
+#### Scénario : Anti-réponse réflexe
+- **GIVEN** Une session FRICTION active.
+- **WHEN** Une carte est révélée.
+- **THEN** le système SHALL imposer un délai de réflexion de **3 secondes** avant de permettre l'évaluation (boutons Again/Hard/Good/Easy désactivés pendant 3s).
+- **AND** le système SHALL casser l'illusion de fluidité (réponse réflexe immédiate sans réflexion).
+- **AND** le système SHALL afficher un compte à rebours visuel discret pendant le délai.
+
+---
+
 ## 4. Boundaries & Constraints
 * 🚫 **SHALL NOT** : Randomisation arbitraire de l'entrelacement (70/30 déterministe).
 * 🚫 **MUST NOT** : Afficher les barres de progression pendant une session FRICTION active.

@@ -57,6 +57,25 @@ Cette spécification définit le comportement de l'**AGENT-11 : ARENA**. Sa miss
 
 ---
 
+### Requirement : Architecture HSM de Persona (D-OPT-008)
+
+#### Scénario : Machine à états finis hiérarchique
+- **GIVEN** Un persona Full-AI construit par l'ARENA.
+- **WHEN** Le roleplay se déroule.
+- **THEN** le système SHALL structurer le persona en **machine à états finis hiérarchique (HSM)**.
+- **AND** chaque état psychologique actif (ex : *Méfiant*, *Intéressé*, *Convaincu*, *Fermé*) dicte le comportement et le ton.
+- **AND** le système SHALL mettre à jour un **Mood score** (-1.0 hostile → +1.0 convaincu) après chaque message utilisateur (classification sémantique ultra-rapide DeepSeek V4).
+- **AND** le système SHALL envoyer uniquement la consigne de l'état actif au LLM (pas le prompt complet), conservant **100% du Prompt Caching DeepSeek** (-40% tokens/message).
+
+### Requirement : FSRS Stability Gate avant ARENA (D-OPT-051)
+
+#### Scénario : Verrouillage préalable
+- **GIVEN** L'utilisateur veut lancer une simulation ARENA (Bloom ≥ 4).
+- **WHEN** La stabilité FSRS des concepts requis est < 3.0 jours.
+- **THEN** le système SHALL verrouiller l'accès à l'ARENA jusqu'à consolidation (Stability ≥ 3.0).
+
+---
+
 ## 4. Boundaries & Constraints (Ce qu'il ne faut PAS faire)
 * 🚫 **FORBIDDEN** : Scorer sans grille d'évaluation explicite.
 * 🚫 **SHALL NOT** : Produire des scénarios non validés par AGENT-13.

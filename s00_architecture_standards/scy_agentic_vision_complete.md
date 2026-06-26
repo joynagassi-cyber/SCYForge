@@ -572,7 +572,76 @@ Agent-09 + NEURON-CHAINS :
 
 ---
 
-## 8. CE QUI RESTE À IMAGINER (R&D Phase 3+)
+## 8. PROGRESSIVE AUTOMATION — Les 3 Niveaux de Contrôle
+
+SCY Forge ne force JAMAIS un seul mode d'interaction. L'utilisateur choisit son niveau d'implication. Le mode agentique est puissant mais **le mode manuel reste TOUJOURS disponible**.
+
+### 8.1 Les 3 Niveaux
+
+| Niveau | Profil | Expérience | Exemple |
+|--------|--------|-----------|---------|
+| **🤖 Agentique** (option) | "Faites tout pour moi" | L'utilisateur décrit → l'agent fait tout → il valide | « Je veux maîtriser React » → parcours complet prêt |
+| **🔀 Hybride** (DÉFAUT) | "Proposez, j'ajuste" | Agentique par défaut + reprise manuelle à tout moment | Agent génère le parcours → l'utilisateur ajuste/rejette/modifie |
+| **🎛️ Manuel** (option) | "Je contrôle tout" | L'utilisateur clique, configure, sélectionne chaque étape | Il choisit ses sources, construit son DAG, sélectionne ses modes COSMOS |
+
+### 8.2 Équivalent Manuel pour Chaque Feature Automatisée
+
+| Feature | Mode Agentique | Mode Manuel (toujours disponible) |
+|---------|---------------|----------------------------------|
+| Mode COSMOS | Agent choisit le mode optimal | Dropdown `[📋][🌳][⏱️][🕸️]` toujours visible |
+| Création DAG | Agent-03 génère automatiquement | Éditeur DAG manuel (ajouter/réordonner/supprimer nœuds) |
+| Choix sources | Agent-02 cherche et ingère | Upload/URL manuel + suppression sources |
+| Création cartes | NEURON-CHAINS (12/nœud) | Bouton "Créer carte" manuel (B01-B10) |
+| Sessions révision | CHRONICLE propose au bon moment | Bouton "Réviser maintenant" toujours disponible |
+| Routage ASCENT | Agent-06 décide (fast-track/remédiation) | Override manuel ("forcer mode normal") |
+| Proof of Skill | Agent-09 déclenche au seuil | Bouton "Je veux me certifier" quand l'utilisateur veut |
+| IMPRINT | Agent-04 déclenche (3 succès) | Bouton "Lancer IMPRINT" manuel |
+| ARENA | Déclenché quand SMI ≥ 70 | Bouton "Pratiquer" (si prérequis Stability ≥ 3.0) |
+| Mode COSMOS | Agent sélectionne (Radar/Stats/Roadmap...) | Sélecteur de mode toujours visible + recherche vocale |
+
+### 8.3 Le Toggle Global d'Autonomie
+
+```
+⚙️ Paramètres > Autonomie Agentique
+
+○ 🤖 Agentique maximal (l'agent décide tout, je valide simplement)
+● 🔀 Hybride (l'agent propose, j'ajuste si besoin) ← DÉFAUT
+○ 🎛️ Manuel (je contrôle tout, l'agent m'aide sur demande seulement)
+```
+
+**Granulaire** : l'utilisateur peut configurer l'autonomie par domaine :
+- Ingestion : 🤖 Agentique (Agent-02 cherche tout seul)
+- Création de cartes : 🎛️ Manuel (je veux écrire mes propres cartes)
+- COSMOS : 🔀 Hybride (l'agent suggère mais je choisis)
+- Sessions : 🤖 Agentique (CHRONICLE gère le timing)
+
+### 8.4 La Règle d'Override
+
+> **L'agent propose, l'utilisateur dispose.**
+> L'agent n'impose JAMAIS une décision sans possibilité d'override.
+> Toute automatisation a un bouton/bypass manuel.
+> Si l'utilisateur rejette une suggestion de l'agent → l'agent s'adapte sans insister (Charte Humilité).
+
+```typescript
+// Chaque action agentique a un override manuel
+interface AgentAction {
+  automated: boolean;       // L'agent peut-il le faire automatiquement ?
+  user_override: boolean;   // L'utilisateur peut-il refuser/modifier ?
+  manual_alternative: boolean; // Y a-t-il un chemin manuel complet ?
+}
+// Toutes les actions : automated=true, user_override=true, manual_alternative=true
+```
+
+### 8.5 Détection du Niveau Préféré
+
+Le système détecte progressivement si l'utilisateur préfère le mode agentique ou manuel :
+- Si l'utilisateur **accepte souvent** les suggestions agentiques → propose de passer en Agentique maximal
+- Si l'utilisateur **override souvent** → reste en Hybride ou suggère Manuel
+- Si l'utilisateur **ne touche jamais** aux settings → reste Hybride (défaut)
+
+---
+
+## 9. CE QUI RESTE À IMAGINER (R&D Phase 3+)
 
 | Idée | Concept | Phase |
 |------|---------|-------|

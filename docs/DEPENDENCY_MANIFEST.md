@@ -350,6 +350,7 @@ const pqsGate = new Gate({
 | `harmonist` | latest | Validation gates framework (hook-driven) |
 | `ace-builds` | latest | Code editor (Multi-View Toggles playground) |
 | `opfs-worker` | latest | OPFS storage (D-DATA-005, BroadcastChannel sync) |
+| `livekit-server-sdk` | latest | Token generation (server-side JWT, LiveKit room access) |
 
 ---
 
@@ -364,6 +365,7 @@ const pqsGate = new Gate({
 | **Axiom** | Free tier | $0/mois | Logs OpenTelemetry (<100GB/mois) |
 | **Langfuse** | Self-hosted | $0/mois | LLM observabilité (tokens, latence, coût) |
 | **Composio** | Free tier | $0/mois | OAuth management (Google Drive, etc.) |
+| **LiveKit Cloud** | Free tier | $0/mois | WebRTC vocal (50 participants, 10K min/mois) | (Google Drive, etc.) |
 
 ### Phase 3 (scaling)
 | Service | Coût estimé | Rôle |
@@ -411,10 +413,10 @@ const pqsGate = new Gate({
 |------------|-------------|--------------|-----------------|
 | **s01 Ingestion** | scraper, article_scraper, feed-rs, epub, roux, google-drive3, google-youtube3, yt-transcript-rs, flate2, tar, quick-xml, calamine, reqwest | — | Scrapling, Docling, SearxNG, Perplexica |
 | **s02 NEURON-CHAINS** | rig, rrag, candle-core, candle-transformers, tiktoken-rs, lancedb, fsrs (shared) | @mastra/core, zod | — |
-| **s03 ASCENT** | petgraph, dashmap, governor | @mastra/core, zod, composio-core, harmonist | — |
+| **s03 ASCENT** | petgraph, dashmap, governor | @mastra/core, zod, composio-core, harmonist, @livekit/components-react, livekit-client | LiveKit Server, Voice Agent Worker |
 | **s04 COSMOS** | — | @antv/g6, @cosmograph/cosmos, @antv/g2, @xyflow/react, recharts, nivo, d3, three, graphology+plugins, @duckdb/duckdb-wasm, elkjs | — |
 | **s05 APEX** | fsrs, tiktoken-rs | survey-react-ui, survey-core | — |
-| **s06 BRAIN** | candle-core, lancedb, reqwest | — | Graphiti/Zep, SearxNG, Perplexica |
+| **s06 BRAIN** | candle-core, lancedb, reqwest | @livekit/components-react, livekit-client | Graphiti/Zep, SearxNG, Perplexica, LiveKit (voice cascade) |
 | **s07 IMPRINT** | — | — | — |
 | **s08 Reader Suite** | — | @react-pdf-viewer/core, pdfjs-dist, epubjs, mammoth, react-markdown, katex, mermaid, shiki, dompurify | Docling |
 | **s09 Harmonist** | — | harmonist, zod | — |
@@ -423,3 +425,51 @@ const pqsGate = new Gate({
 | **s12 B2B** | — | survey-react-ui, @northflank/sdk | — |
 | **Export 9 formats** | typst, typst-pdf, docx, zip, rust_xlsxwriter, tera, csv | — | — |
 | **Intégrations** | notion-client, notify, pulldown-cmark, gray_matter, keyring | composio-core | — |
+
+---
+
+## 10. LIVEKIT — SYSTÈME VOCAL TEMPS RÉEL (WebRTC)
+
+> **Spéc complète** : `minddoc/s00_architecture_standards/scy_livekit_voice_spec.md`
+
+### 10.1 Packages NPM — Frontend (frontend_react/)
+| Package | Version | `pnpm add` | Rôle |
+|---------|---------|-----------|------|
+| `@livekit/components-react` | latest | `@livekit/components-react` | Composants : LiveKitRoom, BarVisualizer, RoomAudioRenderer, useVoiceAssistant |
+| `livekit-client` | latest | `livekit-client` | Client WebRTC (audio tracks, connexion room) |
+
+### 10.2 Packages Python — Voice Agent Worker
+| Package | Version | `pip install` | Rôle |
+|---------|---------|-------------|------|
+| `livekit-agents` | ~=1.5 | `"livekit-agents~=1.5"` | Framework agents vocaux (AgentSession, Agent, cli.run_app) |
+| `livekit-plugins-openai` | ~=1.5 | `"livekit-plugins-openai~=1.5"` | OpenAI Realtime API (speech-in/speech-out, Architecture A) |
+| `livekit-plugins-silero` | ~=1.5 | `"livekit-plugins-silero~=1.5"` | Silero VAD local ($0, CPU, Voice Activity Detection) |
+| `livekit-plugins-assemblyai` | ~=1.5 | `"livekit-plugins-assemblyai~=1.5"` | AssemblyAI STT (Speech-to-Text, Architecture B BRAIN) |
+| `livekit-plugins-cartesia` | ~=1.5 | `"livekit-plugins-cartesia~=1.5"` | Cartesia Sonic-3 TTS (Text-to-Speech basse latence ~100ms) |
+| `livekit-plugins-noise-cancellation` | ~=0.2 | `"livekit-plugins-noise-cancellation~=0.2"` | BVC echo cancellation (Krisp, anti-feedback-loop) |
+| `livekit-plugins-turn-detector` | ~=1.5 | `"livekit-plugins-turn-detector~=1.5"` | Multilingual Turn Detector (ONNX CPU, fin de tour multilingue) |
+
+### 10.3 Service Docker
+| Service | Image | Ports | Rôle |
+|---------|-------|-------|------|
+| **LiveKit Server** | `livekit/livekit-server:latest` | 7880 TCP / 7881 TCP TLS / 7882 UDP | WebRTC SFU + TURN/STUN + room management |
+| **Voice Agent Worker** | Custom Python Dockerfile | — | Worker exécutant ARENA/BRAIN/CHRONICLE voice agents |
+| **LiveKit Cloud** (alternative) | SaaS | — | Gratuit 50 participants simultanés + 10K min/mois |
+
+### 10.4 Services Vocaux Tiers (par minute)
+| Service | Coût | Architecture | Agents |
+|---------|------|-------------|--------|
+| **OpenAI Realtime API** | ~$0.06/min | A (speech-in/speech-out) | ARENA, CHRONICLE |
+| **AssemblyAI STT** | ~$0.012/min | B (cascade STT) | BRAIN, COSMOS, DAG |
+| **Cartesia Sonic-3 TTS** | ~$0.005/1K chars | B (cascade TTS) | BRAIN, COSMOS, DAG |
+| **Silero VAD** | $0 (open-source ONNX) | A+B (local CPU) | Tous |
+| **LiveKit Turn Detector** | $0 (open-source ONNX CPU) | B | BRAIN, COSMOS, DAG |
+
+### 10.5 Matrice d'Utilisation par Agent
+| Agent | Archi | Modèle LLM | STT | TTS | VAD | Turn Detection | Interruptions |
+|-------|-------|-----------|-----|-----|-----|----------------|---------------|
+| **ARENA** | A (Realtime) | GPT-4o Realtime | intégré | intégré | Silero | Server VAD | ✅ (l'utilisateur coupe) |
+| **BRAIN** | B (Cascade) | DeepSeek V4 + RAG | AssemblyAI | Cartesia | Silero | Multilingual ONNX | ✅ (adaptive) |
+| **CHRONICLE** | A (Realtime court) | GPT-4o Realtime | intégré | intégré | Silero | Server VAD patient | ❌ (pas couper CHRONICLE) |
+| **COSMOS** | B (Cascade) | DeepSeek V4 | AssemblyAI | Cartesia | Silero | Multilingual ONNX | ✅ (adaptive) |
+| **DAG** | B (Cascade) | DeepSeek V4 | AssemblyAI | Cartesia | Silero | Multilingual ONNX | ✅ (adaptive) |

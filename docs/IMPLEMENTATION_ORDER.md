@@ -11,9 +11,9 @@
 ### 0.1 POC Jour 4 (BLOQUANT — go/no-go)
 ```
 □ Test 1 : G6 v5 + Louvain clustering 1000 concepts < 10s
-□ Test 2 : GLiNER-micro INT8 NER 100 concepts < 3s, précision ≥ 85%
+□ Test 2 : DeepSeek V4 NER 100 concepts < 3s, précision ≥ 85% (GLiNER-micro en fallback local CPU)
 □ Test 3 : Typst PDF génération complexe < 2s
-□ Test 4 : Tantivy RRF hybrid search 1000 docs < 100ms
+□ Test 4 : PostgreSQL FTS natif (GIN index) + RRF hybrid search 1000 docs < 100ms
 → 4 GO = Lancer sprint | 1 NO-GO = Fallback | 2+ NO-GO = STOP
 ```
 
@@ -110,7 +110,7 @@
 ### 4.1 BRAIN (Service Transverse)
 ```
 □ scy-brain-rag crate
-□ Triple Retrieval (Dense pgvector + BM25 Tantivy + Graph traversal + RRF k=60)
+□ Triple Retrieval (Dense pgvector + BM25 PostgreSQL FTS + Graph traversal + RRF k=60)
 □ Phase 1 : HyDE + KG RAG
 □ Phase 2 : Query Rewriting ×3 + Cross-Encoder reranking + LLMLingua-2
 □ Professor AI (Socratic Progressive Prompting D-OPT-022, Thread-of-Thought D-OPT-027)

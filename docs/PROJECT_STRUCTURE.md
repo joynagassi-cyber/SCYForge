@@ -8,33 +8,38 @@
 ## 1. Arborescence Racine
 
 ```
-MindDoc/                           ← Dépôt Git (specs + code)
+SCYForge/                          ← Dépôt Git MindDoc.git (specs + code)
 ├── AGENTS.md                      ← Instructions permanentes pour l'agent
 ├── docs/                          ← Documents de codage (ce dossier)
 │   ├── PROJECT_STRUCTURE.md       ← CE FICHIER
 │   ├── BUILD_COMMANDS.md
 │   ├── IMPLEMENTATION_ORDER.md
-│   └── CODE_STYLE.md
-├── s00_architecture_standards/    ← Specs architecture (LIRE, pas coder ici)
-├── s00_prd/                       ← PRD (SOURCE DE VÉRITÉ, ne pas modifier)
-├── s01_ingestion_cores/           ← Specs ingestion (13 cores)
-├── s02_neuron_chains_apex_agent/  ← Specs NEURON-CHAINS (service transverse)
-├── s03_ascent_pipeline_agents/    ← Specs ASCENT (18 agents + QA)
-├── s04_scy_cosmos_visualization_engine/ ← Specs COSMOS (26 modes + engines)
-├── s05_apex_retention_system/     ← Specs APEX/FSRS (service transverse)
-├── s06_scy_brain_rag_assistant/   ← Specs BRAIN (service transverse)
-├── s07_scy_imprint_cognitive/     ← Specs IMPRINT
-├── s08_scy_reader_suite/          ← Specs Reader Suite
-├── s09_harmonist_validation_gates/ ← Specs Harmonist
-├── s10_normal_mode_ingestion/     ← Specs Normal Mode
-├── s11_neuroscientific_engine/    ← Specs Neuro Engine
-├── s12_b2b_creator_console/       ← Specs B2B
+│   ├── CODE_STYLE.md
+│   ├── DEPENDENCY_MANIFEST.md     ← Manifeste des dépendances (crates/npm/sidecars)
+│   └── AUDIT_STRUCTURE.md         ← Audit structurel (référence)
 │
-├── backend_rs/                    ← CODE RUST (calculs lourds)
-├── backend_ts/                    ← CODE TYPESCRIPT (orchestration agents)
-├── frontend_react/                ← CODE REACT (UI)
-├── docker/                        ← Docker Compose + Dockerfiles
-└── .env.example                   ← Variables d'environnement (template)
+├── minddoc/                       ← SPECS (590+ fichiers — LIRE, PAS CODER ICI)
+│   ├── s00_architecture_standards/← Specs architecture (services, vision, LiveKit…)
+│   ├── s00_prd/                   ← PRD (SOURCE DE VÉRITÉ, ne pas modifier)
+│   ├── s00_design/                ← Maquettes HTML + design system
+│   ├── s01_ingestion_cores/       ← Specs ingestion (13 cores + Web Search V2)
+│   ├── s02_neuron_chains_apex_agent/  ← Specs NEURON-CHAINS (service transverse)
+│   ├── s03_ascent_pipeline_agents/    ← Specs ASCENT (18 agents + QA + DAG + CHRONICLE)
+│   ├── s04_scy_cosmos_visualization_engine/ ← Specs COSMOS (26 modes + engines)
+│   ├── s05_apex_retention_system/ ← Specs APEX/FSRS (service transverse)
+│   ├── s06_scy_brain_rag_assistant/← Specs BRAIN (service transverse + live web search)
+│   ├── s07_scy_imprint_cognitive/ ← Specs IMPRINT
+│   ├── s08_scy_reader_suite/      ← Specs Reader Suite
+│   ├── s09_harmonist_validation_gates/ ← Specs Harmonist
+│   ├── s10_normal_mode_ingestion/ ← Specs Normal Mode
+│   ├── s11_neuroscientific_engine/← Specs Neuro Engine
+│   └── s12_b2b_creator_console/   ← Specs B2B
+│
+├── backend_rs/                    ← CODE RUST (calculs lourds) — À CRÉER
+├── backend_ts/                    ← CODE TYPESCRIPT (orchestration agents) — À CRÉER
+├── frontend_react/                ← CODE REACT (UI) — À CRÉER
+├── docker/                        ← Docker Compose + Dockerfiles — À CRÉER
+└── .env.example                   ← Variables d'environnement (template) — À CRÉER
 ```
 
 ---

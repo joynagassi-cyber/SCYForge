@@ -29,11 +29,11 @@ Tu codes **SCY Forge** (Synapse Cognitive Yield Forge), une plateforme d'apprent
 ## 3. COMMENT CODER (HOW)
 
 ### Avant de coder, lis TOUJOURS :
-1. La spec de la feature : `s0X_module/sous_feature/scy_*_spec.md`
+1. La spec de la feature : `minddoc/s0X_module/sous_feature/scy_*_spec.md`
 2. Le plan : `scy_*_plan.md`
 3. Les tâches : `scy_*_tasks.md`
 4. Les tests : `scy_*_tests.md`
-5. La cartographie des services : `s00_architecture_standards/scy_service_architecture_map.md`
+5. La cartographie des services : `minddoc/s00_architecture_standards/scy_service_architecture_map.md`
 
 ### Structure du code :
 ```
@@ -53,7 +53,7 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 - 🚫 **JAMAIS** : modifier les couleurs hors des tokens `design.md`.
 - 🚫 **JAMAIS** : appeler un LLM payant pour une opération marquée `$0` (Rust pur).
 - 🚫 **JAMAIS** : committer des secrets (.env, tokens, clés API).
-- 🚫 **JAMAIS** : modifier les fichiers du dossier `s00_prd/` (source de vérité).
+- 🚫 **JAMAIS** : modifier les fichiers du dossier `minddoc/s00_prd/` (source de vérité).
 - ⚠️ **DEMANDER** : avant d'ajouter une nouvelle dépendance (crate/npm package).
 - ⚠️ **DEMANDER** : avant de modifier le schéma BDD.
 
@@ -112,10 +112,10 @@ npm test                          # tests
 
 ## 9. CRATES/PACKAGES OFFICIELS
 
-→ Voir `s00_architecture_standards/crates_standards/scy_crates_standards_spec.md` pour la liste complète.
+→ Voir `minddoc/s00_architecture_standards/crates_standards/scy_crates_standards_spec.md` pour la liste complète.
 
 ## 10. CHARTES À RESPECTER
 
-- **Humilité Totale** (CHRONICLE) : `s03_ascent_pipeline_agents/ag10_chronicle/scy_chronicle_humility_charter.md`
-- **Progressive Automation** : `s00_architecture_standards/scy_progressive_automation_spec.md`
-- **Design tokens** : `s04_scy_cosmos_visualization_engine/scy_design_tokens.md`
+- **Humilité Totale** (CHRONICLE) : `minddoc/s03_ascent_pipeline_agents/ag10_chronicle/scy_chronicle_humility_charter.md`
+- **Progressive Automation** : `minddoc/s00_architecture_standards/scy_progressive_automation_spec.md`
+- **Design tokens** : `minddoc/s04_scy_cosmos_visualization_engine/scy_design_tokens.md`

@@ -125,7 +125,7 @@ sqlx migrate run --database-url $DATABASE_URL
 sqlx migrate run --source migrations/001_init.sql
 
 # Sprint 0 DB init (depuis le PRD)
-psql $DATABASE_URL -f ../s00_prd/scy_sprint_0_db_init.sql
+psql $DATABASE_URL -f ../minddoc/s00_prd/scy_sprint_0_db_init.sql
 
 # RLS vérification
 psql $DATABASE_URL -c "SELECT * FROM pg_policies WHERE schemaname = 'public';"

@@ -71,7 +71,37 @@
 
 ## 3. ALTERNATIVES MEILLEURES QUE COMPOSIO
 
-Comparatif 2026 des plateformes d'intégration pour agents IA :
+### 3.0 ⚡ Approfondissement demandé : Pipedream est-il plus avancé que Nango ?
+
+Comparaison directe (sources : [skywork.ai](https://skywork.ai/skypage/en/pipedream-mcp-server-ai-guide-tools/1978340755696689152), [Peliqan](https://peliqan.io/blog/pipedream-alternatives/), [Nango](https://nango.dev/blog/pipedream-connect-alternatives/), [Integration Atlas](https://www.integrationatlas.com/compare/n8n-vs-pipedream/)) :
+
+| Critère | Pipedream | Nango | Gagnant pour SCY Forge |
+|---|---|---|---|
+| **Catalogue** | 🏆 2 800-3 000 apps, 10 000+ tools | 800+ templates ouverts | Pipedream (largeur) |
+| **MCP server** | 🏆 Mature, production-ready hosted | Built-in, self-host | Égal |
+| **Polish / DX managé** | 🏆 Serverless, auto-scale | Code-first, plus d'ops | Pipedream (confort) |
+| **Compliance cloud** | SOC 2 II, HIPAA (BAA), GDPR | SOC 2 II, GDPR, HIPAA | Égal |
+| **Self-host credentials** | ❌ **NON** — le "self-host MCP" est une *implémentation de référence, non maintenue, non production* qui **route TOUJOURS l'auth via Pipedream Connect cloud** (US, AWS us-east-1). Le coffre-fort reste chez eux. | 🏆 **OUI** — runtime + credential vault dans **votre** PostgreSQL | **Nango** 🔑 |
+| **Data residency** | AWS us-east-1 (US) uniquement ; EU = "sales conversation" | 🏆 Vous choisissez (Northflank EU) | **Nango** 🔑 |
+| **Sync données pour RAG (ingestion)** | ❌ Triggers only, **pas de sync engine** | 🏆 Sync durable incrémental **2-way**, conçu pour nourrir des pipelines RAG | **Nango** 🔑🔑 |
+| **Webhooks/Triggers** | ✅ Triggers | 🏆 High-throughput + syncs | Nango |
+| **Code-first / extensible** | Code steps Node/Python | 🏆 Templates en code dans votre repo + AI coding agent builder | Nango |
+| **White-label OAuth** | Connect (partiellement) | 🏆 Drop-in, marque SCY Forge | Nango |
+| **Observabilité** | Basic | 🏆 OpenTelemetry + logs complets | Nango |
+| **Licence** | Source Available (composants) | 🏆 Elastic License 2.0 (runtime + templates) | Nango |
+| **Prix à l'échelle** | Credit-based, AI brûle les crédits | 🏆 Self-host = $0 API (+ serveur déjà couvert Northflank) | Nango |
+
+**Le point décisif** : Pipedream est **plus avancé en largeur de catalogue et en polish managé**, MAIS :
+1. Il **ne self-host PAS les credentials** — même son MCP "self-hosté" route l'auth via leur cloud US. Après l'incident Composio (mai 2026, 10 242 credentials compromis dans un cloud tiers fermé), confier nos credentials OAuth à un cloud US géré est inacceptable pour SCY Forge (GDPR/EU AI Act).
+2. Il **n'a pas de sync engine** — or le cœur de SCY Forge est l'**ingestion continue** (AG-02 CONTENT-SCOUT doit sync Notion/Evernote → knowledge base). Nango est *conçu* pour ça (sync incrémental 2-way qui nourrit le RAG), Pipedream n'a que des triggers ponctuels.
+
+**Verdict** : 🏆 **Nango reste le meilleur choix pour SCY Forge.** Pipedream gagne en largeur/confort mais perd sur les 2 critères qui comptent le plus ici : **souveraineté des credentials** et **sync d'ingestion**. Pipedream serait le bon choix pour un projet *managed-first, US, orienté actions ponctuelles* — ce n'est pas le profil de SCY Forge.
+
+> Si la largeur de catalogue devenait critique plus tard (une app niche absente de Nango), on pourrait ajouter **Pipedream hosted MCP en lecture seule via `mcp.pipedream.com`** pour ce cas précis — **sans** y stocker de credentials (appel direct avec token que l'utilisateur fournit au runtime).
+
+---
+
+### 3.1 🥇 Recommandation : **Nango** comme hub principal
 
 | Plateforme | Licence | Self-host | APIs | Auth managée | Sync/Webhooks | MCP | Idéal pour |
 |---|---|---|---|---|---|---|---|

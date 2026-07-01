@@ -1,6 +1,6 @@
 {
   "pack_id": "cyber",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "display_name": "Cybersécurité — Blue Team / SOC",
   "description": "Premier Domain Pack de SCYForge. Transforme le savoir cyber rare (MITRE ATT&CK, Sigma, ThreatHunter-Playbook, MITRE Adversary Emulation, CISA IR Playbooks) en autonomie opérationnelle prouvée pour les recrues SOC / blue team.",
   "core_api_version": ">=1.0 <2.0",
@@ -12,7 +12,16 @@
     "decision_scenarios": true,
     "proof_rubric": true,
     "retention_policy": true,
-    "validation_guard": false
+    "validation_guard": "partial"
+  },
+  "artifacts": {
+    "ontology_density": "packs/cyber/ontology/attack_density.json",
+    "ontology_hierarchy": "packs/cyber/ontology/attack_hierarchy.json",
+    "ontology_doc": "packs/cyber/ontology/SCYFORGE_CYBER_ONTOLOGY.md",
+    "corpus_doc": "packs/cyber/corpus/SCYFORGE_FOUNDER_CORPUS.md",
+    "roles_doc": "packs/cyber/roles/SCYFORGE_CYBER_ROLE_TAXONOMY.md",
+    "scenarios_apt29": "packs/cyber/scenarios/apt29_chain.json",
+    "scenarios_doc": "packs/cyber/scenarios/SCYFORGE_ARENA_APT29_SCENARIOS.md"
   },
   "entrypoints": {
     "ontology": "packs/cyber/ontology/index",

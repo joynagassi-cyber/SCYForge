@@ -1,0 +1,482 @@
+{
+  "adversary": "APT29",
+  "source": "center-for-threat-informed-defense/adversary_emulation_library APT29.yaml",
+  "attribution": "Russian government-attributed group, active since ~2008 (per MITRE plan)",
+  "total_steps": 79,
+  "steps": [
+    {
+      "step": "1.A",
+      "tactic": "execution",
+      "attack_id": "T1036.002",
+      "name": ""
+    },
+    {
+      "step": "1.B",
+      "tactic": "execution",
+      "attack_id": "T1059.001",
+      "name": ""
+    },
+    {
+      "step": "2.A.1",
+      "tactic": "collection",
+      "attack_id": "T1119",
+      "name": ""
+    },
+    {
+      "step": "2.A.2",
+      "tactic": "discovery",
+      "attack_id": "T1016",
+      "name": ""
+    },
+    {
+      "step": "2.A.3",
+      "tactic": "discovery",
+      "attack_id": "T1016",
+      "name": ""
+    },
+    {
+      "step": "2.B.1",
+      "tactic": "discovery",
+      "attack_id": "T1033",
+      "name": ""
+    },
+    {
+      "step": "2.B.2",
+      "tactic": "exfiltration",
+      "attack_id": "T1041",
+      "name": ""
+    },
+    {
+      "step": "2.C.1",
+      "tactic": "discovery",
+      "attack_id": "T1057",
+      "name": ""
+    },
+    {
+      "step": "2.C.2",
+      "tactic": "discovery",
+      "attack_id": "T1057",
+      "name": ""
+    },
+    {
+      "step": "2.D.1",
+      "tactic": "discovery",
+      "attack_id": "T1007",
+      "name": ""
+    },
+    {
+      "step": "2.D.2",
+      "tactic": "discovery",
+      "attack_id": "T1007",
+      "name": ""
+    },
+    {
+      "step": "2.E.1",
+      "tactic": "discovery",
+      "attack_id": "T1082",
+      "name": ""
+    },
+    {
+      "step": "2.E.2",
+      "tactic": "discovery",
+      "attack_id": "T1082",
+      "name": ""
+    },
+    {
+      "step": "2.F.1",
+      "tactic": "discovery",
+      "attack_id": "T1069",
+      "name": ""
+    },
+    {
+      "step": "2.F.2",
+      "tactic": "discovery",
+      "attack_id": "T1069",
+      "name": ""
+    },
+    {
+      "step": "2.F.3",
+      "tactic": "discovery",
+      "attack_id": "T1069",
+      "name": ""
+    },
+    {
+      "step": "2.G.1",
+      "tactic": "discovery",
+      "attack_id": "T1087",
+      "name": ""
+    },
+    {
+      "step": "2.G.2",
+      "tactic": "discovery",
+      "attack_id": "T1087",
+      "name": ""
+    },
+    {
+      "step": "2.H.1",
+      "tactic": "discovery",
+      "attack_id": "T1012",
+      "name": ""
+    },
+    {
+      "step": "3.A.1",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1036.005",
+      "name": ""
+    },
+    {
+      "step": "3.A.2",
+      "tactic": "privilege-escalation",
+      "attack_id": "T1134.001",
+      "name": ""
+    },
+    {
+      "step": "3.A.3",
+      "tactic": "privilege-escalation",
+      "attack_id": "T1548.002",
+      "name": ""
+    },
+    {
+      "step": "3.B",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1112",
+      "name": ""
+    },
+    {
+      "step": "3.C",
+      "tactic": "privilege-escalation",
+      "attack_id": "T1055",
+      "name": ""
+    },
+    {
+      "step": "4.A.1",
+      "tactic": "stage-capabilities",
+      "attack_id": "T1036.005",
+      "name": ""
+    },
+    {
+      "step": "4.A.2",
+      "tactic": "discovery",
+      "attack_id": "T1018",
+      "name": ""
+    },
+    {
+      "step": "4.A.3",
+      "tactic": "discovery",
+      "attack_id": "T1018",
+      "name": ""
+    },
+    {
+      "step": "4.B.1",
+      "tactic": "discovery",
+      "attack_id": "T1016",
+      "name": ""
+    },
+    {
+      "step": "4.B.2",
+      "tactic": "discovery",
+      "attack_id": "T1057",
+      "name": ""
+    },
+    {
+      "step": "4.B.3",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1070.004",
+      "name": ""
+    },
+    {
+      "step": "4.C.1",
+      "tactic": "discovery",
+      "attack_id": "T1082",
+      "name": ""
+    },
+    {
+      "step": "4.C.2",
+      "tactic": "discovery",
+      "attack_id": "T1049",
+      "name": ""
+    },
+    {
+      "step": "5.A.1",
+      "tactic": "credential-access",
+      "attack_id": "T1003",
+      "name": ""
+    },
+    {
+      "step": "5.A.2",
+      "tactic": "persistence",
+      "attack_id": "T1547.009",
+      "name": ""
+    },
+    {
+      "step": "5.B.1",
+      "tactic": "persistence",
+      "attack_id": "T1547.009",
+      "name": ""
+    },
+    {
+      "step": "5.B.2",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1134",
+      "name": ""
+    },
+    {
+      "step": "6.A.1",
+      "tactic": "credential-access",
+      "attack_id": "T1003",
+      "name": ""
+    },
+    {
+      "step": "6.A.2",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1134",
+      "name": ""
+    },
+    {
+      "step": "6.B",
+      "tactic": "credential-access",
+      "attack_id": "T1552.004",
+      "name": ""
+    },
+    {
+      "step": "7.A.1",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1036.005",
+      "name": ""
+    },
+    {
+      "step": "7.A.2",
+      "tactic": "collection",
+      "attack_id": "T1113",
+      "name": ""
+    },
+    {
+      "step": "7.A.3",
+      "tactic": "collection",
+      "attack_id": "T1115",
+      "name": ""
+    },
+    {
+      "step": "7.A.4",
+      "tactic": "collection",
+      "attack_id": "T1056.001",
+      "name": ""
+    },
+    {
+      "step": "7.B.1",
+      "tactic": "exfiltration",
+      "attack_id": "T1041",
+      "name": ""
+    },
+    {
+      "step": "7.B.2",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1134.001",
+      "name": ""
+    },
+    {
+      "step": "7.C.1",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1134.001",
+      "name": ""
+    },
+    {
+      "step": "8.A.1",
+      "tactic": "execution",
+      "attack_id": "T1059.001",
+      "name": ""
+    },
+    {
+      "step": "8.A.2",
+      "tactic": "execution",
+      "attack_id": "T1059.001",
+      "name": ""
+    },
+    {
+      "step": "8.A.3",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1134.001",
+      "name": ""
+    },
+    {
+      "step": "8.B",
+      "tactic": "lateral-movement",
+      "attack_id": "T1105",
+      "name": ""
+    },
+    {
+      "step": "8.D.1",
+      "tactic": "collection",
+      "attack_id": "T1113",
+      "name": ""
+    },
+    {
+      "step": "9.A.1",
+      "tactic": "discovery",
+      "attack_id": "T1083",
+      "name": ""
+    },
+    {
+      "step": "9.B.1",
+      "tactic": "execution",
+      "attack_id": "T1059.001",
+      "name": ""
+    },
+    {
+      "step": "9.B.8",
+      "tactic": "exfiltration",
+      "attack_id": "T1041",
+      "name": ""
+    },
+    {
+      "step": "9.C",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1070.004",
+      "name": ""
+    },
+    {
+      "step": "10.A.2",
+      "tactic": "impact",
+      "attack_id": "T1529",
+      "name": ""
+    },
+    {
+      "step": "10.A.3",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1070.004",
+      "name": ""
+    },
+    {
+      "step": "10.B",
+      "tactic": "lateral-movement",
+      "attack_id": "T1037.005",
+      "name": ""
+    },
+    {
+      "step": "11.A",
+      "tactic": "execution",
+      "attack_id": "T1204.002",
+      "name": ""
+    },
+    {
+      "step": "12.A",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1070.006",
+      "name": ""
+    },
+    {
+      "step": "12.B",
+      "tactic": "discovery",
+      "attack_id": "T1518.001",
+      "name": ""
+    },
+    {
+      "step": "12.C",
+      "tactic": "discovery",
+      "attack_id": "T1518",
+      "name": ""
+    },
+    {
+      "step": "13.A",
+      "tactic": "discovery",
+      "attack_id": "T1082",
+      "name": ""
+    },
+    {
+      "step": "13.B",
+      "tactic": "discovery",
+      "attack_id": "T1082",
+      "name": ""
+    },
+    {
+      "step": "13.C",
+      "tactic": "discovery",
+      "attack_id": "T1033",
+      "name": ""
+    },
+    {
+      "step": "13.D",
+      "tactic": "discovery",
+      "attack_id": "T1057",
+      "name": ""
+    },
+    {
+      "step": "14.A",
+      "tactic": "defensive-evasion",
+      "attack_id": "T1134.002",
+      "name": ""
+    },
+    {
+      "step": "14.B",
+      "tactic": "credential-access",
+      "attack_id": "T1003",
+      "name": ""
+    },
+    {
+      "step": "14.C",
+      "tactic": "credential-access",
+      "attack_id": "T1003",
+      "name": ""
+    },
+    {
+      "step": "15.A",
+      "tactic": "persistence",
+      "attack_id": "T1546.003",
+      "name": ""
+    },
+    {
+      "step": "16.A",
+      "tactic": "discovery",
+      "attack_id": "T1018",
+      "name": ""
+    },
+    {
+      "step": "16.B",
+      "tactic": "discovery",
+      "attack_id": "T1033",
+      "name": ""
+    },
+    {
+      "step": "16.C",
+      "tactic": "lateral-movement",
+      "attack_id": "T1105",
+      "name": ""
+    },
+    {
+      "step": "17.A",
+      "tactic": "collection",
+      "attack_id": "T1114.001",
+      "name": ""
+    },
+    {
+      "step": "17.B",
+      "tactic": "collection",
+      "attack_id": "T1005",
+      "name": ""
+    },
+    {
+      "step": "18.A",
+      "tactic": "exfiltration",
+      "attack_id": "T1537",
+      "name": ""
+    },
+    {
+      "step": "19.A",
+      "tactic": "impact",
+      "attack_id": "T1561.001",
+      "name": ""
+    },
+    {
+      "step": "20.A.1",
+      "tactic": "credential-access",
+      "attack_id": "T1003",
+      "name": ""
+    },
+    {
+      "step": "20.B",
+      "tactic": "persistence",
+      "attack_id": "T1218.011",
+      "name": ""
+    }
+  ]
+}

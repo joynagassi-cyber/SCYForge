@@ -217,6 +217,7 @@
 ### 7.2 Features Transverses
 ```
 □ PIVOTIQ (réconciliation multi-sources)
+□ FINANCE SUITE (Pipeline Data Analyst Financier)
 □ Generative-Canvas-AI FlowSeek (diagrammes animés 60 FPS)
 □ Multi-View Toggles (Math/Sémantique/Code/Graphique/Diagramme)
 □ Intégrations 11 services (Notion/Obsidian/Anki/Readwise/Zotero...)

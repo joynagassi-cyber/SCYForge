@@ -1,0 +1,1137 @@
+{
+  "pivot": "mitre_attack",
+  "generated_from": {
+    "source": "SigmaHQ rules/",
+    "rules_scanned": 3136,
+    "distinct_techniques": 390
+  },
+  "techniques": [
+    {
+      "id": "T1059.001",
+      "rule_density": 179,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 113,
+        "medium": 56,
+        "informational": 1,
+        "low": 7,
+        "critical": 2
+      },
+      "sample_detections": [
+        "AWS EC2 Startup Shell Script Change",
+        "AppLocker Prevented Application or Script from Running",
+        "Invoke-Obfuscation CLIP+ Launcher - Security"
+      ]
+    },
+    {
+      "id": "T1685",
+      "rule_density": 156,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 42,
+        "low": 7,
+        "high": 107
+      },
+      "sample_detections": [
+        "Bitbucket Global Secret Scanning Rule Deleted",
+        "Bitbucket Global SSH Settings Changed",
+        "Bitbucket Audit Log Configuration Updated"
+      ]
+    },
+    {
+      "id": "T1218",
+      "rule_density": 135,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 82,
+        "high": 48,
+        "low": 5
+      },
+      "sample_detections": [
+        "Hidden Flag Set On File/Directory Via Chflags - MacOS",
+        "MSI Installation From Web",
+        "Suspicious DotNET CLR Usage Log Artifact"
+      ]
+    },
+    {
+      "id": "T1027",
+      "rule_density": 87,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 66,
+        "low": 5,
+        "medium": 16
+      },
+      "sample_detections": [
+        "Suspicious Filename with Embedded Base64 Commands",
+        "Decode Base64 Encoded Text",
+        "Decode Base64 Encoded Text -MacOs"
+      ]
+    },
+    {
+      "id": "T1574.001",
+      "rule_density": 80,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "low": 3,
+        "high": 43,
+        "medium": 34
+      },
+      "sample_detections": [
+        "Use Of Hidden Paths Or Files",
+        "DNS Server Error Failed Loading the ServerLevelPluginDLL",
+        "Microsoft Defender Blocked from Loading Unsigned DLL"
+      ]
+    },
+    {
+      "id": "T1112",
+      "rule_density": 78,
+      "tactics": [
+        "execution",
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 43,
+        "medium": 29,
+        "low": 5,
+        "critical": 1
+      },
+      "sample_detections": [
+        "Remote Registry Lateral Movement",
+        "ETW Logging Disabled In .NET Processes - Registry",
+        "NetNTLM Downgrade Attack"
+      ]
+    },
+    {
+      "id": "T1059",
+      "rule_density": 74,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 36,
+        "high": 37,
+        "critical": 1
+      },
+      "sample_detections": [
+        "Azure New CloudShell Created",
+        "BPFDoor Abnormal Process ID or Lock File Accessed",
+        "Suspicious Invocation of Shell via AWK - Linux"
+      ]
+    },
+    {
+      "id": "T1003.001",
+      "rule_density": 73,
+      "tactics": [
+        "execution"
+      ],
+      "level_dist": {
+        "critical": 10,
+        "medium": 10,
+        "high": 53
+      },
+      "sample_detections": [
+        "Antivirus Password Dumper Detection",
+        "Transferring Files with Credential Data via Network Shares - Zeek",
+        "Mimikatz Use"
+      ]
+    },
+    {
+      "id": "T1105",
+      "rule_density": 70,
+      "tactics": [
+        "collection",
+        "execution",
+        "exfiltration",
+        "persistence"
+      ],
+      "level_dist": {
+        "low": 7,
+        "medium": 33,
+        "high": 30
+      },
+      "sample_detections": [
+        "Remote File Copy",
+        "Wget Creating Files in Tmp Directory",
+        "Curl Usage on Linux"
+      ]
+    },
+    {
+      "id": "T1548.002",
+      "rule_density": 56,
+      "tactics": [
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 44,
+        "medium": 10,
+        "critical": 2
+      },
+      "sample_detections": [
+        "UAC Bypass Using Consent and Comctl32 - File",
+        "UAC Bypass Using .NET Code Profiler on MMC",
+        "UAC Bypass Using IDiagnostic Profile - File"
+      ]
+    },
+    {
+      "id": "T1078",
+      "rule_density": 55,
+      "tactics": [
+        "collection",
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 24,
+        "high": 24,
+        "low": 6,
+        "critical": 1
+      },
+      "sample_detections": [
+        "Kubernetes Admission Controller Modification",
+        "OpenCanary - SSH Login Attempt",
+        "OpenCanary - SSH New Connection Attempt"
+      ]
+    },
+    {
+      "id": "T1047",
+      "rule_density": 47,
+      "tactics": [
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 19,
+        "medium": 25,
+        "low": 1,
+        "critical": 2
+      },
+      "sample_detections": [
+        "Remote DCOM/WMI Lateral Movement",
+        "MITRE BZAR Indicators for Execution",
+        "T1047 Wmiprvse Wbemcomn DLL Hijack"
+      ]
+    },
+    {
+      "id": "T1190",
+      "rule_density": 46,
+      "tactics": [
+        "execution",
+        "exfiltration",
+        "persistence",
+        "reconnaissance"
+      ],
+      "level_dist": {
+        "medium": 19,
+        "high": 27
+      },
+      "sample_detections": [
+        "Django Framework Exceptions",
+        "Potential JNDI Injection Exploitation In JVM Based Application",
+        "Potential Local File Read Vulnerability In JVM Based Application"
+      ]
+    },
+    {
+      "id": "T1219.002",
+      "rule_density": 41,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "critical": 2,
+        "medium": 27,
+        "high": 10,
+        "low": 2
+      },
+      "sample_detections": [
+        "Antivirus Exploitation Framework Detection",
+        "Potential Linux Amazon SSM Agent Hijacking",
+        "Remote Access Tool - Potential MeshAgent Execution - MacOS"
+      ]
+    },
+    {
+      "id": "T1078.004",
+      "rule_density": 40,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 19,
+        "low": 5,
+        "high": 16
+      },
+      "sample_detections": [
+        "Bitbucket User Login Failure",
+        "Github New Secret Created",
+        "Github Self Hosted Runner Changes Detected"
+      ]
+    },
+    {
+      "id": "T1569.002",
+      "rule_density": 39,
+      "tactics": [
+        "discovery",
+        "execution",
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 19,
+        "medium": 15,
+        "low": 3,
+        "critical": 2
+      },
+      "sample_detections": [
+        "Remote Server Service Abuse for Lateral Movement",
+        "MITRE BZAR Indicators for Execution",
+        "DNS Events Related To Mining Pools"
+      ]
+    },
+    {
+      "id": "T1202",
+      "rule_density": 39,
+      "tactics": [
+        "execution"
+      ],
+      "level_dist": {
+        "high": 18,
+        "medium": 20,
+        "informational": 1
+      },
+      "sample_detections": [
+        "Diagnostic Library Sdiageng.DLL Loaded By Msdt.EXE",
+        "Troubleshooting Pack Cmdlet Execution",
+        "Indirect Inline Command Execution Via Bash.EXE"
+      ]
+    },
+    {
+      "id": "T1543.003",
+      "rule_density": 38,
+      "tactics": [
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "low": 4,
+        "high": 20,
+        "medium": 12,
+        "critical": 2
+      },
+      "sample_detections": [
+        "Special File Creation via Mknod Syscall",
+        "CobaltStrike Service Installations - Security",
+        "Remote Access Tool Services Have Been Installed - Security"
+      ]
+    },
+    {
+      "id": "T1036",
+      "rule_density": 38,
+      "tactics": [
+        "execution"
+      ],
+      "level_dist": {
+        "medium": 16,
+        "high": 21,
+        "low": 1
+      },
+      "sample_detections": [
+        "Potentially Suspicious Execution From Tmp Folder",
+        "Interactive Bash Suspicious Children",
+        "New or Renamed User Account with '$' Character"
+      ]
+    },
+    {
+      "id": "T1021.002",
+      "rule_density": 36,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "exfiltration",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 10,
+        "high": 20,
+        "low": 2,
+        "critical": 4
+      },
+      "sample_detections": [
+        "SMB Spoolss Name Piped Usage",
+        "First Time Seen Remote Named Pipe - Zeek",
+        "Suspicious PsExec Execution - Zeek"
+      ]
+    },
+    {
+      "id": "T1003",
+      "rule_density": 33,
+      "tactics": [
+        "collection",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 17,
+        "critical": 5,
+        "medium": 10,
+        "low": 1
+      },
+      "sample_detections": [
+        "OpenCanary - MSSQL Login Attempt Via SQLAuth",
+        "OpenCanary - MSSQL Login Attempt Via Windows Authentication",
+        "OpenCanary - MySQL Login Attempt"
+      ]
+    },
+    {
+      "id": "T1098",
+      "rule_density": 31,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 14,
+        "low": 6,
+        "high": 11
+      },
+      "sample_detections": [
+        "Bitbucket Global Permission Changed",
+        "AWS IAM Backdoor Users Keys",
+        "AWS Route 53 Domain Transfer Lock Disabled"
+      ]
+    },
+    {
+      "id": "T1082",
+      "rule_density": 31,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "persistence",
+        "reconnaissance"
+      ],
+      "level_dist": {
+        "medium": 11,
+        "low": 11,
+        "informational": 2,
+        "high": 7
+      },
+      "sample_detections": [
+        "Bitbucket User Details Export Attempt Detected",
+        "Bitbucket User Permissions Export Attempt",
+        "System Information Discovery - Auditd"
+      ]
+    },
+    {
+      "id": "T1071.001",
+      "rule_density": 31,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 14,
+        "high": 14,
+        "critical": 2,
+        "low": 1
+      },
+      "sample_detections": [
+        "Suspicious Curl Change User Agents - Linux",
+        "Suspicious Installer Package Child Process",
+        "Wannacry Killswitch Domain"
+      ]
+    },
+    {
+      "id": "T1053.005",
+      "rule_density": 31,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 20,
+        "medium": 10,
+        "low": 1
+      },
+      "sample_detections": [
+        "Persistence and Execution at Scale via GPO Scheduled Task",
+        "Suspicious Scheduled Task Creation",
+        "Important Scheduled Task Deleted/Disabled"
+      ]
+    },
+    {
+      "id": "T1547.001",
+      "rule_density": 31,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 13,
+        "medium": 18
+      },
+      "sample_detections": [
+        "File Creation In Suspicious Directory By Msdt.EXE",
+        "Potential Startup Shortcut Persistence Via PowerShell.EXE",
+        "Startup Folder File Write"
+      ]
+    },
+    {
+      "id": "T1033",
+      "rule_density": 29,
+      "tactics": [
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 10,
+        "low": 4,
+        "medium": 14,
+        "critical": 1
+      },
+      "sample_detections": [
+        "Possible DCSync Attack",
+        "SharpHound Recon Sessions",
+        "System Owner or User Discovery - Linux"
+      ]
+    },
+    {
+      "id": "T1003.002",
+      "rule_density": 28,
+      "tactics": [
+        "collection",
+        "execution"
+      ],
+      "level_dist": {
+        "critical": 3,
+        "high": 19,
+        "medium": 4,
+        "informational": 1,
+        "low": 1
+      },
+      "sample_detections": [
+        "Antivirus Password Dumper Detection",
+        "Possible Impacket SecretDump Remote Activity - Zeek",
+        "Transferring Files with Credential Data via Network Shares - Zeek"
+      ]
+    },
+    {
+      "id": "T1059.003",
+      "rule_density": 27,
+      "tactics": [
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 14,
+        "low": 4,
+        "medium": 9
+      },
+      "sample_detections": [
+        "AWS EC2 Startup Shell Script Change",
+        "Remote Access Tool - ScreenConnect Command Execution",
+        "Remote Access Tool - ScreenConnect File Transfer"
+      ]
+    },
+    {
+      "id": "T1204.002",
+      "rule_density": 27,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 14,
+        "low": 3,
+        "medium": 9,
+        "informational": 1
+      },
+      "sample_detections": [
+        "Suspicious Microsoft Office Child Process - MacOS",
+        "Download From Suspicious TLD - Blacklist",
+        "Download From Suspicious TLD - Whitelist"
+      ]
+    },
+    {
+      "id": "T1218.011",
+      "rule_density": 27,
+      "tactics": [
+        "execution"
+      ],
+      "level_dist": {
+        "medium": 12,
+        "high": 14,
+        "critical": 1
+      },
+      "sample_detections": [
+        "Remote Thread Creation Via PowerShell In Uncommon Target",
+        "SCR File Write Event",
+        "Unsigned DLL Loaded by Windows Utility"
+      ]
+    },
+    {
+      "id": "T1036.003",
+      "rule_density": 26,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 9,
+        "high": 15,
+        "low": 2
+      },
+      "sample_detections": [
+        "Masquerading as Linux Crond Process",
+        "Remote Access Tool - Renamed MeshAgent Execution - MacOS",
+        "Potential Homoglyph Attack Using Lookalike Characters in Filename"
+      ]
+    },
+    {
+      "id": "T1685.001",
+      "rule_density": 26,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 5,
+        "high": 19,
+        "low": 2
+      },
+      "sample_detections": [
+        "ETW Logging/Processing Option Disabled On IIS Server",
+        "HTTP Logging Disabled On IIS Server",
+        "New Module Module Added To IIS Server"
+      ]
+    },
+    {
+      "id": "T1110",
+      "rule_density": 25,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 11,
+        "high": 8,
+        "low": 6
+      },
+      "sample_detections": [
+        "Bitbucket User Login Failure",
+        "Bitbucket User Login Failure Via SSH",
+        "AWS ConsoleLogin Failed Authentication"
+      ]
+    },
+    {
+      "id": "T1055",
+      "rule_density": 24,
+      "tactics": [
+        "execution"
+      ],
+      "level_dist": {
+        "high": 14,
+        "medium": 6,
+        "critical": 4
+      },
+      "sample_detections": [
+        "Rare Remote Thread Creation By Uncommon Source Image",
+        "Remote Thread Creation By Uncommon Source Image",
+        "Created Files by Microsoft Sync Center"
+      ]
+    },
+    {
+      "id": "T1505.003",
+      "rule_density": 23,
+      "tactics": [
+        "discovery",
+        "exfiltration",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 16,
+        "critical": 3,
+        "medium": 4
+      },
+      "sample_detections": [
+        "Antivirus Web Shell Detection",
+        "Webshell Remote Command Execution",
+        "Shellshock Expression"
+      ]
+    },
+    {
+      "id": "T1490",
+      "rule_density": 23,
+      "tactics": [
+        "execution",
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 11,
+        "high": 12
+      },
+      "sample_detections": [
+        "AWS S3 Bucket Versioning Disable",
+        "Time Machine Backup Deletion Attempt Via Tmutil - MacOS",
+        "Time Machine Backup Disabled Via Tmutil - MacOS"
+      ]
+    },
+    {
+      "id": "T1572",
+      "rule_density": 23,
+      "tactics": [
+        "execution",
+        "exfiltration",
+        "impact"
+      ],
+      "level_dist": {
+        "high": 12,
+        "medium": 10,
+        "critical": 1
+      },
+      "sample_detections": [
+        "Communication To LocaltoNet Tunneling Service Initiated - Linux",
+        "Communication To Ngrok Tunneling Service - Linux",
+        "Cloudflared Tunnels Related DNS Requests"
+      ]
+    },
+    {
+      "id": "T1003.003",
+      "rule_density": 23,
+      "tactics": [],
+      "level_dist": {
+        "high": 15,
+        "medium": 7,
+        "low": 1
+      },
+      "sample_detections": [
+        "Possible Impacket SecretDump Remote Activity - Zeek",
+        "Transferring Files with Credential Data via Network Shares - Zeek",
+        "Ntdsutil Abuse"
+      ]
+    },
+    {
+      "id": "T1059.005",
+      "rule_density": 23,
+      "tactics": [
+        "discovery",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 9,
+        "high": 14
+      },
+      "sample_detections": [
+        "AppLocker Prevented Application or Script from Running",
+        "HackTool - CACTUSTORCH Remote Thread Creation",
+        "WScript or CScript Dropper - File"
+      ]
+    },
+    {
+      "id": "T1548",
+      "rule_density": 22,
+      "tactics": [
+        "discovery",
+        "persistence"
+      ],
+      "level_dist": {
+        "low": 6,
+        "medium": 10,
+        "high": 6
+      },
+      "sample_detections": [
+        "AWS STS AssumeRole Misuse",
+        "AWS STS GetSessionToken Misuse",
+        "AWS Suspicious SAML Activity"
+      ]
+    },
+    {
+      "id": "T1083",
+      "rule_density": 22,
+      "tactics": [
+        "discovery",
+        "execution"
+      ],
+      "level_dist": {
+        "low": 5,
+        "medium": 8,
+        "informational": 2,
+        "high": 7
+      },
+      "sample_detections": [
+        "Linux Capabilities Discovery",
+        "Shell Invocation via Apt - Linux",
+        "Capabilities Discovery - Linux"
+      ]
+    },
+    {
+      "id": "T1564.004",
+      "rule_density": 22,
+      "tactics": [
+        "execution"
+      ],
+      "level_dist": {
+        "medium": 13,
+        "high": 8,
+        "low": 1
+      },
+      "sample_detections": [
+        "Hidden Flag Set On File/Directory Via Chflags - MacOS",
+        "Hidden Executable In NTFS Alternate Data Stream",
+        "Suspicious File Download From File Sharing Websites -  File Stream"
+      ]
+    },
+    {
+      "id": "T1090",
+      "rule_density": 21,
+      "tactics": [
+        "exfiltration"
+      ],
+      "level_dist": {
+        "high": 14,
+        "low": 1,
+        "medium": 6
+      },
+      "sample_detections": [
+        "OpenCanary - HTTPPROXY Login Attempt",
+        "Malicious IP Address Sign-In Failure Rate",
+        "Malicious IP Address Sign-In Suspicious"
+      ]
+    },
+    {
+      "id": "T1059.007",
+      "rule_density": 21,
+      "tactics": [
+        "collection",
+        "execution"
+      ],
+      "level_dist": {
+        "medium": 7,
+        "high": 12,
+        "low": 2
+      },
+      "sample_detections": [
+        "Suspicious Installer Package Child Process",
+        "JXA In-memory Execution Via OSAScript",
+        "Potential In-Memory Download And Compile Of Payloads"
+      ]
+    },
+    {
+      "id": "T1070",
+      "rule_density": 20,
+      "tactics": [
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 10,
+        "low": 1,
+        "high": 9
+      },
+      "sample_detections": [
+        "Kubernetes Events Deleted",
+        "SES Identity Has Been Deleted",
+        "Linux Package Uninstall"
+      ]
+    },
+    {
+      "id": "T1552.001",
+      "rule_density": 20,
+      "tactics": [
+        "collection",
+        "discovery",
+        "execution",
+        "impact",
+        "reconnaissance"
+      ],
+      "level_dist": {
+        "medium": 11,
+        "high": 7,
+        "low": 2
+      },
+      "sample_detections": [
+        "Azure Keyvault Key Modified or Deleted",
+        "Azure Key Vault Modified or Deleted",
+        "Azure Keyvault Secrets Modified or Deleted"
+      ]
+    },
+    {
+      "id": "T1087.002",
+      "rule_density": 20,
+      "tactics": [
+        "discovery",
+        "execution",
+        "exfiltration"
+      ],
+      "level_dist": {
+        "medium": 8,
+        "high": 11,
+        "low": 1
+      },
+      "sample_detections": [
+        "Potential Active Directory Reconnaissance/Enumeration Via LDAP",
+        "AD Privileged Users or Groups Reconnaissance",
+        "Potential AD User Enumeration From Non-Machine Account"
+      ]
+    },
+    {
+      "id": "T1046",
+      "rule_density": 19,
+      "tactics": [
+        "discovery",
+        "execution"
+      ],
+      "level_dist": {
+        "high": 8,
+        "low": 3,
+        "medium": 8
+      },
+      "sample_detections": [
+        "OpenCanary - NMAP FIN Scan",
+        "OpenCanary - NMAP NULL Scan",
+        "OpenCanary - NMAP OS Scan"
+      ]
+    },
+    {
+      "id": "T1133",
+      "rule_density": 19,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 11,
+        "low": 3,
+        "medium": 5
+      },
+      "sample_detections": [
+        "OpenCanary - RDP New Connection Attempt",
+        "OpenCanary - SSH Login Attempt",
+        "OpenCanary - SSH New Connection Attempt"
+      ]
+    },
+    {
+      "id": "T1485",
+      "rule_density": 19,
+      "tactics": [
+        "exfiltration",
+        "impact"
+      ],
+      "level_dist": {
+        "medium": 11,
+        "low": 5,
+        "high": 3
+      },
+      "sample_detections": [
+        "AWS EFS Fileshare Mount Modified or Deleted",
+        "AWS EKS Cluster Created or Deleted",
+        "Azure Container Registry Created or Deleted"
+      ]
+    },
+    {
+      "id": "T1489",
+      "rule_density": 19,
+      "tactics": [
+        "execution",
+        "impact"
+      ],
+      "level_dist": {
+        "medium": 8,
+        "low": 6,
+        "high": 5
+      },
+      "sample_detections": [
+        "Azure Application Deleted",
+        "Azure Container Registry Created or Deleted",
+        "Azure Kubernetes Cluster Created or Deleted"
+      ]
+    },
+    {
+      "id": "T1566.001",
+      "rule_density": 19,
+      "tactics": [
+        "collection",
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "medium": 7,
+        "high": 10,
+        "low": 2
+      },
+      "sample_detections": [
+        "Suspicious Email Delivered In Microsoft 365",
+        "Disk Image Mounting Via Hdiutil - MacOS",
+        "ISO Image Mounted"
+      ]
+    },
+    {
+      "id": "T1127",
+      "rule_density": 19,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 7,
+        "medium": 11,
+        "low": 1
+      },
+      "sample_detections": [
+        "Remote Thread Creation Ttdinject.exe Proxy",
+        "Suspicious File Created by ArcSOC.exe",
+        "AspNetCompiler Execution"
+      ]
+    },
+    {
+      "id": "T1203",
+      "rule_density": 17,
+      "tactics": [
+        "execution",
+        "impact",
+        "persistence"
+      ],
+      "level_dist": {
+        "critical": 2,
+        "high": 8,
+        "medium": 5,
+        "low": 2
+      },
+      "sample_detections": [
+        "Antivirus Exploitation Framework Detection",
+        "Suspicious Download and Execute Pattern via Curl/Wget",
+        "OMIGOD SCX RunAsProvider ExecuteScript"
+      ]
+    },
+    {
+      "id": "T1686.003",
+      "rule_density": 17,
+      "tactics": [],
+      "level_dist": {
+        "medium": 10,
+        "high": 4,
+        "low": 3
+      },
+      "sample_detections": [
+        "Uncommon New Firewall Rule Added In Windows Firewall Exception List",
+        "New Firewall Rule Added In Windows Firewall Exception List For Potential Suspicious Application",
+        "New Firewall Rule Added In Windows Firewall Exception List Via WmiPrvSE.EXE"
+      ]
+    },
+    {
+      "id": "T1482",
+      "rule_density": 17,
+      "tactics": [
+        "discovery",
+        "execution"
+      ],
+      "level_dist": {
+        "medium": 5,
+        "low": 2,
+        "high": 10
+      },
+      "sample_detections": [
+        "Potential Active Directory Reconnaissance/Enumeration Via LDAP",
+        "DNS Server Discovery Via LDAP Query",
+        "BloodHound Collection Files"
+      ]
+    },
+    {
+      "id": "T1218.010",
+      "rule_density": 17,
+      "tactics": [
+        "execution"
+      ],
+      "level_dist": {
+        "medium": 7,
+        "high": 10
+      },
+      "sample_detections": [
+        "DNS Query Request By Regsvr32.EXE",
+        "Unsigned DLL Loaded by Windows Utility",
+        "Network Connection Initiated By Regsvr32.EXE"
+      ]
+    },
+    {
+      "id": "T1018",
+      "rule_density": 16,
+      "tactics": [
+        "discovery",
+        "execution",
+        "persistence",
+        "reconnaissance"
+      ],
+      "level_dist": {
+        "low": 6,
+        "informational": 1,
+        "medium": 3,
+        "high": 6
+      },
+      "sample_detections": [
+        "Linux Remote System Discovery",
+        "Macos Remote System Discovery",
+        "Cisco Discovery"
+      ]
+    },
+    {
+      "id": "T1021.001",
+      "rule_density": 15,
+      "tactics": [
+        "execution",
+        "persistence"
+      ],
+      "level_dist": {
+        "high": 11,
+        "medium": 4
+      },
+      "sample_detections": [
+        "OpenCanary - RDP New Connection Attempt",
+        "Publicly Accessible RDP Service",
+        "Denied Access To Remote Desktop"
+      ]
+    }
+  ]
+}

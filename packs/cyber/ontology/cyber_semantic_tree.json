@@ -1,0 +1,2631 @@
+{
+  "id": "f18d4c85-f74b-562b-b3dc-e668f2dfeb63",
+  "owner_kind": "domain_pack",
+  "owner_id": "ecc92402-72b8-5c15-847c-002e5156b1f6",
+  "domain_pack": "cyber",
+  "provenance": {
+    "hierarchy": "MITRE CTI STIX enterprise-attack",
+    "criticality_source": "SigmaHQ rule density",
+    "rules_scanned": 3136,
+    "techniques_total": 697,
+    "sub_techniques_total": 475
+  },
+  "root_nodes": [
+    "0495f37f-f5dd-5765-b3b0-067a4ffaa4ad",
+    "0468a856-d3c6-5052-b23d-df91f5cd06e3",
+    "798cabf0-355e-5cb7-b6f1-39f9986ab2e9",
+    "71c14232-9d5d-5045-94a8-201134b8aebd",
+    "ae36c54f-ed9b-5dd0-89f4-7b8c4ab934c1",
+    "751ea869-231f-5bdd-a556-ee035e3dbbce",
+    "0926711c-0c0b-56e9-899a-11a925cb0b0e",
+    "3bf09709-8f18-50a0-b28c-2ffaf4385ff4",
+    "b70b66ec-984e-5be9-bf86-c4525c13e8d5",
+    "eb3f3c80-5477-5701-976a-cf74a43e9d24",
+    "c9855ccd-1bc6-5771-a60e-e152ee6b2364",
+    "2bac7c27-4bea-5309-8c4c-a755a365eb43",
+    "c0978773-fab0-5c34-9aca-65a41e725185",
+    "7fedc8b4-41ed-5b76-b669-50d17eda2094"
+  ],
+  "stats": {
+    "trunks": 14,
+    "branches": 20,
+    "leaves": 130,
+    "edges": 153
+  },
+  "nodes": [
+    {
+      "id": "0495f37f-f5dd-5765-b3b0-067a4ffaa4ad",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Reconnaissance",
+      "tactic": "reconnaissance",
+      "criticality": 1.0
+    },
+    {
+      "id": "0468a856-d3c6-5052-b23d-df91f5cd06e3",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Resource Development",
+      "tactic": "resource-development",
+      "criticality": 1.0
+    },
+    {
+      "id": "798cabf0-355e-5cb7-b6f1-39f9986ab2e9",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Initial Access",
+      "tactic": "initial-access",
+      "criticality": 1.0
+    },
+    {
+      "id": "71c14232-9d5d-5045-94a8-201134b8aebd",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Execution",
+      "tactic": "execution",
+      "criticality": 1.0
+    },
+    {
+      "id": "ae36c54f-ed9b-5dd0-89f4-7b8c4ab934c1",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Persistence",
+      "tactic": "persistence",
+      "criticality": 1.0
+    },
+    {
+      "id": "751ea869-231f-5bdd-a556-ee035e3dbbce",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Privilege Escalation",
+      "tactic": "privilege-escalation",
+      "criticality": 1.0
+    },
+    {
+      "id": "0926711c-0c0b-56e9-899a-11a925cb0b0e",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Defense Evasion",
+      "tactic": "defense-evasion",
+      "criticality": 1.0
+    },
+    {
+      "id": "3bf09709-8f18-50a0-b28c-2ffaf4385ff4",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Credential Access",
+      "tactic": "credential-access",
+      "criticality": 1.0
+    },
+    {
+      "id": "b70b66ec-984e-5be9-bf86-c4525c13e8d5",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Discovery",
+      "tactic": "discovery",
+      "criticality": 1.0
+    },
+    {
+      "id": "eb3f3c80-5477-5701-976a-cf74a43e9d24",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Lateral Movement",
+      "tactic": "lateral-movement",
+      "criticality": 1.0
+    },
+    {
+      "id": "c9855ccd-1bc6-5771-a60e-e152ee6b2364",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Collection",
+      "tactic": "collection",
+      "criticality": 1.0
+    },
+    {
+      "id": "2bac7c27-4bea-5309-8c4c-a755a365eb43",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Command And Control",
+      "tactic": "command-and-control",
+      "criticality": 1.0
+    },
+    {
+      "id": "c0978773-fab0-5c34-9aca-65a41e725185",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Exfiltration",
+      "tactic": "exfiltration",
+      "criticality": 1.0
+    },
+    {
+      "id": "7fedc8b4-41ed-5b76-b669-50d17eda2094",
+      "kind": "trunk",
+      "attack_id": null,
+      "title": "Impact",
+      "tactic": "impact",
+      "criticality": 1.0
+    },
+    {
+      "id": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "kind": "branch",
+      "attack_id": "T1059",
+      "title": "Command and Scripting Interpreter",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 1.0
+    },
+    {
+      "id": "2f6cb4e3-cb84-58a7-85f9-0c30edf57701",
+      "kind": "leaf",
+      "attack_id": "T1059.007",
+      "title": "JavaScript",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.1173
+    },
+    {
+      "id": "ac007bc4-d4f7-5c57-91fa-fe15b6d000d0",
+      "kind": "leaf",
+      "attack_id": "T1059.002",
+      "title": "AppleScript",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "bd3f11bd-70ea-5767-aeba-d25a41482a76",
+      "kind": "leaf",
+      "attack_id": "T1059.010",
+      "title": "AutoHotKey & AutoIT",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "89239cc7-92bd-56a0-a96e-ac1f481567a8",
+      "kind": "leaf",
+      "attack_id": "T1059.009",
+      "title": "Cloud API",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "204af90d-a2b5-5c10-aec2-5298d4208e55",
+      "kind": "leaf",
+      "attack_id": "T1059.008",
+      "title": "Network Device CLI",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "cd57a786-24ac-518a-905c-6282f652c711",
+      "kind": "leaf",
+      "attack_id": "T1059.001",
+      "title": "PowerShell",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 1.0
+    },
+    {
+      "id": "e235e4cf-9be9-51a1-b1bd-53db63d65898",
+      "kind": "leaf",
+      "attack_id": "T1059.004",
+      "title": "Unix Shell",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "4f0f69ea-0881-5569-9d4b-f8c01c600149",
+      "kind": "leaf",
+      "attack_id": "T1059.011",
+      "title": "Lua",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "a68562ad-2e7c-5365-9051-173d67f246f1",
+      "kind": "leaf",
+      "attack_id": "T1059.013",
+      "title": "Container CLI/API",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "29482956-5bb5-5302-936a-42f7e1af645c",
+      "kind": "leaf",
+      "attack_id": "T1059.006",
+      "title": "Python",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "386854a3-78b2-5161-b47e-9d2441a9dd27",
+      "kind": "leaf",
+      "attack_id": "T1059.003",
+      "title": "Windows Command Shell",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.1508
+    },
+    {
+      "id": "bfdeca3a-db8c-5dd0-9b70-57863a73f03e",
+      "kind": "leaf",
+      "attack_id": "T1059.012",
+      "title": "Hypervisor CLI",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "40094f87-6f33-5610-bdc9-8a72cf5ab8f9",
+      "kind": "leaf",
+      "attack_id": "T1059.005",
+      "title": "Visual Basic",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.1285
+    },
+    {
+      "id": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "kind": "branch",
+      "attack_id": "T1003",
+      "title": "OS Credential Dumping",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.4078
+    },
+    {
+      "id": "2320f911-abcb-5a67-8781-ab9772e20ee6",
+      "kind": "leaf",
+      "attack_id": "T1003.002",
+      "title": "Security Account Manager",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.1564
+    },
+    {
+      "id": "bf4d1baa-e3c2-5eba-a676-375620d2888a",
+      "kind": "leaf",
+      "attack_id": "T1003.004",
+      "title": "LSA Secrets",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "233447a8-9e99-557e-9b6b-35be9fb6f21b",
+      "kind": "leaf",
+      "attack_id": "T1003.007",
+      "title": "Proc Filesystem",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "a1914dd9-d7f8-5b8e-973c-234a2610676b",
+      "kind": "leaf",
+      "attack_id": "T1003.001",
+      "title": "LSASS Memory",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.4078
+    },
+    {
+      "id": "2151785d-8ff5-5320-a429-f70bc27079cd",
+      "kind": "leaf",
+      "attack_id": "T1003.005",
+      "title": "Cached Domain Credentials",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "92998448-a9b5-522a-b424-d4e9ddbd9c94",
+      "kind": "leaf",
+      "attack_id": "T1003.008",
+      "title": "/etc/passwd and /etc/shadow",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "12f32370-95b4-5c89-8fe4-6d48d2882bcb",
+      "kind": "leaf",
+      "attack_id": "T1003.003",
+      "title": "NTDS",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.1285
+    },
+    {
+      "id": "a574fef2-ab67-5b8e-9793-4b849c022e19",
+      "kind": "leaf",
+      "attack_id": "T1003.006",
+      "title": "DCSync",
+      "tactic": [
+        "credential-access"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "kind": "branch",
+      "attack_id": "T1218",
+      "title": "System Binary Proxy Execution",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.7542
+    },
+    {
+      "id": "22f21f86-bd0d-5395-a208-0394cc8de16b",
+      "kind": "leaf",
+      "attack_id": "T1218.011",
+      "title": "Rundll32",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.1508
+    },
+    {
+      "id": "d6d963ab-1e77-51ad-8f71-c5b42321d7b2",
+      "kind": "leaf",
+      "attack_id": "T1218.013",
+      "title": "Mavinject",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "6c37d2e9-1f80-53f7-b2ed-fba26ebbbf4a",
+      "kind": "leaf",
+      "attack_id": "T1218.004",
+      "title": "InstallUtil",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "069896f9-244b-5f63-a9b8-d539cbbafaf7",
+      "kind": "leaf",
+      "attack_id": "T1218.007",
+      "title": "Msiexec",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "d08471fd-c88d-5a44-89d5-1772adbc6600",
+      "kind": "leaf",
+      "attack_id": "T1218.003",
+      "title": "CMSTP",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "11e92e65-2581-5063-8d8b-7998aebf1cdd",
+      "kind": "leaf",
+      "attack_id": "T1218.002",
+      "title": "Control Panel",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "414df18a-1834-559d-a83c-005e074b1ebc",
+      "kind": "leaf",
+      "attack_id": "T1218.015",
+      "title": "Electron Applications",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "193c0e87-f4f9-5d2d-815c-2c5458f3a0e3",
+      "kind": "leaf",
+      "attack_id": "T1218.008",
+      "title": "Odbcconf",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "8efede35-1af8-5fa6-a30e-559562840144",
+      "kind": "leaf",
+      "attack_id": "T1218.012",
+      "title": "Verclsid",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "bff824d6-7afa-59f2-8833-caf0e2003b0b",
+      "kind": "leaf",
+      "attack_id": "T1218.005",
+      "title": "Mshta",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "832ccd98-2406-5a7d-b9c6-f4eaa8a52dbe",
+      "kind": "leaf",
+      "attack_id": "T1218.001",
+      "title": "Compiled HTML File",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "838030dd-0b44-590c-8f58-958e473be722",
+      "kind": "leaf",
+      "attack_id": "T1218.010",
+      "title": "Regsvr32",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.095
+    },
+    {
+      "id": "9589ad5a-e64d-5508-a65c-45b23b3d8a27",
+      "kind": "leaf",
+      "attack_id": "T1218.009",
+      "title": "Regsvcs/Regasm",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "73c35eec-04b1-51c9-a5ed-0cd6c32d8e88",
+      "kind": "leaf",
+      "attack_id": "T1218.014",
+      "title": "MMC",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "kind": "branch",
+      "attack_id": "T1027",
+      "title": "Obfuscated Files or Information",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.486
+    },
+    {
+      "id": "2fe433b4-62b2-56e6-b5c3-a5bc5240ecd0",
+      "kind": "leaf",
+      "attack_id": "T1027.011",
+      "title": "Fileless Storage",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "086e9e24-9b08-5777-af7c-11fbef4c3ee7",
+      "kind": "leaf",
+      "attack_id": "T1027.009",
+      "title": "Embedded Payloads",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "636853ef-1eb8-5c37-8202-14ff02bad5c9",
+      "kind": "leaf",
+      "attack_id": "T1027.013",
+      "title": "Encrypted/Encoded File",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "79015cf0-4c2e-50a1-bb0e-8c7eca951e6e",
+      "kind": "leaf",
+      "attack_id": "T1027.008",
+      "title": "Stripped Payloads",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "afece8d7-5b30-51b9-bade-28af67887b3f",
+      "kind": "leaf",
+      "attack_id": "T1027.001",
+      "title": "Binary Padding",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "bc1decc8-532f-513d-8b57-a58e713497db",
+      "kind": "leaf",
+      "attack_id": "T1027.016",
+      "title": "Junk Code Insertion",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "9396177a-79ab-5c8b-9362-52ea60e5de42",
+      "kind": "leaf",
+      "attack_id": "T1027.017",
+      "title": "SVG Smuggling",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "1e5fb8cf-2c2c-5dbc-a76f-335565813d93",
+      "kind": "leaf",
+      "attack_id": "T1027.012",
+      "title": "LNK Icon Smuggling",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "98b2c1a7-1030-56f3-8ca2-3cb0e4d54a42",
+      "kind": "leaf",
+      "attack_id": "T1027.005",
+      "title": "Indicator Removal from Tools",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "9f3592a3-0539-5d44-a3ef-d8ecf2759a44",
+      "kind": "leaf",
+      "attack_id": "T1027.014",
+      "title": "Polymorphic Code",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "0dad787d-c25d-55cb-9abf-22d830098da6",
+      "kind": "leaf",
+      "attack_id": "T1027.003",
+      "title": "Steganography",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "f22c202f-baa2-51c7-b7dc-07fb632b6627",
+      "kind": "leaf",
+      "attack_id": "T1027.004",
+      "title": "Compile After Delivery",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "4c58a9da-b55b-5a41-ab75-57763f9b9c1b",
+      "kind": "leaf",
+      "attack_id": "T1027.006",
+      "title": "HTML Smuggling",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "21a584ab-504c-52b1-b7b0-512f07cc4c2f",
+      "kind": "leaf",
+      "attack_id": "T1027.010",
+      "title": "Command Obfuscation",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "5afd8fff-405f-52ea-8037-6389f9b5f2c8",
+      "kind": "leaf",
+      "attack_id": "T1027.002",
+      "title": "Software Packing",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "1f4e6b33-6b87-5fd0-8998-9052c1105d8a",
+      "kind": "leaf",
+      "attack_id": "T1027.018",
+      "title": "Invisible Unicode",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "aacf110a-ca4f-5e67-aadf-81151011d207",
+      "kind": "leaf",
+      "attack_id": "T1027.007",
+      "title": "Dynamic API Resolution",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "cb266b24-fca7-5df7-a9fb-142b3665f6f9",
+      "kind": "leaf",
+      "attack_id": "T1027.015",
+      "title": "Compression",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "kind": "branch",
+      "attack_id": "T1574",
+      "title": "Hijack Execution Flow",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.4469
+    },
+    {
+      "id": "503148b2-d2c1-5b2b-9c05-e65a209d7728",
+      "kind": "leaf",
+      "attack_id": "T1574.007",
+      "title": "Path Interception by PATH Environment Variable",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "22288268-45df-5bf4-8245-8ced37590fc7",
+      "kind": "leaf",
+      "attack_id": "T1574.011",
+      "title": "Services Registry Permissions Weakness",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "0c173b92-88d2-53f3-9359-fe72845a6039",
+      "kind": "leaf",
+      "attack_id": "T1574.001",
+      "title": "DLL",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.4469
+    },
+    {
+      "id": "a6e5ca77-95e3-5efc-9d7f-cabdbdbb4f0d",
+      "kind": "leaf",
+      "attack_id": "T1574.014",
+      "title": "AppDomainManager",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "c3f2214f-4355-575a-9733-013a76b5cb42",
+      "kind": "leaf",
+      "attack_id": "T1574.008",
+      "title": "Path Interception by Search Order Hijacking",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "6d6c16fa-41f0-5ee4-a094-8223a41ce0c0",
+      "kind": "leaf",
+      "attack_id": "T1574.006",
+      "title": "Dynamic Linker Hijacking",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "ddf0f951-ceaf-54c0-bf33-1fe3d66cb867",
+      "kind": "leaf",
+      "attack_id": "T1574.005",
+      "title": "Executable Installer File Permissions Weakness",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "f323a1a9-7229-59e5-bc0d-6ffdfabc33ea",
+      "kind": "leaf",
+      "attack_id": "T1574.010",
+      "title": "Services File Permissions Weakness",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "72b541ce-3c9c-5abd-a913-09385924b1bc",
+      "kind": "leaf",
+      "attack_id": "T1574.013",
+      "title": "KernelCallbackTable",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "03a3bbfc-4266-58df-9eef-356e77545156",
+      "kind": "leaf",
+      "attack_id": "T1574.009",
+      "title": "Path Interception by Unquoted Path",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "55096b0f-dc52-5e26-af2d-adca9e7a4e9c",
+      "kind": "leaf",
+      "attack_id": "T1574.004",
+      "title": "Dylib Hijacking",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "928c90d3-b1ce-5274-b295-cf6ed580b4c8",
+      "kind": "leaf",
+      "attack_id": "T1574.012",
+      "title": "COR_PROFILER",
+      "tactic": [
+        "stealth",
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "72f654b3-dbb3-537f-8851-ba28a880e75d",
+      "kind": "branch",
+      "attack_id": "T1112",
+      "title": "Modify Registry",
+      "tactic": [
+        "defense-impairment",
+        "persistence"
+      ],
+      "criticality": 0.4358
+    },
+    {
+      "id": "8ee595ea-cb0d-5a45-a298-b518bb92ad72",
+      "kind": "branch",
+      "attack_id": "T1078",
+      "title": "Valid Accounts",
+      "tactic": [
+        "stealth",
+        "persistence",
+        "privilege-escalation",
+        "initial-access"
+      ],
+      "criticality": 0.3073
+    },
+    {
+      "id": "0d3d0c2c-17fb-5d15-85f0-3b285188fb1e",
+      "kind": "leaf",
+      "attack_id": "T1078.001",
+      "title": "Default Accounts",
+      "tactic": [
+        "stealth",
+        "persistence",
+        "privilege-escalation",
+        "initial-access"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "054ab1b7-0c3e-5311-9ed9-51644b7c3fc9",
+      "kind": "leaf",
+      "attack_id": "T1078.002",
+      "title": "Domain Accounts",
+      "tactic": [
+        "stealth",
+        "persistence",
+        "privilege-escalation",
+        "initial-access"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "9772fc4d-4eeb-55db-930a-bd31dde39320",
+      "kind": "leaf",
+      "attack_id": "T1078.004",
+      "title": "Cloud Accounts",
+      "tactic": [
+        "stealth",
+        "persistence",
+        "privilege-escalation",
+        "initial-access"
+      ],
+      "criticality": 0.2235
+    },
+    {
+      "id": "ca980205-1e47-5119-bf47-c1fefa94e54b",
+      "kind": "leaf",
+      "attack_id": "T1078.003",
+      "title": "Local Accounts",
+      "tactic": [
+        "stealth",
+        "persistence",
+        "privilege-escalation",
+        "initial-access"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "223a97ec-2175-5f1c-be9c-e535605f662c",
+      "kind": "branch",
+      "attack_id": "T1047",
+      "title": "Windows Management Instrumentation",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.2626
+    },
+    {
+      "id": "e7c56872-9770-5244-bbcd-2c4d84642881",
+      "kind": "branch",
+      "attack_id": "T1548",
+      "title": "Abuse Elevation Control Mechanism",
+      "tactic": [
+        "privilege-escalation"
+      ],
+      "criticality": 0.3128
+    },
+    {
+      "id": "4c0aa18d-3d46-537f-84e5-ba9228cd7977",
+      "kind": "leaf",
+      "attack_id": "T1548.002",
+      "title": "Bypass User Account Control",
+      "tactic": [
+        "privilege-escalation"
+      ],
+      "criticality": 0.3128
+    },
+    {
+      "id": "6c2c436f-d9cd-5698-8cc8-e615df583f37",
+      "kind": "leaf",
+      "attack_id": "T1548.003",
+      "title": "Sudo and Sudo Caching",
+      "tactic": [
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "f0e14a3e-194b-5a4a-9d59-b2917ea6f223",
+      "kind": "leaf",
+      "attack_id": "T1548.001",
+      "title": "Setuid and Setgid",
+      "tactic": [
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "11a081d0-da64-50c1-bf2d-904b1a992426",
+      "kind": "leaf",
+      "attack_id": "T1548.005",
+      "title": "Temporary Elevated Cloud Access",
+      "tactic": [
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "28a04ef7-6c05-50b9-8ac1-a1b00e0a9eaf",
+      "kind": "leaf",
+      "attack_id": "T1548.004",
+      "title": "Elevated Execution with Prompt",
+      "tactic": [
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "b14c9b95-03bb-543a-af96-6d1005c25466",
+      "kind": "leaf",
+      "attack_id": "T1548.006",
+      "title": "TCC Manipulation",
+      "tactic": [
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "kind": "branch",
+      "attack_id": "T1021",
+      "title": "Remote Services",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.2011
+    },
+    {
+      "id": "06ef9ade-ba5e-5cbf-a596-b03506b72685",
+      "kind": "leaf",
+      "attack_id": "T1021.005",
+      "title": "VNC",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "e30d631a-3259-55c4-b2f2-93c49738f646",
+      "kind": "leaf",
+      "attack_id": "T1021.004",
+      "title": "SSH",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "6b9fb0dd-be04-5aab-ba1c-07c2f77c5461",
+      "kind": "leaf",
+      "attack_id": "T1021.008",
+      "title": "Direct Cloud VM Connections",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "eaee1b97-035e-5ff4-80a9-0546c158a02a",
+      "kind": "leaf",
+      "attack_id": "T1021.002",
+      "title": "SMB/Windows Admin Shares",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.2011
+    },
+    {
+      "id": "af31e7c6-7fed-538f-8aa7-7d8525852ec8",
+      "kind": "leaf",
+      "attack_id": "T1021.006",
+      "title": "Windows Remote Management",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "69db6b83-552a-5a16-8d13-d53f8d231da1",
+      "kind": "leaf",
+      "attack_id": "T1021.003",
+      "title": "Distributed Component Object Model",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "7d6bcfbe-4911-5506-8522-5cf13d197935",
+      "kind": "leaf",
+      "attack_id": "T1021.007",
+      "title": "Cloud Services",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "9b066af4-48dd-5e6c-a5ae-fc6911a14ba1",
+      "kind": "leaf",
+      "attack_id": "T1021.001",
+      "title": "Remote Desktop Protocol",
+      "tactic": [
+        "lateral-movement"
+      ],
+      "criticality": 0.0838
+    },
+    {
+      "id": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "kind": "branch",
+      "attack_id": "T1053",
+      "title": "Scheduled Task/Job",
+      "tactic": [
+        "execution",
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.1732
+    },
+    {
+      "id": "0713bcc8-0998-553a-8ea5-0b6e57739c80",
+      "kind": "leaf",
+      "attack_id": "T1053.005",
+      "title": "Scheduled Task",
+      "tactic": [
+        "execution",
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.1732
+    },
+    {
+      "id": "95c2aa8c-08ee-5f97-81f6-0cf2a8f8a8a4",
+      "kind": "leaf",
+      "attack_id": "T1053.007",
+      "title": "Container Orchestration Job",
+      "tactic": [
+        "execution",
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "befe3272-0972-5f9e-aba5-b89a64b0908d",
+      "kind": "leaf",
+      "attack_id": "T1053.003",
+      "title": "Cron",
+      "tactic": [
+        "execution",
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "f21f2c5d-b67f-5318-a548-f9c33fb885a4",
+      "kind": "leaf",
+      "attack_id": "T1053.006",
+      "title": "Systemd Timers",
+      "tactic": [
+        "execution",
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "d64e1c5e-3845-5881-b6bc-23558dfc89c6",
+      "kind": "leaf",
+      "attack_id": "T1053.002",
+      "title": "At",
+      "tactic": [
+        "execution",
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "kind": "branch",
+      "attack_id": "T1547",
+      "title": "Boot or Logon Autostart Execution",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.1732
+    },
+    {
+      "id": "d240baaf-4dda-58ed-9162-00ece1a2f890",
+      "kind": "leaf",
+      "attack_id": "T1547.014",
+      "title": "Active Setup",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "9d5756e0-4259-5cce-8cb9-32759b4a325d",
+      "kind": "leaf",
+      "attack_id": "T1547.012",
+      "title": "Print Processors",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "3d8a449f-bb2c-586e-8d63-d5e398aaab99",
+      "kind": "leaf",
+      "attack_id": "T1547.010",
+      "title": "Port Monitors",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "7c86676a-3500-5f86-9e1c-b25c1d879d98",
+      "kind": "leaf",
+      "attack_id": "T1547.009",
+      "title": "Shortcut Modification",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "e2a1c7d7-6bfd-5162-bad2-4ba0617d9bac",
+      "kind": "leaf",
+      "attack_id": "T1547.005",
+      "title": "Security Support Provider",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "2584254e-1942-5990-89de-1ce1ff623da9",
+      "kind": "leaf",
+      "attack_id": "T1547.003",
+      "title": "Time Providers",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "205a2bb5-8c80-5ea5-b19d-1b642ce17be3",
+      "kind": "leaf",
+      "attack_id": "T1547.004",
+      "title": "Winlogon Helper DLL",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "b1fb5c83-a9d7-5b3a-aee4-41f6b9062cf1",
+      "kind": "leaf",
+      "attack_id": "T1547.015",
+      "title": "Login Items",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "3a0cd888-d411-5102-a95b-30f976963c56",
+      "kind": "leaf",
+      "attack_id": "T1547.001",
+      "title": "Registry Run Keys / Startup Folder",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.1732
+    },
+    {
+      "id": "bd1be60c-5318-55ce-b559-5a6e7b454390",
+      "kind": "leaf",
+      "attack_id": "T1547.006",
+      "title": "Kernel Modules and Extensions",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "3c6beceb-01c0-5177-89b2-3a3891293859",
+      "kind": "leaf",
+      "attack_id": "T1547.002",
+      "title": "Authentication Package",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "4b30a85b-e784-57a9-aa68-eb95ea008c87",
+      "kind": "leaf",
+      "attack_id": "T1547.013",
+      "title": "XDG Autostart Entries",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "fe5b58bb-7af7-5752-be31-7a71ff1337ae",
+      "kind": "leaf",
+      "attack_id": "T1547.007",
+      "title": "Re-opened Applications",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "54a8465a-da76-5243-8114-e1bb2120f080",
+      "kind": "leaf",
+      "attack_id": "T1547.008",
+      "title": "LSASS Driver",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "3c251760-e594-5a6b-a41e-16d9972ef98b",
+      "kind": "branch",
+      "attack_id": "T1560",
+      "title": "Archive Collected Data",
+      "tactic": [
+        "collection"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "a57e8bc6-768d-5653-b6ec-f36a33ab6a5f",
+      "kind": "leaf",
+      "attack_id": "T1560.001",
+      "title": "Archive via Utility",
+      "tactic": [
+        "collection"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "e3fb566a-c7a0-5e25-a7f0-b4d623478207",
+      "kind": "leaf",
+      "attack_id": "T1560.003",
+      "title": "Archive via Custom Method",
+      "tactic": [
+        "collection"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "93c71b1a-dfc9-574d-8367-0bc227d63d6f",
+      "kind": "leaf",
+      "attack_id": "T1560.002",
+      "title": "Archive via Library",
+      "tactic": [
+        "collection"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "kind": "branch",
+      "attack_id": "T1036",
+      "title": "Masquerading",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.2123
+    },
+    {
+      "id": "063b45bf-2634-572e-9046-0b5264c8ba81",
+      "kind": "leaf",
+      "attack_id": "T1036.007",
+      "title": "Double File Extension",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "1e59f2c3-3ef9-59bf-9b48-04325d882408",
+      "kind": "leaf",
+      "attack_id": "T1036.005",
+      "title": "Match Legitimate Resource Name or Location",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "ee7e7aff-ff67-5616-8206-2775ba60d915",
+      "kind": "leaf",
+      "attack_id": "T1036.008",
+      "title": "Masquerade File Type",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "5f8fb0ba-90c9-5966-9939-ba90957cb7cb",
+      "kind": "leaf",
+      "attack_id": "T1036.009",
+      "title": "Break Process Trees",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "468ff36e-b97b-581f-8e81-aa1c8a984052",
+      "kind": "leaf",
+      "attack_id": "T1036.011",
+      "title": "Overwrite Process Arguments",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "bfd5d708-8118-5d50-9ea0-d6de0d52267b",
+      "kind": "leaf",
+      "attack_id": "T1036.002",
+      "title": "Right-to-Left Override",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "5767a817-33dd-5d5c-87ea-c6756e7222d1",
+      "kind": "leaf",
+      "attack_id": "T1036.004",
+      "title": "Masquerade Task or Service",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "8213dd97-1c95-5361-9709-08432654afb6",
+      "kind": "leaf",
+      "attack_id": "T1036.012",
+      "title": "Browser Fingerprint",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "34d3e0a0-5946-56ef-ad8a-3579ab15afd2",
+      "kind": "leaf",
+      "attack_id": "T1036.001",
+      "title": "Invalid Code Signature",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "404856c4-3755-5651-9176-4a27bf016e24",
+      "kind": "leaf",
+      "attack_id": "T1036.003",
+      "title": "Rename Legitimate Utilities",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.1453
+    },
+    {
+      "id": "0cab78f4-b919-5ec7-9e4c-02c6ac2db8fa",
+      "kind": "leaf",
+      "attack_id": "T1036.010",
+      "title": "Masquerade Account Name",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "0c54e022-444f-5bd3-8f60-cc3d2042097b",
+      "kind": "leaf",
+      "attack_id": "T1036.006",
+      "title": "Space after Filename",
+      "tactic": [
+        "stealth"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "8cf104f5-1637-5ec8-b6e9-c44fb998592f",
+      "kind": "branch",
+      "attack_id": "T1543",
+      "title": "Create or Modify System Process",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.2123
+    },
+    {
+      "id": "c9803af8-d6b4-52fc-83a0-50fc53e28e4e",
+      "kind": "leaf",
+      "attack_id": "T1543.003",
+      "title": "Windows Service",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.2123
+    },
+    {
+      "id": "faadac16-c738-56ba-98b8-093c47ca4f29",
+      "kind": "leaf",
+      "attack_id": "T1543.004",
+      "title": "Launch Daemon",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "c1ce4b5a-b810-5bfd-b0e8-27f697d08097",
+      "kind": "leaf",
+      "attack_id": "T1543.005",
+      "title": "Container Service",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "2a9d870e-adfc-5ac4-932b-23eb09b596a4",
+      "kind": "leaf",
+      "attack_id": "T1543.001",
+      "title": "Launch Agent",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "fc80d8d7-8ddc-5271-af18-f96c91ab9a13",
+      "kind": "leaf",
+      "attack_id": "T1543.002",
+      "title": "Systemd Service",
+      "tactic": [
+        "persistence",
+        "privilege-escalation"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "a9798165-c35f-5b39-938e-f1031ef26575",
+      "kind": "branch",
+      "attack_id": "T1105",
+      "title": "Ingress Tool Transfer",
+      "tactic": [
+        "command-and-control"
+      ],
+      "criticality": 0.3911
+    },
+    {
+      "id": "6d85360b-3773-5b81-b9b7-edcc1d06a50e",
+      "kind": "branch",
+      "attack_id": "T1190",
+      "title": "Exploit Public-Facing Application",
+      "tactic": [
+        "initial-access"
+      ],
+      "criticality": 0.257
+    },
+    {
+      "id": "66301e49-9951-550d-b321-494c9b2b8f02",
+      "kind": "branch",
+      "attack_id": "T1071",
+      "title": "Application Layer Protocol",
+      "tactic": [
+        "command-and-control"
+      ],
+      "criticality": 0.1732
+    },
+    {
+      "id": "b2a600f4-168d-51d4-af7f-619b9de09c91",
+      "kind": "leaf",
+      "attack_id": "T1071.004",
+      "title": "DNS",
+      "tactic": [
+        "command-and-control"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "07c66952-b709-5a5c-a238-1370906523ea",
+      "kind": "leaf",
+      "attack_id": "T1071.005",
+      "title": "Publish/Subscribe Protocols",
+      "tactic": [
+        "command-and-control"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "30caeebb-6e1f-5ae2-9be6-2b516fb59ed4",
+      "kind": "leaf",
+      "attack_id": "T1071.003",
+      "title": "Mail Protocols",
+      "tactic": [
+        "command-and-control"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "c115df27-2dcf-5b89-ab51-84eaaa2c6ce0",
+      "kind": "leaf",
+      "attack_id": "T1071.002",
+      "title": "File Transfer Protocols",
+      "tactic": [
+        "command-and-control"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "58879e72-46a9-5024-b74f-2ea8a29437cc",
+      "kind": "leaf",
+      "attack_id": "T1071.001",
+      "title": "Web Protocols",
+      "tactic": [
+        "command-and-control"
+      ],
+      "criticality": 0.1732
+    },
+    {
+      "id": "1b0261ca-a477-58af-b6e4-bee0b127b9f9",
+      "kind": "branch",
+      "attack_id": "T1082",
+      "title": "System Information Discovery",
+      "tactic": [
+        "discovery"
+      ],
+      "criticality": 0.1732
+    },
+    {
+      "id": "f91eed72-7687-55bb-bfb5-d58f61953ae1",
+      "kind": "branch",
+      "attack_id": "T1569",
+      "title": "System Services",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.2179
+    },
+    {
+      "id": "3487ca0b-743c-585c-b7c8-587ca06c318f",
+      "kind": "leaf",
+      "attack_id": "T1569.003",
+      "title": "Systemctl",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "d7fe181a-fb7d-50f5-9f6e-00afb87578cc",
+      "kind": "leaf",
+      "attack_id": "T1569.001",
+      "title": "Launchctl",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.0
+    },
+    {
+      "id": "c8ee4f31-ee83-5e83-bc67-e8b87ed5f302",
+      "kind": "leaf",
+      "attack_id": "T1569.002",
+      "title": "Service Execution",
+      "tactic": [
+        "execution"
+      ],
+      "criticality": 0.2179
+    }
+  ],
+  "edges": [
+    {
+      "from_node": "71c14232-9d5d-5045-94a8-201134b8aebd",
+      "to_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "kind": "branch",
+      "criticality": 1.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "2f6cb4e3-cb84-58a7-85f9-0c30edf57701",
+      "kind": "leaf",
+      "criticality": 0.1173
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "ac007bc4-d4f7-5c57-91fa-fe15b6d000d0",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "bd3f11bd-70ea-5767-aeba-d25a41482a76",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "89239cc7-92bd-56a0-a96e-ac1f481567a8",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "204af90d-a2b5-5c10-aec2-5298d4208e55",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "cd57a786-24ac-518a-905c-6282f652c711",
+      "kind": "leaf",
+      "criticality": 1.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "e235e4cf-9be9-51a1-b1bd-53db63d65898",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "4f0f69ea-0881-5569-9d4b-f8c01c600149",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "a68562ad-2e7c-5365-9051-173d67f246f1",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "29482956-5bb5-5302-936a-42f7e1af645c",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "386854a3-78b2-5161-b47e-9d2441a9dd27",
+      "kind": "leaf",
+      "criticality": 0.1508
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "bfdeca3a-db8c-5dd0-9b70-57863a73f03e",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "0c2b700d-d084-5cd5-8b93-3b2d95efce53",
+      "to_node": "40094f87-6f33-5610-bdc9-8a72cf5ab8f9",
+      "kind": "leaf",
+      "criticality": 0.1285
+    },
+    {
+      "from_node": "3bf09709-8f18-50a0-b28c-2ffaf4385ff4",
+      "to_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "kind": "branch",
+      "criticality": 0.4078
+    },
+    {
+      "from_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "to_node": "2320f911-abcb-5a67-8781-ab9772e20ee6",
+      "kind": "leaf",
+      "criticality": 0.1564
+    },
+    {
+      "from_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "to_node": "bf4d1baa-e3c2-5eba-a676-375620d2888a",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "to_node": "233447a8-9e99-557e-9b6b-35be9fb6f21b",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "to_node": "a1914dd9-d7f8-5b8e-973c-234a2610676b",
+      "kind": "leaf",
+      "criticality": 0.4078
+    },
+    {
+      "from_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "to_node": "2151785d-8ff5-5320-a429-f70bc27079cd",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "to_node": "92998448-a9b5-522a-b424-d4e9ddbd9c94",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "to_node": "12f32370-95b4-5c89-8fe4-6d48d2882bcb",
+      "kind": "leaf",
+      "criticality": 0.1285
+    },
+    {
+      "from_node": "067565f4-100e-52cc-a1bb-c03e588790dd",
+      "to_node": "a574fef2-ab67-5b8e-9793-4b849c022e19",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "22f21f86-bd0d-5395-a208-0394cc8de16b",
+      "kind": "leaf",
+      "criticality": 0.1508
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "d6d963ab-1e77-51ad-8f71-c5b42321d7b2",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "6c37d2e9-1f80-53f7-b2ed-fba26ebbbf4a",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "069896f9-244b-5f63-a9b8-d539cbbafaf7",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "d08471fd-c88d-5a44-89d5-1772adbc6600",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "11e92e65-2581-5063-8d8b-7998aebf1cdd",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "414df18a-1834-559d-a83c-005e074b1ebc",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "193c0e87-f4f9-5d2d-815c-2c5458f3a0e3",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "8efede35-1af8-5fa6-a30e-559562840144",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "bff824d6-7afa-59f2-8833-caf0e2003b0b",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "832ccd98-2406-5a7d-b9c6-f4eaa8a52dbe",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "838030dd-0b44-590c-8f58-958e473be722",
+      "kind": "leaf",
+      "criticality": 0.095
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "9589ad5a-e64d-5508-a65c-45b23b3d8a27",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "5aeca14a-d6c5-5345-ba19-3c5e4458f53b",
+      "to_node": "73c35eec-04b1-51c9-a5ed-0cd6c32d8e88",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "2fe433b4-62b2-56e6-b5c3-a5bc5240ecd0",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "086e9e24-9b08-5777-af7c-11fbef4c3ee7",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "636853ef-1eb8-5c37-8202-14ff02bad5c9",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "79015cf0-4c2e-50a1-bb0e-8c7eca951e6e",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "afece8d7-5b30-51b9-bade-28af67887b3f",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "bc1decc8-532f-513d-8b57-a58e713497db",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "9396177a-79ab-5c8b-9362-52ea60e5de42",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "1e5fb8cf-2c2c-5dbc-a76f-335565813d93",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "98b2c1a7-1030-56f3-8ca2-3cb0e4d54a42",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "9f3592a3-0539-5d44-a3ef-d8ecf2759a44",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "0dad787d-c25d-55cb-9abf-22d830098da6",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "f22c202f-baa2-51c7-b7dc-07fb632b6627",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "4c58a9da-b55b-5a41-ab75-57763f9b9c1b",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "21a584ab-504c-52b1-b7b0-512f07cc4c2f",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "5afd8fff-405f-52ea-8037-6389f9b5f2c8",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "1f4e6b33-6b87-5fd0-8998-9052c1105d8a",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "aacf110a-ca4f-5e67-aadf-81151011d207",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2e8640ac-ab5c-5d67-a0b0-b62bda1b9f63",
+      "to_node": "cb266b24-fca7-5df7-a9fb-142b3665f6f9",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "71c14232-9d5d-5045-94a8-201134b8aebd",
+      "to_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "kind": "branch",
+      "criticality": 0.4469
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "503148b2-d2c1-5b2b-9c05-e65a209d7728",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "22288268-45df-5bf4-8245-8ced37590fc7",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "0c173b92-88d2-53f3-9359-fe72845a6039",
+      "kind": "leaf",
+      "criticality": 0.4469
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "a6e5ca77-95e3-5efc-9d7f-cabdbdbb4f0d",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "c3f2214f-4355-575a-9733-013a76b5cb42",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "6d6c16fa-41f0-5ee4-a094-8223a41ce0c0",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "ddf0f951-ceaf-54c0-bf33-1fe3d66cb867",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "f323a1a9-7229-59e5-bc0d-6ffdfabc33ea",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "72b541ce-3c9c-5abd-a913-09385924b1bc",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "03a3bbfc-4266-58df-9eef-356e77545156",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "55096b0f-dc52-5e26-af2d-adca9e7a4e9c",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e8cc1e1e-c37e-5c1e-ac43-c2fe14d3d28e",
+      "to_node": "928c90d3-b1ce-5274-b295-cf6ed580b4c8",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "ae36c54f-ed9b-5dd0-89f4-7b8c4ab934c1",
+      "to_node": "72f654b3-dbb3-537f-8851-ba28a880e75d",
+      "kind": "branch",
+      "criticality": 0.4358
+    },
+    {
+      "from_node": "ae36c54f-ed9b-5dd0-89f4-7b8c4ab934c1",
+      "to_node": "8ee595ea-cb0d-5a45-a298-b518bb92ad72",
+      "kind": "branch",
+      "criticality": 0.3073
+    },
+    {
+      "from_node": "751ea869-231f-5bdd-a556-ee035e3dbbce",
+      "to_node": "8ee595ea-cb0d-5a45-a298-b518bb92ad72",
+      "kind": "branch",
+      "criticality": 0.3073
+    },
+    {
+      "from_node": "798cabf0-355e-5cb7-b6f1-39f9986ab2e9",
+      "to_node": "8ee595ea-cb0d-5a45-a298-b518bb92ad72",
+      "kind": "branch",
+      "criticality": 0.3073
+    },
+    {
+      "from_node": "8ee595ea-cb0d-5a45-a298-b518bb92ad72",
+      "to_node": "0d3d0c2c-17fb-5d15-85f0-3b285188fb1e",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "8ee595ea-cb0d-5a45-a298-b518bb92ad72",
+      "to_node": "054ab1b7-0c3e-5311-9ed9-51644b7c3fc9",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "8ee595ea-cb0d-5a45-a298-b518bb92ad72",
+      "to_node": "9772fc4d-4eeb-55db-930a-bd31dde39320",
+      "kind": "leaf",
+      "criticality": 0.2235
+    },
+    {
+      "from_node": "8ee595ea-cb0d-5a45-a298-b518bb92ad72",
+      "to_node": "ca980205-1e47-5119-bf47-c1fefa94e54b",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "71c14232-9d5d-5045-94a8-201134b8aebd",
+      "to_node": "223a97ec-2175-5f1c-be9c-e535605f662c",
+      "kind": "branch",
+      "criticality": 0.2626
+    },
+    {
+      "from_node": "751ea869-231f-5bdd-a556-ee035e3dbbce",
+      "to_node": "e7c56872-9770-5244-bbcd-2c4d84642881",
+      "kind": "branch",
+      "criticality": 0.3128
+    },
+    {
+      "from_node": "e7c56872-9770-5244-bbcd-2c4d84642881",
+      "to_node": "4c0aa18d-3d46-537f-84e5-ba9228cd7977",
+      "kind": "leaf",
+      "criticality": 0.3128
+    },
+    {
+      "from_node": "e7c56872-9770-5244-bbcd-2c4d84642881",
+      "to_node": "6c2c436f-d9cd-5698-8cc8-e615df583f37",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e7c56872-9770-5244-bbcd-2c4d84642881",
+      "to_node": "f0e14a3e-194b-5a4a-9d59-b2917ea6f223",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e7c56872-9770-5244-bbcd-2c4d84642881",
+      "to_node": "11a081d0-da64-50c1-bf2d-904b1a992426",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e7c56872-9770-5244-bbcd-2c4d84642881",
+      "to_node": "28a04ef7-6c05-50b9-8ac1-a1b00e0a9eaf",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "e7c56872-9770-5244-bbcd-2c4d84642881",
+      "to_node": "b14c9b95-03bb-543a-af96-6d1005c25466",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "eb3f3c80-5477-5701-976a-cf74a43e9d24",
+      "to_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "kind": "branch",
+      "criticality": 0.2011
+    },
+    {
+      "from_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "to_node": "06ef9ade-ba5e-5cbf-a596-b03506b72685",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "to_node": "e30d631a-3259-55c4-b2f2-93c49738f646",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "to_node": "6b9fb0dd-be04-5aab-ba1c-07c2f77c5461",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "to_node": "eaee1b97-035e-5ff4-80a9-0546c158a02a",
+      "kind": "leaf",
+      "criticality": 0.2011
+    },
+    {
+      "from_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "to_node": "af31e7c6-7fed-538f-8aa7-7d8525852ec8",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "to_node": "69db6b83-552a-5a16-8d13-d53f8d231da1",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "to_node": "7d6bcfbe-4911-5506-8522-5cf13d197935",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0533105-7c77-5abf-8220-d5efd593f223",
+      "to_node": "9b066af4-48dd-5e6c-a5ae-fc6911a14ba1",
+      "kind": "leaf",
+      "criticality": 0.0838
+    },
+    {
+      "from_node": "71c14232-9d5d-5045-94a8-201134b8aebd",
+      "to_node": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "kind": "branch",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "ae36c54f-ed9b-5dd0-89f4-7b8c4ab934c1",
+      "to_node": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "kind": "branch",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "751ea869-231f-5bdd-a556-ee035e3dbbce",
+      "to_node": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "kind": "branch",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "to_node": "0713bcc8-0998-553a-8ea5-0b6e57739c80",
+      "kind": "leaf",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "to_node": "95c2aa8c-08ee-5f97-81f6-0cf2a8f8a8a4",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "to_node": "befe3272-0972-5f9e-aba5-b89a64b0908d",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "to_node": "f21f2c5d-b67f-5318-a548-f9c33fb885a4",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f878ee30-4250-5f7b-b181-dbce06f2c4a5",
+      "to_node": "d64e1c5e-3845-5881-b6bc-23558dfc89c6",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "ae36c54f-ed9b-5dd0-89f4-7b8c4ab934c1",
+      "to_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "kind": "branch",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "751ea869-231f-5bdd-a556-ee035e3dbbce",
+      "to_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "kind": "branch",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "d240baaf-4dda-58ed-9162-00ece1a2f890",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "9d5756e0-4259-5cce-8cb9-32759b4a325d",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "3d8a449f-bb2c-586e-8d63-d5e398aaab99",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "7c86676a-3500-5f86-9e1c-b25c1d879d98",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "e2a1c7d7-6bfd-5162-bad2-4ba0617d9bac",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "2584254e-1942-5990-89de-1ce1ff623da9",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "205a2bb5-8c80-5ea5-b19d-1b642ce17be3",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "b1fb5c83-a9d7-5b3a-aee4-41f6b9062cf1",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "3a0cd888-d411-5102-a95b-30f976963c56",
+      "kind": "leaf",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "bd1be60c-5318-55ce-b559-5a6e7b454390",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "3c6beceb-01c0-5177-89b2-3a3891293859",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "4b30a85b-e784-57a9-aa68-eb95ea008c87",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "fe5b58bb-7af7-5752-be31-7a71ff1337ae",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f0cbd2ed-22c5-5d5f-9d1a-31a0593e897b",
+      "to_node": "54a8465a-da76-5243-8114-e1bb2120f080",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c9855ccd-1bc6-5771-a60e-e152ee6b2364",
+      "to_node": "3c251760-e594-5a6b-a41e-16d9972ef98b",
+      "kind": "branch",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "3c251760-e594-5a6b-a41e-16d9972ef98b",
+      "to_node": "a57e8bc6-768d-5653-b6ec-f36a33ab6a5f",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "3c251760-e594-5a6b-a41e-16d9972ef98b",
+      "to_node": "e3fb566a-c7a0-5e25-a7f0-b4d623478207",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "3c251760-e594-5a6b-a41e-16d9972ef98b",
+      "to_node": "93c71b1a-dfc9-574d-8367-0bc227d63d6f",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "063b45bf-2634-572e-9046-0b5264c8ba81",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "1e59f2c3-3ef9-59bf-9b48-04325d882408",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "ee7e7aff-ff67-5616-8206-2775ba60d915",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "5f8fb0ba-90c9-5966-9939-ba90957cb7cb",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "468ff36e-b97b-581f-8e81-aa1c8a984052",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "bfd5d708-8118-5d50-9ea0-d6de0d52267b",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "5767a817-33dd-5d5c-87ea-c6756e7222d1",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "8213dd97-1c95-5361-9709-08432654afb6",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "34d3e0a0-5946-56ef-ad8a-3579ab15afd2",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "404856c4-3755-5651-9176-4a27bf016e24",
+      "kind": "leaf",
+      "criticality": 0.1453
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "0cab78f4-b919-5ec7-9e4c-02c6ac2db8fa",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "c8091edb-ec80-50f9-b8a9-9da81c4d3fc8",
+      "to_node": "0c54e022-444f-5bd3-8f60-cc3d2042097b",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "ae36c54f-ed9b-5dd0-89f4-7b8c4ab934c1",
+      "to_node": "8cf104f5-1637-5ec8-b6e9-c44fb998592f",
+      "kind": "branch",
+      "criticality": 0.2123
+    },
+    {
+      "from_node": "751ea869-231f-5bdd-a556-ee035e3dbbce",
+      "to_node": "8cf104f5-1637-5ec8-b6e9-c44fb998592f",
+      "kind": "branch",
+      "criticality": 0.2123
+    },
+    {
+      "from_node": "8cf104f5-1637-5ec8-b6e9-c44fb998592f",
+      "to_node": "c9803af8-d6b4-52fc-83a0-50fc53e28e4e",
+      "kind": "leaf",
+      "criticality": 0.2123
+    },
+    {
+      "from_node": "8cf104f5-1637-5ec8-b6e9-c44fb998592f",
+      "to_node": "faadac16-c738-56ba-98b8-093c47ca4f29",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "8cf104f5-1637-5ec8-b6e9-c44fb998592f",
+      "to_node": "c1ce4b5a-b810-5bfd-b0e8-27f697d08097",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "8cf104f5-1637-5ec8-b6e9-c44fb998592f",
+      "to_node": "2a9d870e-adfc-5ac4-932b-23eb09b596a4",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "8cf104f5-1637-5ec8-b6e9-c44fb998592f",
+      "to_node": "fc80d8d7-8ddc-5271-af18-f96c91ab9a13",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "2bac7c27-4bea-5309-8c4c-a755a365eb43",
+      "to_node": "a9798165-c35f-5b39-938e-f1031ef26575",
+      "kind": "branch",
+      "criticality": 0.3911
+    },
+    {
+      "from_node": "798cabf0-355e-5cb7-b6f1-39f9986ab2e9",
+      "to_node": "6d85360b-3773-5b81-b9b7-edcc1d06a50e",
+      "kind": "branch",
+      "criticality": 0.257
+    },
+    {
+      "from_node": "2bac7c27-4bea-5309-8c4c-a755a365eb43",
+      "to_node": "66301e49-9951-550d-b321-494c9b2b8f02",
+      "kind": "branch",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "66301e49-9951-550d-b321-494c9b2b8f02",
+      "to_node": "b2a600f4-168d-51d4-af7f-619b9de09c91",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "66301e49-9951-550d-b321-494c9b2b8f02",
+      "to_node": "07c66952-b709-5a5c-a238-1370906523ea",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "66301e49-9951-550d-b321-494c9b2b8f02",
+      "to_node": "30caeebb-6e1f-5ae2-9be6-2b516fb59ed4",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "66301e49-9951-550d-b321-494c9b2b8f02",
+      "to_node": "c115df27-2dcf-5b89-ab51-84eaaa2c6ce0",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "66301e49-9951-550d-b321-494c9b2b8f02",
+      "to_node": "58879e72-46a9-5024-b74f-2ea8a29437cc",
+      "kind": "leaf",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "b70b66ec-984e-5be9-bf86-c4525c13e8d5",
+      "to_node": "1b0261ca-a477-58af-b6e4-bee0b127b9f9",
+      "kind": "branch",
+      "criticality": 0.1732
+    },
+    {
+      "from_node": "71c14232-9d5d-5045-94a8-201134b8aebd",
+      "to_node": "f91eed72-7687-55bb-bfb5-d58f61953ae1",
+      "kind": "branch",
+      "criticality": 0.2179
+    },
+    {
+      "from_node": "f91eed72-7687-55bb-bfb5-d58f61953ae1",
+      "to_node": "3487ca0b-743c-585c-b7c8-587ca06c318f",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f91eed72-7687-55bb-bfb5-d58f61953ae1",
+      "to_node": "d7fe181a-fb7d-50f5-9f6e-00afb87578cc",
+      "kind": "leaf",
+      "criticality": 0.0
+    },
+    {
+      "from_node": "f91eed72-7687-55bb-bfb5-d58f61953ae1",
+      "to_node": "c8ee4f31-ee83-5e83-bc67-e8b87ed5f302",
+      "kind": "leaf",
+      "criticality": 0.2179
+    }
+  ]
+}

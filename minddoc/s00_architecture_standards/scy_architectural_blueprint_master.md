@@ -1,3 +1,10 @@
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+Standards architecturaux — ajouter section beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🏗️ SCY FORGE ARCHITECTURAL BLUEPRINT MASTER (v3.5)
 **Document ID** : ARCH-BLUEPRINT-MASTER-V3.5  
 **Date** : 2026-06-12  
@@ -6,14 +13,40 @@
 
 ---
 
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
+
 ## 🧭 Table des Matières
 1. [Introduction : La Constitution de Production de SCY Forge](#1-intro)
-2. [Section 1 : Les 18 Décisions Fondamentales d'Architecture](#2-fondamentales)
-3. [Section 2 : Les 15 Patterns de Résilience et Robustesse SRE](#3-resilience)
-4. [Section 3 : Les Spécifications Techniques d'ASCENT Pipeline v2](#4-ascent)
-5. [Section 4 : Les Spécifications Techniques de NEURON-CHAINS v2](#5-neuron)
-6. [Section 5 : L'Architecture Visuelle de Rendu SCY-COSMOS v4.5](#6-scy_cosmos_visualization_engine)
-7. [Section 6 : Les Compléments d'Optimisation, Neurosciences et API (MIA v3.5)](#7-opt)
+2. [Section 1 : Les 22 Décisions Fondamentales d'Architecture](#2-fondamentales)
+3. [Section 1bis : Pivot Cyber Beachhead — Décisions de Révision](#2bis-pivot)
+4. [Section 1ter : Generative Forest Engine (GFE) — Le Moteur de Créativité Générative](#2ter-gfe)
+5. [Section 2 : Les 15 Patterns de Résilience et Robustesse SRE](#3-resilience)
+6. [Section 3 : ASCENT Pipeline Plan C — 13 Agents Génériques](#4-ascent)
+7. [Section 4 : COSMOS 4 Modes Cyber](#5-cosmos)
+8. [Section 5 : NEURON-CHAINS — DIFFÉRÉ Post-MVP (B2C)](#6-neuron)
+9. [Section 6 : APIs, Intégrations et Stratégie LLM](#7-opt)
 
 ---
 
@@ -46,10 +79,352 @@ Ce document est la **référence suprême et immuable** régissant l'intégralit
 | **D-016** | **Specification Pattern** | Utilisation de filtres de requêtes composables et typés en Rust pour extraire les cartes APEX dues selon des critères d'urgences variables. | V1 |
 | **D-017** | **Reactive Streams** | Gestion de la pression de retour (Backpressure) lors de l'ingestion massive de flux (transcriptions de vidéos ou de fils Reddit) pour éviter la saturation mémoire. | MVP |
 | **D-018** | **Observability as Code** | Toutes les métriques d'apprentissage, d'accès et d'erreurs logiques d'agents sont structurées et typées, interdisant les logs de texte libre non structurés. | MVP |
+| **D-019** | **DCID — Domain Contract Interface Definition** | Le core SCYForge est **agnostic au domaine métier**. Le trait `SemanticTreeProvider` (Rust) est le **seul pont** entre le core et les domain packs (cyber, finance, santé). Aucun terme métier cyber/medical/finance n'existe dans le core. | MVP |
+| **D-020** | **Domain Pack Contract** | Chaque domain pack implémente **9 providers canoniques** : `SemanticTreeProvider` (PRIMARY, obligatoire), `OntologyProvider`, `CorpusProvider`, `RoleTaxonomyProvider`, `DecisionScenarioProvider`, `ProofRubricProvider`, `RetentionPolicyProvider`, `ValidationGuardProvider`, **`PackConfigProvider`**, **`PackJsonSchemaProvider`**. Les 2 derniers gèrent : (1) la config pack-définie (mastery thresholds, SMI weights, Helm axes, criticality formula), (2) la validation optionnelle du JSONB custom (None = accept-all, pas de rejet). | Phase 2 |
+| **D-021** | **Generative Forest Engine (GFE)** | **3ème pilier** de SCY Forge. Produit des Seeds (extensions, reconversions, innovations) via Pollination + Seed + Germination. Sur le cyber beachhead M0-M36 : mode observatoire (pollinisation intra-domaine MITRE, Seeds stockées, pas de germination auto). Post-MVP M36+ : mode expansion (cross-pollination inter-STB + germination auto). Métaphore : forêt générative gouvernée par un Vision Helm. Documents fondateurs : `SCYFORGE_GENERATIVE_TREE_POLLINATION_SEED.md`, `SCYFORGE_GENERATIVE_ENGINE_LOGICAL_MODEL.md`, `SCYFORGE_GENERATIVE_ENGINE_MATH_FORMALIZATION.md`. | MVP (observatoire) |
+| **D-022** | **Seed Traceability (PROV + Bitemporal)** | Toute Seed est traçable via W3C PROV-DM (`wasDerivedFrom`, `wasGeneratedBy`) + bitemporel (event time + ingestion time). La lignée est immuable → décision incontestable. Inclut : machine à états (POLLINATED → VIABLE → GERMINATING / DORMANT), 4 conditions L1-L4, scoring Viability/Fecundity/PlantScore. | MVP (observatoire) |
+| **D-023** | **Domain Pack = Médiateur, pas Curriculum** | Le Domain Pack ne définit PAS ce que l'apprenant doit savoir (ça appartient à l'entreprise). Il est le **médiateur** qui structure, aligne et traduit le savoir de l'entreprise en parcours de maîtrise mesurable. Deux sources de vérité : (1) QUOI = documents de l'entreprise (source primaire authoritative), (2) COMMENT = le pack (ontologie, grammaire arbre/feuilles, rubriques, garde-fous). Si conflit → l'entreprise gagne. Sans corpus entreprise → pas de curriculum. Test de médiation : « Si je retire le corpus de l'entreprise, reste-t-il un curriculum ? » → Non, et c'est voulu. | MVP |
+| **D-024** | **Principe Fondateur — Extensibilité par Conception** | **Le core est un squelette générique sans mémoire métier ; la connaissance, les règles et les seuils vivent dans les packs.** Aucun terme métier, aucune règle de domaine, aucun seuil (mastery_threshold, weights, helm_axes, criticality_formula) n'est hardcodé dans le core. L'absence de config pack → `MissingPackConfig` error, jamais de fallback silencieux. Un nouveau domaine = un nouveau pack, **zéro réécriture du noyau**. Ce principe surpasse toutes les décisions D-001 à D-022 en cas de conflit. | MVP |
+| **D-025** | **Loop Engineering — Grammaire de Conception Transverse** | L'autonomie est structurée en 4 boucles imbriquées : Micro (output/input ≥ seuil), Méso (Plant→Graft→Test→Myelinate ; SMI ≥ threshold), Macro (coverage ≥ 0.80 + enveloppe validée), Outcome (écart preuve↔réalité sous tolérance). Chaque agent ASCENT opère dans au moins une boucle. | MVP |
+| **D-026** | **Cognitive Runtime Policies — Protection de l'Apprenant** | 5 policies traversent ASCENT et le Semantic Tree : OutputPressurePolicy, CognitiveFrictionPolicy, ConsolidationWindowPolicy, SparringPolicy, SemanticTreePriorityPolicy. Tous les seuils sont pack-définis via `PackConfigProvider`. Aucun seuil hardcodé dans le core. Events : `OutputPressureApplied`, `FrictionAdjusted`, `ConsolidationWindowStarted`, `SparringModeActivated`, `SemanticTreePriorityEnforced`. | MVP |
 
 ---
 
-## 3. Section 2 : Les 15 Patterns de Résilience et Robustesse SRE {#3-resilience}
+## 2bis. Pivot Cyber Beachhead — Décisions de Révision {#2bis-pivot}
+
+> **[PIVOT-BEACHHEAD v2.0 — 2026-07-01]** Cette section fige les décisions de révision architecturales issues du pivot Cyber SOC/Blue-Team.
+> Toute décision future qui contredit cette section est une **violation du contrat d'architecture**.
+
+### 2bis.1 Features DIFFÉRÉES — Court Terme (B2B SOC/Cyber) vs Long Terme (B2C Grand Public)
+
+> **[PIVOT]** Rien n'est éliminé. Toutes les features sont **reclassées** selon le marché cible et le timeline.
+> Le B2B SOC/Cyber est le **court terme** (M0-M36). Le B2C est le **long terme** (M36+).
+
+#### Court Terme (B2B SOC/Cyber) — IN_MVP ou Phase 2/3
+
+| Feature | Statut court terme | Raison |
+|---------|-------------------|--------|
+| **Semantic Tree + DCID** | ✅ IN_MVP | Core agnostic, pont domain packs |
+| **Domain Pack Cyber (MITRE)** | ✅ IN_MVP | Contenu pré-généré, $0 LLM |
+| **ASCENT Plan C (13 agents)** | ✅ IN_MVP | Refactorisé via SemanticTreeProvider |
+| **COSMOS 4 modes cyber** | ✅ IN_MVP | Mission Tree, SMI Radar, Threat Terrain, Tactical Zoom |
+| **APEX B11-B14** | ✅ IN_MVP | Cartes cyber (IOC, Kill Chain, Chain-of-Custody) |
+| **Tactical AI** | ✅ IN_MVP | DeepSeek V4 Free ($0) |
+| **SOC Manager Dashboard** | ✅ IN_MVP | Coverage, Gap Detection, Readiness Report |
+| **Role-Based Onboarding** | ✅ IN_MVP | SOC L1/L2/DFIR en <5min |
+| **Proof of Skill cert** | ✅ IN_MVP | Manager sign-off workflow |
+| **COSMOS Mode 3D** | Phase 2 | 4 modes 2D suffisent MVP |
+| **COSMOS modes 22 autres** | Phase 3 | 26 modes → 4 puis expansion |
+| **FSRS scheduler avancé** | Phase 2 | Simplifié SM-2-like pour MVP |
+| **BRAIN RAG triples** | Phase 2 | BM25 seulement pour MVP |
+| **Sector Pack Builder** | Phase 1 (Corporate) | RSSI ajoute règles HDS/PCI-DSS/NIS2 |
+| **Phishing Simulator** | Phase 1 (Corporate) | Formation tous-employés |
+| **Compliance Mapping** | Phase 1 (Corporate) | MITRE → contrôles sectoriels |
+
+#### Long Terme (B2C Grand Public) — M36+
+
+| Feature | Statut long terme | Marché B2C |
+|---------|-------------------|-----------|
+| **Normal Mode** (consumer ingestion) | ✅ B2C | Étudiant, professionnel, autodidacte — ingestion libre |
+| **B2B Creator Console** | ✅ B2C → B2B2C | Créateurs de contenu (formateurs, auteurs) publient des parcours |
+| **Finance Suite** (Yahoo Finance, etc.) | ✅ B2C | Investisseur retail, trader, étudiant finance |
+| **IMPRINT** (registres cognitifs) | ✅ B2C | Mémorisation profonde pour étudiants, chercheurs |
+| **NEURON-CHAINS** (7 chaînes LLM) | ✅ B2C | Génération de contenu à la volée pour apprenants individuels |
+| **ARENA** (roleplay Full-AI générique) | ✅ B2C | Pratique conversationnelle : négociation, prise de parole, entretien |
+| **CHRONICLE** (coéquipier quotidien) | ✅ B2C | Accompagnement quotidien pour apprenants grand public |
+| **11 Ingestion Cores** (YouTube, Reddit, etc.) | ✅ B2C | Sources infinies pour apprenants individuels |
+| **Reader Suite + IMPRINT inline** | ✅ B2C | Lecture enrichie pour étudiants |
+| **Stripe consumer billing** | ✅ B2C | Free/Lite/Pro/Ultra tiers pour consommateurs |
+| **BRAIN triple retrieval** | ✅ B2C | RAG avancé pour questions libres |
+
+> **Principe** : Le B2C n'est JAMAIS éliminé. Il est **repoussé** car :
+> 1. Le B2B SOC/Cyber a une douleur plus urgente et un ACV plus élevé
+> 2. Le B2C nécessite NEURON-CHAINS + ingestion cores → $0 LLM en B2B pré-généré, mais nécessaire en B2C
+> 3. Le B2C est le **mass market** qui validera la scale et le brand SCY Forge
+
+### 2bis.3 DCID — Invariants Deux Marchés
+
+| Invariant | Règle | Violation = |
+|-----------|-------|------------|
+| **Core agnostic** | Le cœur Rust/TS ne contient **aucun terme métier cyber en dur** (pas de "MITRE", "SOC", "Sigma", "CVE") | Arrêt build |
+| **Pack isolation** | Tout contenu cyber vit dans `packs/cyber/` | Arrêt build |
+| **SemanticTreeProvider** | Seul trait pont entre core et packs | Violation contrat DCID |
+| **MASTERY_THRESHOLD** | **Pack-défini uniquement**. Le core ne connaît aucun seuil. Absence de config → `MissingPackConfig` error, jamais de fallback silencieux. Le pack cyber définit 0.70 | Violation contrat DCID (D-024) |
+| **Pack ingestion = $0 LLM** | Toute ingestion de pack NE nécessite pas d'appel LLM | Violation budget |
+| **Role subtree mandatory** | Tout learner DOIT avoir un role_subtree avant onboarding | Violation RBAC |
+| **RLS par organization_id** | Toutes les tables filter par `organization_id` | Fuite cross-tenant |
+| **Sector pack = MITRE + rules** | Un sector pack = MITRE ATT&CK + règles sectorielles (HDS, PCI-DSS, NIS2) injectées via DCID | Violation monopole sectoriel |
+
+### 2bis.4 Pricing — Deux Marchés Cumulés
+
+| Tier | Prix/an | Cible Pure-Player | Cible Corporate | Inclus |
+|------|---------|-------------------|-----------------|--------|
+| **Trial** | 0 $ (30j) | 5 analysts | 3 analysts | 1 pack MITRE, 1 secteur |
+| **Team** | 5 000 $ | 5-20 analysts | 5 analysts | MITRE + 1 secteur, Manager dashboard |
+| **Enterprise** | 25 000 $ | 20-100 analysts | 50+ analysts | Multi-pack, SSO/SAML, analytics avancés |
+| **Industry** | 50 000 $+ | — | RSSI + tous employés | Custom sector pack + B2B2C deployment |
+| **Government** | Custom | Secteur public | Secteur public | On-prem, FedRAMP, custom ontology |
+
+> **MRR cible M6** : 50 K$ (100 SOCs × 5 analysts avg × mix Trial/Team/Enterprise)
+> **MRR cible M18** : 200 K$ (ajout Corporate : 20 entreprises × 25K$ Industry tier)
+
+### 2bis.5 Personas Cyber Beachhead (Seules autorisées)
+
+| ID | Persona | Rôle | Tactics Core | Phase |
+|----|---------|------|-------------|-------|
+| **P-SOC1** | SOC Analyst L1 | Monitoring, alert triage, IOC identification | 6 tactics (TA0001-TA0006) | MVP |
+| **P-SOC2** | SOC Analyst L2 | Threat hunting, incident response, playbook execution | 10 tactics (TA0001-TA0010) | MVP |
+| **P-DFIR** | Digital Forensic Investigator | Forensic analysis, chain-of-custody, malware analysis | 14 tactics (all) | MVP |
+| **P-SEL** | Security Enablement Lead | Team training, gap analysis, readiness reporting | All + manager view | MVP |
+| **P-RSSI** *(PEAK)* | RSSI / Security Manager (corporate non-tech) | Former équipe minuscule + prouver compliance | All + sector rules | Phase 1 |
+| **P-JUNIOR** *(PEAK)* | Junior Cyber Analyst (corporate non-tech) | Autonomie rapide sans mentor senior | role_subtree adapté | Phase 1 |
+| **P-ITM** *(PEAK)* | IT Manager avec sécurité (non-cyber) | Comprendre et appliquer règles sécurité | Subtree compliance-only | Phase 1 |
+
+> Toute persona générique (Étudiant Tech, Professionnel Veille, etc.) est **éliminée** du beachhead.
+> Les personas PEAK-OPPORTUNITY (P-RSSI, P-JUNIOR, P-ITM) sont le **multiplicateur x10** — corporate non-tech (banques, hôpitaux, usines, retail).
+
+---
+
+## 1ter. Generative Forest Engine (GFE) — Le Moteur de Créativité Générative {#2ter-gfe}
+
+> **[PIVOT-GFE]** SCY Forge ne fait PAS « un moteur d'insights de plus ». Elle produit des **graines plantables**, pas des insights.
+> Le GFE est le **troisième pilier** de SCY Forge : après le Semantic Tree (Pilier 1) et l'ASCENT Pipeline (Pilier 2), la Forêt Générative permet à l'entreprise de **créer du nouveau** à partir de son savoir privé.
+
+### D-021 — Generative Forest Engine (GFE) — 3 Pilier
+
+| ID | Décision | Spécification | Phase |
+|---|---|---|---|
+| **D-021** | **GFE — 3ème pilier** | SCY Forge produit des **graines plantables** (extensions, reconversions, innovations) à partir du savoir privé de l'entreprise. Pas des insights. Métaphore : une forêt générative (STB) qui se pollinise et sème de nouveaux arbres, gouvernée par un cap (Vision Helm). Sur beachhead M0-M36 : mode observatoire (pollinisation intra-domaine MITRE, Seeds stockées). Post-MVP M36+ : mode expansion (cross-pollination inter-STB + germination auto). Documents fondateurs : `SCYFORGE_GENERATIVE_TREE_POLLINATION_SEED.md`, `SCYFORGE_GENERATIVE_ENGINE_LOGICAL_MODEL.md`, `SCYFORGE_GENERATIVE_ENGINE_MATH_FORMALIZATION.md`. | MVP (observatoire) |
+| **D-022** | **Seed Traceability** | Toute Seed est traçable via **W3C PROV-DM** (`wasDerivedFrom`, `wasGeneratedBy`) + **bitemporel** (event time + ingestion time). La lignée est immuable → décision incontestable. Inclut : machine à états (POLLINATED → VIABLE → GERMINATING / DORMANT), 4 conditions L1-L4, scoring Viability/Fecundity/PlantScore. | MVP (observatoire) |
+
+### D-023 — Domain Pack = Médiateur, pas Curriculum
+
+> **Principe fondateur** : le Domain Pack ne définit PAS ce que l'apprenant doit savoir. C'est l'entreprise qui détient la vérité pédagogique. Le pack est le **médiateur** qui structure, aligne et traduit le savoir de l'entreprise en parcours de maîtrise mesurable.
+
+| ID | Décision | Spécification | Phase |
+|---|---|---|---|
+| **D-023** | **Domain Pack = Médiateur** | Deux sources de vérité : (1) **QUOI** = documents de l'entreprise (SOP, playbooks, postmortems, politiques) — source primaire authoritative ; (2) **COMMENT** = le pack (ontologie, grammaire arbre/feuilles, rubriques, garde-fous). Si conflit → l'entreprise gagne. Sans corpus entreprise → pas de curriculum. Le `CorpusProvider` traite les docs entreprise comme source #1 ; les sources publiques (Sigma, CISA…) ne sont qu'un **échafaudage de médiation**. Le `seed_hash` inclut `corpus_snapshot_id` pour garantir que deux entreprises avec le même pack produisent deux arbres différents. | MVP |
+
+### D-024 — Principe Fondateur — Extensibilité par Conception
+
+> **Le core est un squelette générique sans mémoire métier ; la connaissance, les règles et les seuils vivent dans les packs.**
+
+| ID | Décision | Spécification | Phase |
+|---|---|---|---|
+| **D-024** | **Extensibilité par Conception** | Aucun terme métier, aucune règle de domaine, aucun seuil (mastery_threshold, weights, helm_axes, criticality_formula) n'est hardcodé dans le core. L'absence de config pack → `MissingPackConfig` error, jamais de fallback silencieux. Un nouveau domaine = un nouveau pack, **zéro réécriture du noyau**. Ce principe surpasse toutes les décisions D-001 à D-022 en cas de conflit. | MVP |
+
+### Documents fondateurs GFE (à lire avant tout codage GFE)
+
+| Document | Contenu | Statut |
+|----------|---------|--------|
+| `docs/SCYFORGE_GENERATIVE_TREE_POLLINATION_SEED.md` | Concept : Pollination + Seed, biologie générative, méthode 4 passes par secteur | ✅ Fondateur |
+| `docs/SCYFORGE_GENERATIVE_ENGINE_LOGICAL_MODEL.md` | Modélisation logique : nomenclature anglaise, opérateur Pollination, anatomie Seed, Viability/Fecundity, Vision Helm, traçabilité PROV | ✅ Logique |
+| `docs/SCYFORGE_GENERATIVE_ENGINE_MATH_FORMALIZATION.md` | Formalisation mathématique : distance hybride, seuils, fonction de viabilité, émergence endogène (SME + Blending + Link Prediction) | ✅ Math |
+
+### Nomenclature canonique (code, API, docs investisseurs)
+
+| Concept FR | Nom anglais canonique | Alias court | Définition |
+|---|---|---|---|
+| Arbre sémantique | **Semantic Tree** / **Knowledge Tree** | `STB` | structure dirigée tronc→branches→feuilles |
+| Arborisation | **Arborization** | `ARBOR` | transformer un graphe plat (KG) en arbre dirigé |
+| Nœud vivant | **Living Node** | — | nœud = fondation + dérivés datés (mini-arbre) |
+| Fondation du nœud | **Rootstock** | — | la racine immuable d'une connaissance |
+| Dérivés datés | **Growth Rings** | — | anneaux de croissance horodatés |
+| Pollinisation | **Pollination** (opérateur : *Pollinator*) | `POLL` | croisement fécondant entre branches éloignées |
+| Pollinisation intra-domaine | **Self-Pollination** | — | croisement à l'intérieur d'un même STB sectoriel |
+| Pollinisation inter-domaine | **Cross-Pollination** | `XPOLL` | croisement entre STB sectoriels différents |
+| Graine | **Seed** | — | résultat génératif, contient un arbre en puissance |
+| Viabilité de la graine | **Seed Viability** | — | probabilité qu'une graine germe en valeur réelle |
+| Fécondité | **Fecundity** | — | potentiel génératif (combien d'arbres une graine peut produire) |
+| Germination | **Germination** | — | déploiement d'une graine en nouveau sous-arbre |
+| Gouvernail de vision | **Vision Helm** | `HELM` | encapsule la vision ; aligne tout le système |
+| Moteur génératif global | **Generative Forest Engine** | `GFE` | l'ensemble : arborize → pollinate → seed → germinate |
+
+### L'opérateur Pollination (modèle logique)
+
+```
+Pollination( source_A , source_B , context ) → Seed | ∅
+```
+
+**4 conditions de fécondité** (toutes nécessaires) :
+
+| # | Condition | Logique | Pourquoi |
+|---|---|---|---|
+| **L1** | **Distance suffisante** | `distance(A,B) ≥ θ_min` | trop proches = redondance |
+| **L2** | **Compatibilité non nulle** | `∃ pont logique entre A et B` | trop éloignés sans pont = bruit |
+| **L3** | **Nouveauté** | lien A↔B **n'existe pas déjà** dans le KG | sinon c'est un rappel, pas une création |
+| **L4** | **Alignement Vision** | `align(A⊕B, Vision Helm) ≥ τ` | graine non alignée = stérile |
+
+**Sweet spot** : zone féconde = `θ_min ≤ distance ≤ θ_max` avec pont logique.
+
+### Anatomie d'une Seed (5 composants logiques)
+
+```
+SEED
+├─ ① CORE PROPOSITION  : l'idée/décision/méthode neuve (le "quoi")
+├─ ② PARENTHOOD        : (source_A, source_B) qui l'ont engendrée (le "d'où")
+├─ ③ POTENTIAL TREE    : l'arbre en puissance qu'elle peut déployer (le "vers quoi")
+├─ ④ VIABILITY PROFILE : viability + fecundity (le "peut-elle germer ?")
+└─ ⑤ PROVENANCE        : la lignée datée immuable (le "comment le prouver")
+```
+
+**Viability** = `feasibility × alignment × non_redundancy × resource_fit`
+**Fecundity** = `potential_subtrees × strategic_reach`
+**PlantScore** = `Viability^γ × Fecundity^(1−γ)` (γ = curseur prudence/ambition)
+
+### Vision Helm — Le gouvernail
+
+| Encodage | Forme | Usage |
+|----------|-------|-------|
+| **Vecteur pondéré** `h ∈ ℝᵏ` | k axes stratégiques pondérés | calcul rapide `align()` (filtre temps-réel) |
+| **Graphe d'objectifs** `G_H` | objectifs → sous-objectifs → KPIs | raisonnement, traçabilité, explicabilité |
+
+`align(x, H) = cos( proj(x), h ) ∈ [−1, 1] → renormalisé [0,1]`
+
+Le Helm gouverne tout : Arborization, Pollination (L4), ASCENT/recrues, COSMOS.
+
+### Émergence endogène — Le cœur du 0→1
+
+3 mécanismes combinés (indépendants d'Internet) :
+
+```
+SAVOIR PRIVÉ (STB + KG bitemporel)
+     │
+ ① SME → candidats par analogie structurelle (paires A,B à Π élevé)
+     │
+ ② BLENDING → fusionne en structure émergente (Seed candidate)
+     │
+ ③ LINK-PREDICTION → score la plausibilité du lien latent + nouveauté
+     │
+ FILTRE : conditions L1–L4 + Viability + align(H)
+     │
+ SEED viable (endogène, datée, prouvée) ──► germination
+     │
+ (optionnel) RESEARCH AGENT Internet → CONTEXTUALISE / valide nouveauté externe
+```
+
+Internet n'intervient qu'**après** la génération, jamais pour générer. La créativité naît de la structure du savoir privé → **non-copiable**.
+
+| Mécanisme | Base scientifique | Rôle dans GFE |
+|-----------|-------------------|---------------|
+| **SME (Gentner)** | Structure-Mapping Theory | Trouve paires éloignées au sens mais identiques en structure relationnelle |
+| **Blending (Fauconnier-Turner)** | Conceptual Blending (4 espaces) | Fusionne 2 inputs → structure émergente absente des inputs |
+| **Link Prediction (Swanson/node2vec)** | Literature-Based Discovery | Prédit liens latents plausibles sur le graphe privé |
+
+### Cycle de vie d'une Seed (machine à états)
+
+```
+   POLLINATED ──(viability ≥ seuil)──► VIABLE ──(plantée)──► GERMINATING ──► NEW SUBTREE
+        │                                  │
+        └──(stérile)──► DORMANT ◄──────────┘ (rétrogradée si contexte change)
+        DORMANT ──(contexte favorable plus tard)──► VIABLE   (réveil bitemporel)
+```
+
+Aucune graine n'est détruite. **Dormant ≠ mort** : une graine stérile aujourd'hui peut germer demain.
+
+### D-025 — Loop Engineering — Grammaire de Conception Transverse
+
+> **Principe** : l'autonomie est structurée en **4 boucles imbriquées** avec des critères de sortie déterministes. Ce n'est pas une feature à part : c'est la grammaire de conception qui donne les critères solides pour l'arborisation.
+
+| Boucle | Portée | Critère de sortie (déterministe) |
+|---|---|---|
+| **Micro** | une interaction | ratio output/input ≥ seuil (`OutputPressurePolicy`) |
+| **Méso** | une compétence | Plant → Graft → Test → Myelinate ; SMI du nœud ≥ `pack_config.mastery_threshold` |
+| **Macro** | un rôle | `coverage(pack) ≥ 0.80` (pondéré D9 : R1 criticité × R2 skill_era × R3 fidélité) + enveloppe validée |
+| **Outcome** | le réel | écart preuve↔réalité sous tolérance (`OutcomeFeedbackPolicy` G3) |
+
+**Règle d'or** : chaque agent ASCENT (Ag-01 à Ag-13) opère dans au moins une de ces boucles. La sortie d'une boucle alimente l'entrée de la suivante.
+
+### D-026 — Cognitive Runtime Policies — Protection de l'Apprenant
+
+> **Principe** : le runtime doit parfois **protéger l'apprenant contre sa préférence pour la passivité**. 5 policies traversent les agents ASCENT et le Semantic Tree.
+
+| Policy | Rôle | Agents concernés | Seuil pack-défini |
+|---|---|---|---|
+| **OutputPressurePolicy** | Surveille l'accumulation d'input sans output ; force rappel / teachback / application | GOAL, DAG, ADAPTIVE-ROUTER, SKILL-CERTIFIER | ratio output/input ≥ 1.5 |
+| **CognitiveFrictionPolicy** | Introduit de la friction utile (desirable difficulty) calibrée | ARENA, PERFORMANCE-ANALYZER | frictionLevel par niveau/risque |
+| **ConsolidationWindowPolicy** | Impose fenêtres de consolidation / repos | APEX/FSRS, LEARNING-CONDUCTOR | fenêtre pack-définie |
+| **SparringPolicy** | L'IA devient contradicteur/évaluateur, pas juste assistant | SKILL-CERTIFIER, ARENA | mode activé/désactivé par pack |
+| **SemanticTreePriorityPolicy** | Protège le tronc sémantique avant les branches | DAG-ARCHITECT, ADAPTIVE-ROUTER | tronc-avant-feuilles, toujours |
+
+**Règle d'or** : aucune policy n'a de seuil hardcodé dans le core. Tous les seuils sont fournis par `PackConfigProvider`. Absence → `MissingPackConfig` error.
+
+**EventBus events** : `OutputPressureApplied`, `FrictionAdjusted`, `ConsolidationWindowStarted`, `SparringModeActivated`, `SemanticTreePriorityEnforced`.
+
+---
+
+## 3. Section 3 : ASCENT Pipeline Plan C — 13 Agents Génériques {#4-ascent}
+
+> **[PIVOT-BEACHHEAD + GFE]** Les 13 agents ASCENT sont refactorisés pour consommer des `SemanticTreeProvider` contracts (DCID D-019).
+> Le GFE est intégré comme 3ème pilier : les Seeds produites par pollinisation alimentent l'ASCENT Pipeline (Germination → nouveaux objectifs d'apprentissage).
+> Référence : PRD Part 2 § "Plan C — Refactor 13 agents" + § "GFE Integration".
+
+### 3.1 Vue d'Ensemble du Pipeline
+
+```
+[Goal-Interpreter] → [Content-Scout] → [DAG-Architect] → [Learning-Conductor]
+                                                       ↓
+                    [Performance-Analyzer] ← [Adaptive-Router] ← [Validation-Guard]
+                       ↓                    ↓
+              [Certification-Service]    [BudgetGuard]
+```
+
+> **[PIVOT]** : Agents éliminés du MVP :
+> - **AGENT-08** (CHRONICLE) → Remplacé par Tactical AI inline hints
+> - **AGENT-10** (Scenario-Generator LLM) → Remplacé par scenarios pré-générés dans pack
+> - **AGENT-11** (ARENA Orchestrator) → Remplacé par évaluation automatisée
+> - **AGENT-15** (AXIOMATIZER) → Différé (contenu statique = pas de dérive)
+> - **AGENT-16** (SME Expert) → Remplacé par MITRE ATT&CK source-of-truth
+> - **AGENT-17** (QA Comité) → Remplacé par ValidationGuardProvider
+> - **AGENT-18** (Content-Writer) → Remplacé par ingestion pack pré-construit
+
+### 3.2 SemanticTreeProvider — Le Seul Pont DCID
+
+```rust
+/// Trait unique entre le core SCYForge et les domain packs.
+/// Le core ne connaît RIEN de MITRE, SOC, Sigma, CVE.
+pub trait SemanticTreeProvider {
+    /// Crée un arbre sémantique depuis un ontology_ref (ex: "MITRE-ATT&CK-v14.1")
+    fn plant_tree(&self, ontology_ref: &str) -> Result<SemanticTree, Error>;
+    
+    /// Greffe un nœud avec ses prérequis (DAG edges)
+    fn graft_node(&self, tree_id: TreeId, node: TreeNode, prereqs: Vec<NodeId>) -> Result<(), Error>;
+    
+    /// Teste un nœud (évaluation automatisée)
+    fn test_node(&self, tree_id: TreeId, node_id: NodeId) -> Result<Evaluation, Error>;
+    
+    /// Élague un nœud obsolète (Supersedes)
+    fn prune_node(&self, tree_id: TreeId, node_id: NodeId) -> Result<(), Error>;
+    
+    /// Myéline un nœud (marque comme mastery ≥ threshold)
+    fn myelinate_node(&self, tree_id: TreeId, learner_id: LearnerId, node_id: NodeId) -> Result<(), Error>;
+}
+```
+
+**Règle d'or** : Si un agent appelle `cyber_graft_technique()` directement → **violation du contrat DCID**.
+Tout appel DOIT passer par `SemanticTreeProvider::graft_node()`.
+
+### 3.3 Patterns de Découplage (EventBus)
+
+Tous les agents communiquent via l'EventBus (D-010). Zéro appel direct inter-agents.
+
+```rust
+// Exemple : Agent-04 (Learning-Conductor) ne connaît pas Agent-05 (Performance-Analyzer)
+// Il publie un événement, et le router le dispatch
+event_bus.publish(TreeOpGrafted { tree_id, node_id, prereqs }).await?;
+// Agent-05 souscrit à TreeOpGrafted et calcule le SMI
+```
+
+**Événements obligatoires** (voir SEQUENCE_DIAGRAMS.md pour la liste complète) :
+- `TreeOpPlanted` : Nouvel arbre créé (pack ingestion)
+- `TreeOpGrafted` : Nœud greffé (prereqs ajoutés)
+- `TreeOpTested` : Nœud évalué (scenario complété)
+- `TreeOpMyelinated` : Nœud maîtrisé (SMI ≥ pack_config.mastery_threshold)
+- `ScenarioEvaluated` : Évaluation scenario terminée
+- `MasteryUpdated` : Score maîtrise recalculé
+- `GapDetected` : Lacune identifiée (mastery < threshold)
+
+---
 
 | ID | Pattern de Résilience | Spécification d'Implémentation & Règle de Sûreté | Phase |
 |---|---|---|---|

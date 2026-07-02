@@ -40,7 +40,7 @@
 - **[SCYFORGE_DOMAIN_PACK_CONTRACT.md](./SCYFORGE_DOMAIN_PACK_CONTRACT.md)** - Contrat d'extensibilité : cœur agnostique + Domain Packs chargeables
 - **[SCYFORGE_DOMAIN_CONTRACTS_BLUEPRINT.md](./SCYFORGE_DOMAIN_CONTRACTS_BLUEPRINT.md)** - Blueprint des contrats domaine
 - **[SCYFORGE_FEATURE_PATTERNING_ARCHITECTURE.md](./SCYFORGE_FEATURE_PATTERNING_ARCHITECTURE.md)** - Patterning features : mécanique invariant + vérité métier par pack
-- **[SCYFORGE_FEATURE_TO_PROVIDER_MATRIX.md](./SCYFORGE_FEATURE_TO_PROVIDER_MATRIX.md)** - Feature-to-Provider Matrix (7 providers canoniques)
+- **[SCYFORGE_FEATURE_TO_PROVIDER_MATRIX.md](./SCYFORGE_FEATURE_TO_PROVIDER_MATRIX.md)** - Feature-to-Provider Matrix (9 providers : SemanticTree + 8 optionnels)
 
 ### Réseau sémantique & génératif
 - **[SCYFORGE_SEMANTIC_TREE_ARCHITECTURE_V2.md](./SCYFORGE_SEMANTIC_TREE_ARCHITECTURE_V2.md)** - Le Nœud Vivant : Semantic Tree Base, fondation + dérivés
@@ -65,7 +65,10 @@
 - **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md)** - Plugin infra COSMOS — Cyber plugin
 - **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md)** - Plugin infra COSMOS — Arborization & insights
 
-### Refactor ASCENT 13 agents
+### Architecture pivot & beachhead cyber
+- **[SCYFORGE_PIVOT_ARCHITECTURE.md](./SCYFORGE_PIVOT_ARCHITECTURE.md)** - Pivot architecture : ce qui change, ce qui est éliminé, séquence MVP beachhead
+- **[SCYFORGE_C4_MODEL.md](./SCYFORGE_C4_MODEL.md)** - C4 model (Context / Container / Component / Deployment)
+- **[SCYFORGE_SEQUENCE_DIAGRAMS.md](./SCYFORGE_SEQUENCE_DIAGRAMS.md)** - Diagrammes séquence onboarding + pack loader + ARENA
 - **[SCYFORGE_13_AGENTS_REFACTOR_PLAN_00_OVERVIEW.md](./SCYFORGE_13_AGENTS_REFACTOR_PLAN_00_OVERVIEW.md)** - Plan C refactor : overview et objectifs
 - **[SCYFORGE_13_AGENTS_REFACTOR_PLAN_01_SEQUENCE.md](./SCYFORGE_13_AGENTS_REFACTOR_PLAN_01_SEQUENCE.md)** - Séquence d'implémentation
 - **[SCYFORGE_13_AGENTS_REFACTOR_PLAN_02_P0_AGENTS.md](./SCYFORGE_13_AGENTS_REFACTOR_PLAN_02_P0_AGENTS.md)** - Agents P0 (critiques)
@@ -77,3 +80,9 @@
 ### Politiques & contrats
 - **[SCYFORGE_COGNITIVE_RUNTIME_POLICIES.md](./SCYFORGE_COGNITIVE_RUNTIME_POLICIES.md)** - Politiques runtime pour apprentissage orienté maîtrise
 - **[SCYFORGE_RECURSIVEMAS_RESEARCH_AND_ADAPTATION.md](./SCYFORGE_RECURSIVEMAS_RESEARCH_AND_ADAPTATION.md)** - Recherche et adaptation RecursiveMAS
+
+## Design Artifacts (Whiteport Design System)
+- **[WDS3-CYBER-BEACHHEAD.md](../design-artifacts/C-UX-Scenarios/WDS3-CYBER-BEACHHEAD.md)** - 11 scenarios recalculés pour beachhead cyber (SOC L1/L2/DFIR/SEL)
+- **[primitives.md](../design-artifacts/D-Design-System/primitives.md)** - Inventaire des primitives UI (atomics, composites, layouts)
+- **[tokens.ts](../design-artifacts/D-Design-System/tokens.ts)** - Design tokens TypeScript
+- **[tokens.css](../design-artifacts/D-Design-System/tokens.css)** - Design tokens CSS custom properties

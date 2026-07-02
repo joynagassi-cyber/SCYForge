@@ -1,3 +1,34 @@
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
+
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+PRD source de vérité — adapter pour cyber beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
   cache_value JSONB NOT NULL,
   expires_at INTEGER NOT NULL,
   created_at INTEGER NOT NULL DEFAULT extract(epoch from now())::INTEGER
@@ -370,7 +401,223 @@ CREATE INDEX idx_arena_personas_domain ON scy_arena_personas(domain, difficulty_
 CREATE INDEX idx_arena_skill_proof_user ON scy_arena_skill_proof(user_id, goal_id);
 ```
 
-### 8.4 Indexes Critiques
+### 8.4bis Nouvelles Tables Cyber Beachhead (Domain Packs & Semantic Tree)
+
+[PIVOT-BEACHHEAD] Ces tables supportent le modèle DCID (Domain Contract Interface Definition) — le pont entre le core et les domain packs (MITRE ATT&CK).
+
+```sql
+-- ═══════════════════════════════════════════════════
+-- DOMAIN PACKS — Registre des packs métier (cyber, finance, santé...)
+-- ═══════════════════════════════════════════════════
+
+CREATE TABLE scy_domain_packs (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  organization_id UUID REFERENCES scy_organizations(id), -- NULL = pack global (MITRE public)
+  pack_key TEXT NOT NULL,              -- 'cyber', 'finance', 'medical'
+  version TEXT NOT NULL DEFAULT '1.0.0',
+  ontology_ref TEXT,                   -- 'MITRE-ATT&CK-v14.1', 'NIST-CSF-2.0'
+  node_count INTEGER DEFAULT 0,
+  edge_count INTEGER DEFAULT 0,
+  is_active BOOLEAN DEFAULT true,
+  loaded_at INTEGER NOT NULL,          -- Timestamp ingestion
+  created_at INTEGER NOT NULL,
+  UNIQUE(organization_id, pack_key, version)
+);
+
+CREATE TABLE scy_role_subtrees (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  domain_pack_id UUID NOT NULL REFERENCES scy_domain_packs(id),
+  role_key TEXT NOT NULL,              -- 'SOC_L1', 'SOC_L2', 'DFIR', 'CISO'
+  role_label TEXT NOT NULL,            -- 'SOC Analyst L1', 'Forensic Investigator'
+  tactic_ids UUID[] NOT NULL,          -- Sous-ensemble de tactiques ATT&CK
+  node_count INTEGER DEFAULT 0,
+  estimated_hours REAL DEFAULT 0,      -- Heures estimées onboarding
+  mastery_threshold REAL, -- fourni par PackConfigProvider (jamais DEFAULT 0.70 hardcodé dans le core)
+  created_at INTEGER NOT NULL,
+  UNIQUE(domain_pack_id, role_key)
+);
+
+-- ═══════════════════════════════════════════════════
+-- SEMANTIC TREE — Arbre sémantique DCID
+-- ═══════════════════════════════════════════════════
+
+CREATE TABLE scy_semantic_trees (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  domain_pack_id UUID NOT NULL REFERENCES scy_domain_packs(id),
+  owner_kind TEXT NOT NULL,            -- 'DomainPack' | 'Organization' | 'Learner'
+  owner_id UUID,                       -- ID selon owner_kind
+  domain_pack TEXT NOT NULL,           -- référence pack (ex: 'cyber')
+  root_nodes UUID[] NOT NULL DEFAULT '{}', -- troncs racines (niveau pack)
+  root_node_id UUID REFERENCES scy_semantic_tree_nodes(id), -- point d'entrée learner
+  node_count INTEGER DEFAULT 0,
+  depth_max INTEGER DEFAULT 0,
+  version INTEGER DEFAULT 1,
+  is_current BOOLEAN DEFAULT true,
+  created_at INTEGER NOT NULL
+);
+
+-- Index GIN sur root_nodes pour requêtes "est-ce que ce nœud est racine ?"
+CREATE INDEX idx_semantic_trees_root_nodes ON scy_semantic_trees USING GIN(root_nodes);
+
+CREATE TABLE scy_semantic_tree_nodes (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  tree_id UUID NOT NULL REFERENCES scy_semantic_trees(id),
+  node_kind TEXT NOT NULL,             -- 'Trunk' | 'Branch' | 'Leaf'
+  canonical_ref TEXT NOT NULL,         -- 'TACTIC-Initial-Access', 'TECHNIQUE-T1566'
+  label TEXT NOT NULL,
+  description TEXT,
+  metadata JSONB DEFAULT '{}',         -- {mitre_id, tactic, platforms, detection_difficulty}
+  depth INTEGER NOT NULL DEFAULT 0,
+  parent_id UUID REFERENCES scy_semantic_tree_nodes(id),
+  sort_order INTEGER DEFAULT 0,
+  created_at INTEGER NOT NULL,
+  UNIQUE(tree_id, canonical_ref)
+);
+
+CREATE TABLE scy_tree_edges (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  tree_id UUID NOT NULL REFERENCES scy_semantic_trees(id),
+  source_node_id UUID NOT NULL REFERENCES scy_semantic_tree_nodes(id),
+  target_node_id UUID NOT NULL REFERENCES scy_semantic_tree_nodes(id),
+  edge_kind TEXT NOT NULL,             -- 'Trunk' | 'Branch' | 'Leaf' | 'Prereq' | 'Relates' | 'Contradicts' | 'Supersedes'
+  weight REAL DEFAULT 1.0,
+  metadata JSONB DEFAULT '{}',
+  created_at INTEGER NOT NULL,
+  UNIQUE(tree_id, source_node_id, target_node_id, edge_kind)
+);
+
+-- ═══════════════════════════════════════════════════
+-- LEARNER STATE — État de maîtrise par nœud sémantique
+-- ═══════════════════════════════════════════════════
+
+CREATE TABLE scy_learner_node_states (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  learner_id UUID NOT NULL REFERENCES scy_users(id),
+  tree_id UUID NOT NULL REFERENCES scy_semantic_trees(id),
+  node_id UUID NOT NULL REFERENCES scy_semantic_tree_nodes(id),
+  confidence REAL NOT NULL DEFAULT 0.0,    -- 0.0–1.0 (prouvée par test, SOURCE DE VÉRITÉ)
+  mastery_score REAL,                       -- STORED: dérivé de confidence (GENERATED ALWAYS AS par trigger pack-défini)
+  status TEXT,                              -- STORED: 'locked'|'ready'|'studying'|'mastered' (GENERATED ALWAYS AS)
+  unlocked BOOLEAN NOT NULL DEFAULT false,  -- tronc-avant-feuilles
+  unlockable BOOLEAN NOT NULL DEFAULT false,-- calculé runtime (tous parents mastered)
+  exposure_count INTEGER DEFAULT 0,
+  success_count INTEGER DEFAULT 0,
+  last_exposed_at INTEGER,
+  last_success_at INTEGER,
+  evidence_refs UUID[] DEFAULT '{}',        -- Refs vers scenario_instances prouvant la maîtrise
+  created_at INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL,
+  UNIQUE(learner_id, tree_id, node_id)
+);
+
+-- ═══════════════════════════════════════════════════
+-- SCENARIOS & EVALUATIONS — Scénarios d'évaluation cyber
+-- ═══════════════════════════════════════════════════
+
+CREATE TABLE scy_scenario_instances (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  organization_id UUID NOT NULL REFERENCES scy_organizations(id),
+  learner_id UUID NOT NULL REFERENCES scy_users(id),
+  tree_id UUID NOT NULL REFERENCES scy_semantic_trees(id),
+  node_id UUID NOT NULL REFERENCES scy_semantic_tree_nodes(id),
+  scenario_template_id TEXT,            -- Ref vers pack cyber scenario
+  scenario_config JSONB NOT NULL,       -- {context, artifacts, evaluation_criteria}
+  status TEXT NOT NULL DEFAULT 'pending', -- 'pending'|'in_progress'|'completed'|'failed'
+  started_at INTEGER,
+  completed_at INTEGER,
+  created_at INTEGER NOT NULL
+);
+
+CREATE TABLE scy_mastery_evaluations (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  learner_id UUID NOT NULL REFERENCES scy_users(id),
+  tree_id UUID NOT NULL REFERENCES scy_semantic_trees(id),
+  node_id UUID NOT NULL REFERENCES scy_semantic_tree_nodes(id),
+  scenario_instance_id UUID REFERENCES scy_scenario_instances(id),
+  evaluation_type TEXT NOT NULL,        -- 'automated'|('peer_review')|('manager_sign-off')
+  score REAL NOT NULL,                  -- Score 0.0-1.0
+  passed BOOLEAN NOT NULL,
+  evidence JSONB DEFAULT '{}',          -- {ioc_found, timeline_accuracy, artifacts_correct}
+  evaluator_id UUID REFERENCES scy_users(id), -- NULL = automated
+  feedback TEXT,
+  created_at INTEGER NOT NULL
+);
+
+-- ═══════════════════════════════════════════════════
+-- TREE OPERATIONS — Audit trail des ops sémantiques
+-- ═══════════════════════════════════════════════════
+
+-- ═══════════════════════════════════════════════════
+-- SEEDS — Generative Forest Engine (GFE, Pilier 3)
+-- ═══════════════════════════════════════════════════
+
+CREATE TABLE scy_seeds (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  tree_id UUID NOT NULL REFERENCES scy_semantic_trees(id),
+  organization_id UUID NOT NULL REFERENCES scy_organizations(id),
+  status TEXT NOT NULL DEFAULT 'pollinated', -- 'pollinated' | 'viable' | 'germinating' | 'dormant'
+  core_proposition TEXT NOT NULL,
+  parenthood JSONB NOT NULL,                 -- {source_a_id, source_b_id, context, conditions_l1_l4}
+  potential_tree JSONB,                      -- arbre en puissance (nullable jusqu'à germination)
+  viability_profile JSONB NOT NULL,          -- {viability, fecundity, plant_score, breakdown}
+  provenance JSONB NOT NULL,                 -- {was_derived_from, was_generated_by, event_time, ingestion_time}
+  pollination_context JSONB,                 -- contexte de la pollinisation
+  created_at INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+
+-- Seeds par organization (pour Seed Explorer dashboard)
+CREATE INDEX idx_seeds_org_status ON scy_seeds(organization_id, status, created_at DESC);
+
+-- ═══════════════════════════════════════════════════
+-- TREE OPERATIONS — Log des opérations Plant/Graft/Test/Prune/Myelinate
+-- ═══════════════════════════════════════════════════
+
+CREATE TABLE scy_tree_operations (
+  id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
+  tree_id UUID NOT NULL REFERENCES scy_semantic_trees(id),
+  user_id UUID NOT NULL REFERENCES scy_users(id),
+  operation TEXT NOT NULL,              -- 'Plant' | 'Graft' | 'Test' | 'Prune' | 'Myelinate'
+  target_node_id UUID REFERENCES scy_semantic_tree_nodes(id),
+  payload JSONB NOT NULL,               -- Détails de l'opération
+  result_status TEXT NOT NULL,          -- 'success' | 'conflict' | 'rejected'
+  validation_guard_result JSONB,        -- Résultat du ValidationGuardProvider
+  created_at INTEGER NOT NULL
+);
+
+-- ═══════════════════════════════════════════════════
+-- INDEXES — Tables Cyber Beachhead
+-- ═══════════════════════════════════════════════════
+
+CREATE INDEX idx_domain_packs_org ON scy_domain_packs(organization_id, pack_key);
+CREATE INDEX idx_role_subtrees_pack ON scy_role_subtrees(domain_pack_id, role_key);
+CREATE INDEX idx_semantic_trees_pack ON scy_semantic_trees(domain_pack_id, owner_kind);
+CREATE INDEX idx_tree_nodes_tree ON scy_semantic_tree_nodes(tree_id, depth, node_kind);
+CREATE INDEX idx_tree_edges_tree ON scy_tree_edges(tree_id, edge_kind);
+CREATE INDEX idx_learner_states_learner ON scy_learner_node_states(learner_id, tree_id, mastery_score);
+CREATE INDEX idx_scenario_instances_org ON scy_scenario_instances(organization_id, learner_id, status);
+CREATE INDEX idx_mastery_evals_learner ON scy_mastery_evaluations(learner_id, tree_id, node_id);
+CREATE INDEX idx_tree_ops_tree ON scy_tree_operations(tree_id, created_at DESC);
+
+-- Full-text search (cyber pack content scenarios)
+CREATE INDEX idx_scenario_fts ON scy_scenario_instances USING gin(to_tsvector('english', scenario_config::text));
+```
+
+---
+
+### 8.4bis Tables DEFERRED post-MVP
+
+> **[PIVOT-BEACHHEAD — DEFERRED]** Les tables ci-dessous appartiennent à des fonctionnalités **différées** après le MVP beachhead.
+
+| Table | Raison du report |
+|-------|-----------------|
+| `scy_imprint_registers`, `scy_imprint_trees` | **IMPRINT** — contenu biblique incompatible avec ops cyber |
+| `scy_chronicle_memory`, `scy_chronicle_disruptions`, `scy_chronicle_plans`, `scy_chronicle_conversations` | **CHRONICLE** rebrandé Tactical AI (remplacé par hints adaptatifs inline) |
+| `scy_arena_sessions`, `scy_arena_personas`, `scy_arena_skill_proof` | **ARENA** → Cyber Range (Phase 2+, usage real CTF) |
+| `scy_confidence_reports` | NEURON-CHAINS → contenu pré-généré, pas de génération à la volée |
+| `scy_user_gamification`, `scy_gamification_events` | Gamification SOC-native (Phase 2+) |
+
+### 8.5 Indexes Critiques (Legacy)
 
 ```sql
 -- Performance queries fréquentes
@@ -394,58 +641,113 @@ CREATE INDEX idx_documents_fts ON scy_documents USING gin(to_tsvector('english',
 
 ---
 
-## 9. APIs Externes & Intégrations `[Rôle : Backend & Data]`
+## 9. APIs Externes & Intégrations — Beachhead SOC `[Rôle : Backend & Data]`
 
-### 9.1 AI/LLM Providers
+> **[PIVOT-BEACHHEAD — IN_MVP]** Le beachhead utilise des APIs **cyber-native** + sources open-source. Pas d'ingestion consumer (YouTube, Reddit, TikTok).
+
+### 9.1 Cyber Intelligence & Threat Data APIs
+
+| Provider | Usage | Coût |
+|---------|-------|------|
+| **MITRE ATT&CK STIX** | Ontologie troncs/feuilles (gratuit, open-data) | $0 |
+| **NIST NVD (CVE)** | Base CVE vulnérabilités (API publique) | $0 |
+| **Sigma Rules Hub** | Rules de détection réutilisables (open-source) | $0 |
+| **OTX (AlienVault)** | Pulses OTX, IOCs communauté | $0 |
+| **URLhaus / PhishTank** | URLs malveilleuses, phishing IOCs | $0 |
+| **Shodan/Censys** | Reconnaissance surfaces d'attaque (optional) | Freemium |
+| **SearxNG (self-hosted)** | OSINT search container (Docker sidecar) | $0 (infra incluse) |
+
+### 9.2 LLM Providers (Beachhead Tiers)
 
 | Provider | Usage | Coût moyen |
 |---------|-------|-----------|
-| DeepSeek V4 | Tâches simple/complex (Free tier primaire) | $0.0001-0.0002/1K |
-| DeepSeek R1 | Raisonnement profond (Free tier) | $0.0015/1K |
-| Claude Haiku | Tâches simples (Premium tier) | $0.0003/1K |
-| Claude Sonnet | Tâches complexes (Premium tier) | $0.003/1K |
-| Kimi K2.6 (128K) | Long context output (Free tier) | $0.001/1K |
-| GPT-4.5 | Output haute qualité (Premium tier) | $0.01/1K |
-| GPT-o1-mini | Raisonnement (Premium tier) | $0.015/1K |
-| OpenAI Whisper | Transcription audio (Podcast, TikTok) | $0.006/min |
-| text-embedding-3-small | Embeddings 512D | $0.00002/1K |
+| DeepSeek V4 Free | Tactical AI chat, hints, re-scénarisation | $0 (gratuit) |
+| Claude Sonnet 4.6 | Premium Tier (Enterprise) — complex analysis | $0.003/1K |
+| Kimi K2.6 (128K) | Long context — briefing documents | $0.001/1K |
 
-**Fallbacks** : OpenRouter, Together.ai, Groq (dev/testing)
+> **[PIVOT-BEACHHEAD]** GPT-4.5, GPT-o1-mini, Whisper **éliminés du MVP** (consumer features). Seuls DeepSeek V4 Free + Claude Sonnet suffisent.
 
-**Modèles locaux** :
-- GLiNER-micro INT8 (12MB ONNX, ort 1.16) : NER locale, $0/mois
-- LLMLingua-2 (candle-core) : Compression prompts locale, $0/mois
-- Nomic Embed (candle, optionnel offline) : Embeddings locaux
+### 9.3 Infrastructure Services (Cyber-Native)
 
-### 9.2 Ingestion APIs (25+)
+| Service | Rôle | Pricing MVP |
+|---------|------|------------|
+| Northflank | Axum backend + PostgreSQL + pgvector | Free tier → $35/mois scaling |
+| Zilliz Cloud Serverless | Vector index (pack embeddings MITRE) | $10/mois |
+| Vercel | React frontend deployment | Free tier → $20/mois |
+| Docker (SearxNG) | Sidecar OSINT (self-hosted, included in Northflank) | $0 |
+| Sentry | Error tracking | Free (<5K events/mois) |
 
-YouTube Data API v3, Google Drive API v3, Reddit API v2, Twitter/X API v2, MediaWiki API, NASA API, ArXiv API, PubMed API, IEEE Xplore API, Springer API, Nature API, Science (AAAS) API, JSTOR API, Google Scholar (scraping), ResearchGate (scraping), Yahoo Finance API, Bloomberg API (enterprise), Reuters API, SEC EDGAR API, Earnings Calls API
+### 9.4 Intégrations B2B (Phase 2+)
 
-### 9.3 Infrastructure Services
-
-| Service | Rôle | Pricing Phase 0-1 |
-|---------|------|-------------------|
-| Northflank | Backend Rust deployment | $0/mois (tier gratuit) |
-| Northflank | PostgreSQL + pgvector + Auth + Storage | $0/mois (tier gratuit 500MB) |
-| Vercel | Frontend React deployment | $0/mois (tier gratuit) |
-| Netlify | Fallback frontend | $0/mois |
-| Sentry | Error tracking | $0/mois (<5K events/mois) |
-| Axiom | Logs OpenTelemetry | $0/mois (<100GB/mois) |
+| Intégration | Usage | Phase |
+|-------------|-------|-------|
+| **SAML 2.0 SSO** (Okta/Azure AD) | Enterprise authentication | Post-MVP |
+| **SCIM Provisioning** | Auto-provisioning users SOC | Post-MVP |
+| **Slack/MS Teams webhooks** | Alertes mastery, gap detection | Post-MVP |
+| **Splunk/Sentinel API** | Ingestion telemetry SOC | Post-MVP |
+| **Sigma rule converter** | Convert rules pack → SIEM format | Post-MVP |
 
 ---
 
-## 10. Stratégie Économique LLM — Anti-Goulot `[Rôle : AI & LLM Engineer]`
+## 10. Stratégie LLM — Beachhead Anti-Goulot `[Rôle : AI & LLM Engineer]`
 
-### 10.1 Problème Sans Optimisation
+> **[PIVOT-BEACHHEAD — IN_MVP]** Le coût LLM est **quasi-nul** grâce au contenu MITRE pré-généré.
+> Les appels LLM ne servent que pour le **Tactical AI live** (chat + hints adaptatifs).
+> DeepSeek V4 Free couvre 95% des besoins — $0/mois.
+
+### 10.1 Problème Sans Optimisation (Legacy)
 
 Une pipeline agentique naïve consommerait **$1.78/parcours** (594K tokens, 600+ appels LLM). À 1000 parcours actifs simultanés → $1 780/mois LLM. Inacceptable pour une marge positive.
 
-### 10.2 Les 7 Mécanismes Anti-Goulot
+### 10.2 Différence Beachhead — Le Coeur du Pivot
 
-**Mécanisme 1 : Classification 4 types de décisions**
-- TYPE A (70% des opérations) : Règles Rust déterministes → $0.00 LLM
-  - FSRS scheduling, calcul SMI, routing adaptatif, détection drift
-- TYPE B : Modèles locaux ONNX → $0.00 LLM externe
+| Aspect | Legacy (Consumer) | Beachhead (SOC) |
+|--------|-------------------|-----------------|
+| Contenu | Généré à la volée par LLM | **Pré-généré + ingéré** (MITRE ATT&CK, NIST, Sigma) |
+| Appels LLM par parcours | ~600 | **<5** (chat/hints uniquement) |
+| Coût LLM/parcours | $1.78 | **<$0.001** |
+| Modèle dominant | Claude Opus/Sonnet | **DeepSeek V4 Free ($0)** |
+| Cache mutualisé | 35-60% hit rate | **>80% hit rate** (contenu statique pack) |
+| Token Bleeding risk | Élevé (agents autonomes) | **Minime** (contenu pré-construit) |
+
+### 10.3 Architecture LLM — Beachhead MVP
+
+**Tier 1 — Contenu Pré-construit (0 $ LLM)**
+- MITRE ATT&CK STIX pack ingéré à l'onboarding → tables PostgreSQL
+- NIST CSF 2.0 mapping → JSONB dans `scy_semantic_tree_nodes.metadata`
+- Sigma rules → vectorisés dans Zilliz
+- Scénarios d'évaluation → pré-générés dans `scy_scenario_instances`
+- **Résultat** : 0 appel LLM pour la navigation, les parcours, les évaluations automatisées.
+
+**Tier 2 — Tactical AI Live (DeepSeek V4 Free)**
+- Chat contextuel SOC (questions sur techniques, playbooks) → DeepSeek V4 Free
+- Hints adaptatifs (scénarios en cours) → DeepSeek V4 Free
+- Re-scénarisation adaptative (selon performance learner) → DeepSeek V4 Free
+- **Budget worst-case** : 50 SOCs × 5 analysts × 5 sessions/semaine × 5K tokens = **75M tokens/mois = $0** (DeepSeek V4 Free).
+
+**Tier 3 — Premium Analysis (Claude Sonnet 4.6 — Enterprise Only)**
+- Briefing CISO (analyse de risque aggregate) → Claude Sonnet 4.6
+- Playbook customization avancée → Claude Sonnet 4.6
+- **Fréquence** : 1-2x/mois par SOC Enterprise
+- **Coût** : ~$2-5/mois à l'échelle
+
+### 10.4 Budget LLM Réel — Beachhead MVP
+
+| Poste | Coût/mois |
+|-------|-----------|
+| Contenu MITRE pré-généré | **$0** (ingestion one-shot) |
+| Tactical AI DeepSeek V4 Free | **$0** (free tier) |
+| Premium Enterprise Claude | **< 50 $** (usage rare) |
+| **Total LLM M6 (50 SOCs)** | **<$50/mois** |
+| Budget de prévision (worst-case) | **150 $/mois** (BudgetGuard plafond) |
+
+**Économie vs legacy** : ~$1 730/mois économisés (-99%) grâce au contenu pré-construit.
+
+### 10.5 Règles BudgetGuard (Beachhead)
+
+- **Seuil 1 (50%)** : 75 $ consommés → Warning dashboard
+- **Seuil 2 (100%)** : 150 $ consommés → Tactical AI bascule en mode lecture seule
+- **Seuil 3 (150%)** : 225 $ consommés → Alert email SOC Manager + Pause LLM 24h
   - GLiNER NER, embeddings optionnels, LLMLingua compression
 - TYPE C : Cache sémantique LanceDB (hit rate 35-60%) → $0.00 LLM
   - Même requête sémantique → réponse cached
@@ -571,19 +873,56 @@ Alertes automatiques si seuils dépassés :
 
 ---
 
-## 11. Métriques de Succès `[Rôle : Product Owner & QA]`
+## 11. Métriques de Succès — Cyber Beachhead `[Rôle : Product Owner & QA]`
 
-### 11.1 Métriques Business (KPIs Phase 0-1)
+> **[PIVOT-BEACHHEAD — IN_MVP]** Métriques adaptées pour contexte SOC/blue-team.
+
+### 11.1 Métriques Business (KPIs MVP)
 
 | Métrique | Cible | Mesure |
 |---------|-------|--------|
-| Activation J1 | >60% users upload 1 source | % users action ingestion <24h |
-| TTFV | <5min onboarding → 1ère carte révisée | Temps médian inscription → review |
-| Rétention J7 | >40% | % users ≥1 session période |
-| Rétention J30 | >25% | % users ≥1 session période |
-| NPS | >40 | Survey 0-10 |
-| ASCENT Completion | >70% terminent 1 roadmap | % users completés ≥1 goal |
-| Coût LLM/user/mois | <$0.10 Free, <$0.50 Premium | scy_llm_spend_log |
+| **Pack Load Time** | <5min onboarding → 1er parcours | Temps Trial → pack chargé + 1er nœud |
+| **Role-based Autonomy (SOC L1)** | <7j à autonomie tactique | Temps jusqu'à mastery ≥0.70 sur tactiques core |
+| **Time-to-Readiness équipe** | -60% vs formation classique | Différence onboarding SOC classique vs SCY Forge |
+| **Rétention J30 (organization)** | >40% SOCs actives | % organizations ≥1 session/mois |
+| **Mastery pass rate** | >70% learners certifiés | % learners ≥0.70 mastery sur leur role subtree |
+| **Gap Detection Impact** | -40% senior mentoring hours | Réduction heures mentoring seniors après 30j |
+| **NPS SOC Manager** | >50 | Survey Manager satisfaction |
+| **Certification issuance** | 100% goals certifiés | Proof of Skill délivrés |
+
+### 11.2 Métriques Produit (Agentic Pipeline — Plan C)
+
+| Métrique | Cible | Alerte si |
+|---------|-------|-----------|
+| Pack ingestion time | <30min pour MITRE ATT&CK complet | >1h |
+| Semantic Tree build | <5min pour MITRE 14 tactics | >10min |
+| Tactical AI response latency | p95 <2s | >5s |
+| Cache hit rate (contenu pack) | >80% | <60% |
+| Token Bleeding max per org | <150$/mois | >150$/mois |
+| Scenario evaluation accuracy | >85% auto-grading correct | <70% |
+| Drill-down tree depth | ≤4 levels (SOC L1) / ≤6 levels (SOC L2) | >6 / >8 |
+
+### 11.3 Métriques Techniques
+
+| Métrique | Cible |
+|---------|-------|
+| COSMOS render (4 modes) | <16ms (60fps) 1000 nœuds |
+| PostgreSQL queries p95 | <50ms (RLS multi-tenant) |
+| Zilliz vector search p95 | <100ms |
+| API error rate | <0.1% 5xx |
+| Uptime | >99.5% |
+| FSRS scheduling batch | <5s pour 1000 cards |
+| BudgetGuard enforcement | 100% orgs sous plafond |
+
+### 11.4 Métriques Phase 2+ (Expansion)
+
+| Métrique | Cible 12 mois |
+|---------|--------------|
+| MA (monthly active organizations) | 50 SOCs |
+| MRR | $50K |
+| NR (net revenue) | >100% |
+| Expansion packs | Cyber Pro + Finance (si pivot validé) |
+| Custom scenario creation | >20 scenarios/SOC/trimestre |
 
 ### 11.2 Métriques Produit Pipeline Agentique (NOUVEAU v2)
 
@@ -624,26 +963,90 @@ Alertes automatiques si seuils dépassés :
 
 ---
 
-## 12. Budget & Timeline `[Rôle : Product Owner & PM]`
+## 12. Budget & Timeline — Beachhead MVP `[Rôle : Product Owner & PM]`
 
-### 12.1 Budget Phase 0-1 — $5-10/mois (-80% Optimisé)
+### 12.1 Budget Phase 0 (CapEx Initial)
 
-| Poste | Baseline | Phase 0-1 | Économie |
-|-------|---------|-----------|---------|
-| LLM API | $3-6/mois | $3-6/mois | $0 |
-| Embeddings | $1-2/mois | $0.50/mois | -$1.50 |
-| Cache (Redis) | $15/mois | $0 (SQLite D-002) | -$15 |
-| NER (Hugging Face) | $9/mois | $0 (GLiNER local D-011) | -$9 |
-| Storage Northflank | $0/mois | $0/mois | $0 |
-| Compute Northflank | $0-5/mois | $0-5/mois | $0 |
-| Monitoring | $0/mois | $0/mois | $0 |
-| **TOTAL** | **$29-34/mois** | **$5-10/mois** | **-$24/mois** |
+| Poste | Montant |
+|-------|---------|
+| Légale (Doola, USPTO, Delaware) | 2 974 $ |
+| Mitre ATT&CK ingestion (one-shot) | 500 $ |
+| **Total CapEx** | **3 474 $** |
 
-**Économie cumulée Année 1** : 12 × $24 = **-$288 économisés**
+### 12.2 Budget Phase 1 (OpEx Mensuel M0-M1)
 
-### 12.2 Timeline — 35 Jours (Scénario B révisé)
+| Poste | M0-M1 |
+|-------|-------|
+| Infrastructure (Northflank + Zilliz + SearxNG) | 93 $/mois |
+| APIs LLM (Tactical AI DeepSeek V4 Free) | 0 $/mois |
+| Stripe (trials, 0 revenue) | 0 $/mois |
+| Marketing acquisition | 500 $/mois (conferences + outreach) |
+| **Total M0-M1** | **593 $/mois** |
+| **Burn rate M0-M1** | **593 $/mois × 2 mois = 1 186 $** |
 
-**POC Jour 4 (1j, 7h) — BLOQUANT avant tout développement**
+### 12.3 Budget Phase 2 (M2-M6 — Revenue Growth)
+
+| Poste | M6 |
+|-------|----|
+| Infrastructure | 93 $/mois |
+| Stripe (2,9% sur 25 K$ MRR) | 725 $/mois |
+| Marketing acquisition | 2 175 $/mois |
+| **Total M6** | **~2 993 $/mois** |
+| **MRR M6** | **~25 000 $** |
+| **Profitabilité nette M6** | **+22 007 $/mois** |
+
+### 12.4 Timeline — 28 Jours (Scénario Beachhead MVP)
+
+**Jours 1-4 : Foundations (Sprint 0)**
+```
+├─ J1 : Docker sidecar (SearxNG) + Northflank deploy
+├─ J2 : PostgreSQL schema (10 tables cyber + RLS)
+├─ J3 : Axum backend skeleton (9 handlers)
+├─ J4 : Frontend skeleton (React + Vite + Tailwind)
+```
+
+**Jours 5-12 : Domain Pack Ingestion (Sprint 1)**
+```
+├─ J5-6 : MITRE ATT&CK STIX ingestion → scy_domain_packs + scy_semantic_trees
+├─ J7 : Role subtrees (SOC L1/L2/DFIR/SEL) → scy_role_subtrees
+├─ J8 : Vector indexing (Zilliz) + BM25 (SQLite FTS)
+├─ J9 : API endpoints pack CRUD + tree queries
+└─ J10-12 : Integration tests + devnet validation
+```
+
+**Jours 13-20 : ASCENT Plan C Adaptation (Sprint 2)**
+```
+├─ J13-14 : Agent-01 (Goal-Interpreter) → consume SemanticTreeProvider trait
+├─ J15 : Agent-02 (Content-Scout) → domain pack aware
+├─ J16-17 : Agent-03 (DAG-Architect) → role-subtree aware
+├─ J18 : Agent-04 (Learning-Conductor) → scenario-driven
+├─ J19-20 : Agent-05 (Performance-Analyzer) → mastery gap detection
+```
+
+**Jours 21-26 : UX + Certification (Sprint 3)**
+```
+├─ J21 : COSMOS 4 modes cyber (Mission Tree, SMI Radar, Threat Terrain, Tactical Zoom)
+├─ J22 : APEX B11-B14 card types cyber
+├─ J23 : Tactical AI (chat + hints) — DeepSeek V4 Free integration
+├─ J24 : Proof of Skill (certificate generation PDF)
+├─ J25 : SOC Manager dashboard (coverage + gap detection)
+└─ J26 : End-to-end tests + dogfood interne
+```
+
+**Jours 27-28 : Launch**
+```
+├─ J27 : Deploy production (Vercel + Northflank)
+├─ J28 : RSA/Black Hat announcement (OUTPUT-DRIVEN — rien avant J27)
+```
+
+### 12.5 Dépendances Externes (NOT Startup's Problem)
+
+| Dépendance | Acceptation critère | Plan B |
+|-----------|-------------------|--------|
+| MITRE ATT&CK STIX 2.1 (download) | JSON valide, 14 tactics ingérables | MITRE REST API fallback |
+| DeepSeek V4 Free API | Disponible juin 2026 | Fallback DeepSeek V4 Flash (toujours gratuit) |
+| Northflank deploy | Account créé, Rust projet build | Railway / Fly.io alternatives |
+| Zilliz Cloud free tier | 1 collection, 10K vectors | pgvector local suffisant MVP |
 - Test 1 : G6 v5 + Louvain clustering 1000 concepts <10s (go/no-go graphe)
 - Test 2 : GLiNER-micro INT8 NER 100 concepts <3s, précision ≥85%
 - Test 3 : Typst PDF génération complexe <2s

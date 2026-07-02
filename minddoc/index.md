@@ -64,10 +64,23 @@
 ## Domain Packs
 
 ### packs/
-- **[packs/cyber/](./packs/cyber/)** - Cyber Pack v0.2.0 — Domain Pack cybersecurity (ONTOLOGY + ROLES + SCENARIOS + CORPUS)
-  - `pack.manifest.json` — manifest du pack (version, providers, artifacts, sources)
-  - `ontology/` — ATT&CK hierarchy, density, semantic tree, ontologie complète
-  - `roles/` — taxonomy des rôles SOC / blue-team
-  - `scenarios/` — chaîne APT29 complète + scénarios ARENA + barème proof-of-skill
+- **[packs/cyber/](../../packs/cyber/)** - Cyber Pack v0.2.0 — Domain Pack cybersecurity (ONTOLOGY + ROLES + SCENARIOS + CORPUS)
+  - `pack.manifest.json` — manifest du pack (version, 9 providers, sources)
+  - `ontology/` — ATT&CK hierarchy (14 troncs), density, semantic tree (130 feuilles, 153 edges)
+  - `roles/` — taxonomy des rôles SOC / blue-team (SOC L1/L2/L3, DFIR, Detection Eng, Threat Hunter, SEL)
+  - `scenarios/` — chaîne APT29 (79 steps) + 3 scenarios ARENA + barème proof-of-skill
   - `corpus/` — corpus fondateur SCYForge
-  - `scripts/` — génération du semantic tree cyber
+  - `scripts/` — génération du semantic tree cyber (Python)
+
+## Architecture Pivot & Zero-to-One
+
+### Architecture
+- **[SCYFORGE_PIVOT_ARCHITECTURE.md](../../docs/SCYFORGE_PIVOT_ARCHITECTURE.md)** - Pivot architecture : invariants qui restent/changent, features éliminées/différées, séquence MVP
+- **[SCYFORGE_C4_MODEL.md](../../docs/SCYFORGE_C4_MODEL.md)** - C4 model (Context / Container / Component / Deployment)
+- **[SCYFORGE_SEQUENCE_DIAGRAMS.md](../../docs/SCYFORGE_SEQUENCE_DIAGRAMS.md)** - Diagrammes séquence onboarding + pack loader + ARENA + certification
+
+### Design (Whiteport Design System)
+- **[WDS3-CYBER-BEACHHEAD.md](../../design-artifacts/C-UX-Scenarios/WDS3-CYBER-BEACHHEAD.md)** - 11 scenarios cyber recalibrés (SOC L1/L2/DFIR/SEL)
+- **[primitives.md](../../design-artifacts/D-Design-System/primitives.md)** - Inventaire des primitives UI React
+- **[tokens.ts](../../design-artifacts/D-Design-System/tokens.ts)** - Design tokens TypeScript
+- **[tokens.css](../../design-artifacts/D-Design-System/tokens.css)** - Design tokens CSS

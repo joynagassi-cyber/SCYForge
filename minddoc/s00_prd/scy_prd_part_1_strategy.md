@@ -1,4 +1,35 @@
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+PRD source de vérité — adapter pour cyber beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # PRD SCY Forge — Version 2.0 Complète & Consolidée
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
+
 ## Product Requirements Document — Intégrant Pipeline Agentique ASCENT + NEURON-CHAINS Autonomes
 
 ---
@@ -71,91 +102,110 @@ Pour maximiser l'efficacité de l'équipe technique, ce document de référence 
 
 ## 1. Executive Summary `[Rôle : Product Owner & PM]`
 
-### 1.1 Charte de Marque & Storytelling Officiel (v1.0)
-SCY Forge est officiellement rebrandé sous l'appellation unique et brevetée : **SCY Forge (Synapse Cognitive Yield Forge)**.
+### 1.1 Charte de Marque & Storytelling Officiel (v2.0 — Cyber Beachhead)
+
+SCY Forge est officiellement positionné comme : **Cyber Operational Mastery Infrastructure**.
 
 #### A. Slogans Officiels de Lancement :
-* **Version Française (Scientifique & Moderne) :**  
-  > **"SCY Forge : Façonnez votre rendu cognitif."**
+* **Version Française (B2B SOC) :**  
+  > **"SCY Forge : Transformez votre savoir cyber en autonomie opérationnelle."**
 * **Version Anglaise (SaaS Tech Global) :**  
-  > **"SCY Forge : Forge your cognitive yield."**
+  > **"SCY Forge : Turn private cyber knowledge into measurable operator readiness."**
 
-#### B. Double Pitch de Storytelling :
-1. **Le Pitch "Rigueur Scientifique & Médicale"** (Cible : Cliniciens, Chercheurs, PMEs B2B) :  
-   *"Notre plateforme, **SCY Forge**, est conçue sur les principes fondamentaux de la neuroplasticité active. L'objectif est d'optimiser le **S**ynapse **C**ognitive **Y**ield — le rendement et l'efficacité de transmission de chaque connexion neuronale. Nous offrons une structure d'apprentissage rigoureuse (la **Forge**) qui permet d'ancrer de manière permanente les concepts les plus complexes pour garantir une rétention maximale à long terme."*
-2. **Le Pitch "Bénéfice & Clarté"** (Cible : Autodidactes, Créateurs de contenu, Grand Public) :  
-   *"On sait tous qu'assimiler et retenir des montagnes d'informations complexes est un calvaire. **SCY Forge** fonctionne comme un véritable entraîneur de votre cerveau. Il connecte vos idées sous forme de **S**ynapses, simplifie vos **C**oncepts clés, et décuple votre **Y**ield — c'est-à-dire votre productivité intellectuelle. C'est l'outil parfait pour se forger une mémoire infaillible et des compétences d'élite sans effort technique."*
+#### B. Pitch de Storytelling (Beachhead) :
+1. **Le Pitch "Monopole Niche"** (Cible : SOC Manager, CISO, Security Enablement Lead) :  
+   *"SCYForge est la première infrastructure qui transforme le savoir privé de votre organisation (SOPs, playbooks, incidents, règles de détection) en compréhension, rétention, jugement et autonomie opérationnelle mesurable pour vos recrues SOC. Pas un LMS. Pas un chatbot sur docs. Un moteur de maîtrise cyber."*
 
-### 1.1bis Vision en 3 Phrases
+### 1.1bis Vision en 3 Phrases — Cyber Beachhead
 
-**SCY Forge** est la première plateforme d'apprentissage entièrement autonome : l'utilisateur déclare un objectif de compétence, et 13 agents IA orchestrent automatiquement l'ingestion de contenu, la génération de parcours, les révisions espacées, l'assistance contextuelle et la certification — sans que l'utilisateur ait à choisir quelle feature utiliser.
+**SCY Forge** est une infrastructure de maîtrise opérationnelle cyber : un SOC Manager déclare un rôle à former, SCYForge charge un Domain Pack (MITRE ATT&CK + Sigma + OTRF + CISA), construit un Semantic Tree, et orchestre la conversion du savoir privé de l'entreprise en autonomie vérifiable pour les recrues.
 
-Le système combine une **Pipeline Agentique ASCENT** (13 agents autonomes orchestrant toutes les features), des **NEURON-CHAINS Autonomes** (7 chaînes × 24 agents × 18 tools natifs Rust pour la génération documentaire), et une **architecture économique rigoureuse** maintenant les coûts LLM à $0.006/parcours grâce à 7 mécanismes d'optimisation.
+Le système combine un **Semantic Tree** (substrat unique : cerveau apprenant + savoir entreprise + architecture produit), des **Domain Packs chargeables** (le cœur ne sait RIEN de la cybersécurité), et une **pipeline ASCENT** (agents consommateurs de contracts domaine) pour la rétention FSRS, la visualisation COSMOS et la certification Proof of Skill.
 
-**Value Proposition** : *"Tu déclares un objectif → SCY Forge s'occupe du reste jusqu'à ce que tu sois compétent, vérifiablement."*
+**Value Proposition** : *"Votre SOC recrute. SCYForge transforme ses SOPs en autonomie opérationnelle prouvée — sans dépendre des seniors."*
 
-### 1.2 Différenciation Clé v2.4
+### 1.2 Différenciation Clé — Cyber Beachhead v2.0
 
-| Aspect | Anki | Notion | Coursera | SCY Forge v1 | **SCY Forge v2.4** |
-|--------|------|--------|----------|-------------|-----------------|
-| Ingestion automatique | ❌ | ❌ | ❌ | ✅ 11 cores | ✅ 11 cores + Auto-Scout |
-| Génération contenu IA | ❌ | ⚠️ | ❌ | ✅ 24 agents | ✅ 24 agents + 18 tools Rust |
-| Apprentissage adaptatif | ❌ | ❌ | ⚠️ | ✅ DAG ASCENT | ✅ **Pipeline 13 agents autonomes** |
-| Orchestration auto features | ❌ | ❌ | ❌ | ❌ | ✅ **ASCENT-ORCHESTRATOR** |
-| **Coéquipier quotidien (vie réelle)** | ❌ | ❌ | ❌ | ❌ | ✅ **CHRONICLE — gestion imprévus, reprogrammation** |
-| **Validation pratique simulation** | ❌ | ❌ | ❌ | ❌ | ✅ **ARENA — roleplay Full-AI tout domaine** |
-| Coût LLM maîtrisé | N/A | N/A | N/A | $0.015/vidéo | **$0.006/parcours complet** |
-| Score confiance documents | ❌ | ❌ | ❌ | ⚠️ | ✅ **Par section + rapport** |
-| Anti-hallucination | ❌ | ❌ | ❌ | ⚠️ | ✅ **3 couches de protection** |
-| Certification compétence | ❌ | ❌ | ⚠️ | ✅ SMI | ✅ **Proof of Skill théorique + pratique ARENA** |
+| Aspect | Anki | Notion | Coursera | Cyber LMS | **SCY Forge Beachhead** |
+|--------|------|--------|----------|-----------|------------------------|
+| Ingestion automatique | ❌ | ❌ | ❌ | ✅ 13 cores | ✅ **Domain Pack pré-chargé** (MITRE ATT&CK + Sigma) |
+| Génération contenu IA | ❌ | ⚠️ | ❌ | ✅ générique | ✅ **Scénarios pré-construits** (APT29, CISA IR) |
+| Apprentissage adaptatif | ❌ | ❌ | ⚠️ | ✅ basique | ✅ **Semantic Tree + SMI 5-dim** |
+| Orchestration auto features | ❌ | ❌ | ❌ | ❌ | ✅ **ASCENT 13 agents (Plan C)** |
+| **Maîtrise opérationnelle cyber** | ❌ | ❌ | ❌ | ❌ | ✅ **Proof of Skill + ARENA APT29** |
+| **Visibilité manager (SEL)** | ❌ | ❌ | ❌ | ❌ | ✅ **Coverage Map + Gap Detection + Readiness Score** |
+| Coût LLM initial | N/A | N/A | N/A | $0.10+ | **$0 (contenu pré-construit)** |
+| Score confiance | ❌ | ❌ | ❌ | ⚠️ | ✅ **Par section + traçabilité** |
+| Anti-hallucination | ❌ | ❌ | ❌ | ❌ | ✅ **Beth Trunk Validator (Datalog Horn)** |
+| Certification compétence | ❌ | ❌ | ⚠️ | ✅ basique | ✅ **Proof of Skill (5 formats + APT29 cert)** |
+| **Private corpus → autonomie** | ❌ | ❌ | ❌ | ❌ | ✅ **Le cœur ne sait RIEN de la cyber — tout est pack** |
+| **Corporate sector adaptation** | ❌ | ❌ | ❌ | ❌ | ✅ **Pack MITRE + secteur (HDS, PCI-DSS, NIS2) → monopole sectoriel** |
+| **Generative Forest Engine (GFE)** | ❌ | ❌ | ❌ | ❌ | ✅ **Croisement structuré du savoir privé → Seeds neuves (non-copiables)** |
+| **B2B2C expansion** | ❌ | ❌ | ❌ | ❌ | ✅ **RSSI valide → déploiement tous employés (200-5000)** |
 
-### 1.3 Métriques Cibles Révisées
+### 1.3 Métriques Cibles Révisées — Beachhead Cyber
 
-- **ASCENT Completion Rate** : >70% (vs <15% industrie standard)
-- **Temps Until Compétence** : -40% vs estimation initiale (pipeline adaptatif)
-- **Coût LLM/user/mois** : <0,02 $ (Free) / ~0,38 $ (Lite) / ~2,16 $ (Pro) / ~4,50 $ (Ultra)
-- **Score Confiance Docs** : ≥85/100 moyen tous documents générés
-- **Taux Hallucination** : <1% assertions non vérifiées
-- **Cache Hit Rate** : >60% contenu partagé entre users
-- **NPS** : >40
-- **Rétention J7** : >40% | **J30** : >25%
+- **Time-to-Autonomy (SOC L1)** : < 90 jours (vs 6-12 mois standard)
+- **APT29 Scenario Completion** : > 70% taux de complétion (score ≥ 0.70)
+- **SMI Global moyen (équipe)** : progression 0.0 → 0.70 en 28 jours
+- **Senior Mentoring Hours économisées** : -60% (vs onboarding traditionnel)
+- **Coverage ATT&CK (rôle)** : 100% des tactiques requêtes maîtrisées à SMI ≥ 0.70
+- **Readiness Score** : ≥ 85% avant certification Proof of Skill
+- **Gap Detection précision** : ≤ 5% faux négatifs (prereq manquant non détecté)
+- **NPS SOC Manager** : > 50 (vs < 40 générique)
+- **Rétention J30** : > 60% (vs < 25% standard LMS)
+- **Coût infrastructure initial** : ~$35/mois (Northflank + Vercel, pas de LLM au démarrage)
 
 ---
 
 ## 2. Vision Produit & Stratégie `[Rôle : Product Owner & PM]`
 
-### 2.1 Problème Résolu — Version Étendue
+### 2.1 Problème Résolu — Version Cyber Beachhead
 
-**La friction classique de l'apprentissage :**
-1. **Fragmentation sources** : Contenu dispersé (YouTube, articles, PDFs, Drive)
-2. **Extraction manuelle** : Note-taking chronophage, perte contexte
-3. **Création cartes révision** : 30-60 min/vidéo, taux abandon 70%+
-4. **Parcours statiques** : Coursera/Udemy non-adaptatifs, 85% abandonnent
-5. **Absence vérification** : Impossible prouver compétence acquise
+**La fracture du savoir cyber dans les organisations :**
+1. **Fragmentation SOPs** : Procédures dispersées (Confluence, PDFs, wikis morts, runbooks obsolètes)
+2. **Dépendance seniors** : Les connaissances critiques sont dans la tête de 2-3 seniors qui partiront
+3. **Onboarding lent** : 3-6 mois avant qu'une recrue SOC soit opérationnelle
+4. **Pas de structure** : Aucune hiérarchie de concepts, pas de prérequis identifiés
+5. **Pas de mesure** : Impossible de prouver le niveau réel d'un analyste
+6. **Alert fatigue** : Les recrues escaladent prématurément par manque de contexte
+7. **Drift silencieux** : Les SOPs évoluent mais la formation ne suit pas
+8. **Charge senior** : 30-40% du temps des seniors dédié au mentoring non structuré
 
-**Problème additionnel résolu par SCY Forge v2 :**
+**Pourquoi les solutions existantes échouent :**
+- LMS génériques : pas de contexte opérationnel cyber
+- Cyber ranges : pas de progression structurée, pas de rétention
+- Chatbot docs : pas de maîtrise vérifiable, pas de preuve de compétence
+- SOAR : automatise les workflows mais ne forme pas les humains
 
-6. **Orchestration cognitive** : L'utilisateur doit décider lui-même "quelle feature utiliser maintenant" → friction cognitive → abandon
-7. **Génération non fiable** : Documents IA sans score de confiance ni traçabilité source → distrust → rejet
-8. **Coûts IA imprévisibles** : Pipelines agentiques naïves → $10-50/user/mois → marges négatives
-
-### 2.2 Solution SCY Forge v2 — Architecture Unifiée
+### 2.2 Solution SCY Forge — Cyber Operational Mastery Infrastructure
 
 ```
-INPUT : "Je veux maîtriser React en 8 semaines"
+INPUT : "Je veux former 3 recrues SOC L1 sur mon environnement"
             ↓
-[ASCENT-ORCHESTRATOR — 9 Agents Autonomes]
-   ↓              ↓              ↓              ↓
-[Ingestion]  [NEURON-CHAINS] [APEX/FSRS]   [BRAIN/RAG]
-[11 cores]   [7 chaînes     [Révisions     [Assistant
-[auto-scout] [24 agents     [spacées       [contextuel
-             [18 tools]     [FSRS 5.0]     [temps réel]
-   ↓              ↓              ↓              ↓
-[COSMOS KG]   [IMPRINT]     [Gamification] [Drift Guard]
-[26 modes    [Mémorisa-    [XP, badges,   [8 signaux
-[visualisa.] [tion profonde][streaks]     [prévention]
+[Domain Pack Loader — Pack Cyber v0.2]
+   • MITRE ATT&CK (14 tactiques, 20 branches, 130 feuilles)
+   • SigmaHQ (3 136 rules → criticality weights)
+   • OTRF + MITRE Emulation + CISA IR Playbooks
+   • APT29 chain (79 steps, 3 scenarios ARENA)
             ↓
-OUTPUT : SMI 84/100 + Proof of Skill Certificate ✅
+[Semantic Tree — Plant 14 troncs ATT&CK]
+   • Trunk = tactiques (80/20)
+   • Branch = sous-domaines (techniques)
+   • Leaf = concepts opérables (détection, artefacts, SOPs)
+   • Lianes = prereqs, relates, contradicts, supersedes
+            ↓
+[Role Projection — SOC L1]
+   • Sous-arbre : 6 tactiques core (Reconnaissance → Privilege Escalation)
+   • SOC L2 : 10 tactiques | DFIR : 14 tactiques
+            ↓
+[ASCENT Pipeline — Plan C Refactor]
+   • Agent-03 DAG-ARCHITECT → construit graphe maîtrise
+   • Agent-04 LEARNING-CONDUCTOR → sessions APEX + ARENA
+   • Agent-05 PERFORMANCE-ANALYZER → SMI 5-dim continue
+   • Agent-09 SKILL-CERTIFIER → Proof of Skill (5 formats)
+            ↓
+OUTPUT : SMI par tactique + Coverage Map + Gap Detection + Readiness Score + Certificat
 ```
 
 ### 2.3 Value Proposition Complète
@@ -172,53 +222,208 @@ OUTPUT : SMI 84/100 + Proof of Skill Certificate ✅
 - **Différenciation unique** : Aucun concurrent avec pipeline DAG → compétence autonome
 - **Moats solides** : 4 couches compétitives (7 Powers framework)
 
-### 2.4 Personas Cibles
+### 2.4 Personas Cibles — Version Cyber Beachhead (PIVOT v2.0)
 
-**Persona 1 — Étudiant Tech Autodidacte**
-- Profil : 18-28 ans, bootcamp/reconversion, apprentissage YouTube/articles
-- Besoin : Structurer apprentissage fragmenté, prouver compétences employeurs
-- Usage ASCENT : "Full-Stack React/Rust" → Pipeline auto → Proof of Skill → LinkedIn
+> **Override** : les 4 personas génériques d'origine sont remplacées par 4 personas SOC/blue-team.
+> La mécanique ASCENT reste identique ; seuls les cas d'usage et le contexte métier changent.
+> Réf : `docs/SCYFORGE_STRATEGIC_MASTERPLAN.md` §7 + `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
 
-**Persona 2 — Professionnel Veille Continue**
-- Profil : 28-45 ans, dev/PM/designer, formation continue
-- Besoin : Centraliser connaissances dispersées, révision espacée domaine pro
-- Usage ASCENT : "Architecture microservices" → 6 agents actifs en background
+**Persona 1 — SOC L1 Analyste (P-SOC1)**
+- Profil : Nouvelle recrue blue-team (0-12 mois), certification Sec+ ou équivalent
+- Besoin : Atteindre autonomie opérationnelle en 90 jours. Trop de docs, pas de structure, senior overloadé
+- Usage ASCENT : "SOC L1 Onboarding" → Pack Cyber chargé → DAG ATT&CK → APT29 ARENA scenario → Proof of Skill certifié
+- KPI : Time-to-autonomy < 90 jours, SMI ≥ 0.70 sur 6 tactiques core
 
-**Persona 3 — Chercheur/Académique**
-- Profil : 25-50 ans, PhD/Postdoc, lecture papers ArXiv
-- Besoin : Extraire concepts papers, liens inter-papers, synthèse littérature
-- Usage ASCENT : "ML pour bioinformatique" → Academic cores + ETA chain scientifique
+**Persona 2 — SOC L2 Analyste (P-SOC2)**
+- Profil : Analyste 1-2 ans, connaît les fondamentaux, manque de pratique investigations
+- Besoin : Maîtriser tactiques avancées + investigation. Gap entre théorie ATT&CK et pratique incident
+- Usage ASCENT : "SOC L2 Advanced" → DAG étendu (10 tactiques) → Investigation scenarios → Threat hunting sessions
+- KPI : SMI ≥ 0.70 sur 10 tactiques, decision-latency < 30s en ARENA
 
-**Persona 4 — Créateur de Contenu Formateur (The Creator-Educator)**
-- Profil : Créateurs de contenu influents (YouTube, TikTok, Facebook, X) vendant des formations en ligne de haut niveau.
-- Besoin : Suivre l'acquisition réelle de compétences des élèves, éviter l'abandon (taux d'attrition de 90% sur LMS classiques), fournir un feedback hyper-ciblé, et optimiser instantanément les contenus de la formation en fonction des blocages réels des étudiants.
-- Usage ASCENT/Normal : Tableau de bord de cohorte (SMI global) → Détection automatique de goulots cognitifs par l'Agent-13 → Enregistrement de micro-clarifications en un clic → Mise à jour RAG instantanée pour toute la communauté.
+**Persona 3 — DFIR / IR Analyste (P-DFIR)**
+- Profil : Spécialiste réponse aux incidents, investigation forensique
+- Besoin : Investigation forensique + chaine kill. Manque de scénarios réalistes sur données internes
+- Usage ASCENT : "DFIR Certification" → DAG complet ATT&CK (14 tactiques) → IR Playbook CISA scenarios → Chain of custody validation
+- KPI : SMI ≥ 0.75 sur 14 tactiques, APT29 score ≥ 0.85
 
-### 2.5 Architecture Stratégique — 7 Powers
+**Persona 4 — Security Enablement Lead (P-SEL)**
+- Profil : Manager qui forme les recrues SOC, responsable onboarding et readiness
+- Besoin : Réduire charge senior + prouver readiness. Pas de visibilité progression, pas de certification standardisée
+- Usage ASCENT : "Team Onboarding Manager" → Bulk learner creation → Pack Cyber chargé → Coverage dashboard → Gap detection → Readiness reports export PDF
+- KPI : Time-to-autonomy équipe -40%, senior mentoring hours -60%, cert rate ≥ 80%
 
-**Couche 4 — Intelligence Collective (Network Effect + Cornered Resource)**
-- DAG ASCENT optimisés empiriquement (1000+ completions), k-anonymity ≥100
-- Cache mutualisé : User A génère React ($0.057), 999 autres → $0.000 chacun
+### 2.4bis Personas Éliminées (Génériques — NON APPLICABLES)
 
-**Couche 3 — Données Privées (Switching Costs + RGPD)**
-- Graphe personnel + 2 ans FSRS historique + Parcours ASCENT certifiés
-- Perte massive si migration concurrent (données non-portables facilement)
+Les personas suivantes de la version générique initiale sont **éliminées** du beachhead :
+- ~~Étudiant Tech Autodidacte~~ → Remplacé par P-SOC1/P-SOC2
+- ~~Professionnel Veille Continue~~ → Remplacé par P-SEL
+- ~~Chercheur/Académique~~ → Remplacé par P-DFIR (partiel)
+- ~~Créateur de Contenu Formateur~~ → ÉLIMINÉ. Retour en Phase 2+ (B2B Creator Console)
 
-**Couche 2 — Cache Public Mutualisé (Scale Economies)**
-- Coût marginal décroissant avec utilisateurs
-- Breakeven cache : ~10 users par objectif similaire
+### 2.5 Architecture Stratégique — 7 Powers (Cyber Beachhead)
 
-**Couche 1 — Pipeline Agentique (Counter Positioning)**
-- Impossible à répliquer sans infrastructure complète (13 agents × 7 features)
-- Différenciateur technologique vs Coursera, Anki, Notion
+**Couche 4 — Private Corpus Moat (Cornered Resource + Network Effect)**
+- Chaque corpus client est propriétaire et non-public (Sigma rules custom, IR playbooks, SOPs)
+- Semantic Tree partagé : plus l'entreprise vit, plus l'arbre s'enrichit → switching cost exponentiel
 
-### 2.6 Stratégie d'Expansion B2B (ROI-Driven Education)
+**Couche 3 — Competency Graph Moat (Switching Costs + RGPD)**
+- SCYForge modélise la maîtrise par rôle, tactique, playbook et workflow
+- 2 ans d'historique SMI + parcours certifiés = données non-portables facilement
 
-Pour asseoir sa rentabilité et conquérir le marché des entreprises, SCY Forge se positionne comme l'unique plateforme de formation professionnelle axée sur le **Retour sur Investissement (ROI) de la montée en compétences** prouvé par les données (SMI). Les détails complets du plan d'expansion, de la console manager, de l'onboarding sécurisé et de l'analyse financière lean sont documentés dans le guide **`uploads/scy_forge_b2b_expansion_strategy.md`** :
-* **La Console Manager / Instructeur** : Permet aux DRH ou Directeurs Techniques de suivre la progression du SMI en temps réel de leurs équipes (avec le module d'analytics **SurveyJS Dashboard** à 0$ de licence).
-* **Private Corporate Ingestion (La Niche SOP-to-SMI)** : Téléversement en 1 clic de manuels de procédures internes (SOP), de processus de sécurité ou de guides réglementaires. SCY Forge est le seul moteur capable de transformer ces documentations poussiéreuses en cursus d'apprentissage actif et mesurable (grâce à la mémorisation FSRS 5.0 et aux simulations pratiques de l'ARENA), offrant aux managers et auditeurs une preuve de conformité d'SMI légale inattaquable.
-* **Isolation Native & Multi-Tenant** : Étancheité absolue des données d'entreprises assurée au niveau database par les règles de sécurité PostgreSQL **RLS (Row Level Security)**.
-* **Plan de Bootstrapping à 0$** : Démarre par des pilotes gratuits de 30 jours pour des PME ou startups locales (onboarding logiciel ultra-rapide via Software Sprint) pour prouver la valeur et générer la trésorerie nécessaire pour financer les serveurs dédiés et les accréditations officielles (Qualiopi, IACET, ECTS).
+**Couche 2 — Learning Telemetry Moat (Data Accumulation)**
+- SCYForge apprend où les gens oublient, hésitent, échouent, progressent
+- Plus de learners → meilleure calibration des paramètres FSRS par domaine
+
+**Couche 1 — Domain Pack Architecture (Counter Positioning)**
+- Le cœur ne sait RIEN de la cybersécurité → extension à tout domaine sans réécriture
+- 9 providers : SemanticTreeProvider (PRIMARY) + Ontology, Corpus, RoleTaxonomy, DecisionScenario, ProofRubric, RetentionPolicy, ValidationGuard + PackConfig + PackJsonSchema
+- Impossible à répliquer sans architecture hexagonale + contrat de pack
+
+**Mécanisme d'expansion** : Beachhead = SOC onboarding → expansion IR/threat hunting/cloud security → SRE/DevOps → Finance/Healthcare → Infrastructure de maîtrise universelle
+
+**Couche 5 — Generative Forest Engine (Counter Positioning + Network Effect)**
+- Le GFE produit de la **connaissance neuve** à partir du savoir privé du client (non-copiable)
+- Pollinisation intra-STB (MITRE) → Seeds de nouveaux scenarios → validation client
+- Cross-pollination inter-STB (MITRE + secteur) → monopole sectoriel
+- Plus le corpus client est riche, plus les Seeds sont pertinentes → switching cost exponentiel
+
+### 2.6 Stratégie d'Expansion B2B — Deux Marchés Cumulés (SOC + Corporate)
+
+**[PIVOT]** SCY Forge cible **deux marchés complémentaires**, pas un seul :
+1. **Pure-players cyber** (SOC teams tech) — beachhead initial, personas P-SOC1/P-SOC2/P-DFIR/P-SEL
+2. **Corporate IT/Cyber non-tech** (banques, hôpitaux, usines, retail, assurances) — Peak-Opportunity, personas P-RSSI/P-JUNIOR/P-ITM
+
+Le marché #2 a une douleur **maximale** (équipe minuscule, RSSI épuisé, risque mortel) et un TAM **10x supérieur**.
+Les deux marchés partagent le même core produit (MITRE ATT&CK + Semantic Tree + ASCENT + APEX + COSMOS).
+La seule différence = le **sector pack** injecté via le Domain Pack Contract (DCID).
+
+Les détails complets du plan d'expansion, de la console manager, de l'onboarding sécurisé et de l'analyse financière lean sont documentés dans le guide **`uploads/scy_forge_b2b_expansion_strategy.md`** :
+* **SOC Manager Console / SEL (Security Enablement Lead)** : Permet au SOC Manager de suivre la progression du SMI en temps réel de ses recrues (avec le module d'analytics **SurveyJS Dashboard** à 0$ de licence).
+* **Sector Pack Builder (Corporate)** : Le RSSI peut ajouter des règles sectorielles (HDS, PCI-DSS, NIS2) à un pack MITRE pré-chargé. SCY Forge transforme ces documentations poussiéreuses en cursus d'apprentissage actif et mesurable, offrant aux managers et auditeurs une preuve de readiness d'SMI légale inattaquable.
+* **Private Corporate Ingestion** : Téléversement en 1 clic de SOPs internes, playbooks IR, règles de détection Sigma customisées.
+* **Isolation Native & Multi-Tenant** : Étanchéité absolue des données d'entreprises assurée au niveau database par les règles de sécurité PostgreSQL **RLS (Row Level Security)**.
+* **Plan de Bootstrapping à 0$** : Démarre par des pilotes gratuits de 30 jours pour des SOCs de moins de 10 analystes ou des équipes corporate de moins de 5 personnes pour prouver la valeur et générer la trésorerie nécessaire pour financer les serveurs dédiés et les accréditations officielles (NIST SP 800-53, CIS Controls, DoD 8570).
+
+> **Note B2B vs B2C** : Rien n'est éliminé. Le B2B SOC/Cyber est le **court terme** (M0-M36). Le B2C grand public est le **long terme** (M36+).
+> Toutes les features "éliminées" du beachhead B2B (NEURON-CHAINS, ARENA, CHRONICLE, IMPRINT, B2B Creator, Normal Mode, Finance Suite, 11 Ingestion Cores) sont **reclassées B2C**.
+> Le B2C nécessite génération LLM à la volée + ingestion infinie → mass market qui validera la scale et le brand SCY Forge.
+
+### 2.6ter Generative Forest Engine (GFE) — Le Moteur de Créativité Génératif
+
+**[D-021 — D-022]** Le GFE est le **3ème pilier** de SCY Forge, à côté de l'ASCENT Pipeline (transmission du savoir) et du Semantic Tree + DCID (structure du savoir).
+
+**Principe** : SCY Forge ne se contente pas de transmettre du savoir. Il **produit de la connaissance neuve** à partir du savoir existant.
+
+> **"Le fruit, on le mange. La graine, on la plante."**
+
+Le GFE prend le Semantic Tree + le Knowledge Graph bitemporel d'un client et, par croisement structuré entre branches éloignées (pollinisation), produit des **graines plantables** — des propositions neuves qui peuvent germer en nouveaux sous-arbres de savoir.
+
+**Propriété souveraine** : La créativité naît de la **structure unique** du savoir privé du client. Aucun Internet n'est nécessaire pour polliniser. Le résultat est **non-copiable** par un concurrent.
+
+**Sur le cyber beachhead** : Le GFE fonctionne en **mode observatoire** (M0-M36). La pollinisation intra-domaine opère sur le Semantic Tree MITRE ATT&CK pour produire des Seeds de nouveaux scenarios d'entraînement. Les Seeds sont stockées mais pas encore germinées — elles attendent la validation produit.
+
+**Post-MVP (corporate PEAK, M36+)** : Le GFE passe en **mode expansion** :
+- Cross-pollination inter-STB (MITRE + secteur HDS/PCI-DSS/NIS2)
+- Pollinisation avec le savoir privé du RSSI (sector pack builder)
+- Germination automatique : Seeds valides → nouveaux sous-arbres de formation sectoriels
+
+**Nomenclature** :
+| Concept | Nom | Rôle |
+|---------|-----|------|
+| STB | Semantic Tree Base | Arbre de savoir dirigé |
+| ARBOR | Arborization | KG plat → arbre dirigé |
+| POLL | Pollination | `Pollination(A, B, ctx) → Seed \| ∅` |
+| XPOLL | Cross-Pollination | Inter-STB sectoriels |
+| Seed | Graine | Proposition neuve (5 composants) |
+| PlantScore | Score de plantation | Viability^γ × Fecundity^(1−γ) |
+| Vision Helm (HELM) | Gouvernail de vision | Vecteur k-dim + graphe d'objectifs |
+
+**Émergence endogène (3 mécanismes)** : Structure-Mapping (Gentner) + Conceptual Blending (Fauconnier-Turner) + Link Prediction (Swanson/node2vec). **Indépendants d'Internet.**
+
+### 2.7 Stratégie d'Expansion B2B — Deux Marchés Cumulés (SOC + Corporate)
+
+**[PEAK-OPPORTUNITY — 2026-07-01]** Le vrai multiplicateur de valeur de SCY Forge ne vient pas des pure-players de la cyber, mais des **équipes de sécurité internes d'entreprises non-tech** (banques, hôpitaux, usines, grande distribution, assurances).
+
+**Pourquoi c'est le marché massif** :
+1. **Douleur maximale** : Dans une entreprise non-tech, l'équipe cyber est minuscule (2-3 personnes). Le RSSI n'a strictement aucun temps pour former une nouvelle recrue. Si le junior n'est pas autonome immédiatement, le RSSI fait des semaines de 70h et le risque de piratage explose.
+2. **Coût d'erreur mortel** : Dans une entreprise non-tech, une erreur de configuration junior = arrêt d'activité (ransomware). Le ROI d'un outil de formation est **instantané** pour le CFO : coût d'une attaque > coût de SCY Forge x100.
+3. **Monopole sectoriel** : En adaptant le contenu MITRE aux règles spécifiques du secteur (HDS pour santé, PCI-DSS pour banque/retail, NIS2 pour industriels), SCY Forge crée un **contenu propriétaire sectoriel** qu'aucun concurrent généraliste (Coursera, Notion, Asana) ne pourra répliquer.
+4. **Flywheel B2B2C** : Une fois que le RSSI valide SCY Forge pour son équipe (5 personnes), il le déploie pour former **tous les employés** (200-5000 personnes) aux règles d'or de la sécurité.
+
+**Hypothèse TAM (Total Addressable Market)** :
+- Pure-players cyber (SOC/L1/L2/DFIR) : ~50 SOCs tech en France → ~250K $ ARR
+- Corporate IT/Cyber non-tech : ~10 000 entreprises (banques, hôpitaux, retail, assurances, industries) → **~50M $ ARR potentiel**
+
+**Étapes du flywheel** :
+1. **B2B niche** : SOC interne (5 analysts) → ~5 000 $/an
+2. **B2B2C expansion** : Tous les employés (200 personnes) → ~20 000 $/an
+3. **Monopole sectoriel** : 3 banques → contenu bancaire propriétaire → barrière à l'entrée massive
+4. **Référence** : Les secteurs satisfaits vantent SCY Forge → acquisition dans d'autres secteurs
+
+**Pricing Corporate** :
+| Tier | Prix/an | Cible | Inclus |
+|------|---------|-------|--------|
+| Team | 5 000 $ | SOC interne (5 analysts) | Pack Cyber MITRE + 1 secteur |
+| Enterprise | 25 000 $ | Services centraux (50+ analysts) | Multi-pack, SSO, analytics |
+| Industry | 50 000 $+ | RSSI + Tous les employés | Custom sector pack + B2B2C |
+| Government | Custom | Secteur public | On-prem, FedRAMP, custom ontology |
+
+---
+
+## 3. Architecture Système — Vue Unifiée Cyber Beachhead `[Rôle : Backend & Data]`
+
+### 3.1 Architecture Hexagonale (Décision-001) — Adaptée Beachhead
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    FRONTEND REACT (Vercel)                          │
+│  Onboarding Flow | Semantic Tree (COSMOS-lite) | ARENA Engine      │
+│  Dashboard (SMI + Gaps + Coverage) | Pack Manager | Seed Explorer   │
+└──────────────────────────────┬──────────────────────────────────────┘
+                               │ REST / WebSocket
+┌──────────────────────────────▼──────────────────────────────────────┘
+│             AXUM SERVER — Rust + Tokio                              │
+│                                                                       │
+│  POST /api/packs/load          → Domain Pack Loader                 │
+│  POST /api/tree/plant           → TreeOpResult (14 troncs)          │
+│  POST /api/tree/graft           → greffer nœud                     │
+│  POST /api/tree/prune           → élaguer                          │
+│  POST /api/gfe/pollinate        → Seed | ∅                         │
+│  POST /api/gfe/germinate        → New Subtree                       │
+│  GET  /api/gfe/seeds            → Seed Explorer                     │
+│  GET  /api/roles/{id}/subtree   → sous-arbre de rôle               │
+│  POST /api/scenarios/{id}/start → initier ARENA                     │
+│  POST /api/scenarios/{id}/react → décision joueur                   │
+│  POST /api/mastery/evaluate     → SMI après évaluation              │
+│  GET  /health/{live|ready|deep}  → 3-tier health                     │
+└──────────────────────────────┬──────────────────────────────────────┘
+                               │
+          ┌────────────────────┼────────────────────┐
+          ▼                    ▼                    ▼
+┌─────────────────┐  ┌───────────────┐  ┌────────────────┐
+│ scy-eventbus     │  │ scy-shared    │  │ scy-apex-fsrs  │
+│ (pub/sub)        │  │ (types +      │  │ (SMI calc      │
+│                  │  │  ports + tree)│  │  simplifié)    │
+│                  │  │  + GFE types  │  │                │
+│ Events:          │  │               │  │                │
+│ - SeedPollinated  │  │               │  │                │
+│ - SeedViable      │  │               │  │                │
+│ - SeedGerminated  │  │               │  │                │
+│ - TreeOpPlanted   │  │               │  │                │
+│ - TreeOpGrafted   │  │               │  │                │
+│ - ScenarioEv      │  │               │  │                │
+│ - MasteryUpd      │  │               │  │                │
+└──────────────────┘  └───────────────┘  └────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  PostgreSQL (Northflank) + pgvector + RLS                           │
+│                                                                       │
+│  scy_semantic_trees  │  scy_tree_edges  │  scy_learner_node_states │
+│  scy_domain_packs    │  scy_role_subtrees│ scy_scenario_instances  │
+│  scy_mastery_evaluations │ scy_seeds (GFE) │ scy_tree_operations     │
+└─────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -318,6 +523,15 @@ pub enum SCY ForgeEvent {
 
     // IMPRINT
     ImprintCompleted { user_id, concept, cran_level },
+
+    // GFE (Generative Forest Engine)
+    SeedPollinated { seed_id, source_a: NodeId, source_b: NodeId, plant_score: f32 },
+    SeedViable { seed_id, viability: f32, fecundity: f32 },
+    SeedDormant { seed_id, reason: String },
+    SeedGerminated { seed_id, new_subtree_id: TreeId },
+    TreeOpPlanted { tree_id, pack_ref: String },
+    TreeOpGrafted { tree_id, node_id, prereqs: Vec<NodeId> },
+    TreeOpPruned { tree_id, node_id, reason: Supersedes },
 
     // Système
     UserOnboarded { user_id },

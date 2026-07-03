@@ -1,5 +1,36 @@
+<!--
+BEACHHEAD PIVOT v2.0 — ELIMINATED
+IMPRINT ÉLIMINÉE. Contenu biblique incompatible avec cyber ops. Réécriture nécessaire.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 📖 SCY-EMPREINTE-VOCABULAIRE — SPÉCIFICATION (SPEC)
 **ID** : S07_IMPRINT_EMPREINTE_VOCABULAIRE_SPEC · **Phase** : v2.5 🔴 CRITIQUE · **Réf** : PRD §7.8
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | ELIMINATED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module est ÉLIMINÉ du beachhead**
+• Conservé pour expansion future
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 L'**Empreinte Vocabulaire** est un module de mémorisation de vocabulaire d'élite : l'IA sélectionne **10 mots complexes, rares et stratégiques** (ex : *Sérendipité*, *Éphémère*, *Sycophante*). Chaque mot s'accompagne d'une fiche étymologique interactive (prononciation phonétique, étymologie, définition) et exige un **ancrage par écriture manuscrite** (friction intentionnelle).

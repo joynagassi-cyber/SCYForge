@@ -60,10 +60,16 @@
 - **[SCYFORGE_RCL_MESSAGE_CATALOG.md](./SCYFORGE_RCL_MESSAGE_CATALOG.md)** - Catalogue des messages RCL
 - **[SCYFORGE_RCL_IMPLEMENTATION_BACKLOG.md](./SCYFORGE_RCL_IMPLEMENTATION_BACKLOG.md)** - Backlog d'implémentation RCL
 
-### COSMOS Plugin Infrastructure
-- **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_A_CORE.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_A_CORE.md)** - Plugin infra COSMOS — Core (architecture plugin)
-- **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md)** - Plugin infra COSMOS — Cyber plugin
-- **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md)** - Plugin infra COSMOS — Arborization & insights
+### Architecture COSMOS (visualisation)
+> **Note** : l'architecture Plugin (docs A/B/C) a été abandonnée au profit de COSMOS v5 (moteur de rendu intégré + VizSpec catalog).
+
+- **[SCYFORGE_COSMOS_V5_VIZSPEC_CATALOG.md](./SCYFORGE_COSMOS_V5_VIZSPEC_CATALOG.md)** - Architecture COSMOS v5 active : VizSpec catalog (90 entrées), intent resolver, 6 viz noyau, use case intentions par domain pack
+- **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_A_CORE.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_A_CORE.md)** - [ARCHIVÉ] Référence historique — noyau Plugin COSMOS
+- **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md)** - [ARCHIVÉ] Référence historique — Plugin Cyber
+- **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md)** - [ARCHIVÉ] Référence historique — Arborization Plugin
+
+### STUDENT AI (évaluation cognitive & teach-back)
+- **[STUDENT_AI_IMPROVEMENT_REPORT.md](./STUDENT_AI_IMPROVEMENT_REPORT.md)** - Rapport d'amélioration utilisateur (9 améliorations : MSS, profondeur conceptuelle, séparation pédagogique/LLM, métacognition, visualisation rapport, FSRS étendu, profils d'explication, mode présentation, intelligence collective)
 
 ### Architecture pivot & beachhead cyber
 - **[SCYFORGE_PIVOT_ARCHITECTURE.md](./SCYFORGE_PIVOT_ARCHITECTURE.md)** - Pivot architecture : ce qui change, ce qui est éliminé, séquence MVP beachhead

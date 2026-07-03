@@ -1,6 +1,40 @@
-# 📊 CHECKLIST BUDGET SAAS POUR STARTUPS — SCY FORGE
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+PRD source de vérité — adapter pour cyber beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
 
-Cette checklist de niveau corporate est conçue pour structurer, budgétiser et piloter méthodiquement le lancement de la startup **SCY Forge**. Elle intègre nos décisions stratégiques réelles de **juin 2026**, notamment notre architecture de déploiement sur **Northflank**, notre structure d'abonnement à 4 tiers et l'ingénierie augmentée par agents (*Agentic SDLC*).
+# 📊 CHECKLIST BUDGET SAAS — SCY FORGE — Cyber Beachhead MVP
+
+> **PIVOT v2.0** : Cette checklist est adaptée pour le beachhead cyber SOC/blue-team.
+> Les tiers consumer (Lite/Pro/Ultra) sont remplacés par des tiers B2B SOC.
+> Les fonctionnalités différées (NEURON-CHAINS, ARENA multi-domaines, CHRONICLE) sont exclues du budget MVP.
+> Réf : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` + `docs/SCYFORGE_STRATEGIC_MASTERPLAN.md`
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le Beachhead MVP Scenario privilégie le **contenu pré-généré** (MITRE ATT&CK, pack Cyber pack → $0 LLM).
+> Les appels LLM ne servent que pour les interactions **Tactical AI live** (chat, hints, re-scénarisation adaptative).
+> En worst-case absolu : 50 SOCs × 5 analystes × 300 sessions/mois × ~5K tokens/session = **75M tokens/mois ≈ 75 $/mois max**.
 
 ---
 
@@ -59,27 +93,53 @@ Pour estimer le coût réel du code source de SCY Forge développé par des agen
 
 ---
 
-## 2. Prévoir les Revenus & Tarifs d'Abonnement <a name="2-revenus"></a>
+## 2. Prévoir les Revenus & Tarifs d'Abonnement — Deux Marchés Cumulés <a name="2-revenus"></a>
 
-SCY Forge applique une structure de tarification récurrente (SaaS) divisée en 4 offres claires de service :
+SCY Forge cible **deux marchés complémentaires** avec la même plateforme :
+1. **Pure-players cyber** (SOC teams tech) — personas P-SOC1/P-SOC2/P-DFIR/P-SEL
+2. **Corporate IT/Cyber non-tech** (banques, hôpitaux, retail, assurances) — Peak-Opportunity, personas P-RSSI/P-JUNIOR/P-ITM
 
-### ☐ 2.1 Configuration de la Grille d'Abonnement
-*   **🟢 Free Tier (0 $ / mois)** :  
-    *Usage* : Utilise exclusivement **DeepSeek V4 Pro/Flash** (0% de modèles fermés). Limité à 3 sources ingérées/mois, 15 requêtes BRAIN/jour et 1 parcours ASCENT simplifié (max 5 nœuds).  
-    *Mémorisation* : Accès complet à APEX (FSRS 5.0) et COSMOS (limites physiques d'affichage à 10K nœuds).
-*   **🟡 Lite Tier (10 $ / mois)** :  
-    *Usage* : Ouvre l'accès à **Claude Sonnet 4.6** (bridé). Pas de Claude Opus. Limité à 10 sources/mois, 50 requêtes BRAIN/jour, 2 parcours actifs ASCENT (max 8 nœuds).
-*   **🟠 Pro Tier (20 $ / mois)** :  
-    *Usage* : Débloque l'utilisation sélective de **Claude Opus 4.8** (exclusivement dédié au DAG, à l'expert AGENT-16 et au Comité QA), de **Claude Sonnet 4.6** pour l'écriture et les révisions d'erreurs, et de **DeepSeek Pro** pour le chat et CHRONICLE.  
-    *Limites* : 50 sources/mois, chat BRAIN illimité, 5 parcours (max 15 nœuds), 3 sessions ARENA/mois avec certification signée et assistant compagnon **CHRONICLE**.
-*   **🔴 Ultra Tier (45 $ / mois)** :  
-    *Usage* : Accès maximal sans restriction. **Claude Opus 4.8** est utilisé pour toutes les tâches de calcul et de rédaction. Parcours d'apprentissage et simulations d'ARENA illimités, avec hébergement de conteneurs prioritaires sur Northflank.
+### ☐ 2.1 Configuration de la Grille d'Abonnement (Deux Marchés)
 
-### ☐ 2.2 Définir les Métriques de Prévision (Objectif de Lancement à 1 000 utilisateurs)
-*   **Taux de Churn cible** : < 5 % / mois (Soutenu par les notifications anti-démission de `DRIFT-GUARDIAN`).
-*   **LTV (Lifetime Value) cible** : > 300,00 $ sur les tiers payants.
-*   **CAC (Customer Acquisition Cost) cible** : < 15,00 $ par conversion payante.
-*   **Hypothèse de conversion standard** : 5 % des visiteurs de la landing page s'inscrivent au Free Tier, et 10% des utilisateurs actifs se convertissent vers une offre payante (Lite ou Pro) sous 30 jours.
+*   **🟢 Trial (0 $ / 30 jours)** :  
+    *Usage* : Jusqu'à 3-5 analysts, 1 Domain Pack (MITRE + 1 secteur), scénarios basiques, Dashboard basique.  
+    *Cible* : SOC Manager (pure-player) OU RSSI (corporate). Conversion cible : 40% vers Team.
+*   **🔵 Team (5 000 $ / an)** :  
+    *Usage* : 5-20 analysts, Pack Cyber MITRE complet + 1 secteur, tous les scénarios, Coverage Map + Gap Detection, export PDF readiness reports.  
+    *Cible* : SOC Manager (pure-player) OU RSSI petite équipe (corporate).  
+    *Inclut* : Role-based onboarding, Semantic Tree viewer, SMI tracking, mastery evaluations.
+*   **🟣 Enterprise (25 000 $ / an)** :  
+    *Usage* : 50+ analysts, multi-packs (MITRE + secteurs), custom scenarios, SSO/SAML, API access, priority support, SLA.  
+    *Cible* : SOC Manager grande équipe (pure-player) OU RSSI services centraux (corporate).
+*   **🏭 Industry (50 000 $+ / an)** :  
+    *Usage* : RSSI + tous les employés (200-5000), custom sector pack, B2B2C deployment, phishing simulator, compliance mapping.  
+    *Cible* : RSSI entreprises non-tech (banques, hôpitaux, retail, assurances, industries). **Peak-Opportunity unique.**
+*   **🔴 Government/Defense (custom)** :  
+    *Usage* : On-prem possible, air-gap deployment, accréditations NIST SP 800-53 / DoD 8570.  
+    *Phase* : Post-MVP (Phase 3+).
+
+### ☐ 2.2 Métriques de Prévision (Deux Marchés)
+
+*   **Taux de Conversion Trial → Team** : > 40% (les deux marchés)
+*   **LTV (Lifetime Value) cible** : 
+  - Pure-player Team : **15 000 $** (3 ans avg)
+  - Corporate Industry : **150 000 $** (3 ans avg, B2B2C expansion)
+*   **CAC (Customer Acquisition Cost) cible** : 
+  - Pure-player : < 500 $ par SOC (conference + outreach)
+  - Corporate : < 5 000 $ par RSSI (CISO summit + partner SIEM)
+*   **Hypothèse de conversion** : 20% trials → Team, 10% → Enterprise/Industry.
+*   **MRR cible M6** : 25 K$ (50 SOCs pure-player × mix Team/Enterprise)
+*   **MRR cible M18** : 100 K$ (50 SOCs pure-player + 20 entreprises corporate × Industry tier)
+
+<!-- PIVOT-BEACHHEAD: deux marchés cumulés (SOC + Corporate), tiers consumer éliminés -->
+
+### ☐ 2.2 Définir les Métriques de Prévision (Objectif de Lancement à 100 SOCs)
+
+*   **Taux de Conversion Trial → Team** : > 40% (vs 10% consumer)
+*   **LTV (Lifetime Value) cible** : > 3 000 $ sur le tier Team (24 mois avg)
+*   **CAC (Customer Acquisition Cost) cible** : < 500 $ par SOC (conference + outreach)
+*   **Hypothèse de conversion** : 20% des trials convertissent vers Team, 10% vers Enterprise. Churn target < 5%/mois.
+*   **MRR cible M6** : 50 K$ (100 SOCs × 5 analysts avg × 49 $)
 
 ---
 
@@ -87,27 +147,41 @@ SCY Forge applique une structure de tarification récurrente (SaaS) divisée en 
 
 Cette section regroupe les dépenses récurrentes nécessaires à la livraison du service au jour le jour (lissage mensuel).
 
-### ☐ 3.1 Coût des Marchandises Vendues (COGS - Infrastructure Always-on sur Northflank)
-Notre architecture de Monolithe Unifié s'exécute de manière optimisée sur Northflank :
-*   **`scy-gateway-app`** (Mastra TS Gateway, 0.5 vCPU, 1.0 Go RAM) : **12,00 $ / mois**.
-*   **`scy-rust-core`** (Calculs physiques et IA ONNX, 1.0 vCPU, 1.5 Go RAM) : **21,00 $ / mois**.
-*   **`scy-docling-sidecar`** (Pattern Bulkhead d'extraction PDF, 1.0 vCPU, 2.0 Go RAM) : **24,00 $ / mois**.
-*   **PostgreSQL Addon** (Base de données relationnelle RLS multi-tenant, 1.0 Go RAM, 20 Go) : **20,00 $ / mois**.
-*   **Zilliz Cloud Vector Search** (Index vectoriel serverless) : **10,00 $ / mois**.
-*   **Stockage volume & Bande passante de sortie (Egress)** : **25,00 $ / mois**.
-*   *Sous-total Infrastructure Cloud* : **112,00 $ / mois** (coût fixe stable à 100%).
+### ☐ 3.1 Coût de l'Infrastructure Always-on (Northflank + Sidecars)
 
-### ☐ 3.2 Coût des APIs LLM à l'Usage (Worst-Case de Charge vs Réalité d'Usage)
-Facture mensuelle d'API calculée pour **1 000 utilisateurs actifs** (avec 60% Free, 20% Lite, 15% Pro et 5% Ultra) :
-*   **Worst-Case (100% de consommation des limites)** : **4 367,50 $ / mois**.
-*   **Scénario Réel Constaté (30% de consommation moyenne)** : **1 310,25 $ / mois**.
+Notre architecture backend (Axum + PostgreSQL + Zilliz + SearxNG sidecar) s'exécute de manière optimisée sur Northflank :
 
-### ☐ 3.3 Frais Généraux, Ventes & Marketing (S&M, G&A)
-*   **Frais de traitement des abonnements (Stripe)** : **2,9% + 0,30 $** par transaction.  
-    *(Sur un chiffre d'affaires mensuel de 7 250,00 $ pour 1 000 utilisateurs, les frais Stripe représentent environ **330,00 $ / mois**).*
-*   **Outil de Marketing Automation & Analytics (PostHog)** : **0,00 $** (Plan gratuit jusqu'à 1 million d'événements par mois).
-*   **Hébergement de la Landing Page (Vercel)** : **0,00 $** (Plan gratuit pour les fichiers statiques de présentation).
-*   **Logiciel de Comptabilité** : **0,00 $** (Outil de comptabilité et facturation basique inclus dans le plan Doola Tax & Compliance).
+*   **`scy-ts-gateway`** (Mastra TS Orchestrator, 0.5 vCPU, 1.0 Go RAM) : **12,00 $ / mois**.
+*   **`scy-rust-core`** (Calculs lourds, FSRS, RAG, 1.0 vCPU, 1.5 Go RAM) : **21,00 $ / mois**.
+*   **`scy-searxng-sidecar`** (Recherche OSINT / threat intelligence, 1.0 vCPU, 2.0 Go RAM) : **18,00 $ / mois**.
+    *Inclut la recherche web sécurisée pour le Field Intel Assistant (BRAIN) et la veille TI des analystes SOC.*
+*   **PostgreSQL Addon** (RLS multi-tenant, 1.0 Go RAM, 20 Go) : **20,00 $ / mois**.
+*   **Zilliz Cloud Serverless** (Index vectoriel) : **10,00 $ / mois**.
+*   **Stockage & Egress** : **12,00 $ / mois**.
+*   *Sous-total Infrastructure* : **93,00 $ / mois** (coût fixe stable à 100%).
+
+### ☐ 3.2 Coût des APIs LLM à l'Usage — Beachhead Scenario (Contenu Pré-construit)
+
+> **Règle Beachhead** : Tout le contenu MITRE ATT&CK, playbooks, scenarios, évaluations est **pré-généré et stocké** au moment de l'ingestion du cyber pack. Zéro appel LLM pour la navigation apprenant.
+
+Les appels LLM en Phase MVP ne servent que pour :
+
+1. **Tactical AI Live** (chat contextuel + hints adaptatifs) — Fréquence : ~5 sessions/semaine/learner
+2. **Gamification adaptative** (re-scénarisation de scenarios selon performance) — Fréquence : ~1 session/semaine/learner
+3. **Certification adapted briefs** (génération PDF personnalisé post-évaluation) — Fréquence : 1x/parcours
+
+*   **Worst-Case Absolu (50 SOCs × 5 analystes × sessions tactiques intensives)** : **75,00 $ / mois**.
+    *Hypothèse : 75M tokens/mois × 1$/M tokens (DeepSeek V4 Free)*.
+*   **Budget de prévision LLM réservé** : **150,00 $ / mois** (2× worst-case pour marge sécurité).
+*   *En pratique, la grande majorité des organisations opèrent à **<$10/mois** en LLM grâce au contenu pré-construit.*
+
+### ☐ 3.3 Frais de Traitement & Sales (S&M, G&A)
+### ☐ 3.2bis Frais de Traitement Paiements & Analytics
+*   **Frais de traitement Stripe (B2B)** : **2,9% + 0,30 $** par transaction.  
+    *(Sur un MRR de 50 K$ à M6, les frais Stripe représentent environ **1 450 $ / mois**.)*
+*   **Analytics Produit (PostHog)** : **0,00 $** (Plan gratuit jusqu'à 1M événements/mois — suffisant pour MVP beachhead).
+*   **Hébergement Frontend (Vercel)** : **0,00 $** (Plan gratuit pour déploiement React/Vite).
+*   **Logiciel de Comptabilité** : **0,00 $** (Inclus dans Doola Tax & Compliance).
 
 ---
 
@@ -115,37 +189,57 @@ Facture mensuelle d'API calculée pour **1 000 utilisateurs actifs** (avec 60% F
 
 Le Cash Flow represents la différence nette entre vos entrées réelles de trésorerie (abonnements payés) et vos sorties (infrastructure, APIs, taxes).
 
-### ☐ 4.1 Modélisation Budgétaire du MVP (Lancement avec 1 000 Utilisateurs)
+### ☐ 4.1 Modélisation Budgétaire du MVP (Lancement à M0 → M6)
+
+**M0 (Phase Trials — aucun revenu)**
 
 ```
-[ Entrées Mensuelles (Chiffre d'Affaires Brut) ]  =  +7 250,00 $
-  ├─ 200 Utilisateurs Lite à 10 $ = 2 000,00 $
-  ├─ 150 Utilisateurs Pro à 20 $  = 3 000,00 $
-  └─  50 Utilisateurs Ultra à 45 $ = 2 250,00 $
+[ Entrées Mensuelles ] = 0 $ (trials gratuits uniquement)
+[ Sorties Mensuelles ] = -168,00 $
+├─ Infrastructure     = -93,00 $
+└─ LLM (réservé)     = -75,00 $
 
-[ Sorties Mensuelles (OpEx - Scénario Réel Constaté à 30%) ] =  -1 752,25 $
-  ├─ Infrastructure Northflank      =   -112,00 $
-  ├─ Facturation APIs LLM Réelle    = -1 310,25 $
-  └─ Frais de traitement Stripe     =   -330,00 $
+[ BURN RATE MOIS 0 ] = 168,00 $ / mois
+[ CASH RUNWAY M0 ]   = Infini (bootstrapped solo-founder, pas de capex rec)
+```
 
-[ BÉNÉFICE NET MENSUEL CONSTATÉ ]                  =  +5 497,75 $ / mois
-[ BÉNÉFICE NET DANS LE PIRE SCÉNARIO (Worst-Case) ] =  +2 770,50 $ / mois
+**M6 (50 SOCs converties → MRR cible)**
+
+```
+[ Entrées Mensuelles (MRR) ]  =  +25 000,00 $ (mix Trial/Team/Enterprise)
+  ├─ Trial (30 jours gratuit) = 0 $ (courant)
+  ├─ Team ($49/seat, 50 SOCs) = 12 250,00 $
+  └─ Enterprise ($149/seat, 25 SOCs) = 12 750,00 $
+
+[ Sorties Mensuelles ]  =  -3 068,00 $
+  ├─ Infrastructure       =   -93,00 $
+  ├─ APIs LLM             =   -75,00 $
+  ├─ Stripe (~2,9%)       =  -725,00 $
+  └─ Marketing acquisition = -2 175,00 $ (SOC conferences + outreach)
+
+[ BÉNÉFICE NET MENSUEL M6 ]        =  +21 932,00 $ / mois
+[ RUNWAY DEPUIS M0 ]                =  1,4 an de cash runway sur CapEx initial
 ```
 
 ### ☐ 4.2 Métriques de Sécurité financière
-*   **Burn Rate Mensuel Moyen** : **0,00 $** (La startup est immédiatement bénéficiaire dès l'atteinte de son premier jalon, ne nécessitant aucun apport de capital extérieur récurrent).
-*   **Cash Runway Estimé** : **Infini** (Grâce à notre modèle économique optimisé, le chiffre d'affaires couvre à la fois l'infrastructure fixe et l'intégralité de la consommation à l'usage des APIs LLM).
+*   **Burn Rate M0** : **168,00 $ / mois** (infra + LLM réservé — pas de revenu).
+*   **Time to Profitability** : **M2** (premiers trials convertis couvrent OpEx).
+*   **Cash Runway estimé (sans VC)** : **>18 mois** sur le CapEx initial de 2 974 $.
+*   **Token Bleeding Max Loss** : **<150 $/mois** (BudgetGuard LLM plafonné à worst-case).
 
 ---
 
-## 5. Planifier les Imprévus (BudgetGuard) <a name="5-imprevus"></a>
+## 5. Planifier les Imprévus (BudgetGuard Cyber) <a name="5-imprevus"></a>
 
-Le principal risque financier d'un produit SaaS basé sur l'IA est le *Token Bleeding* (un utilisateur malveillant ou une boucle infinie d'agents consommant des milliers de dollars d'API en quelques secondes).
+### ☐ 5.1 Garde-fou Budget LLM (Token Bleeding)
+*[PIVOT-BEACHHEAD] Le contenu pré-généré minimise le risque, mais le Tactical AI live nécessite une protection.*
+*   **[COMPLÉTÉ] Garde-fou BudgetGuard** : Le backend Rust intègre un middleware qui limite le **budget LLM mensuel par organisation** à 150 $.
+*   **[COMPLÉTÉ] Bloqueur par organisation** : Si une SOC franchit la limite, le Tactical AI bascule en mode **Configuration Seulement** (lecture, pas de génération).
+*   **[À FAIRE] Alertes globales** : Webhooks quand le budget global LLM franchit 50%/80%/100% du plafond mensuel.
 
-### ☐ 5.1 Sécurité Applicative du Budget
-*   **[COMPLÉTÉ] Règle de design BudgetGuard (Tool T17)** : Le backend Rust intègre un garde-fou middleware qui intercepte chaque appel d'API LLM et enregistre la dépense en temps réel dans la table `scy_llm_spend_log`.
-*   **[COMPLÉTÉ] Bloqueur de requêtes automatique** : Si l'utilisateur franchit 100% de la limite de tokens allouée à son tier d'abonnement au cours du mois courant, son accès est immédiatement basculé en mode "Lecture Seule", interdisant toute nouvelle génération ou appel LLM jusqu'au renouvellement de son forfait.
-*   **[À FAIRE] Alertes d'Infrastructure** : Configurer des webhooks d'alertes automatiques (Slack ou Email) lorsque le budget global d'API de la startup franchit des paliers de 50%, 80% et 100% de la réserve mensuelle de prévoyance.
+### ☐ 5.2 Sonsoriel : Dépassement Coût Ingestion Cyber Pack
+*   **[À FAIRE] Budget ingestion MITRE ATT&CK** : Prévoir **500 $ unique** pour l'ingestion/traitement initial du pack Cyber (MITRE + NIST + Sigma rules + playbooks de référence).
+    *Coût one-shot au onboarding de chaque nouvelle SOC — amorti sur le trial gratuit de 30 jours.*
 
 ---
 
@@ -179,14 +273,21 @@ Notre Delaware C-Corp exige le strict respect du calendrier fiscal sous peine de
 
 ---
 
-## 9. Conformité & Sécurité (Compliance) <a name="9-compliance"></a>
+## 9. Conformité & Sécurité (Compliance Cyber) <a name="9-compliance"></a>
 
-### ☐ 9.1 RGPD & CCPA (Réglementations de Protection des Données)
-*   **Isolation multi-tenant au niveau de la base de données** : Toutes les requêtes et écritures s'exécutent de manière étanche grâce aux règles **RLS (Row Level Security)** configurées sur les tables de PostgreSQL Northflank.
-*   **Droit à l'anonymisation et à l'oubli** : L'anonymisation des données des cohortes étudiantes et l'exclusion des profils personnels d'apprentissage respectent les contraintes du RGPD (k-anonymat $\ge 10$).
+[PIVOT-BEACHHEAD] Le beachhead cible des SOC teams et des auditeurs sécurité → compliance cyber-native obligatoire.
 
-### ☐ 9.2 Sécurité de l'Exécution Technique
-*   **Isolation des outils tiers** : Les outils d'analyse et les scripts de scraping tiers s'exécutent de manière étanche au sein d'un bac à sable **WebAssembly (WASM)** sécurisé et isolé au runtime sur notre serveur Northflank, éliminant tout risque d'injection de code malveillant dans notre conteneur transactionnel principal.
+### ☐ 9.1 Standards Cyber Applicables
+*   **NIST Cybersecurity Framework (CSF) 2.0** : Alignement des Mastery Trees sur les 6 fonctions NIST (Identify, Protect, Detect, Respond, Recover, Govern).
+*   **CIS Critical Security Controls (CSC) v8** : Mapping des scenarios APT et playbooks sur les 18 contrôles CIS.
+*   **SOC 2 Type II** : À certification post-MVP. Budget estimé **15 000 $** pour l'audit initial + **8 000 $/an** pour la surveillance continue.
+*   **ISO 27001** : Nécessaire pour Enterprise/Gov tiers. Budget estimé **25 000 $** pour certification initiale.
+
+### ☐ 9.2 Sécurité Multi-Tenant & ISMS
+*   **Isolation données SOC (RLS PostgreSQL)** : Toutes les tables filtrent par `organization_id`. Pas de fuite cross-SOC possible.
+*   **Chiffrement at-rest** : PostgreSQL RLS + pgcrypto pour données sensibles (IOC, playbooks internes).
+*   **Conformité RGPD/CCPA** : k-anonymat ≥ 10, droit à l'oubli, export données portable.
+*   **Seal SaaS / SSO** : À prévoir pour Enterprise tier (SAML 2.0, SCIM provisioning).
 
 ---
 
@@ -227,8 +328,13 @@ Le succès commercial et l'évaluation continue du produit s'appuient sur PostHo
 ## 14. Partenariats, Ventes & Distribution <a name="14-sales"></a>
 
 ### ☐ 14.1 Canaux de Distribution Ingrédients
-*   **Lancement d'Acquisition Organique** : Soumission et promotion de SCY Forge sur la plateforme **Product Hunt** (0$ d'inscription).
-*   **Canaux de créateurs (Consoles B2B)** : Mise à disposition de la console créateur permettant aux formateurs d'intégrer et de monétiser leurs propres cours et cohortes sur SCY Forge, générant un effet de réseau organique d'arrière-plan sans budget marketing direct.
+*   **Canaux de distribution SOC** :
+    *   **Cybersecurity conferences** (RSA, Black Hat, DEF CON, SANS) : ~2 000 $/événement (booth + flyers + meetup sponsorships). **Budget cible M0-M6** : 10 000 $.
+    *   **SOC Manager newsletters & LinkedIn outreach** : 0 $ (cold outreach + content marketing organique).
+    *   **Splunk/Sentinel/MSFT partner programs** : 0 $ (co-marketing avec SIEM vendors — pas de frais d'entrée).
+*   **Programme de référence SOC-to-SOC** : Chaque SOC référente obtient **1 mois gratuit** par conversion. Cost-of-acquisition indirect : 49 $/seat.
+*   ~~**Canaux créateurs (B2B Creator Console)**~~ → **ÉLIMINÉ du MVP**. Retour Phase 3 (PIVOT_ARCHITECTURE §3).
+*   ~~**Canaux consumer**~~ → **ÉLIMINÉ**. SCY Forge beachhead ne vend pas au consommateur final.
 
 ---
 

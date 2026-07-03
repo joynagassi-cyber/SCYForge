@@ -1,5 +1,36 @@
+<!--
+BEACHHEAD PIVOT v2.0 — DEFERRED
+NEURON-CHAINS DIFFÉRÉ. Contenu pré-construit dans pack cyber. Revenir post-MVP.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # ⚙️ SCY-TOOLS-18 — LES 18 TOOLS NATIFS RUST (SPEC)
 **ID** : S02_NEURON_TOOLS_18_SPEC · **Décision** : NC-001 (18 tools natifs Rust, latence <1ms)
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | DEFERRED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module n'est PAS dans le beachhead MVP**
+• La spec est conservée pour référence Phase 2+
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 Les **18 tools natifs** sont compilés en Rust et exposent des capacités à l'APEX-AGENT via le trait composable `Tool` de Rig. **14 sur 18 ne consomment aucun token LLM externe** ($0).

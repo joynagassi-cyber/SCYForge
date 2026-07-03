@@ -1,5 +1,36 @@
+<!--
+BEACHHEAD PIVOT v2.0 — DEFERRED
+NEURON-CHAINS DIFFÉRÉ. Contenu pré-construit dans pack cyber. Revenir post-MVP.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🔀 SCY-MULTI-VIEW-TOGGLES — SPÉCIFICATION (SPEC)
 **ID** : S02_NEURON_MULTI_VIEW_TOGGLES_SPEC · **Phase** : V1 🔴 CRITIQUE · **Réf** : PRD §7.4.3bis I
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | DEFERRED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module n'est PAS dans le beachhead MVP**
+• La spec est conservée pour référence Phase 2+
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 Le **Moteur de Rendu Technique Multi-Vues** (inspiré Notion) permet à l'utilisateur de basculer le format d'affichage de tout bloc technique généré par l'IA en **1 clic**. L'apprenant n'est jamais bloqué : s'il ne comprend pas l'équation mathématique, il bascule sur l'explication sémantique ou le schéma visuel.

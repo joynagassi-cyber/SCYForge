@@ -1,5 +1,36 @@
+<!--
+BEACHHEAD PIVOT v2.0 — DEFERRED
+NEURON-CHAINS DIFFÉRÉ. Contenu pré-construit dans pack cyber. Revenir post-MVP.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🔄 SCY-PIVOTIQ — RÉCONCILIATION MULTI-SOURCES (SPEC)
 **ID** : S02_NEURON_PIVOTIQ_SPEC · **Phase** : V2 · **Réf** : PRD §7.6.3 · **Position** : Entre MapReduce L0-L3 et NEURON-CHAINS
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | DEFERRED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module n'est PAS dans le beachhead MVP**
+• La spec est conservée pour référence Phase 2+
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 **PIVOTIQ** réconcilie intelligemment les sources multiples potentiellement contradictoires **avant** leur transmission à NEURON-CHAINS. Quand l'utilisateur ingère ≥ 3 sources sur le même sujet, PIVOTIQ détecte les contradictions, déduplique les contenus sémantiquement identiques, et produit une synthèse unifiée propre — évitant que NEURON-CHAINS ne génère un document incohérent.

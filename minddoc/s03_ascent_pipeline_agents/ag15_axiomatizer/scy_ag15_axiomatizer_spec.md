@@ -1,8 +1,39 @@
+<!--
+BEACHHEAD PIVOT v2.0 — DEFERRED
+Agent ag15_axiomatizer DIFFÉRÉ beachhead MVP.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🧬 SCY-AG15-AXIOMATIZER — SPÉCIFICATION DE COMPORTEMENT (SPEC)
 **ID Spécification** : S03_ASCENT_AG15_AXIOMATIZER_SPEC  
 **Décision d'architecture** : D-OPT-035 (SCY-AXIOM Synthesis Engine), D-OPT-033 (SCY-AXIOM DB), D-OPT-034 (Closed-Loop Learning)  
 **Statut** : 🟢 SPÉCIFICATION DE PORTÉE IMMUABLE ET VALIDÉE  
 **Format d'Écriture** : SDD (Gherkin GIVEN-WHEN-THEN-AND) + Norme RFC 2119  
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | DEFERRED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module n'est PAS dans le beachhead MVP**
+• La spec est conservée pour référence Phase 2+
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

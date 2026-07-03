@@ -623,13 +623,16 @@ Une fois que SCY Forge a prouvé sa valeur sur l'équipe cyber (5-10 personnes),
 
 ### 9.5 Pricing — Deux Marchés, Deux Grilles
 
-| Tier | Prix/an | Cible Pure-Player | Cible Corporate | Inclus |
-|------|---------|-------------------|-----------------|--------|
-| **Trial** | 0 $ (30j) | 5 analysts | 3 analysts | 1 pack MITRE, 1 secteur |
-| **Team** | 5 000 $ | 5-20 analysts | 5 analysts | MITRE + 1 secteur, Manager dashboard |
-| **Enterprise** | 25 000 $ | 20-100 analysts | 50+ analysts | Multi-pack, SSO/SAML, analytics avancés |
-| **Industry** | 50 000 $+ | — | RSSI + tous employés | Custom sector pack + B2B2C deployment |
-| **Government** | Custom | — | Secteur public | On-prem, FedRAMP, custom ontology |
+| Tier | Prix/an | Marché | Statut | Inclus |
+|------|---------|--------|--------|--------|
+| **Trial** | 0 $ (30j) | B2B SOC (MSSP + Corporate) | ✅ IN_MVP | 1 pack MITRE, 1 secteur |
+| **Team** | 5 000 $ | B2B SOC (MSSP + Corporate) | ✅ IN_MVP | MITRE + 1 secteur, Manager dashboard |
+| **Enterprise** | 25 000 $ | B2B SOC (MSSP + Corporate) | ✅ IN_MVP | Multi-pack, SSO/SAML, analytics avancés |
+| **Industry** | 50 000 $+ | B2B2C Corporate (RSSI + tous employés) | ⏸️ POST_MVP | Custom sector pack + B2B2C deployment |
+| **Government** | Custom | Secteur public | ⏸️ POST_MVP | On-prem, FedRAMP, custom ontology |
+| **Consumer** | TBD | B2C Grand Public (étudiant, autodidacte) | ⏸️ POST_MVP | Mode Normal, ingestion libre, Normal Mode |
+
+> **Règle** : B2B SOC (MSSP/MDR + Corporate interne) = IN_MVP. B2C (consommateur individuel) et B2B2C (tous-employés) = POST_MVP. Les tiers IN_MVP sont les seuls à coder au beachhead.
 
 ### 9.6 Feature Roadmap — Deux Marchés
 

@@ -2,7 +2,13 @@
 ## Instructions permanentes pour l'agent de codage (lire en PREMIER)
 
 > **Règle** : ce fichier est le point d'entrée. Tout commence ici.
-> Ensuite, lis `docs/PROJECT_STRUCTURE.md` pour comprendre où mettre le code.
+> **Étape 1** : Lire `MASTER_AGENT_PROMPT_V2.md` (contexte charnière — 10 phases documentaires).
+> **Étape 2** : Lire `minddoc/PROJECT_CONTEXT.md` (contexte projet partageable).
+> **Étape 3** : Lire `minddoc/s00_architecture_standards/INDEX.md` (navigation architecture).
+> **Étape 4** : Lire la phase correspondante dans `MASTER_AGENT_PROMPT_V2.md`.
+> Ensuite, lis `minddoc/s00_architecture_standards/work_packages/WP01_DCID_TRAITS.md` pour coder.
+
+> **Note** : `MASTER_AGENT_PROMPT.md` (V1) est conservé pour référence historique. La V2 est la référence active.
 
 ---
 

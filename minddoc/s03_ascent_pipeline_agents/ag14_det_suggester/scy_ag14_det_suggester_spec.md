@@ -1,5 +1,36 @@
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+ASCENT en MVP avec Plan C refactor (domain contract consumption). AGENT-08/10/11/15/16/17/18 différés.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # ⚡ SCY-AG14-DET-SUGGESTER — SPÉCIFICATION (SPEC)
 **ID** : S03_AG14_DET_SUGGESTER_SPEC · **Phase** : P0 (Epic 4.1) · **Réf** : PRD epics Story 4.1, sprint SQL `why_suggested`
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 L'**AGENT-14 (Det-Suggester)** est l'**Agent Déterministe de Suggestions** de documents. À partir des métadonnées d'une source extraite (Docling), il renvoie en **moins de 5ms** exactement **3 codes de documents pertinents** (ex : G01, C01, W01) **sans aucun appel LLM externe**. Arbre de décision déterministe Rust pur ($0).

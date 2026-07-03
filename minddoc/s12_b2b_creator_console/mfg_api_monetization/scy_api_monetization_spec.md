@@ -1,7 +1,38 @@
+<!--
+BEACHHEAD PIVOT v2.0 — ELIMINATED
+B2B Creator Console ÉLIMINÉE. Conservée Enterprise Tier Phase 2.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 💰 SCY-API-MONETIZATION — SPÉCIFICATION (SPEC)
 **ID** : S12_B2B_API_MONETIZATION_SPEC · **Phase** : V2+ · **Réf** : PRD §12, `scy_api_monetization_specs.md`
 
 > **📌 RÉFÉRENCE CROISÉE** : Les specs de monétisation API sont dans **`scy_api_monetization_specs.md`** (2.4KB). Ce fichier en est le résumé SDD.
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | ELIMINATED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module est ÉLIMINÉ du beachhead**
+• Conservé pour expansion future
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 Le module **API Monetization (MFG API)** permet aux entreprises tierces et créateurs d'accéder aux fonctionnalités SCY Forge via une API payante (ingestion, génération NEURON-CHAINS, COSMOS, APEX) selon un modèle de facturation à l'usage (usage-based pricing).

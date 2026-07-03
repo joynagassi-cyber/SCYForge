@@ -1,7 +1,38 @@
+<!--
+BEACHHEAD PIVOT v2.0 — ELIMINATED
+IMPRINT ÉLIMINÉE. Contenu biblique incompatible avec cyber ops. Réécriture nécessaire.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 📖 SCY-IMPRINT — PROTOCOLE DE MÉMORISATION DES VERSETS SÉCURISÉS (LEECHS)
 **ID Spécification** : S07_IMPRINT_LEECH_VERSE_SPEC  
 **Statut** : 🟢 SPÉCIFICATION DE PRODUCTION IMMUABLE ET VALIDÉE  
 **Format d'Écriture** : SDD (Gherkin WHEN-THEN-AND) + Norme RFC 2119  
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | ELIMINATED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module est ÉLIMINÉ du beachhead**
+• Conservé pour expansion future
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

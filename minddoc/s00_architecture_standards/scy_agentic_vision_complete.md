@@ -1,7 +1,38 @@
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+Standards architecturaux — ajouter section beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🚀 SCY-FORGE — VISION AGENTIQUE TOTALE & INVENTAIRE COMPLET
 **ID Document** : S00_AGENTIC_VISION_COMPLETE  
 **Date** : 2026-06-26  
 **Statut** : 🔴 DOCUMENT FONDATEUR — PRÉCÈDE TOUT CODAGE  
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 
@@ -20,30 +51,33 @@
 | **NotebookLM** | L'utilisateur upload, pose des questions | Ne maintient pas la connaissance dans le temps |
 | **SCY Forge** | L'utilisateur **parle** : « Je veux maîtriser React en 8 semaines » → **TOUT est automatisé** | ✅ Zéro friction |
 
-### Le flux agentique idéal
+### Le flux agentique idéal — Cyber Beachhead
 
 ```
-Utilisateur : "Je veux maîtriser React"
+SOC Manager : "Je veux onliner mon équipe SOC (5 analysts) sur MITRE ATT&CK"
      │
      ▼ (1 message, zéro clic)
      │
 ASCENT-ORCHESTRATOR prend le relais :
-     ├── Agent-01 : formalise l'objectif (niveau, temps, style)
-     ├── Agent-02 : cherche et ingère 25 sources (YouTube, Web, Academic...)
-     ├── Agent-03 : construit le DAG + déclenche NEURON-CHAINS
-     │     └── NEURON-CHAINS : génère cours, cartes, exercices pour chaque nœud
-     ├── Agent-04 : propose la première session (prête à démarrer)
-     ├── COSMOS : affiche automatiquement la roadmap (meilleur mode sélectionné)
-     └── CHRONICLE : « C'est prêt. 3 cartes pour commencer ? »
+     ├── Agent-01 : formalise l'objectif (org "Acme Corp", roles SOC L1/L2/DFIR)
+     ├── Agent-02 : charge le pack Cyber MITRE ATT&CK (pré-ingéré, $0 LLM)
+     │     └── Domain Pack Provider : SemanticTreeProvider::plant_tree("MITRE-ATT&CK-v14.1")
+     ├── Agent-03 : construit les Role Subtrees (SOC L1: 6 tactics, SOC L2: 10, DFIR: 14)
+     │     └── SemanticTreeProvider::graft_node() pour chaque tactic/technique
+     ├── Agent-04 : propose le premier scénario d'évaluation (prêt à démarrer)
+     │     └── Scenario: "APT29 Initial Access — Identify the Phishing Vector"
+     ├── COSMOS : affiche automatiquement le Mission Tree (meilleur mode sélectionné)
+     └── Tactical AI : « Votre équipe est prête. Commencez par le scénario APT29 ? »
      
-     ↓ L'utilisateur n'a RIEN fait d'autre que DÉCRIRE son objectif.
+     ↓ Le SOC Manager n'a RIEN fait d'autre que DÉCRIRE son besoin.
+     ↓ Chaque analyste reçoit son onboarding en <5min après clic sur le lien.
 ```
 
-### Règle d'or agentique
-
-> **Si l'utilisateur doit cliquer sur plus de 2 boutons pour accomplir une tâche, le design est défaillant.**
-> 
-> L'utilisateur **décrit**. L'agent **fait**. L'utilisateur **valide** (ou pas).
+> **[PIVOT-BEACHHEAD]** Ce flux diffère du flux générique original :
+> - Pas d'ingestion de 11 cores (YouTube, Reddit, etc.) → **Pack MITRE pré-ingéré**
+> - Pas de NEURON-CHAINS (génération LLM) → **Contenu pré-construit**
+> - Pas de CHRONICLE (coéquipier quotidien) → **Tactical AI inline**
+> - Pas de ARENA (roleplay Full-AI) → **Évaluations automatisées + Cyber Range (Phase 3)**
 
 ---
 

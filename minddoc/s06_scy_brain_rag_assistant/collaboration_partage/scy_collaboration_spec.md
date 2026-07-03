@@ -1,5 +1,36 @@
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+BRAIN en MVP simplifié (BM25 FTS uniquement). Triple retrieval + live web différés.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🤝 SCY-COLLABORATION-PARTAGE — SPÉCIFICATION (SPEC)
 **ID** : S06_COLLABORATION_SPEC · **Phase** : N1 P1, N2 P3, N3 P3, N4 P3+ · **Réf** : PRD §7.7quater, COL-001/002/003
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 Module **Collaboration & Partage** — du partage simple read-only (Phase 1) au marketplace communautaire (Phase 3), commentaires asynchrones et sessions groupe live.

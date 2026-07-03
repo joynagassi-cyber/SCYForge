@@ -1,8 +1,39 @@
+<!--
+BEACHHEAD PIVOT v2.0 — DEFERRED
+Agent ag10_chronicle DIFFÉRÉ beachhead MVP.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🧠 SCY-FORGE — ATTENTION, COACHING & SAGESSE UNIVERSELLE
 **ID Document** : S03_ASCENT_ATTENTION_COACHING_WISDOM  
 **Date** : 2026-06-25  
 **Statut** : 🔵 PROPOSITION FONDATRICE (EN ATTENTE DE VALIDATION UTILISATEUR)  
 **Portée** : Définit le **Système d'Attention**, le **Mindset de Coach de Développement Personnel**, et la **Bibliothèque de Sagesse Universelle** intégrés dans CHRONICLE et tous les agents ASCENT. Compatible et subordonné à la Charte d'Humilité Totale.
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | DEFERRED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module n'est PAS dans le beachhead MVP**
+• La spec est conservée pour référence Phase 2+
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

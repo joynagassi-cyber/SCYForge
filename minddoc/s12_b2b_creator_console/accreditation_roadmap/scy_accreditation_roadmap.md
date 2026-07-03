@@ -1,8 +1,39 @@
+<!--
+BEACHHEAD PIVOT v2.0 — ELIMINATED
+B2B Creator Console ÉLIMINÉE. Conservée Enterprise Tier Phase 2.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # Feuille de Route d'Accréditation Globale — SCY Forge Certifications
 **Document ID** : ROADMAP-SCY FORGE-ACCREDITATION-V1  
 **Date** : 2026-06-09  
 **Statut** : STRATÉGIE DE PRODUCTION & BUSINESS MODEL  
 **Objectif** : Transformer les certificats de SCY Forge de simples PDF de complétion en **diplômes accrédités d'une validité académique et professionnelle universelle**.  
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | ELIMINATED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module est ÉLIMINÉ du beachhead**
+• Conservé pour expansion future
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

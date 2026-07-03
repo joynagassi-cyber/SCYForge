@@ -1,8 +1,38 @@
+<!--
+POST_MVP — Voice Agent Pipeline
+Source de vérité : docs/SCYFORGE_PIVOT_ARCHITECTURE.md (ligne 196 : "LiveKit (voix) ❌ Hors MVP")
+Statut : Hors beachhead. M36+.
+—>
+
 # 🎙️ SCY-FORGE — SYSTÈME VOCAL LIVEKIT (ARENA, BRAIN, CHRONICLE, COSMOS, DAG)
 **ID Spécification** : S00_LIVEKIT_VOICE_SPEC  
 **Date** : 2026-06-26  
-**Statut** : 🟢 SPÉCIFICATION TECHNIQUE VALIDÉE  
+**Statut** : 🟢 SPÉCIFICATION TECHNIQUE VALIDÉE — **POST_MVP**  
 **Projet open-source** : [LiveKit](https://livekit.io) + [LiveKit Agents](https://docs.livekit.io/agents/) (Apache 2.0)
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

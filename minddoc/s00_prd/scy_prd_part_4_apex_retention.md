@@ -1,4 +1,88 @@
-**Principe fondateur** : *"La meilleure façon d'apprendre quelque chose est de l'enseigner"* — Feynman, 1985. STUDENT AI industrialise ce principe à l'échelle.
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+PRD source de vérité — adapter pour cyber beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
+**Principe fondateur** : *"La meilleure façon d'apprendre quelque chose est de l'enseigner"* — Feynman, 1985. STUDENT AI industrialise ce principe à l'échelle. <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI -->
+
+---
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
+
+## 🏖️ ADAPTATIONS CYBER BEACHHEAD
+
+> **Contexte** : Adaptations spécifiques pour le pivot cyber beachhead (SOC/blue-team)  
+> **Règle d'or** : Le cœur SCYForge reste générique. Toutes les adaptations cyber vivent dans `packs/cyber/`.  
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+### Rebranding Tactical AI
+
+Le concept **STUDENT AI** <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> est rebrandé **Tactical AI** pour le contexte SOC : l'IA joue le rôle d'un pair opérationnel en contexte cyber, calibré pour les workflows de détection, réponse à incident et investigation forensique. La mécanique Teach-Back reste identique ; seul le persona et les critères d'évaluation changent.
+
+### Personas Cyber (Tactical AI)
+
+| SMI actuel | Persona SOC |
+|-----------|-------------|
+| SMI < 40% | Junior SOC analyst — questions fondamentales ("C'est quoi exactement un IOC ?") |
+| SMI 40-70% | SOC L2 peer — questions de clarification ("Attends, ça veut dire que cette adresse IP est un C2 ?") |
+| SMI 70-85% | Skeptical DFIR lead — questions techniques ("Et dans ce cas-là, qu'est-ce que ça change sur ta timeline ?") |
+| SMI ≥ 86% | IR Manager — questions stratégiques ("Tu ne serais pas en train de sous-estimer la portée de ce malware ?") |
+
+### Formats de Soumission Proof of Skill — Cyber
+
+Remplace les formats génériques (GitHub, Figma, Jupyter) par des preuves opérationnelles cyber :
+
+| Format Cyber | Description |
+|--------------|-------------|
+| IOC report | Rapport d'identification d'indicateurs de compromission (IOC) |
+| IR timeline writeup | Rédaction d'une timeline d'incident de réponse (IR) |
+| Evidence chain documentation | Documentation de la chaîne de custody des preuves |
+| Sigma rule validation | Validation et test d'une règle Sigma sur un jeu de données |
+| Threat brief | Brief de menace synthétique sur un acteur ou une campagne |
+
+### Note FSRS — Paramètres Cyber
+
+Les identifiants de techniques **ATT&CK** nécessitent un **poids de stabilité (stability) plus élevé** que les noms de champs de logs. Pourquoi ? Une technique ATT&CK est un concept fondamental du référentiel, alors qu'un champ de log (ex: `EventID`, `CommandLine`) est un détail d'implémentation qui varie entre outils et versions. En FSRS, cela signifie :
+
+- Stabilité initiale recommandée : **T_technique_ATT&CK > T_champ_log**
+- Intervalle de rappel initial : **+40-60%** pour les cartes ATT&CK vs cartes techniques bas-niveau
+- Principe : "Si je maîtrise la technique, les variantes d'outils suivent."
+
+### APEX Card Types B11-B14 — Cyber Extensions
+
+Cartes additionnelles spécifiques au domaine cyber, ajoutées au pool standard B01-B10 :
+
+| ID | Type | Description |
+|----|------|-------------|
+| B11 | IOC Identification | Identifier des IPs, domains, hashes, artifacts malveillants |
+| B12 | Kill Chain Mapping | Cartographier une séquence d'attaque sur la Cyber Kill Chain ou MITRE ATT&CK |
+| B13 | Chain-of-Custody | Documenter la préservation des preuves (timestamps, hash, intégrité) |
+| B14 | Artifact Correlation | Corréler des artefacts forensiques entre plusieurs sources (logs, mémoire, disque) |
+
+<!-- PIVOT-BEACHHEAD: ARENA deferred, teach-back standalone -->
 
 ---
 
@@ -12,7 +96,7 @@ Ce n'est pas un quiz. Ce n'est pas un chatbot. C'est une **session d'enseignemen
 
 **### Pourquoi c'est game-changer**
 
-| Méthode classique | STUDENT AI |
+| Méthode classique | STUDENT AI <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> |
 |------------------|-----------|
 | L'IA pose des questions → user répond | User explique librement → IA écoute et questionne |
 | Évaluation binaire correcte/incorrecte | Détection nuancée : incohérences, lacunes, sur-simplifications |
@@ -28,11 +112,11 @@ Ce n'est pas un quiz. Ce n'est pas un chatbot. C'est une **session d'enseignemen
 
 ---
 
-**### Architecture STUDENT AI**
+**### Architecture STUDENT AI** <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI -->
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    STUDENT AI SESSION                        │
+│                    STUDENT AI <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> SESSION                        │
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
 │  CONTEXTE INJECTÉ (invisible pour user) :                   │
@@ -48,7 +132,7 @@ Ce n'est pas un quiz. Ce n'est pas un chatbot. C'est une **session d'enseignemen
 │                                                              │
 │  USER EXPLIQUE LIBREMENT                                    │
 │       ↓                                                      │
-│  STUDENT AI ANALYSIS ENGINE (Rust + LLM)                   │
+│  STUDENT AI <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> ANALYSIS ENGINE (Rust + LLM)                   │
 │  ┌─────────────────────────────────────────────────────┐   │
 │  │  1. Concept Coverage Tracker                        │   │
 │  │     → Quels concepts clés ont été mentionnés ?     │   │
@@ -89,7 +173,7 @@ Ce n'est pas un quiz. Ce n'est pas un chatbot. C'est une **session d'enseignemen
 - ✅ Interface dédiée (modal plein écran, pas d'interruptions)
 - ✅ Durée suggérée : 3 à 10 minutes selon complexité nœud
 
-**B — Persona STUDENT AI Adaptatif**
+**B — Persona STUDENT AI Adaptatif** <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI -->
 
 L'IA joue un rôle différent selon le domaine et le SMI :
 
@@ -160,21 +244,21 @@ pub enum QuestionType {
 
 L'IA ne dit jamais "Tu as tort" ou "Tu oublies quelque chose". Elle pose des questions qui *naturellement* amènent l'utilisateur à réaliser lui-même ce qu'il manque.
 
-*Exemples de questions STUDENT AI :*
+*Exemples de questions STUDENT AI* <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> :
 
 ```
 Lacune détectée : L'utilisateur n'a pas mentionné le "learning rate"
-→ STUDENT AI : "Super ! Mais dis-moi... quand tu dis que le modèle 'apprend',
+→ STUDENT AI <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> : "Super ! Mais dis-moi... quand tu dis que le modèle 'apprend',
   il apprend à quelle vitesse ? Est-ce qu'il y a un paramètre qui contrôle ça ?"
 
 Incohérence détectée : L'user dit "gradient descent descend toujours" 
                       puis "parfois ça monte"
-→ STUDENT AI : "Attends, j'ai du mal à suivre. Tu as dit que ça descend 
+→ STUDENT AI <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> : "Attends, j'ai du mal à suivre. Tu as dit que ça descend 
   toujours, mais après tu as dit que parfois ça monte. 
   Comment les deux sont possibles en même temps ?"
 
 Misconception : L'user confond overfitting et underfitting
-→ STUDENT AI : "Mmh intéressant. Donc si je comprends bien, un modèle qui 
+→ STUDENT AI <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> : "Mmh intéressant. Donc si je comprends bien, un modèle qui 
   mémorise trop les données d'entraînement, il sera mauvais sur 
   de nouvelles données ? C'est bien ça le problème ?"
   [→ l'user se rend compte lui-même de la distinction]
@@ -274,7 +358,7 @@ Les patterns Teach-Back agrégés (anonymisés, k-anonymity ≥ 100) permettent 
 - ✅ Adapter les DAG ASCENT (certains nœuds trop complexes pour leur position)
 - ✅ Créer de meilleures cartes APEX automatiquement
 
-**Schéma BDD — Tables STUDENT AI :**
+**Schéma BDD — Tables STUDENT AI :** <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI -->
 
 ```sql
 -- Sessions d'enseignement inversé
@@ -661,8 +745,8 @@ Template spécial dans génération cartes B04 (Short Answer) :
 → "Quelle est la RAISON pour laquelle [mécanisme] existe ?"
 → "Expliquez le FONDEMENT de [principe]"
 
-Distinction avec STUDENT AI :
-STUDENT AI        = L'user enseigne à l'IA
+Distinction avec STUDENT AI <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI --> :
+STUDENT AI <!-- PIVOT-BEACHHEAD: rebranded to Tactical AI -->        = L'user enseigne à l'IA
 Elaborative Inter. = NEURON-CHAINS génère des questions "Pourquoi" dans les cartes
 ```
 

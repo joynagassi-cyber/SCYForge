@@ -44,7 +44,7 @@
 ### s01 à s12 — Modules core
 - **[s01_ingestion_cores/](./s01_ingestion_cores/)** - Specs 13 cores d'ingestion
 - **[s02_neuron_chains_apex_agent/](./s02_neuron_chains_apex_agent/)** - Specs NEURON-CHAINS et APEX
-- **[s03_ascent_pipeline_agents/](./s03_ascent_pipeline_agents/)** - Specs ASCENT (18 agents + QA)
+- **[s03_ascent_pipeline_agents/](./s03_ascent_pipeline_agents/)** - Specs ASCENT (18 agents : 13 IN_MVP + 5 POST_MVP) + STUDENT AI (9 améliorations cognitive teach-back)
 - **[s04_scy_cosmos_visualization_engine/](./s04_scy_cosmos_visualization_engine/)** - Specs COSMOS (26 modes)
 - **[s05_apex_retention_system/](./s05_apex_retention_system/)** - Specs APEX/FSRS
 - **[s06_scy_brain_rag_assistant/](./s06_scy_brain_rag_assistant/)** - Specs BRAIN RAG

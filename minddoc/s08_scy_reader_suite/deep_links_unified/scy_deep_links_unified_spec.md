@@ -1,5 +1,36 @@
+<!--
+BEACHHEAD PIVOT v2.0 — DEFERRED
+Reader Suite DIFFÉRÉE. Phase 2+.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🔗 SCY-DEEP-LINKS-UNIFIED — SPÉCIFICATION TRANSVERSE (SPEC)
 **ID** : S08_DEEP_LINKS_UNIFIED_SPEC · **Décisions** : D-OPT-002, D-COSMOS-019 · **Phase** : V1
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | DEFERRED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module n'est PAS dans le beachhead MVP**
+• La spec est conservée pour référence Phase 2+
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 Les **Deep Links Sémantiques** sont un système **transverse** permettant de naviguer d'un élément (carte APEX, nœud COSMOS, citation de cours, document généré) vers la **position exacte** dans la source originale via la Reader Suite. Cette spec unifie les 5 points d'entrée.

@@ -1,3 +1,100 @@
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
+
+## 🏖️ COSMOS CYBER MODE — BEACHHEAD MVP
+
+> **Révision pivot cyber** : 26 modes originaux réduits à **4 modes MVP**.
+> Les 18 autres modes restent dans la codebase mais ne sont pas actifs pour le beachhead SOC.
+
+### Modes retenus pour le MVP Cyber Beachhead
+
+| Mode original | Nom MVP Cyber | Concept ATT&CK | Description |
+|---------------|---------------|----------------|-------------|
+| **Mode 04** (Roadmap) | **Mission Tree** | Tactic hierarchy | Hiérarchie des tactiques ATT&CK en arbre de mission navigable |
+| **Mode 07** (Statistics) | **SMI Radar** | Mastery radar | Radar 5-dimensions de maîtrise des techniques |
+| **Mode 09** (Concept Map) | **Threat Terrain** | Technique relationships | Carte des relations entre techniques ATT&CK (enables/requires/detected_by) |
+| **Mode 22** (Semantic Zoom) | **Tactical Zoom** | Enterprise→Tactic→Technique→Sub-technique | Zoom sémantique navigable de l'échelle Enterprise vers le sub-technique |
+
+**Réduction 26→4 modes** :
+- 4 modes retenus et renommés pour le contexte cyber
+- 18 modes en veille (code conservé, spec maintenue)
+- **Mode 23 (3D Knowledge Space) → DEFERRED** (voir marqueur plus bas)
+- 4 modes éliminés du MVP (fusionnés ou non essentiels au beachhead)
+
+### Règles COSMOS Cyber Auto-Linking
+
+Le moteur COSMOS applique automatiquement ces règles de liaison pour le contexte cyber :
+
+```
+EDR Alert → ATT&CK Technique → Playbook Step → Artifact Type
+     ↓              ↓                  ↓               ↓
+  [Alert ID]    [Tactic+Technique] [Runbook Step]  [File/Registry/Network]
+```
+
+**Règles de lien automatique** :
+1. **EDR Alert → Technique** : Chaque alerte EDR est mappée vers la(les) technique(s) ATT&CK correspondante(s) via les signatures de l'EDR
+2. **Technique → Playbook** : Chaque technique pointe vers les playbooks/runbooks de réponse associés
+3. **Playbook → Artifact** : Chaque étape de playbook référence le type d'artefact attendu (fichier, clé registre, connexion réseau, processus)
+4. **Gap Detection** : Signal de confiance primaire — si une prérequis technique n'est pas couverte par un playbook existant → **écart opérationnel identifié**
+
+### Gap Detection — Signal de confiance primaire
+
+```
+Prérequis manquant = Operational Readiness Gap
+
+Exemple :
+  Technique ATT&CK T1059.001 (PowerShell) nécessite :
+    ☐ Playbook "Détection PowerShell suspect"
+    ☐ Règle Sigma associée
+    ☐ Artefact de collecte (script de logging)
+  
+  Si ☐ non coché → GAP détecté → Action requise
+```
+
+**Métriques Gap Detection** :
+- Nombre de gaps par tactic
+- Couverture playbook par technique (%)
+- Maturité opérationnelle globale (0-100)
+- Temps moyen de résolution des gaps
+
+<!-- DEFERRED BEYOND BEACHHEAD MVP -->
+### Mode 23 — 3D Knowledge Space *(DEFERRED)*
+
+**Description** : Espace sémantique 3D immersif (palais de mémoire). Moteur `three.js` optionnel Phase 3.
+- Spécification complète : `s04_scy_cosmos_visualization_engine/scy_cosmos_modes_production_blueprint.md`
+- Roadmap WebGPU : `s04_scy_cosmos_visualization_engine/engine_webgpu/`
+<!-- /DEFERRED BEYOND BEACHHEAD MVP -->
+
+---
+
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+PRD source de vérité — adapter pour cyber beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
   total_days INTEGER,
   total_study_hours REAL,
   nodes_completed INTEGER,

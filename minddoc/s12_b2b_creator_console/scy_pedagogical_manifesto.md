@@ -1,7 +1,38 @@
+<!--
+BEACHHEAD PIVOT v2.0 — ELIMINATED
+B2B Creator Console ÉLIMINÉE. Conservée Enterprise Tier Phase 2.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # Manifeste Pédagogique — L'Ère de la Conception Systémique
 **Document ID** : MANIFESTO-SCY FORGE-PEDAGOGY-2026  
 **Date** : 2026-06-10  
 **Statut** : PHILOSOPHIE DIRECTRICE DU PRODUIT (VISION GO-TO-MARKET)  
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | ELIMINATED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module est ÉLIMINÉ du beachhead**
+• Conservé pour expansion future
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

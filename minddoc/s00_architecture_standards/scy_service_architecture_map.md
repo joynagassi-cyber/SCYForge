@@ -46,8 +46,8 @@ Plusieurs modules du dépôt (s01, s02, s04, s05, s06, s07, s08) ne sont **PAS d
 - ❌ **Impossibilité de tester** (service non isolable)
 - ❌ **Confusion pour l'agent de codage** (où mettre le code ?)
 
-**La solution** : comprendre que SCY Forge suit une **architecture hexagonale** (D-001) où les services transverses sont des **ports/adapters** partagés, et les agents ASCENT (13 agents) + COSMOS + APEX sont les **consumers**.
-**[PIVOT-BEACHHEAD]** Normal Mode, B2B Creator Console, et finance/consumer features sont **éliminées** du beachhead. Seuls ASCENT, COSMOS (4 modes), APEX (B11-B14), et Tactical AI sont les consumers MVP.
+**La solution** : comprendre que SCY Forge suit une **architecture hexagonale** (D-001) où les services transverses sont des **ports/adapters** partagés, et les agents ASCENT (18 agents — 13 IN_MVP + 5 POST_MVP) + COSMOS + APEX + STUDENT AI sont les **consumers**.
+**[PIVOT-BEACHHEAD]** Normal Mode, B2B Creator Console, et finance/consumer features sont **éliminées** du beachhead. Seuls ASCENT, COSMOS (VizSpec catalog), APEX (B11-B14), Tactical AI, et STUDENT AI sont les consumers MVP.
 
 ---
 
@@ -59,12 +59,12 @@ Plusieurs modules du dépôt (s01, s02, s04, s05, s06, s07, s08) ne sont **PAS d
 ┌─────────────────────────────────────────────────────────────────┐
 │                    COUCHE CONSOMMATEURS (MVP)                   │
 │                                                                 │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐   │
-│  │ ASCENT   │  │ COSMOS   │  │ APEX     │  │ TACTICAL AI  │   │
-│  │ Pipeline │  │ 4 modes  │  │ B11-B14  │  │ (chat + hints│   │
-│  │ (13 agents│  │ cyber    │  │ cards    │  │  DeepSeek)   │   │
-│  │  Plan C) │  │ native)  │  │ cyber)   │  │              │   │
-│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └──────┬───────┘   │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐  ┌──────────────┐   │
+│  │ ASCENT   │  │ COSMOS   │  │ APEX     │  │ TACTICAL AI  │  │ STUDENT AI   │   │
+│  │ Pipeline │  │ VizSpec  │  │ B11-B14  │  │ (chat + hints│  │ (teach-back  │   │
+│  │ (13 agents│  │ catalog  │  │ cards    │  │  DeepSeek)   │  │  cognitive)  │   │
+│  │  + 5 P.MVP│  │  V5)     │  │ cyber)   │  │              │  │  P1-P7       │   │
+│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └──────┬───────┘  └──────┬───────┘   │
 │       │             │             │                │           │
 └────────┼─────────────┼─────────────┼────────────────┼───────────┘
          │             │             │                │

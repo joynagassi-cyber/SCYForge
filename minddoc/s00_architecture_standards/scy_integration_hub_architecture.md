@@ -1,8 +1,39 @@
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+Standards architecturaux — ajouter section beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # SCY INTEGRATION HUB — Analyse Composio + Alternatives + Architecture d'Ingestion Multi-Plateformes
 
 **ID** : S00_INTEGRATION_HUB · **Date** : 2026-06-27 · **Réf** : PRD §6.1-6.2, s01 ingestion cores (c05 Google Drive), DEPENDENCY_MANIFEST §Integrations
 
 > **Objet** : Évaluer Composio (open source vs payant), identifier de meilleures alternatives, et définir comment les 18 agents SCY utilisent le hub d'intégration pour l'ingestion depuis Notion, Obsidian, Recall, NotebookLM, Anki, Evernote.
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

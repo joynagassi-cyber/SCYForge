@@ -1,0 +1,15 @@
+Au caractŠre Ligne:1 : 156
++ ... tSCYForge\minddoc' -Filter '*.md' -Recurse;  = @(); foreach ( in ) {  ...
++                                                                  ~
+Nom de variable manquant aprŠs l'instruction foreach.
+Au caractŠre Ligne:1 : 160
++ ... orge\minddoc' -Filter '*.md' -Recurse;  = @(); foreach ( in ) {  = [S ...
++                                                                 ~
+Jeton inattendu ®ÿ)ÿ¯ dans l'expression ou l'instruction.
+Au caractŠre Ligne:1 : 333
++ ... rectory=.DirectoryName; Name=.Name; Lines=; FirstLine=} };  | Convert ...
++                                                                 ~
+Un ‚l‚ment de canal vide n'est pas autoris‚.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingVariableNameAfterForeach
+ 

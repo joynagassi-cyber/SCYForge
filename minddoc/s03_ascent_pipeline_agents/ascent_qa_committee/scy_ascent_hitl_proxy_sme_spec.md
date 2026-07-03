@@ -1,3 +1,10 @@
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+ASCENT en MVP avec Plan C refactor (domain contract consumption). AGENT-08/10/11/15/16/17/18 différés.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🔬 SCY-AG16-HITL-PROXY-SME — SPÉCIFICATION DE COMPORTEMENT (SPEC)
 **ID Spécification** : S03_ASCENT_AG16_HITL_PROXY_SME_SPEC  
 **Décision d'architecture** : D-OPT-036 (SME HITL-Proxy Agent)  
@@ -5,6 +12,30 @@
 **Format d'Écriture** : SDD (Gherkin GIVEN-WHEN-THEN-AND) + Norme RFC 2119  
 
 > **📌 RÉFÉRENCE CROISÉE** : La spécification scientifique complète de production (6 modules, 6 classes épistémologiques, verbes de Bloom, grille de scepticisme, 10 Commandements) est le document dédié **`scy_ascent_hitl_proxy_sme_specs.md`** (38KB) auquel la présente spec renvoie. Ce fichier en est le résumé comportemental aligné sur le kit SDD.
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

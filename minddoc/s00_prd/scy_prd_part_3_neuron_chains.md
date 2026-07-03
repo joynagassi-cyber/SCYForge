@@ -1,3 +1,51 @@
+<!--
+BEACHHEAD PIVOT v2.0 — DEFERRED
+NEURON-CHAINS DIFFÉRÉ. Contenu pré-construit dans pack cyber. Revenir post-MVP.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
+## 🏖️ BEACHHEAD SCOPE — NEURON-CHAINS (Module DEFERRÉ)
+
+> **Statut** : **DEFERRED BEYOND BEACHHEAD MVP**
+>
+> • NEURON-CHAINS est **différé au-delà du MVP** pour le beachhead cyber
+> • Le contenu est **pré-construit dans le cyber pack** (aucune génération LLM au démarrage)
+> • Le module reviendra **post-MVP** pour l'expansion multi-domaines
+
+<!-- DEFERRED BEYOND BEACHHEAD MVP — Alpha chain (Extraction & Synthèse) -->
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
+
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+PRD source de vérité — adapter pour cyber beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 **Professionnels (T21-T30)** : Business Exécutif, Consulting Stratégique, Juridique Précis, Marketing Persuasif, Journalistique Factuel, Technique Support, Formation Corporate, Startup Disruptif, Gouvernemental Officiel, ONG Engagé
 
 **Créatifs (T31-T40)** : Dystopique, Utopique, Cyberpunk, Fantasy, Steampunk, Thriller, Comédie Absurde, Documentaire, Slam Poétique, Rap Éducatif
@@ -151,6 +199,10 @@
 - ✅ Préservation du "mental map" lors des transitions
 
 ---
+
+<!-- DEFERRED BEYOND BEACHHEAD MVP — Beta chain (Structuration & Taxonomie) -->
+
+> **Note pivot cyber** : Lorsque NEURON-CHAINS revient post-MVP, la taxonomie 10 domaines inclura **"Cybersecurity/DFIR"** comme domaine primaire.
 
 #### 7.4.3 bis — Intelligence du Graphe COSMOS (Features IA)
 
@@ -425,6 +477,10 @@ graph.render();
 
 ---
 
+<!-- DEFERRED BEYOND BEACHHEAD MVP — Delta chain (Validation) -->
+
+<!-- **Anti-hallucination** : Le Beth Trunk Validator (Datalog Horn rules) fournit la couche de validation first-principles pour les contenus cyber. -->
+
 ### D — Sceau de Double Validation Théorique (AI vs Human Dual Confidence) 🔴 CRITIQUE
 
 **Description** : Pour transformer le graphe en un véritable outil scientifique rigoureux d'acquisition de connaissances, toutes les arêtes sémantiques de la Base de Connaissances (Mode 0) et du Graphe Projet (Mode 2) affichent un badge de double validation (zoom > 35%) :
@@ -459,6 +515,8 @@ graph.render();
 4. **La Stabilisation** (3s+) : La simulation physique s'amortit et les labels textuels apparaissent avec un effet de flou à net ultra-premium.
 
 ---
+
+<!-- DEFERRED BEYOND BEACHHEAD MVP — Gamma chain (Enrichissement) -->
 
 ### H — Generative-Canvas-AI (FlowSeek) pour Slides & Pages de Cours 🔴 HAUTE
 
@@ -538,6 +596,10 @@ Relearning → [Good/Easy] → Review
 - ✅ History Replay : Recalcul rétroactif si algorithme amélioré (Event Sourcing FSRS)
 
 ---
+
+<!-- DEFERRED BEYOND BEACHHEAD MVP — Epsilon chain (Génération Documents/Cartes) -->
+
+> **Note pivot cyber** : Types de cartes spécifiques cyber : **IOC Identification**, **Kill Chain Mapping (MITRE ATT&CK)**, **Chain-of-Custody**.
 
 #### 7.5.2 Les 10 Types de Cartes (B01-B10)
 
@@ -830,6 +892,8 @@ consistency = sessions_done_last_30j / sessions_planned_last_30j
 
 ---
 
+<!-- DEFERRED BEYOND BEACHHEAD MVP — ETA chain (Export Final) -->
+
 #### 7.5.10 Export Anki — SCY Forge → .apkg
 
 **Technologies** : zip 2.1 + rusqlite 0.31
@@ -857,6 +921,8 @@ consistency = sessions_done_last_30j / sessions_planned_last_30j
 - ✅ **Add note** : Ajouter une note personnelle à une carte (visible au dos)
 
 ---
+
+<!-- DEFERRED BEYOND BEACHHEAD MVP — Zeta chain (Révision Qualité) -->
 
 #### 7.5.12 Gamification APEX (via Agent-08)
 

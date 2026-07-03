@@ -1,5 +1,36 @@
+<!--
+BEACHHEAD PIVOT v2.0 — IN_MVP
+Standards architecturaux — ajouter section beachhead
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🔧 SCY-WASM-EDGE-COMPUTING — SPÉCIFICATION (SPEC)
 **ID** : S00_WASM_EDGE_COMPUTING_SPEC · **Décisions** : D-OPT-001 (WASM Edge Computation) + D-OPT-060 (WASM Tool Sandboxing) · **Phase** : MVP+
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | IN_MVP |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• Adapté pour contexte cyber beachhead (SOC/blue-team)
+• Personas rebrandés pour opérateurs cyber
+• Conserve la mécanique core, change l'instanciation métier
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
+
+---
 
 ## 1. Purpose
 Le **WASM Edge Computing** compile le code Rust backend (FSRS scheduler + petgraph DAG validation) en **WebAssembly** pour l'exécuter **dans le navigateur**. Élimine la latence réseau, supprime la facturation CPU serveur, et permet un fonctionnement **100% hors-ligne** sans Electron (PWA offline-capable).

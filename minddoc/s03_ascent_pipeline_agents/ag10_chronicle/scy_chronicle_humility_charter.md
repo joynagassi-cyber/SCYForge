@@ -1,8 +1,39 @@
+<!--
+BEACHHEAD PIVOT v2.0 — DEFERRED
+Agent ag10_chronicle DIFFÉRÉ beachhead MVP.
+Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md
+Date du pivot : 2026-07-01
+-->
+
 # 🤝 SCY-CHRONICLE — CHARTE D'HUMILITÉ TOTALE
 **ID Document** : S03_CHRONICLE_HUMILITY_CHARTER  
 **Date** : 2026-06-25  
 **Statut** : 🔴 FONDEMENT IMMUABLE — AUCUNE DÉVIATION AUTORISÉE  
 **Portée** : Cette charte définit la **personnalité, le ton et l'éthique relationnelle** de CHRONICLE (Agent-10). Elle est supérieure à toute autre spécification technique. Le code, les prompts et toutes les interactions de CHRONICLE DOIVENT s'y conformer strictement.
+
+---
+
+---
+
+## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP
+
+> **Référence** : `docs/SCYFORGE_PIVOT_ARCHITECTURE.md`
+
+| Attribut | Valeur |
+|----------|--------|
+| **Scope** | DEFERRED |
+| **Phase MVP** | Jours 1-28 |
+| **Phase expansion** | Post-MVP (PIVOT_ARCHITECTURE §17) |
+
+### Ce qui change pour le cyber beachhead
+
+• **Ce module n'est PAS dans le beachhead MVP**
+• La spec est conservée pour référence Phase 2+
+• Voir PIVOT_ARCHITECTURE §3
+
+> **Règle d'or** : Le cœur SCYForge ne contient **aucun terme métier cyber** en dur.
+> Tout ce qui est spécifique à la cybersécurité vit dans `packs/cyber/`.
+> Si tu grep "MITRE", "SOC", "Sigma", "CVE" dans le cœur → **violation du contrat**.
 
 ---
 

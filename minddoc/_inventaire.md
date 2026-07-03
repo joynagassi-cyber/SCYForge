@@ -332,7 +332,7 @@
     [1] SCY_EVENTBUS_SCHEMAS.md  (616 lignes)
          Titre: # SCY FORGE - EVENTBUS SCHEMAS & CONTRACTS (RFC-2119)
          Resume: # SCY FORGE - EVENTBUS SCHEMAS & CONTRACTS (RFC-2119) **Document ID** : S01_EVENTBUS_SCHEMAS **Date** : 2026-07-01 **Statut** : ?? NORMATIF - R‚f pour toute impl‚mentation EventBus **Pilier** : Pilier 1 (Semantic Tree) + Pilier 2 (ASCENT) + Pilier...
-    [2] SCY_FORMULAS.md  (385 lignes)
+    [2] scy_formulas.md  (385 lignes)
          Titre: # SCY FORGE - FORMULAS & CONSTANTS (CANONICAL)
          Resume: # SCY FORGE - FORMULAS & CONSTANTS (CANONICAL) **Document ID** : S01_FORMULAS **Date** : 2026-07-01 **Statut** : ?? NORMATIF - Source de v‚rit‚ pour toutes les formules **Pilier** : Pilier 1 (Semantic Tree) + Pilier 2 (ASCENT/APEX) + Pilier 3 (GFE...
     [3] SCY_STATE_MACHINES.md  (533 lignes)

@@ -221,21 +221,23 @@ SI HOOK == true → Seed viable
 SINON → ∅ (stérile)
 ```
 
-### 7.2 Blending (Fauconnier-Turner — Core-Fixed)
+### 7.2 First-Principles Composition (Core-Fixed)
 
 ```
-blend(A, B, context) = emergent_proposition
+compose_from_invariants(A, B, context) = emergent_proposition
 
-Espaces :
-  1. Input A    → frame_A (structure sémantique de A)
-  2. Input B    → frame_B (structure sémantique de B)
-  3. Generic    → generic_space (patterns communs abstraits)
-  4. Emergent   → emergent_space (structure absente des inputs)
+Étapes :
+  1. Remonter A et B vers leur tronc commun / invariant atomique
+  2. Identifier ce qui reste vrai quand les détails de surface sont retirés
+  3. Composer une proposition depuis ces invariants, pas depuis une analogie de surface
+  4. Rejeter toute proposition qui ne peut pas rattacher sa parenthood au tronc
 
 core_proposition = compress(emergent_space, context)
 ```
 
-### 7.3 Link Prediction (node2vec — Core-Fixed)
+**Règle de cohérence** : le blending conceptuel peut inspirer la représentation, mais il n'est pas la source de validité scientifique du GFE. La validité vient du couple `root_depth` + invariant + traçabilité + validation L1-L4.
+
+### 7.3 Link Prediction / Co-occurrence (Scoring auxiliaire, non générateur)
 
 ```
 predict(A, B) → (potential_subtrees, strategic_reach)
@@ -246,6 +248,8 @@ predict(A, B) → (potential_subtrees, strategic_reach)
 4. potential_subtrees = estimate_subtrees(A, B, latent_score)
 5. strategic_reach = compute_strategic_reach(A, B) // profondeur hiérarchique
 ```
+
+**Règle de cohérence** : la prédiction de lien ne crée pas une Seed. Elle sert à estimer `Fecundity`, à construire des baselines et à détecter les redondances. Une Seed ne peut être promue que si elle passe la composition par invariants, L1-L4, la provenance et la validation métier.
 
 ---
 

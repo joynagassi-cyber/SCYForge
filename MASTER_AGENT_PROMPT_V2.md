@@ -330,7 +330,7 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 5.3. **Détailler** : Pour chaque jour, lister les tâches à accomplir.
 5.4. **Restructurer** : Créer la roadmap sous forme de tableau visuel (sprint, jours, WP, livrables).
 5.5. **Architecturer** : Créer les fichiers de référence pour le code futur :
-   - `docs/ROADMAP_MVP_28J.md` — Roadmap jour-par-jour
+   - `minddoc/s00_prd/roadmap_mvp_28j.md` — Roadmap jour-par-jour
    - `docs/DEPENDENCIES.md` — Graphe de dépendances entre crates
    - `docs/build_commands.md` — Commandes de build/test par crate
    - `docs/code_style.md` — Conventions Rust/TS/React/SQL
@@ -339,7 +339,7 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 5.6. **Unifier** : Déplacer/Migrer TOUS les fichiers de `docs/` vers `minddoc/` sauf les fichiers purement opérationnels.
 
 **Livrables** :
-- `docs/ROADMAP_MVP_28J.md` — Sprint 0 à 3, jour par jour
+- `minddoc/s00_prd/roadmap_mvp_28j.md` — Sprint 0 à 3, jour par jour
 - `docs/DEPENDENCIES.md` — Ordre bottom-up des crates
 - `docs/build_commands.md` — Commandes par stack
 - `docs/code_style.md` — Conventions de code

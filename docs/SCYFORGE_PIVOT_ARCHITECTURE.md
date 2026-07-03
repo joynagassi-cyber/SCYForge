@@ -957,7 +957,7 @@ coverage(pack) = Σ score(N) / Σ score_max(N)
 
 ## 14. Proof Metrics — Les 3 Thèses (PROOF_METRICS v1.0)
 
-> **Référence** : `SCYFORGE_PROOF_METRICS.md`
+> **Référence** : `scyforge_proof_metrics.md`
 > Règle d'or : **aucune métrique de vanité**. Chaque chiffre est auditable, attribuable, et refuse le faux positif pédagogique.
 
 ### 14.1 Les 3 Thèses

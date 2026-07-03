@@ -102,6 +102,23 @@ Toute Seed doit satisfaire les **4 conditions de fécondité** simultanément (�
 
 > Distinction clé (héritée §6) : une Seed n'a de valeur que **validée par un senior** comme exploitable. Le score GFE (Viability/Fecundity) est un *pré-filtre*, pas un verdict. Sans validation humaine → DORMANT, pas VIABLE.
 
+### B1bis. Contrôles scientifiques du GFE — éviter le faux "innovant"
+
+Le GFE ne doit pas seulement produire des idées plausibles. Il doit prouver que la Seed vient d'un raisonnement par **premiers principes** sur le Semantic Tree, et qu'elle bat des baselines simples.
+
+| Contrôle | Définition | Cible |
+|---|---|---|
+| **First-Principle Grounding Rate** | % Seeds avec parenthood complet, chemin vers tronc/invariant, et split `formel` vs `tacite` explicite | **≥ 80%** des Seeds VIABLE |
+| **Baseline Lift** | taux d'acceptation senior du GFE / taux d'acceptation senior d'un baseline random, near-node ou co-occurrence ATT&CK simple | **≥ 2.0×** |
+| **False Viable Rate** | Seeds marquées VIABLE par le système mais rejetées par senior comme redondantes, non actionnables ou mal fondées | **≤ 15%** |
+| **Decision-Bearing Rate** | Seeds acceptées qui produisent une décision testable : règle, scénario, runbook, arbre de hunting ou changement de posture | **≥ 70%** |
+| **External Novelty Check** | absence de duplication évidente dans le corpus pack + corpus org + sources publiques consultées après génération | **100%** des Seeds candidates à germination |
+| **Time-Slice Hit Rate** | sur corpus historique coupé à T, % Seeds qui anticipent ou reconstruisent une amélioration observée en T+Δ | **≥ 20%** en benchmark historique |
+
+**Baselines obligatoires** : random pair pollination, paires proches dans l'arbre, co-occurrence ATT&CK simple, résumé/RAG type NotebookLM, et proposition humaine rapide. Sans comparaison, on ne prouve pas l'innovation ; on prouve seulement que le système sait écrire une proposition plausible.
+
+**Séparation des rôles** : le générateur de Seed ne valide jamais sa propre Seed. Le minimum crédible est : GFE propose, `ValidationGuard` vérifie la source et les bornes, AG16/Beth ou Datalog estime la fondationnalité, puis un senior métier tranche l'utilité.
+
 ### B2. Exploration de l'espace de décision (couverture ATT&CK / rôle)
 
 Prouve que le moteur *étend* la surface couverte, pas seulement qu'il l'entretient — la contrepartie « exploration » de la pollinisation.
@@ -186,8 +203,9 @@ Deux garde-fous du §9 : l'arbre doit être construit **10× mieux** qu'un humai
 0. **S1 — Franchir l'activation (A0).** Vérifier les gates du pivot sur le tenant : TTFV < 5 min, valeur perçue < 30 min, APT29 jouable. Sans activation, rien à mesurer ensuite.
 1. **S1 — Instrumenter (P0).** Câbler les 7 métriques du tableau de bord sur un tenant MSSP/MDR réel. Établir la **cohorte témoin** (recrues onboardées à l'ancienne).
 2. **S2–S4 — Prouver en sim (P1).** 1 rôle (SOC L1), 1 classe d'alerte, 5 scénarios hero, ~69% de couverture. GFE en **mode observatoire** : Transfer Ratio *prédit* + Seed Yield/Viability mesurés (Seeds stockées, non germinées).
-3. **S5–S8 — Prouver le transfert (P2).** Basculer sur les vraies alertes. **Point de contrôle G1** : si Transfer Ratio < 0.65 → arrêt et pivot, on ne continue pas.
-4. **S9–S12 — Prouver la boucle (P2→P3).** Mesurer TTA réel vs témoin, valider les premières Seeds avec un senior (VIABLE), amorcer la cohorte N+1 pour capter la pente inter-cohorte, et suivre le **taux de greffe** + le **Delta souverain** (l'arbre du tenant doit visiblement diverger du pack public).
+3. **S2–S4 — Bench GFE contrôlé.** Sur le même corpus, comparer GFE contre random pairs, near-node pairs, co-occurrence ATT&CK simple, résumé/RAG et proposition humaine rapide. Revue senior aveugle : le reviewer ne sait pas quelle méthode a produit la Seed.
+4. **S5–S8 — Prouver le transfert (P2).** Basculer sur les vraies alertes. **Point de contrôle G1** : si Transfer Ratio < 0.65 → arrêt et pivot, on ne continue pas.
+5. **S9–S12 — Prouver la boucle (P2→P3).** Mesurer TTA réel vs témoin, valider les premières Seeds avec un senior (VIABLE), amorcer la cohorte N+1 pour capter la pente inter-cohorte, et suivre le **taux de greffe** + le **Delta souverain** (l'arbre du tenant doit visiblement diverger du pack public).
 
 ---
 

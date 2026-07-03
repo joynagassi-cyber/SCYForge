@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Bloquant pour WP11 (C1-C7) et WP12 (D9 Coverage)
 > **Dépendances** : WP01 (DCID traits), WP03 (EventBus), WP05 (Postgres Adapter)
-> **Références** : `MASTER_AGENT_PROMPT.md`, `minddoc/s01_semantic_tree/SCY_STATE_MACHINES.md` (§9, §10), `minddoc/s01_semantic_tree/SCY_EVENTBUS_SCHEMAS.md`, `minddoc/s03_generative_forest_engine/SCY_GFE_PARAMETERS.md` (§12.5)
+> **Références** : `MASTER_AGENT_PROMPT.md`, `minddoc/s01_semantic_tree/scy_state_machines.md` (§9, §10), `minddoc/s01_semantic_tree/scy_eventbus_schemas.md`, `minddoc/s03_generative_forest_engine/scy_gfe_parameters.md` (§12.5)
 
 ---
 
@@ -17,10 +17,10 @@ Implémenter la **matrice Provider × owner_kind** qui spécifie quel provider e
 
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
-1. `minddoc/s01_semantic_tree/SCY_STATE_MACHINES.md` — §9 (provider×owner_kind matrix), §10 (inheritance rules)
-2. `WORK_PACKAGE_01_DCID_TRAITS.md` — 9 providers DCID
-3. `WORK_PACKAGE_03_EVENTBUS_CRATE.md` — EventBus events avec owner_kind
-4. `WORK_PACKAGE_04_PACK_PROVIDERS.md` — PackConfigProvider cascade
+1. `minddoc/s01_semantic_tree/scy_state_machines.md` — §9 (provider×owner_kind matrix), §10 (inheritance rules)
+2. `work_package_01_dcid_traits.md` — 9 providers DCID
+3. `work_package_03_eventbus_crate.md` — EventBus events avec owner_kind
+4. `work_package_04_pack_providers.md` — PackConfigProvider cascade
 
 ---
 
@@ -220,7 +220,7 @@ pub struct ProviderResolutionResult {
 
 ```rust
 //! Résolveur de providers — trouve le bon impl pour un owner_kind donné.
-//! Référence: SCY_STATE_MACHINES.md §9-10.
+//! Référence: scy_state_machines.md §9-10.
 
 pub struct ProviderResolver {
     registry: ProviderRegistry,

@@ -323,8 +323,8 @@ CREATE TABLE scy_wisdom_displayed (
     created_at INTEGER NOT NULL
 );
 
-CREATE INDEX idx_wisdom_principles_trigger ON scy_wisdom_principles(trigger_situation, is_active);
-CREATE INDEX idx_wisdom_displayed_user ON scy_wisdom_displayed(user_id, displayed_at DESC);
+CREATE index idx_wisdom_principles_trigger ON scy_wisdom_principles(trigger_situation, is_active);
+CREATE index idx_wisdom_displayed_user ON scy_wisdom_displayed(user_id, displayed_at DESC);
 ```
 
 ---

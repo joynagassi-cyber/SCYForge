@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ASCENT_QA_COMMITTEE
+# 🗺️ index LOCAL : ASCENT_QA_COMMITTEE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ascent_qa_committee**.
 

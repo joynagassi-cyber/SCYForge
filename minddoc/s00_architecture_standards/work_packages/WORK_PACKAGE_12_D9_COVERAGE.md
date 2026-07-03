@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Bloquant pour WP14 (Cyber Pack) et WP15 (Dashboard)
 > **Dépendances** : WP01 (types), WP10 (Provider matrix), WP11 (C1-C7 Validator), WP02 (SQL migrations)
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #1), `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` (§12 D9 Coverage), `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` (D-023), `WORK_PACKAGE_02_SQL_MIGRATIONS.md`
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #1), `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` (§12 D9 Coverage), `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` (D-023), `work_package_02_sql_migrations.md`
 
 ---
 
@@ -18,9 +18,9 @@ Implémenter l"**évaluateur D9 Coverage** — la métrique de couverture pondé
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
 1. `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` — §12 (D9 Coverage detail: pondération R1, R2, R3)
-2. `WORK_PACKAGE_01_DCID_TRAITS.md` — SemanticTree, LearnerNodeState
-3. `WORK_PACKAGE_11_C1C7_VALIDATOR.md` — C1-C7 validation
-4. `WORK_PACKAGE_02_SQL_MIGRATIONS.md` — `resolve_pack_config()`, `scy_semantic_trees`
+2. `work_package_01_dcid_traits.md` — SemanticTree, LearnerNodeState
+3. `work_package_11_c1c7_validator.md` — C1-C7 validation
+4. `work_package_02_sql_migrations.md` — `resolve_pack_config()`, `scy_semantic_trees`
 
 ---
 

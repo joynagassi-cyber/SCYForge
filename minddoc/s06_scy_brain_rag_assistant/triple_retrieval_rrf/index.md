@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : TRIPLE_RETRIEVAL_RRF
+# 🗺️ index LOCAL : TRIPLE_RETRIEVAL_RRF
 Ce sous-répertoire documente le **Triple Retrieval + RRF Fusion** de SCY-BRAIN — la recherche hybride (Dense Vector + BM25 Sparse + Graph Traversal) consolidée par Reciprocal Rank Fusion.
 
 ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ)

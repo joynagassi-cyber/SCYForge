@@ -301,7 +301,7 @@ CREATE TABLE scy_domain_packs (
 );
 
 -- Semantic Tree — une instance par pack/organization/learner
--- (déjà décrit dans IMPLEMENTATION_ORDER, complété ici)
+-- (déjà décrit dans implementation_order, complété ici)
 CREATE TABLE scy_semantic_trees (
   id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
   owner_kind TEXT NOT NULL,                -- 'domain_pack' | 'organization' | 'learner'
@@ -340,7 +340,7 @@ CREATE TABLE scy_learner_node_states (
 );
 
 -- Index GIN sur root_nodes pour requêtes "est-ce que ce nœud est racine ?"
-CREATE INDEX idx_semantic_trees_root_nodes ON scy_semantic_trees USING GIN(root_nodes);
+CREATE index idx_semantic_trees_root_nodes ON scy_semantic_trees USING GIN(root_nodes);
 
 -- Sous-arbre de rôle (projection d'un arbre complet vers les nœuds qu'un rôle doit maîtriser)
 CREATE TABLE scy_role_subtrees (

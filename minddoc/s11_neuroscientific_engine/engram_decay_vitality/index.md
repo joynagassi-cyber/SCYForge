@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGRAM_DECAY_VITALITY
+# 🗺️ index LOCAL : ENGRAM_DECAY_VITALITY
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engram_decay_vitality**.
 

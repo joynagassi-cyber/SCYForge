@@ -3,8 +3,8 @@
 
 > **Règle** : ce fichier est le point d'entrée. Tout commence ici.
 > **Étape 1** : Lire `MASTER_AGENT_PROMPT_V2.md` (contexte charnière — 10 phases documentaires).
-> **Étape 2** : Lire `minddoc/PROJECT_CONTEXT.md` (contexte projet partageable).
-> **Étape 3** : Lire `minddoc/s00_architecture_standards/INDEX.md` (navigation architecture).
+> **Étape 2** : Lire `minddoc/project_context.md` (contexte projet partageable).
+> **Étape 3** : Lire `minddoc/s00_architecture_standards/index.md` (navigation architecture).
 > **Étape 4** : Lire la phase correspondante dans `MASTER_AGENT_PROMPT_V2.md`.
 > Ensuite, lis `minddoc/s00_architecture_standards/work_packages/WP01_DCID_TRAITS.md` pour coder.
 
@@ -47,7 +47,7 @@ backend_rs/     → Rust (calculs lourds, FSRS, petgraph, RAG, NEURON-CHAINS)
 backend_ts/     → TypeScript (agents ASCENT, Mastra orchestration)
 frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 ```
-→ Voir `docs/PROJECT_STRUCTURE.md` pour l'arborescence complète.
+→ Voir `docs/project_structure.md` pour l'arborescence complète.
 
 ## 4. BOUNDARIES — Ce que tu NE FAIS JAMAIS
 
@@ -74,7 +74,7 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 
 ## 6. COMMANDES CLÉS
 
-→ Voir `docs/BUILD_COMMANDS.md` pour la liste complète.
+→ Voir `docs/build_commands.md` pour la liste complète.
 
 ```bash
 # Backend Rust
@@ -94,7 +94,7 @@ pnpm test                          # tests
 
 ## 7. ORDRE D'IMPLÉMENTATION
 
-→ Voir `docs/IMPLEMENTATION_ORDER.md` pour le plan complet séquencé.
+→ Voir `docs/implementation_order.md` pour le plan complet séquencé.
 
 **Bottom-up** (les services avant les consommateurs) :
 1. EventBus + PostgreSQL + Zilliz (fondation)
@@ -109,7 +109,7 @@ pnpm test                          # tests
 
 ## 8. CONVENTIONS DE CODE
 
-→ Voir `docs/CODE_STYLE.md` pour les exemples complets.
+→ Voir `docs/code_style.md` pour les exemples complets.
 
 - **Rust** : snake_case fonctions, PascalCase structs, error handling avec `Result<T, E>`.
 - **TypeScript** : camelCase, interfaces explicites, Zod pour la validation.

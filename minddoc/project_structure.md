@@ -40,10 +40,10 @@ Date du pivot : 2026-07-01
 MindDoc/                           ← Dépôt Git (specs + code)
 ├── AGENTS.md                      ← Instructions permanentes pour l'agent
 ├── docs/                          ← Documents de codage (ce dossier)
-│   ├── PROJECT_STRUCTURE.md       ← CE FICHIER
-│   ├── BUILD_COMMANDS.md
-│   ├── IMPLEMENTATION_ORDER.md
-│   └── CODE_STYLE.md
+│   ├── project_structure.md       ← CE FICHIER
+│   ├── build_commands.md
+│   ├── implementation_order.md
+│   └── code_style.md
 ├── s00_architecture_standards/    ← Specs architecture (LIRE, pas coder ici)
 ├── s00_prd/                       ← PRD (SOURCE DE VÉRITÉ, ne pas modifier)
 ├── s01_ingestion_cores/           ← Specs ingestion (13 cores)

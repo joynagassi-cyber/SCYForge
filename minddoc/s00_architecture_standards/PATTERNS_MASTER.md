@@ -1,4 +1,4 @@
-# PATTERNS_MASTER.md — Tous les patterns architecturaux unifiés
+# patterns_master.md — Tous les patterns architecturaux unifiés
 
 > **Phase 2** — Livrable d'unification
 > **Source** : Consolidation de tous les documents d'architecture SCY Forge
@@ -337,6 +337,6 @@ Tous les patterns ci-dessus sont référencés vers une décision d'architecture
 
 ---
 
-*PATTERNS_MASTER.md — SCY Forge — V1.0 — 2026-07-03*
+*patterns_master.md — SCY Forge — V1.0 — 2026-07-03*
 *Référence unique de tous les patterns architecturaux SCY Forge*
 *144 patterns consolidés, zéro doublon, 98 IN_MVP / 46 Post-MVP ou V1*

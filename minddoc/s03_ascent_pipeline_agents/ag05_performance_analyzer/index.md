@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG05_PERFORMANCE_ANALYZER
+# 🗺️ index LOCAL : AG05_PERFORMANCE_ANALYZER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag05_performance_analyzer**.
 

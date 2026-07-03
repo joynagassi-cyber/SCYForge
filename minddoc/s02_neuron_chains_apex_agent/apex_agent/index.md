@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : APEX_AGENT
+# 🗺️ index LOCAL : APEX_AGENT
 
 Ce sous-répertoire gère l'implémentation du **APEX-AGENT** — le méta-orchestrateur interne des NEURON-CHAINS (distinct de l'ASCENT-ORCHESTRATOR). Il pilote la génération documentaire via une boucle ReAct (Reason → Act → Observe) et coordonne les 7 chaînes + 18 tools.
 

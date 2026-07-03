@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX
+# 🗺️ index : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX
 
 Ce répertoire gère les entraînements actifs, le planificateur FSRS, et l'écosystème de création d'examens complexes.
 

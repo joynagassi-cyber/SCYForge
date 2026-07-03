@@ -1578,8 +1578,8 @@ export const CIRCUIT_BREAKER_TIMEOUTS = {
   
   // Data Layer
   DUCKDB_QUERY: 5_000,              // 5s  | P95 observé: 800ms | Justification: queries analytiques
-  INDEXEDDB_OPEN: 5_000,            // 5s  | P95 observé: 100ms | Justification: quota prompts
-  INDEXEDDB_TRANSACTION: 10_000,    // 10s | P95 observé: 2s | Justification: writes gros graphes
+  indexEDDB_OPEN: 5_000,            // 5s  | P95 observé: 100ms | Justification: quota prompts
+  indexEDDB_TRANSACTION: 10_000,    // 10s | P95 observé: 2s | Justification: writes gros graphes
   
   // Workers
   WORKER_INIT: 3_000,               // 3s  | P95 observé: 500ms | Justification: script load

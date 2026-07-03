@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : EXPORT_FORMATS
+# 🗺️ index LOCAL : EXPORT_FORMATS
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **export_formats**.
 

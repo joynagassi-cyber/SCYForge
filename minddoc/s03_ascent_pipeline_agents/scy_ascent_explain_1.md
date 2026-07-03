@@ -3076,10 +3076,10 @@ CREATE TABLE scy_user_gamification (
 );
 
 -- Index performance
-CREATE INDEX idx_agent_decisions_user_goal ON scy_agent_decisions(user_id, goal_id, created_at DESC);
-CREATE INDEX idx_drift_interventions_user ON scy_drift_interventions(user_id, created_at DESC);
-CREATE INDEX idx_proof_of_skill_user ON scy_proof_of_skill(user_id);
-CREATE INDEX idx_routing_history_node ON scy_routing_history(node_id, decided_at DESC);
+CREATE index idx_agent_decisions_user_goal ON scy_agent_decisions(user_id, goal_id, created_at DESC);
+CREATE index idx_drift_interventions_user ON scy_drift_interventions(user_id, created_at DESC);
+CREATE index idx_proof_of_skill_user ON scy_proof_of_skill(user_id);
+CREATE index idx_routing_history_node ON scy_routing_history(node_id, decided_at DESC);
 ```
 
 ---

@@ -327,12 +327,12 @@ Corpus entreprise (couche 1)  ⟶  TOUJOURS prioritaire
 
 ## 12. Pont GFE → Semantic Tree (Pilier 3 → Pilier 1)
 
-> Cette section établit le **contrat d'intégration** entre le GFE (Generative Forest Engine, Pilier 3) et le tronc SOC L1 (Pilier 1). Référence : `SCY_GFE_PARAMETERS.md §4.7–4.9`, D-023, D-024.
+> Cette section établit le **contrat d'intégration** entre le GFE (Generative Forest Engine, Pilier 3) et le tronc SOC L1 (Pilier 1). Référence : `scy_gfe_parameters.md §4.7–4.9`, D-023, D-024.
 
 ### 12.1 C1-C7 vs L1-L4 : deux systèmes orthogonaux
 
 Les **7 critères C1-C7** (ce document §0) valident la **pertinence métier** d'une Seed en sortie.
-Les **4 conditions L1-L4** (`SCY_GFE_PARAMETERS.md §3.1`) filtrent la **compatibilité combinatoire** de deux nœuds en entrée.
+Les **4 conditions L1-L4** (`scy_gfe_parameters.md §3.1`) filtrent la **compatibilité combinatoire** de deux nœuds en entrée.
 
 ```
 Pollination(A, B, context) [L1-L4 : distance + pont + nouveauté + Vision Helm]

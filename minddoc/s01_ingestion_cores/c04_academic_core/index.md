@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C04_ACADEMIC_CORE
+# 🗺️ index LOCAL : C04_ACADEMIC_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c04_academic_core**.
 

@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C05_GOOGLE_DRIVE_CORE
+# 🗺️ index LOCAL : C05_GOOGLE_DRIVE_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c05_google_drive_core**.
 

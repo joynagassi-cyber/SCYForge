@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Validé avant WP14 (Cyber Pack onboarding)
 > **Dépendances** : WP07 (Autonomy Envelope), WP08 (Cognitive Policies), WP12 (D9 Coverage)
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #1, #3), `docs/SCYFORGE_DEPLOYMENT_PROFILES_SPEC.md` (complet), `WORK_PACKAGE_07_AUTONOMY_ENVELOPE.md`, `WORK_PACKAGE_08_COGNITIVE_POLICIES.md`
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #1, #3), `docs/SCYFORGE_DEPLOYMENT_PROFILES_SPEC.md` (complet), `work_package_07_autonomy_envelope.md`, `work_package_08_cognitive_policies.md`
 
 ---
 
@@ -18,8 +18,8 @@ Implémenter les **2 Deployment Profiles** (MSSP/MDR vs regulated_internal) — 
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
 1. `docs/SCYFORGE_DEPLOYMENT_PROFILES_SPEC.md` — entier
-2. `WORK_PACKAGE_07_AUTONOMY_ENVELOPE.md` — AutonomyMode, AlertRiskGrid
-3. `WORK_PACKAGE_08_COGNITIVE_POLICIES.md` — CognitivePoliciesConfig
+2. `work_package_07_autonomy_envelope.md` — AutonomyMode, AlertRiskGrid
+3. `work_package_08_cognitive_policies.md` — CognitivePoliciesConfig
 4. `minddoc/s00_architecture_standards/scy_service_architecture_map.md` — Service 19 (ValidationGuard)
 
 ---
@@ -363,8 +363,8 @@ CREATE TABLE IF NOT EXISTS scy_deployment_profiles (
 );
 
 -- ── Indexes ──
-CREATE INDEX IF NOT EXISTS idx_deployment_profiles_org ON scy_deployment_profiles (organization_id);
-CREATE INDEX IF NOT EXISTS idx_deployment_profiles_profile ON scy_deployment_profiles (profile);
+CREATE index IF NOT EXISTS idx_deployment_profiles_org ON scy_deployment_profiles (organization_id);
+CREATE index IF NOT EXISTS idx_deployment_profiles_profile ON scy_deployment_profiles (profile);
 
 -- ── RLS ──
 ALTER TABLE scy_deployment_profiles ENABLE ROW LEVEL SECURITY;

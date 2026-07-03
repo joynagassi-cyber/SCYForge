@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C03_PODCAST_CORE
+# 🗺️ index LOCAL : C03_PODCAST_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c03_podcast_core**.
 

@@ -1,4 +1,4 @@
-# INDEX.md — Navigation centralisée de l'architecture SCY Forge
+# index.md — Navigation centralisée de l'architecture SCY Forge
 
 > **🛑 DIRECTIVE DE SÛRETÉ CRITIQUE**  
 > Il est formellement interdit de modifier ou de rédiger la moindre ligne de code pour SCY Forge sans avoir lu, assimilé et implémenté les standards de ce répertoire. Tout code non conforme aux patterns définis ci-dessous sera rejeté par les validations CI d'Harmonist.
@@ -9,17 +9,17 @@
 
 | Besoin | Fichier | Description |
 |--------|---------|-------------|
-| **Comprendre SCY Forge en 10 min** | `minddoc/PROJECT_CONTEXT.md` | Contexte partageable — lire ABSOLUMENT avant toute action |
+| **Comprendre SCY Forge en 10 min** | `minddoc/project_context.md` | Contexte partageable — lire ABSOLUMENT avant toute action |
 | **Toutes les décisions D-xxx consolidées** | `scy_architectural_blueprint_master.md` | Blueprint master — 50+ décisions D-xxx, règles d'or, vocabulaire |
 | **Cartographie des services** | `scy_service_architecture_map.md` | Carte de tous les services, consumers, événements |
-| **Toutes les incohérences connues** | `AUDIT_INCOHERENCES.md` | 12 incohérences documentées avec corrections appliquées |
+| **Toutes les incohérences connues** | `audit_incoherences.md` | 12 incohérences documentées avec corrections appliquées |
 | **Specs d'un Work Package** | `work_packages/WP01` → `WP14` | Specifications atomiques par feature (voir section 7) |
 | **Standards Rust (crates)** | `crates_standards/scy_crates_standards_spec.md` | Naming, structure, dependencies Rust |
 | **Standards TypeScript** | `scy_agentic_sdlc_standards.md` | AI-SDLC, WHEN-THEN-AND format, RFC 2119 |
 | **Patterns multi-agents** | `scy_multi_agent_pipeline_patterns.md` | G6/Three.js, LLMLingua-2, budgets, isolation |
 | **LiveKit Voice (POST_MVP)** | `scy_livekit_voice_spec.md` | Voice agent pipeline — Hors beachhead IN_MVP |
 | **Pricing tiers** | `pricing_tiers/scy_pricing_tiers_spec.md` | B2C/B2B pricing model |
-| **Log de toutes les migrations** | `s99_migration_logs/MIGRATION_LOG.md` | Historique complet des déplacements/suppressions |
+| **Log de toutes les migrations** | `s99_migration_logs/migration_log.md` | Historique complet des déplacements/suppressions |
 
 ---
 
@@ -27,13 +27,13 @@
 
 ```
 s00_architecture_standards/
-├── INDEX.md                          ← CE FICHIER — Navigation centralisée (LIRE EN PREMIER)
-├── AUDIT_DECISIONS.md                ← P1 — Table de toutes les décisions D-xxx/AP-xxx/NC-xxx/FLY-xxx/ARC-xxx/D-OPT-xxx (120 décisions)
-├── AUDIT_FEATURES.md                 ← P1 — Table de toutes les features MVP/Post-MVP (155+ features)
-├── AUDIT_PATTERNS.md                 ← P1 — Table de tous les patterns architecturaux (144 patterns)
-├── AUDIT_INCOHERENCES.md             ← P1 — Rapport d'incohérences (12 incohérences, corrections appliquées)
-├── DECISIONS_MASTER.md               ← P2 — Toutes les décisions unifiées (140 décisions consolidées)
-├── PATTERNS_MASTER.md                ← P2 — Tous les patterns unifiés (144 patterns, zéro doublon)
+├── index.md                          ← CE FICHIER — Navigation centralisée (LIRE EN PREMIER)
+├── audit_decisions.md                ← P1 — Table de toutes les décisions D-xxx/AP-xxx/NC-xxx/FLY-xxx/ARC-xxx/D-OPT-xxx (120 décisions)
+├── audit_features.md                 ← P1 — Table de toutes les features MVP/Post-MVP (155+ features)
+├── audit_patterns.md                 ← P1 — Table de tous les patterns architecturaux (144 patterns)
+├── audit_incoherences.md             ← P1 — Rapport d'incohérences (12 incohérences, corrections appliquées)
+├── decisions_master.md               ← P2 — Toutes les décisions unifiées (140 décisions consolidées)
+├── patterns_master.md                ← P2 — Tous les patterns unifiés (144 patterns, zéro doublon)
 ├── VALIDATION_CROISEE.md             ← P9 — Rapport de validation finale
 │
 ├── 📋 STANDARDS FONDAMENTAUX
@@ -81,7 +81,7 @@ s00_architecture_standards/
 │
 └── 📋 MIGRATION LOGS
     └── s99_migration_logs/
-        └── MIGRATION_LOG.md             ← Historique de toutes les migrations documentaires
+        └── migration_log.md             ← Historique de toutes les migrations documentaires
 ```
 
 ---
@@ -99,7 +99,7 @@ s00_architecture_standards/
 - Beachhead MVP (Jours 1-28)
 - Ordre d'implémentation bottom-up
 
-**Ordre de lecture** : LIRE EN DEUXIÈME, après `minddoc/PROJECT_CONTEXT.md`.
+**Ordre de lecture** : LIRE EN DEUXIÈME, après `minddoc/project_context.md`.
 
 ### 3.2 `scy_service_architecture_map.md` — La carte des services
 
@@ -198,23 +198,23 @@ WP14 ← WP01-WP05 (Cyber Pack)
 ## 7. Lecture séquentielle recommandée
 
 **Pour un nouvel agent** :
-1. `minddoc/PROJECT_CONTEXT.md` (10 min — vision, stack, règles d'or)
+1. `minddoc/project_context.md` (10 min — vision, stack, règles d'or)
 2. `scy_architectural_blueprint_master.md` (30 min — décisions D-001 à D-040)
 3. `scy_service_architecture_map.md` (15 min — services, events, flux)
 4. `work_packages/WP01_DCID_TRAITS.md` (spec avant implémentation)
-5. `WORK_PACKAGE_02_SQL_MIGRATIONS.md` → `WP03_EVENTBUS_CRATE.md` → ... (ordre bottom-up)
+5. `work_package_02_sql_migrations.md` → `WP03_EVENTBUS_CRATE.md` → ... (ordre bottom-up)
 
 **Pour l'Architecte Documentaire** (cette phase) :
-1. `AUDIT_INCOHERENCES.md` (toutes les corrections appliquées)
-2. `s99_migration_logs/MIGRATION_LOG.md` (traçabilité des migrations)
+1. `audit_incoherences.md` (toutes les corrections appliquées)
+2. `s99_migration_logs/migration_log.md` (traçabilité des migrations)
 3. Tous les sous-dossiers spécialisés (crates, safeguards, infra, UX)
 
 ---
 
 ## 8. Règles de navigation
 
-- ✅ **TOUJOURS** commencer par `INDEX.md` (ce fichier)
-- ✅ **TOUJOURS** lire `minddoc/PROJECT_CONTEXT.md` avant de coder
+- ✅ **TOUJOURS** commencer par `index.md` (ce fichier)
+- ✅ **TOUJOURS** lire `minddoc/project_context.md` avant de coder
 - ✅ **TOUJOURS** vérifier la section Work Packages avant d'implémenter une feature
 - ❌ **JAMAIS** modifier un WP sans validation humaine
 - ❌ **JAMAIS** coder avant d'avoir lu le WP correspondant
@@ -222,5 +222,5 @@ WP14 ← WP01-WP05 (Cyber Pack)
 
 ---
 
-*INDEX.md — SCY Forge Architecture Standards — V2.0 — 2026-07-02*
+*index.md — SCY Forge Architecture Standards — V2.0 — 2026-07-02*
 *Généré pendant la Phase 2 (Unification Architecture)*

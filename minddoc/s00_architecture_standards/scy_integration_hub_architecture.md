@@ -239,7 +239,7 @@ Chaque plateforme a une nature différente. Voici la stratégie d'ingestion reco
 ### 5.3 Anki ⚠️ — Desktop-only, deux voies
 
 - **Voie A — AnkiConnect (live sync)** : plugin Anki qui expose un serveur HTTP sur `127.0.0.1:8765`. Permet CRUD decks/cartes. **Mais** : nécessite Anki Desktop lancé sur la machine de l'utilisateur → convient au **mode Desktop local** (WASM/SQLite), pas cloud.
-- **Voie B — .apkg (fichier)** : import/export de paquets `.apkg` (format SM-2). **Déjà prévu** dans APEX/FSRS (`Import/Export Anki .apkg SM-2↔FSRS`, IMPLEMENTATION_ORDER Sprint 3).
+- **Voie B — .apkg (fichier)** : import/export de paquets `.apkg` (format SM-2). **Déjà prévu** dans APEX/FSRS (`Import/Export Anki .apkg SM-2↔FSRS`, implementation_order Sprint 3).
 - **Recommandation** : `.apkg` bidirectionnel comme défaut ($0, cross-platform) + AnkiConnect optionnel pour le mode Desktop live.
 - **Statut** : 🟡 Spécial — pas un hub OAuth classique.
 

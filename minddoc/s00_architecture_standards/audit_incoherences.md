@@ -65,7 +65,7 @@
 ### INC-M-03 — Dossier `work_packages/` manquant dans `s00_architecture_standards/`
 **Fichiers concernés** :
 - `minddoc/s00_architecture_standards/` : pas de sous-dossier `work_packages/`
-- `WORK_PACKAGE_01_DCID_TRAITS.md` à `WORK_PACKAGE_14_CYBER_PACK.md` : à la racine de `minddoc/` ou `docs/` (position incohérente)
+- `work_package_01_dcid_traits.md` à `work_package_14_cyber_pack.md` : à la racine de `minddoc/` ou `docs/` (position incohérente)
 
 **Problème** : Les Work Packages WP01-WP14 sont éparpillés. La structure attendue (`minddoc/s00_architecture_standards/work_packages/`) n'existe pas.
 
@@ -84,7 +84,7 @@
 
 ### INC-M-04 — WP03 EventBus : fragment incomplet (116 lignes)
 **Fichiers concernés** :
-- `WORK_PACKAGE_03_EVENTBUS_CRATE.md` : 116 lignes, seulement DLQ tests + checklist
+- `work_package_03_eventbus_crate.md` : 116 lignes, seulement DLQ tests + checklist
 - Manque : corps principal du WP (architecture, traits, événements, implémentation)
 
 **Problème** : WP03 est un fragment. Impossible de coder sans le corps principal.
@@ -190,12 +190,12 @@ ProofRubric → Graduel (score pondéré sur dimensions)
   - 8 Use Case Intentions C1-C8 (Doc B) → Use Case Intentions du Cyber Pack
   - 6 viz noyau (Feature Report §14) → entrées `corePriority: 1` du VizSpec catalog
 - Les 26 modes deviennent des **presets** du VizSpec catalog (pas des plugins)
-- COSMOS v5 = `docs/SCYFORGE_COSMOS_V5_VIZSPEC_CATALOG.md` (document actif)
+- COSMOS v5 = `docs/scyforge_cosmos_v5_vizspec_catalog.md` (document actif)
 - Les 3 docs Plugin (A/B/C) sont marqués **ARCHIVÉ — Référence historique**
 
 **Action requise** :
 1. ✅ Fait : archivage des 3 docs Plugin avec bandeau ARCHIVE
-2. ✅ Fait : création de `docs/SCYFORGE_COSMOS_V5_VIZSPEC_CATALOG.md`
+2. ✅ Fait : création de `docs/scyforge_cosmos_v5_vizspec_catalog.md`
 3. Mettre à jour `minddoc/s04_scy_cosmos_visualization_engine/scy_cosmos_architecture_v4_5.md` pour référencer COSMOS v5
 4. Migrer les 3 docs Plugin archivés de `docs/` vers `minddoc/archive/cosmos_plugin_infrastructure/`
 
@@ -211,7 +211,7 @@ ProofRubric → Graduel (score pondéré sur dimensions)
 **Problème** : 9 améliorations majeures (MSS, profondeur conceptuelle, séparation pédagogique/LLM, métacognition, visualisation rapport, FSRS étendu, profils d'explication, mode présentation, intelligence collective) ne sont pas intégrées au scope architectural.
 
 **Correction validée** :
-- ✅ Créer `minddoc/s03_ascent_pipeline_agents/student_ai/STUDENT_AI_IMPROVEMENTS.md`
+- ✅ Créer `minddoc/s03_ascent_pipeline_agents/student_ai/student_ai_improvements.md`
 - 7 améliorations IN_MVP (P1-P7), 2 POST_MVP (P8-P9)
 - STUDENT AI est un **consumer du noyau ASCENT**, pas un agent séparé
 - Intégré aux 5 composants ASCENT existants (Ag-05, Ag-07, Ag-09, Ag-11, COSMOS)
@@ -219,7 +219,7 @@ ProofRubric → Graduel (score pondéré sur dimensions)
 **Action requise** :
 1. ✅ Fait : création du document STUDENT AI dans minddoc
 2. Mettre à jour `scy_service_architecture_map.md` pour inclure STUDENT AI comme consumer
-3. Mettre à jour `PROJECT_CONTEXT.md` si nécessaire
+3. Mettre à jour `project_context.md` si nécessaire
 
 ---
 
@@ -314,8 +314,8 @@ P1 (important) :
 | `docs/SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_A_CORE.md` | Archivé (bandeau ARCHIVE) | ✅ |
 | `docs/SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md` | Archivé (bandeau ARCHIVE) | ✅ |
 | `docs/SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md` | Archivé (bandeau ARCHIVE) | ✅ |
-| `docs/SCYFORGE_COSMOS_V5_VIZSPEC_CATALOG.md` | Créé (architecture active) | ✅ |
-| `minddoc/s03_ascent_pipeline_agents/student_ai/STUDENT_AI_IMPROVEMENTS.md` | Créé (9 améliorations) | ✅ |
+| `docs/scyforge_cosmos_v5_vizspec_catalog.md` | Créé (architecture active) | ✅ |
+| `minddoc/s03_ascent_pipeline_agents/student_ai/student_ai_improvements.md` | Créé (9 améliorations) | ✅ |
 
 ---
 

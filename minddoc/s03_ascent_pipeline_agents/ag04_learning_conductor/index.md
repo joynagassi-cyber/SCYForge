@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG04_LEARNING_CONDUCTOR
+# 🗺️ index LOCAL : AG04_LEARNING_CONDUCTOR
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag04_learning_conductor**.
 

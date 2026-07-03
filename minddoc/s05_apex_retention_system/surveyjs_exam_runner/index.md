@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : SURVEYJS_EXAM_RUNNER
+# 🗺️ index LOCAL : SURVEYJS_EXAM_RUNNER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **surveyjs_exam_runner**.
 

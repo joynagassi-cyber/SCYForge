@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_NIVO
+# 🗺️ index LOCAL : ENGINE_NIVO
 
 Ce sous-répertoire documente le moteur de rendu **nivo** (D-RENDER-007) — dataviz déclaratif React — utilisé par les modes COSMOS M12 (Chord), M13 (Sankey), M16 (Heatmap) et M19 (Circle Packing).
 

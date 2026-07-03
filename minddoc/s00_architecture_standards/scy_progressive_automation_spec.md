@@ -104,7 +104,7 @@ CREATE TABLE scy_agent_proposals (
     resolved_at INTEGER
 );
 
-CREATE INDEX idx_agent_proposals_user ON scy_agent_proposals(user_id, feature_domain, proposed_at DESC);
+CREATE index idx_agent_proposals_user ON scy_agent_proposals(user_id, feature_domain, proposed_at DESC);
 ```
 
 ---

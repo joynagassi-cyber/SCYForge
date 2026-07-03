@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C12_EPUB_CORE
+# 🗺️ index LOCAL : C12_EPUB_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c12_epub_core**.
 

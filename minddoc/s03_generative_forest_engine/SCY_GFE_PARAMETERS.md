@@ -306,8 +306,8 @@ Toute Seed GFE possède **deux identités** :
 
 | Identité | Format | Rôle | Source |
 |---|---|---|---|
-| `seed.id` | UUID v7 | Clé de stockage, ordre chronologique | SCY_GFE_PARAMETERS (EventBus) |
-| `seed_hash` | SHA-256 | Fingerprint logique déterministe | CYBER_ONTOLOGY §8 + SCY_GFE_PARAMETERS |
+| `seed.id` | UUID v7 | Clé de stockage, ordre chronologique | scy_gfe_parameters (EventBus) |
+| `seed_hash` | SHA-256 | Fingerprint logique déterministe | CYBER_ONTOLOGY §8 + scy_gfe_parameters |
 
 ```
 seed_hash = sha256( 

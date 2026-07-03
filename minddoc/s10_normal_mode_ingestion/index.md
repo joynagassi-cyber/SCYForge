@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 10 — MODE NORMAL D'INGESTION
+# 🗺️ index : MODULE 10 — MODE NORMAL D'INGESTION
 
 Ce répertoire gère l'ingestion à la demande et la génération asynchrone par lots du Pack par Défaut.
 

@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_G2
+# 🗺️ index LOCAL : ENGINE_G2
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_g2**.
 

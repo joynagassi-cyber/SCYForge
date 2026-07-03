@@ -1,4 +1,4 @@
-# AUDIT_PATTERNS.md — Table de tous les patterns architecturaux
+# audit_patterns.md — Table de tous les patterns architecturaux
 
 > **Phase 1** — Livrable d'audit documentaire
 > **Source** : `MASTER_AGENT_PROMPT_V2.md` §4.1.4
@@ -221,4 +221,4 @@
 
 ---
 
-*AUDIT_PATTERNS.md — SCY Forge — V1.0 — 2026-07-03*
+*audit_patterns.md — SCY Forge — V1.0 — 2026-07-03*

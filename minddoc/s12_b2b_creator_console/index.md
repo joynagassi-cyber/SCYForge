@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B
+# 🗺️ index : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B
 
 Ce répertoire régit les tableaux de bord cohortes des formateurs de contenu, les règles de k-anonymat, et la monétisation SaaS API.
 

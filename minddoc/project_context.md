@@ -1,4 +1,4 @@
-# PROJECT_CONTEXT.md — Contexte SCY Forge
+# project_context.md — Contexte SCY Forge
 
 > **Usage** : Ce fichier est conçu pour être partagé avec un nouvel agent (ou un humain) pour comprendre SCY Forge en **10 minutes**.
 > **Version** : V1.0 (2026-07-02)
@@ -195,13 +195,13 @@ Chaque Domain Pack implémente 9 providers :
 
 ```
 minddoc/
-├── PROJECT_CONTEXT.md          ← CE FICHIER — contexte partageable
-├── PROJECT_CONTEXT_SHORT.md    ← Version 2 min
+├── project_context.md          ← CE FICHIER — contexte partageable
+├── project_context_SHORT.md    ← Version 2 min
 ├── s00_architecture_standards/ ← Architecture unifiée
-│   ├── INDEX.md
+│   ├── index.md
 │   ├── AUDIT_*.md
-│   ├── DECISIONS_MASTER.md
-│   ├── PATTERNS_MASTER.md
+│   ├── decisions_master.md
+│   ├── patterns_master.md
 │   ├── work_packages/
 │   └── s99_migration_logs/
 ├── s00_prd/                    ← PRD (Golden Master + Post-MVP)
@@ -232,4 +232,4 @@ docs/  ← Fichiers opérationnels uniquement (roadmap, build, style, structure)
 
 ---
 
-*PROJECT_CONTEXT.md — SCY Forge — V1.0 — 2026-07-02*
+*project_context.md — SCY Forge — V1.0 — 2026-07-02*

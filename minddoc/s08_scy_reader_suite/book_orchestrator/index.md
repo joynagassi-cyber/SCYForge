@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : BOOK_ORCHESTRATOR
+# 🗺️ index LOCAL : BOOK_ORCHESTRATOR
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **book_orchestrator**.
 

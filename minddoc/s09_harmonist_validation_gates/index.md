@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS
+# 🗺️ index : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS
 
 Ce répertoire regroupe les verrous de sûreté logique interceptant les écritures de base de données d'apprentissage.
 

@@ -184,8 +184,8 @@ CREATE TABLE scy_editorial_tones (
 );
 
 -- Index pour requêtes de génération de nuit (Batch) ultra-rapides
-CREATE INDEX idx_document_types_code ON scy_document_types(document_code);
-CREATE INDEX idx_editorial_tones_code ON scy_editorial_tones(tone_code);
+CREATE index idx_document_types_code ON scy_document_types(document_code);
+CREATE index idx_editorial_tones_code ON scy_editorial_tones(tone_code);
 ```
 
 ---

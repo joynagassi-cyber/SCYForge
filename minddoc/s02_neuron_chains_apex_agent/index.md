@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 02 — NEURON-CHAINS & APEX-AGENT
+# 🗺️ index : MODULE 02 — NEURON-CHAINS & APEX-AGENT
 
 Ce répertoire contient l'ingénierie sémantique lourde gérée par le serveur Rust Axum pour la génération de documents de cours.
 

@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C06_FINANCIAL_CORE
+# 🗺️ index LOCAL : C06_FINANCIAL_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c06_financial_core**.
 

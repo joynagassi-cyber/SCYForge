@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Obligatoire avant WP05 (adapter Postgres) et WP13 (deployment profiles)
 > **Dépendances** : WP01 (DCID traits) doit exister
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #3), `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` (D-024), `WORK_PACKAGE_01_DCID_TRAITS.md`
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #3), `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` (D-024), `work_package_01_dcid_traits.md`
 
 ---
 

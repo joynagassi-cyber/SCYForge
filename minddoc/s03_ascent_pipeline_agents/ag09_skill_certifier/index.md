@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG09_SKILL_CERTIFIER
+# 🗺️ index LOCAL : AG09_SKILL_CERTIFIER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag09_skill_certifier**.
 

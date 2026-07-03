@@ -3,15 +3,15 @@ Total: 610 fichiers Markdown
 
 === (root) DOSSIER RACINE minddoc/ ===
 
-[1] BUILD_COMMANDS.md   |   212 lignes
+[1] build_commands.md   |   212 lignes
   Titre: <!--
   Resume: <!-- BEACHHEAD PIVOT v2.0 — UNKNOWN Module non classifié. Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 --> # SCY FORGE — BUILD COMMANDS --- ## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP > **Référence** : docs/SCYFORGE_PIVOT_ARCHITE...
 
-[2] CODE_STYLE.md   |   406 lignes
+[2] code_style.md   |   406 lignes
   Titre: <!--
   Resume: <!-- BEACHHEAD PIVOT v2.0 — UNKNOWN Module non classifié. Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 --> # SCY FORGE — CODE STYLE --- ## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP > **Référence** : docs/SCYFORGE_PIVOT_ARCHITECTUR...
 
-[3] IMPLEMENTATION_ORDER.md   |   265 lignes
+[3] implementation_order.md   |   265 lignes
   Titre: <!--
   Resume: <!-- BEACHHEAD PIVOT v2.0 — UNKNOWN Module non classifié. Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 --> # SCY FORGE — IMPLEMENTATION ORDER --- ## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP > **Référence** : docs/SCYFORGE_PIVOT_A...
 
@@ -19,15 +19,15 @@ Total: 610 fichiers Markdown
   Titre: # MindDoc — Index
   Resume: # MindDoc — Index ## Produit et exigences ### s00_prd/ - **[index.md](./s00_prd/index.md)** - Index du PRD consolidé et exigences maîtres - **[scy_prd_part_1_strategy.md](./s00_prd/scy_prd_part_1_strategy.md)** - Vision produit, personas et stratégie B2B - **[scy_prd_part_2_as...
 
-[5] PROJECT_CONTEXT.md   |   236 lignes
-  Titre: # PROJECT_CONTEXT.md — Contexte SCY Forge
-  Resume: # PROJECT_CONTEXT.md — Contexte SCY Forge > **Usage** : Ce fichier est conçu pour être partagé avec un nouvel agent (ou un humain) pour comprendre SCY Forge en **10 minutes**. > **Version** : V1.0 (2026-07-02) > **Référence** : MASTER_AGENT_PROMPT_V2.md pour les détails comple...
+[5] project_context.md   |   236 lignes
+  Titre: # project_context.md — Contexte SCY Forge
+  Resume: # project_context.md — Contexte SCY Forge > **Usage** : Ce fichier est conçu pour être partagé avec un nouvel agent (ou un humain) pour comprendre SCY Forge en **10 minutes**. > **Version** : V1.0 (2026-07-02) > **Référence** : MASTER_AGENT_PROMPT_V2.md pour les détails comple...
 
-[6] PROJECT_CONTEXT_SHORT.md   |   27 lignes
-  Titre: # PROJECT_CONTEXT_SHORT.md — SCY Forge (2 min)
-  Resume: # PROJECT_CONTEXT_SHORT.md — SCY Forge (2 min) **Quoi** : Plateforme d'apprentissage agentique. L'utilisateur déclare un objectif → agents IA orchestrent ingestion, génération, rétention, certification. **Promesse** : "Zéro friction. Règle des 2 clics." **3 Piliers** : 1. Sema...
+[6] project_context_SHORT.md   |   27 lignes
+  Titre: # project_context_SHORT.md — SCY Forge (2 min)
+  Resume: # project_context_SHORT.md — SCY Forge (2 min) **Quoi** : Plateforme d'apprentissage agentique. L'utilisateur déclare un objectif → agents IA orchestrent ingestion, génération, rétention, certification. **Promesse** : "Zéro friction. Règle des 2 clics." **3 Piliers** : 1. Sema...
 
-[7] PROJECT_STRUCTURE.md   |   450 lignes
+[7] project_structure.md   |   450 lignes
   Titre: <!--
   Resume: <!-- BEACHHEAD PIVOT v2.0 — UNKNOWN Module non classifié. Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 --> # SCY FORGE — PROJECT STRUCTURE --- ## 🏖️ BEACHHEAD SCOPE — Cyber SOC/Blue-Team MVP > **Référence** : docs/SCYFORGE_PIVOT_ARCH...
 
@@ -122,8 +122,8 @@ Total: 610 fichiers Markdown
 === s00_prd ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES
-  Resume: # 🗺️ INDEX : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES Ce répertoire regroupe le PRD de production découpé en sections sémantiques de moins de 1000 lignes pour éviter les pannes de contexte et d'attention des agents IA. ## 📁 Répertoire des Fichiers de Section 1. **scy_pr...
+  Titre: # 🗺️ index : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES
+  Resume: # 🗺️ index : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES Ce répertoire regroupe le PRD de production découpé en sections sémantiques de moins de 1000 lignes pour éviter les pannes de contexte et d'attention des agents IA. ## 📁 Répertoire des Fichiers de Section 1. **scy_pr...
 
 [2] scy_epics_and_stories.md   |   578 lignes
   Titre: <!--
@@ -160,8 +160,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores ===
 
 [1] index.md   |   16 lignes
-  Titre: # 🗺️ INDEX : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES
-  Resume: # 🗺️ INDEX : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES Ce répertoire regroupe les spécifications de plomberie et d'interfaçage de nos 11 Cores d'ingestion à la demande. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Fiche technique des bibliothèques de parsin...
+  Titre: # 🗺️ index : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES
+  Resume: # 🗺️ index : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES Ce répertoire regroupe les spécifications de plomberie et d'interfaçage de nos 11 Cores d'ingestion à la demande. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Fiche technique des bibliothèques de parsin...
 
 [2] spec_and_patterns.md   |   98 lignes
   Titre: <!--
@@ -170,8 +170,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c01_youtube_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C01_YOUTUBE_CORE
-  Resume: # 🗺️ INDEX LOCAL : C01_YOUTUBE_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c01_youtube_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrément...
+  Titre: # 🗺️ index LOCAL : C01_YOUTUBE_CORE
+  Resume: # 🗺️ index LOCAL : C01_YOUTUBE_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c01_youtube_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrément...
 
 [2] scy_youtube_core_plan.md   |   77 lignes
   Titre: <!--
@@ -192,8 +192,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c02_web_article_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C02_WEB_ARTICLE_CORE
-  Resume: # 🗺️ INDEX LOCAL : C02_WEB_ARTICLE_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c02_web_article_core** (Le Core d'Ingestion Web & Articles). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-...
+  Titre: # 🗺️ index LOCAL : C02_WEB_ARTICLE_CORE
+  Resume: # 🗺️ index LOCAL : C02_WEB_ARTICLE_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c02_web_article_core** (Le Core d'Ingestion Web & Articles). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-...
 
 [2] scy_web_article_core_plan.md   |   68 lignes
   Titre: <!--
@@ -218,8 +218,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c03_podcast_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C03_PODCAST_CORE
-  Resume: # 🗺️ INDEX LOCAL : C03_PODCAST_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c03_podcast_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrément...
+  Titre: # 🗺️ index LOCAL : C03_PODCAST_CORE
+  Resume: # 🗺️ index LOCAL : C03_PODCAST_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c03_podcast_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrément...
 
 [2] scy_c03_podcast_core_plan.md   |   114 lignes
   Titre: <!--
@@ -240,8 +240,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c04_academic_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C04_ACADEMIC_CORE
-  Resume: # 🗺️ INDEX LOCAL : C04_ACADEMIC_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c04_academic_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
+  Titre: # 🗺️ index LOCAL : C04_ACADEMIC_CORE
+  Resume: # 🗺️ index LOCAL : C04_ACADEMIC_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c04_academic_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
 
 [2] scy_c04_academic_core_plan.md   |   86 lignes
   Titre: <!--
@@ -262,8 +262,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c05_google_drive_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C05_GOOGLE_DRIVE_CORE
-  Resume: # 🗺️ INDEX LOCAL : C05_GOOGLE_DRIVE_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c05_google_drive_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
+  Titre: # 🗺️ index LOCAL : C05_GOOGLE_DRIVE_CORE
+  Resume: # 🗺️ index LOCAL : C05_GOOGLE_DRIVE_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c05_google_drive_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
 
 [2] scy_c05_google_drive_core_plan.md   |   131 lignes
   Titre: <!--
@@ -284,8 +284,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c06_financial_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C06_FINANCIAL_CORE
-  Resume: # 🗺️ INDEX LOCAL : C06_FINANCIAL_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c06_financial_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
+  Titre: # 🗺️ index LOCAL : C06_FINANCIAL_CORE
+  Resume: # 🗺️ index LOCAL : C06_FINANCIAL_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c06_financial_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
 
 [2] scy_c06_financial_core_plan.md   |   122 lignes
   Titre: <!--
@@ -306,8 +306,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c07_twitter_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C07_TWITTER_CORE
-  Resume: # 🗺️ INDEX LOCAL : C07_TWITTER_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c07_twitter_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrément...
+  Titre: # 🗺️ index LOCAL : C07_TWITTER_CORE
+  Resume: # 🗺️ index LOCAL : C07_TWITTER_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c07_twitter_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrément...
 
 [2] scy_c07_twitter_core_plan.md   |   110 lignes
   Titre: <!--
@@ -328,8 +328,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c08_wikipedia_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C08_WIKIPEDIA_CORE
-  Resume: # 🗺️ INDEX LOCAL : C08_WIKIPEDIA_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c08_wikipedia_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
+  Titre: # 🗺️ index LOCAL : C08_WIKIPEDIA_CORE
+  Resume: # 🗺️ index LOCAL : C08_WIKIPEDIA_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c08_wikipedia_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
 
 [2] scy_c08_wikipedia_core_plan.md   |   105 lignes
   Titre: <!--
@@ -350,8 +350,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c09_science_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C09_SCIENCE_CORE
-  Resume: # 🗺️ INDEX LOCAL : C09_SCIENCE_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c09_science_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrément...
+  Titre: # 🗺️ index LOCAL : C09_SCIENCE_CORE
+  Resume: # 🗺️ index LOCAL : C09_SCIENCE_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c09_science_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrément...
 
 [2] scy_c09_science_core_plan.md   |   106 lignes
   Titre: <!--
@@ -372,8 +372,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c10_tiktok_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C10_TIKTOK_CORE
-  Resume: # 🗺️ INDEX LOCAL : C10_TIKTOK_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c10_tiktok_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémental...
+  Titre: # 🗺️ index LOCAL : C10_TIKTOK_CORE
+  Resume: # 🗺️ index LOCAL : C10_TIKTOK_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c10_tiktok_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémental...
 
 [2] scy_c10_tiktok_core_plan.md   |   122 lignes
   Titre: <!--
@@ -394,8 +394,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c11_reddit_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C11_REDDIT_CORE
-  Resume: # 🗺️ INDEX LOCAL : C11_REDDIT_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c11_reddit_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémental...
+  Titre: # 🗺️ index LOCAL : C11_REDDIT_CORE
+  Resume: # 🗺️ index LOCAL : C11_REDDIT_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c11_reddit_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémental...
 
 [2] scy_c11_reddit_core_plan.md   |   103 lignes
   Titre: <!--
@@ -416,8 +416,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c12_epub_core ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C12_EPUB_CORE
-  Resume: # 🗺️ INDEX LOCAL : C12_EPUB_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c12_epub_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en...
+  Titre: # 🗺️ index LOCAL : C12_EPUB_CORE
+  Resume: # 🗺️ index LOCAL : C12_EPUB_CORE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c12_epub_core**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en...
 
 [2] scy_c12_epub_core_plan.md   |   108 lignes
   Titre: <!--
@@ -438,8 +438,8 @@ Total: 610 fichiers Markdown
 === s01_ingestion_cores/c13_anki_import_export ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : C13_ANKI_IMPORT_EXPORT
-  Resume: # 🗺️ INDEX LOCAL : C13_ANKI_IMPORT_EXPORT Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c13_anki_import_export**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de maniè...
+  Titre: # 🗺️ index LOCAL : C13_ANKI_IMPORT_EXPORT
+  Resume: # 🗺️ index LOCAL : C13_ANKI_IMPORT_EXPORT Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c13_anki_import_export**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de maniè...
 
 [2] scy_c13_anki_import_export_plan.md   |   130 lignes
   Titre: <!--
@@ -459,23 +459,23 @@ Total: 610 fichiers Markdown
 
 === s01_semantic_tree ===
 
-[1] SCY_EVENTBUS_SCHEMAS.md   |   616 lignes
+[1] scy_eventbus_schemas.md   |   616 lignes
   Titre: # SCY FORGE — EVENTBUS SCHEMAS & CONTRACTS (RFC-2119)
   Resume: # SCY FORGE — EVENTBUS SCHEMAS & CONTRACTS (RFC-2119) **Document ID** : S01_EVENTBUS_SCHEMAS **Date** : 2026-07-01 **Statut** : 🟢 NORMATIF — Réf pour toute implémentation EventBus **Pilier** : Pilier 1 (Semantic Tree) + Pilier 2 (ASCENT) + Pilier 3 (GFE) --- ## 1. Contexte et...
 
-[2] SCY_FORMULAS.md   |   385 lignes
+[2] scy_formulas.md   |   385 lignes
   Titre: # SCY FORGE — FORMULAS & CONSTANTS (CANONICAL)
   Resume: # SCY FORGE — FORMULAS & CONSTANTS (CANONICAL) **Document ID** : S01_FORMULAS **Date** : 2026-07-01 **Statut** : 🟢 NORMATIF — Source de vérité pour toutes les formules **Pilier** : Pilier 1 (Semantic Tree) + Pilier 2 (ASCENT/APEX) + Pilier 3 (GFE) --- ## 1. Principe Fondateur...
 
-[3] SCY_STATE_MACHINES.md   |   533 lignes
+[3] scy_state_machines.md   |   533 lignes
   Titre: # SCY FORGE — MACHINES À ÉTATS (STATE MACHINES)
   Resume: # SCY FORGE — MACHINES À ÉTATS (STATE MACHINES) **Document ID** : S01_STATE_MACHINES **Date** : 2026-07-01 **Statut** : 🟢 NORMATIF — Réf pour toute implémentation de machines à états **Pilier** : Pilier 1 (Semantic Tree + DCID) + Pilier 3 (GFE) --- ## 1. Vue d'Ensemble SCY Fo...
 
 === s02_neuron_chains_apex_agent ===
 
 [1] index.md   |   7 lignes
-  Titre: # 🗺️ INDEX : MODULE 02 — NEURON-CHAINS & APEX-AGENT
-  Resume: # 🗺️ INDEX : MODULE 02 — NEURON-CHAINS & APEX-AGENT Ce répertoire contient l'ingénierie sémantique lourde gérée par le serveur Rust Axum pour la génération de documents de cours. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Spécifications des 18 outils natifs, d...
+  Titre: # 🗺️ index : MODULE 02 — NEURON-CHAINS & APEX-AGENT
+  Resume: # 🗺️ index : MODULE 02 — NEURON-CHAINS & APEX-AGENT Ce répertoire contient l'ingénierie sémantique lourde gérée par le serveur Rust Axum pour la génération de documents de cours. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Spécifications des 18 outils natifs, d...
 
 [2] scy_cosmos_document_synthesis_specs.md   |   202 lignes
   Titre: <!--
@@ -488,8 +488,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/anti_hallucination ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : ANTI_HALLUCINATION
-  Resume: # 🗺️ INDEX LOCAL : ANTI_HALLUCINATION Les **3 couches anti-hallucination** + **score de confiance par section**. Réf. PRD §5.4, NC-003 (anti-hallucination 3 couches vs vérification post).
+  Titre: # 🗺️ index LOCAL : ANTI_HALLUCINATION
+  Resume: # 🗺️ index LOCAL : ANTI_HALLUCINATION Les **3 couches anti-hallucination** + **score de confiance par section**. Réf. PRD §5.4, NC-003 (anti-hallucination 3 couches vs vérification post).
 
 [2] scy_anti_hallucination_combined.md   |   39 lignes
   Titre: <!--
@@ -502,8 +502,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/apex_agent ===
 
 [1] index.md   |   12 lignes
-  Titre: # 🗺️ INDEX LOCAL : APEX_AGENT
-  Resume: # 🗺️ INDEX LOCAL : APEX_AGENT Ce sous-répertoire gère l'implémentation du **APEX-AGENT** — le méta-orchestrateur interne des NEURON-CHAINS (distinct de l'ASCENT-ORCHESTRATOR). Il pilote la génération documentaire via une boucle ReAct (Reason → Act → Observe) et coordonne les ...
+  Titre: # 🗺️ index LOCAL : APEX_AGENT
+  Resume: # 🗺️ index LOCAL : APEX_AGENT Ce sous-répertoire gère l'implémentation du **APEX-AGENT** — le méta-orchestrateur interne des NEURON-CHAINS (distinct de l'ASCENT-ORCHESTRATOR). Il pilote la génération documentaire via une boucle ReAct (Reason → Act → Observe) et coordonne les ...
 
 [2] scy_apex_agent_plan.md   |   61 lignes
   Titre: <!--
@@ -524,8 +524,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/chain_alpha ===
 
 [1] index.md   |   4 lignes
-  Titre: # 🗺️ INDEX LOCAL : CHAIN_ALPHA
-  Resume: # 🗺️ INDEX LOCAL : CHAIN_ALPHA Chaîne **ALPHA — Extraction & Synthèse** (MVP). 3 agents : ALPHA-1 Extracteur Brut, ALPHA-2 Chunker Intelligent, ALPHA-3 Résumeur Multi-Niveaux. Pipeline MapReduce L0-L4. Fichiers : scy_chain_alpha_spec/plan/tasks/tests.md. Réf. PRD §5.3, §7.3. ...
+  Titre: # 🗺️ index LOCAL : CHAIN_ALPHA
+  Resume: # 🗺️ index LOCAL : CHAIN_ALPHA Chaîne **ALPHA — Extraction & Synthèse** (MVP). 3 agents : ALPHA-1 Extracteur Brut, ALPHA-2 Chunker Intelligent, ALPHA-3 Résumeur Multi-Niveaux. Pipeline MapReduce L0-L4. Fichiers : scy_chain_alpha_spec/plan/tasks/tests.md. Réf. PRD §5.3, §7.3. ...
 
 [2] scy_chain_alpha_plan.md   |   37 lignes
   Titre: <!--
@@ -546,8 +546,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/chain_beta ===
 
 [1] index.md   |   4 lignes
-  Titre: # 🗺️ INDEX LOCAL : CHAIN_BETA
-  Resume: # 🗺️ INDEX LOCAL : CHAIN_BETA Chaîne **BETA — Structuration** (MVP). 3 agents : BETA-1 Taxonomiste (10 domaines), BETA-2 Extracteur Relations, BETA-3 Architecte Hiérarchie (PageRank). Fichiers : scy_chain_beta_spec/plan/tasks/tests.md. Réf. PRD §5.3, §7.3.
+  Titre: # 🗺️ index LOCAL : CHAIN_BETA
+  Resume: # 🗺️ index LOCAL : CHAIN_BETA Chaîne **BETA — Structuration** (MVP). 3 agents : BETA-1 Taxonomiste (10 domaines), BETA-2 Extracteur Relations, BETA-3 Architecte Hiérarchie (PageRank). Fichiers : scy_chain_beta_spec/plan/tasks/tests.md. Réf. PRD §5.3, §7.3.
 
 [2] scy_chain_beta_plan.md   |   37 lignes
   Titre: <!--
@@ -568,8 +568,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/chain_delta ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : CHAIN_DELTA
-  Resume: # 🗺️ INDEX LOCAL : CHAIN_DELTA Chaîne **DELTA — Validation** (V1). DELTA-1 Fact-Checker, DELTA-2 Auditeur Cohérence, DELTA-3 Validateur Citations. Réf. PRD §5.3, §5.4 (anti-hallucination couche 2).
+  Titre: # 🗺️ index LOCAL : CHAIN_DELTA
+  Resume: # 🗺️ index LOCAL : CHAIN_DELTA Chaîne **DELTA — Validation** (V1). DELTA-1 Fact-Checker, DELTA-2 Auditeur Cohérence, DELTA-3 Validateur Citations. Réf. PRD §5.3, §5.4 (anti-hallucination couche 2).
 
 [2] scy_chain_delta_combined.md   |   38 lignes
   Titre: <!--
@@ -582,8 +582,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/chain_epsilon ===
 
 [1] index.md   |   4 lignes
-  Titre: # 🗺️ INDEX LOCAL : CHAIN_EPSILON
-  Resume: # 🗺️ INDEX LOCAL : CHAIN_EPSILON Chaîne **EPSILON — Génération Documents** (MVP). 3 agents : EPSILON-1 Cartes Révision (5 types), EPSILON-2 Exercices (Template Gold), EPSILON-3 QCM (distracteurs intelligents). Fichiers : scy_chain_epsilon_spec/plan/tasks/tests.md. Réf. PRD §5...
+  Titre: # 🗺️ index LOCAL : CHAIN_EPSILON
+  Resume: # 🗺️ index LOCAL : CHAIN_EPSILON Chaîne **EPSILON — Génération Documents** (MVP). 3 agents : EPSILON-1 Cartes Révision (5 types), EPSILON-2 Exercices (Template Gold), EPSILON-3 QCM (distracteurs intelligents). Fichiers : scy_chain_epsilon_spec/plan/tasks/tests.md. Réf. PRD §5...
 
 [2] scy_chain_epsilon_plan.md   |   37 lignes
   Titre: <!--
@@ -604,8 +604,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/chain_eta ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : CHAIN_ETA
-  Resume: # 🗺️ INDEX LOCAL : CHAIN_ETA Chaîne **ETA — Export Final** (V2). ETA-1 Formateur Multi-Formats (9 formats), ETA-2 Enrichisseur Métadonnées (Dublin Core), ETA-3 JSON Cognitif 360° (12 dimensions). Réf. PRD §5.3, §7.9.
+  Titre: # 🗺️ index LOCAL : CHAIN_ETA
+  Resume: # 🗺️ index LOCAL : CHAIN_ETA Chaîne **ETA — Export Final** (V2). ETA-1 Formateur Multi-Formats (9 formats), ETA-2 Enrichisseur Métadonnées (Dublin Core), ETA-3 JSON Cognitif 360° (12 dimensions). Réf. PRD §5.3, §7.9.
 
 [2] scy_chain_eta_combined.md   |   38 lignes
   Titre: <!--
@@ -618,8 +618,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/chain_gamma ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : CHAIN_GAMMA
-  Resume: # 🗺️ INDEX LOCAL : CHAIN_GAMMA Chaîne **GAMMA — Enrichissement** (V1). GAMMA-1 Contextualiseur, GAMMA-2 Analogies, GAMMA-3 Exemples. Réf. PRD §5.3.
+  Titre: # 🗺️ index LOCAL : CHAIN_GAMMA
+  Resume: # 🗺️ index LOCAL : CHAIN_GAMMA Chaîne **GAMMA — Enrichissement** (V1). GAMMA-1 Contextualiseur, GAMMA-2 Analogies, GAMMA-3 Exemples. Réf. PRD §5.3.
 
 [2] scy_chain_gamma_combined.md   |   38 lignes
   Titre: <!--
@@ -632,8 +632,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/chain_zeta ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : CHAIN_ZETA
-  Resume: # 🗺️ INDEX LOCAL : CHAIN_ZETA Chaîne **ZETA — Révision Qualité** (V2). ZETA-1 Harmoniseur Style, ZETA-2 Optimiseur Clarté, ZETA-3 Adaptateur Tons (T01-T50). Réf. PRD §5.3.
+  Titre: # 🗺️ index LOCAL : CHAIN_ZETA
+  Resume: # 🗺️ index LOCAL : CHAIN_ZETA Chaîne **ZETA — Révision Qualité** (V2). ZETA-1 Harmoniseur Style, ZETA-2 Optimiseur Clarté, ZETA-3 Adaptateur Tons (T01-T50). Réf. PRD §5.3.
 
 [2] scy_chain_zeta_combined.md   |   38 lignes
   Titre: <!--
@@ -708,8 +708,8 @@ Total: 610 fichiers Markdown
 === s02_neuron_chains_apex_agent/tools_18 ===
 
 [1] index.md   |   4 lignes
-  Titre: # 🗺️ INDEX LOCAL : TOOLS_18
-  Resume: # 🗺️ INDEX LOCAL : TOOLS_18 Ce sous-répertoire documente les **18 tools natifs Rust** (T01-T18) des NEURON-CHAINS, organisés en 5 groupes. **14 sur 18 ne consomment AUCUN token LLM externe.** Réf. PRD §5.3. > ⚠️ La numérotation PRD (18 tools T01-T18) est **authoritative** sur...
+  Titre: # 🗺️ index LOCAL : TOOLS_18
+  Resume: # 🗺️ index LOCAL : TOOLS_18 Ce sous-répertoire documente les **18 tools natifs Rust** (T01-T18) des NEURON-CHAINS, organisés en 5 groupes. **14 sur 18 ne consomment AUCUN token LLM externe.** Réf. PRD §5.3. > ⚠️ La numérotation PRD (18 tools T01-T18) est **authoritative** sur...
 
 [2] scy_tools_18_combined.md   |   43 lignes
   Titre: <!--
@@ -722,8 +722,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents ===
 
 [1] index.md   |   11 lignes
-  Titre: # 🗺️ INDEX : MODULE 03 — ASCENT PIPELINE & WORKFLOWS
-  Resume: # 🗺️ INDEX : MODULE 03 — ASCENT PIPELINE & WORKFLOWS Ce répertoire regroupe l'orchestration des 13 agents de parcours de SCY Forge, l'expérience utilisateur cognitive active et les protocoles d'expertises scientifiques. ## 📁 Répertoire des Fichiers - **scy_user_experience.md...
+  Titre: # 🗺️ index : MODULE 03 — ASCENT PIPELINE & WORKFLOWS
+  Resume: # 🗺️ index : MODULE 03 — ASCENT PIPELINE & WORKFLOWS Ce répertoire regroupe l'orchestration des 13 agents de parcours de SCY Forge, l'expérience utilisateur cognitive active et les protocoles d'expertises scientifiques. ## 📁 Répertoire des Fichiers - **scy_user_experience.md...
 
 [2] scy_ascent_explain_1.md   |   3224 lignes
   Titre: <!--
@@ -744,8 +744,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag01_goal_interpreter ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG01_GOAL_INTERPRETER
-  Resume: # 🗺️ INDEX LOCAL : AG01_GOAL_INTERPRETER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag01_goal_interpreter**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
+  Titre: # 🗺️ index LOCAL : AG01_GOAL_INTERPRETER
+  Resume: # 🗺️ index LOCAL : AG01_GOAL_INTERPRETER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag01_goal_interpreter**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
 
 [2] scy_ag01_goal_interpreter_plan.md   |   93 lignes
   Titre: <!--
@@ -766,8 +766,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag02_content_scout ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG02_CONTENT_SCOUT
-  Resume: # 🗺️ INDEX LOCAL : AG02_CONTENT_SCOUT Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag02_content_scout**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
+  Titre: # 🗺️ index LOCAL : AG02_CONTENT_SCOUT
+  Resume: # 🗺️ index LOCAL : AG02_CONTENT_SCOUT Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag02_content_scout**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
 
 [2] scy_ag02_content_scout_plan.md   |   88 lignes
   Titre: <!--
@@ -788,8 +788,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag03_dag_architect ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG03_DAG_ARCHITECT
-  Resume: # 🗺️ INDEX LOCAL : AG03_DAG_ARCHITECT Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag03_dag_architect**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
+  Titre: # 🗺️ index LOCAL : AG03_DAG_ARCHITECT
+  Resume: # 🗺️ index LOCAL : AG03_DAG_ARCHITECT Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag03_dag_architect**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
 
 [2] scy_ag03_dag_architect_plan.md   |   91 lignes
   Titre: <!--
@@ -810,8 +810,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag04_learning_conductor ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG04_LEARNING_CONDUCTOR
-  Resume: # 🗺️ INDEX LOCAL : AG04_LEARNING_CONDUCTOR Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag04_learning_conductor**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de man...
+  Titre: # 🗺️ index LOCAL : AG04_LEARNING_CONDUCTOR
+  Resume: # 🗺️ index LOCAL : AG04_LEARNING_CONDUCTOR Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag04_learning_conductor**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de man...
 
 [2] scy_ag04_learning_conductor_plan.md   |   83 lignes
   Titre: <!--
@@ -832,8 +832,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag05_performance_analyzer ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG05_PERFORMANCE_ANALYZER
-  Resume: # 🗺️ INDEX LOCAL : AG05_PERFORMANCE_ANALYZER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag05_performance_analyzer**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de...
+  Titre: # 🗺️ index LOCAL : AG05_PERFORMANCE_ANALYZER
+  Resume: # 🗺️ index LOCAL : AG05_PERFORMANCE_ANALYZER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag05_performance_analyzer**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de...
 
 [2] scy_ag05_performance_analyzer_plan.md   |   79 lignes
   Titre: <!--
@@ -854,8 +854,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag06_adaptive_router ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG06_ADAPTIVE_ROUTER
-  Resume: # 🗺️ INDEX LOCAL : AG06_ADAPTIVE_ROUTER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag06_adaptive_router**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière i...
+  Titre: # 🗺️ index LOCAL : AG06_ADAPTIVE_ROUTER
+  Resume: # 🗺️ index LOCAL : AG06_ADAPTIVE_ROUTER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag06_adaptive_router**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière i...
 
 [2] scy_ag06_adaptive_router_plan.md   |   77 lignes
   Titre: <!--
@@ -876,8 +876,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag07_drift_guardian ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG07_DRIFT_GUARDIAN
-  Resume: # 🗺️ INDEX LOCAL : AG07_DRIFT_GUARDIAN Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag07_drift_guardian**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière inc...
+  Titre: # 🗺️ index LOCAL : AG07_DRIFT_GUARDIAN
+  Resume: # 🗺️ index LOCAL : AG07_DRIFT_GUARDIAN Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag07_drift_guardian**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière inc...
 
 [2] scy_ag07_drift_guardian_plan.md   |   81 lignes
   Titre: <!--
@@ -898,8 +898,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag08_engagement_amplifier ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG08_ENGAGEMENT_AMPLIFIER
-  Resume: # 🗺️ INDEX LOCAL : AG08_ENGAGEMENT_AMPLIFIER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag08_engagement_amplifier**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de...
+  Titre: # 🗺️ index LOCAL : AG08_ENGAGEMENT_AMPLIFIER
+  Resume: # 🗺️ index LOCAL : AG08_ENGAGEMENT_AMPLIFIER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag08_engagement_amplifier**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de...
 
 [2] scy_ag08_engagement_amplifier_plan.md   |   75 lignes
   Titre: <!--
@@ -920,8 +920,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag09_skill_certifier ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG09_SKILL_CERTIFIER
-  Resume: # 🗺️ INDEX LOCAL : AG09_SKILL_CERTIFIER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag09_skill_certifier**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière i...
+  Titre: # 🗺️ index LOCAL : AG09_SKILL_CERTIFIER
+  Resume: # 🗺️ index LOCAL : AG09_SKILL_CERTIFIER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag09_skill_certifier**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière i...
 
 [2] scy_ag09_skill_certifier_plan.md   |   86 lignes
   Titre: <!--
@@ -942,8 +942,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag10_chronicle ===
 
 [1] index.md   |   10 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG10_CHRONICLE
-  Resume: # 🗺️ INDEX LOCAL : AG10_CHRONICLE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag10_chronicle** (L'agent compagnon quotidien). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effe...
+  Titre: # 🗺️ index LOCAL : AG10_CHRONICLE
+  Resume: # 🗺️ index LOCAL : AG10_CHRONICLE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag10_chronicle** (L'agent compagnon quotidien). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effe...
 
 [2] scy_ag10_chronicle_plan.md   |   81 lignes
   Titre: <!--
@@ -986,8 +986,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag11_arena ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG11_ARENA
-  Resume: # 🗺️ INDEX LOCAL : AG11_ARENA Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag11_arena**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en créan...
+  Titre: # 🗺️ index LOCAL : AG11_ARENA
+  Resume: # 🗺️ index LOCAL : AG11_ARENA Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag11_arena**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en créan...
 
 [2] scy_ag11_arena_plan.md   |   86 lignes
   Titre: <!--
@@ -1008,8 +1008,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag12_visual_critic ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG12_VISUAL_CRITIC
-  Resume: # 🗺️ INDEX LOCAL : AG12_VISUAL_CRITIC Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag12_visual_critic**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
+  Titre: # 🗺️ index LOCAL : AG12_VISUAL_CRITIC
+  Resume: # 🗺️ index LOCAL : AG12_VISUAL_CRITIC Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag12_visual_critic**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
 
 [2] scy_ag12_visual_critic_plan.md   |   80 lignes
   Titre: <!--
@@ -1030,8 +1030,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag13_cognitive_validator ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG13_COGNITIVE_VALIDATOR
-  Resume: # 🗺️ INDEX LOCAL : AG13_COGNITIVE_VALIDATOR Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag13_cognitive_validator**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de m...
+  Titre: # 🗺️ index LOCAL : AG13_COGNITIVE_VALIDATOR
+  Resume: # 🗺️ index LOCAL : AG13_COGNITIVE_VALIDATOR Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag13_cognitive_validator**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de m...
 
 [2] scy_ag13_cognitive_validator_plan.md   |   85 lignes
   Titre: <!--
@@ -1058,8 +1058,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ag15_axiomatizer ===
 
 [1] index.md   |   15 lignes
-  Titre: # 🗺️ INDEX LOCAL : AG15_AXIOMATIZER
-  Resume: # 🗺️ INDEX LOCAL : AG15_AXIOMATIZER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de l'agent **AG15_AXIOMATIZER (AGENT-15)** — L'Axiomatiseur de Connaissances. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) - scy_ag15_axiomatizer_spec.md (Sp...
+  Titre: # 🗺️ index LOCAL : AG15_AXIOMATIZER
+  Resume: # 🗺️ index LOCAL : AG15_AXIOMATIZER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de l'agent **AG15_AXIOMATIZER (AGENT-15)** — L'Axiomatiseur de Connaissances. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) - scy_ag15_axiomatizer_spec.md (Sp...
 
 [2] scy_ag15_axiomatizer_plan.md   |   96 lignes
   Titre: <!--
@@ -1110,8 +1110,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/ascent_qa_committee ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ASCENT_QA_COMMITTEE
-  Resume: # 🗺️ INDEX LOCAL : ASCENT_QA_COMMITTEE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ascent_qa_committee**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière inc...
+  Titre: # 🗺️ index LOCAL : ASCENT_QA_COMMITTEE
+  Resume: # 🗺️ index LOCAL : ASCENT_QA_COMMITTEE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ascent_qa_committee**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière inc...
 
 [2] scy_ascent_hitl_proxy_sme_plan.md   |   65 lignes
   Titre: <!--
@@ -1156,8 +1156,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/dag_display_modes ===
 
 [1] index.md   |   30 lignes
-  Titre: # 🗺️ INDEX : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT
-  Resume: # 🗺️ INDEX : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT Ce répertoire documente les **3 vues complémentaires d'affichage** du DAG ASCENT généré. Chaque vue offre une perspective différente sur le parcours d'apprentissage. L'utilisateur bascule entre les 3 via un sélecteur. ...
+  Titre: # 🗺️ index : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT
+  Resume: # 🗺️ index : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT Ce répertoire documente les **3 vues complémentaires d'affichage** du DAG ASCENT généré. Chaque vue offre une perspective différente sur le parcours d'apprentissage. L'utilisateur bascule entre les 3 via un sélecteur. ...
 
 [2] scy_dag_views_overview.md   |   75 lignes
   Titre: <!--
@@ -1188,8 +1188,8 @@ Total: 610 fichiers Markdown
 === s03_ascent_pipeline_agents/onboarding_flow ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ONBOARDING_FLOW
-  Resume: # 🗺️ INDEX LOCAL : ONBOARDING_FLOW Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **onboarding_flow**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémental...
+  Titre: # 🗺️ index LOCAL : ONBOARDING_FLOW
+  Resume: # 🗺️ index LOCAL : ONBOARDING_FLOW Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **onboarding_flow**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémental...
 
 [2] scy_brain_onboarding_spec.md   |   731 lignes
   Titre: <!--
@@ -1211,15 +1211,15 @@ Total: 610 fichiers Markdown
 
 === s03_generative_forest_engine ===
 
-[1] SCY_GFE_PARAMETERS.md   |   1010 lignes
+[1] scy_gfe_parameters.md   |   1010 lignes
   Titre: # SCY FORGE — GFE PARAMETERS & ALGORITHMS (PILIER 3)
   Resume: # SCY FORGE — GFE PARAMETERS & ALGORITHMS (PILIER 3) **Document ID** : S03_GFE_PARAMETERS **Date** : 2026-07-01 **Statut** : 🟡 EN REVISION — Soumis à HITL utilisateur **Pilier** : Pilier 3 (Generative Forest Engine) --- ## 1. Principe Fondateur des Paramètres > **D-024** : Le...
 
 === s04_scy_cosmos_visualization_engine ===
 
 [1] index.md   |   12 lignes
-  Titre: # 🗺️ INDEX : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS
-  Resume: # 🗺️ INDEX : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS Ce répertoire régit la visualisation spatiale et l'organisation du savoir en 2D axial horizontal et en 3D volumétrique. ## 📁 Répertoire des Fichiers - **scy_cosmos_master_specs.md** : Spécifications complètes du reb...
+  Titre: # 🗺️ index : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS
+  Resume: # 🗺️ index : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS Ce répertoire régit la visualisation spatiale et l'organisation du savoir en 2D axial horizontal et en 3D volumétrique. ## 📁 Répertoire des Fichiers - **scy_cosmos_master_specs.md** : Spécifications complètes du reb...
 
 [2] scy_cosmos_advanced_modes_ux_specs.md   |   445 lignes
   Titre: <!--
@@ -1256,8 +1256,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_cosmograph ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_COSMOGRAPH
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_COSMOGRAPH Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_cosmograph**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
+  Titre: # 🗺️ index LOCAL : ENGINE_COSMOGRAPH
+  Resume: # 🗺️ index LOCAL : ENGINE_COSMOGRAPH Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_cosmograph**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
 
 [2] scy_engine_cosmograph_plan.md   |   78 lignes
   Titre: <!--
@@ -1278,8 +1278,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_d3 ===
 
 [1] index.md   |   12 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_D3
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_D3 Ce sous-répertoire documente le moteur de rendu **d3 v7** (D-RENDER-008) — contrôle bas niveau pour visualisations custom — utilisé par les modes COSMOS M15 (Parallel Coordinates), M20 (Arc Diagram), M21 (Hierarchical Edge Bundling) et M24 (Vorono...
+  Titre: # 🗺️ index LOCAL : ENGINE_D3
+  Resume: # 🗺️ index LOCAL : ENGINE_D3 Ce sous-répertoire documente le moteur de rendu **d3 v7** (D-RENDER-008) — contrôle bas niveau pour visualisations custom — utilisé par les modes COSMOS M15 (Parallel Coordinates), M20 (Arc Diagram), M21 (Hierarchical Edge Bundling) et M24 (Vorono...
 
 [2] scy_engine_d3_plan.md   |   76 lignes
   Titre: <!--
@@ -1300,8 +1300,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_g2 ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_G2
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_G2 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_g2**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en créant ...
+  Titre: # 🗺️ index LOCAL : ENGINE_G2
+  Resume: # 🗺️ index LOCAL : ENGINE_G2 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_g2**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en créant ...
 
 [2] scy_engine_g2_plan.md   |   70 lignes
   Titre: <!--
@@ -1322,8 +1322,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_g6 ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_G6
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_G6 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_g6**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en créant ...
+  Titre: # 🗺️ index LOCAL : ENGINE_G6
+  Resume: # 🗺️ index LOCAL : ENGINE_G6 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_g6**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en créant ...
 
 [2] scy_engine_g6_plan.md   |   78 lignes
   Titre: <!--
@@ -1344,8 +1344,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_nivo ===
 
 [1] index.md   |   15 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_NIVO
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_NIVO Ce sous-répertoire documente le moteur de rendu **nivo** (D-RENDER-007) — dataviz déclaratif React — utilisé par les modes COSMOS M12 (Chord), M13 (Sankey), M16 (Heatmap) et M19 (Circle Packing). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY RE...
+  Titre: # 🗺️ index LOCAL : ENGINE_NIVO
+  Resume: # 🗺️ index LOCAL : ENGINE_NIVO Ce sous-répertoire documente le moteur de rendu **nivo** (D-RENDER-007) — dataviz déclaratif React — utilisé par les modes COSMOS M12 (Chord), M13 (Sankey), M16 (Heatmap) et M19 (Circle Packing). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY RE...
 
 [2] scy_engine_nivo_plan.md   |   77 lignes
   Titre: <!--
@@ -1366,8 +1366,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_react_flow ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_REACT_FLOW
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_REACT_FLOW Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_react_flow**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
+  Titre: # 🗺️ index LOCAL : ENGINE_REACT_FLOW
+  Resume: # 🗺️ index LOCAL : ENGINE_REACT_FLOW Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_react_flow**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
 
 [2] scy_engine_react_flow_plan.md   |   78 lignes
   Titre: <!--
@@ -1388,8 +1388,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_recharts ===
 
 [1] index.md   |   12 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_RECHARTS
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_RECHARTS Ce sous-répertoire documente le moteur de rendu **recharts v2** — graphiques statistiques déclaratifs SVG — utilisé par les modes COSMOS M7 (Statistics) et M14 (Radar Comparaison). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) - scy_e...
+  Titre: # 🗺️ index LOCAL : ENGINE_RECHARTS
+  Resume: # 🗺️ index LOCAL : ENGINE_RECHARTS Ce sous-répertoire documente le moteur de rendu **recharts v2** — graphiques statistiques déclaratifs SVG — utilisé par les modes COSMOS M7 (Statistics) et M14 (Radar Comparaison). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) - scy_e...
 
 [2] scy_engine_recharts_plan.md   |   77 lignes
   Titre: <!--
@@ -1410,8 +1410,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_statistical ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_STATISTICAL
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_STATISTICAL Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_statistical**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
+  Titre: # 🗺️ index LOCAL : ENGINE_STATISTICAL
+  Resume: # 🗺️ index LOCAL : ENGINE_STATISTICAL Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_statistical**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incré...
 
 [2] scy_engine_statistical_plan.md   |   74 lignes
   Titre: <!--
@@ -1432,8 +1432,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_tanstack_table ===
 
 [1] index.md   |   12 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_TANSTACK_TABLE
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_TANSTACK_TABLE Ce sous-répertoire documente le moteur de rendu **TanStack Table v8** (+ @tanstack/react-virtual) — tableur virtualisé — utilisé par le mode COSMOS M5 (Concepts Grid). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) - scy_engine_t...
+  Titre: # 🗺️ index LOCAL : ENGINE_TANSTACK_TABLE
+  Resume: # 🗺️ index LOCAL : ENGINE_TANSTACK_TABLE Ce sous-répertoire documente le moteur de rendu **TanStack Table v8** (+ @tanstack/react-virtual) — tableur virtualisé — utilisé par le mode COSMOS M5 (Concepts Grid). ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) - scy_engine_t...
 
 [2] scy_engine_tanstack_table_plan.md   |   77 lignes
   Titre: <!--
@@ -1454,8 +1454,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_threejs ===
 
 [1] index.md   |   12 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_THREEJS
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_THREEJS Ce sous-répertoire documente le moteur de rendu **three.js** (D-RENDER-009) — espace sémantique 3D immersif — utilisé par le mode COSMOS M23 (3D Knowledge Space). Mode optionnel Phase 3 avec roadmap WebGPU. ## 📁 Gabarits de Sûreté d'Écriture...
+  Titre: # 🗺️ index LOCAL : ENGINE_THREEJS
+  Resume: # 🗺️ index LOCAL : ENGINE_THREEJS Ce sous-répertoire documente le moteur de rendu **three.js** (D-RENDER-009) — espace sémantique 3D immersif — utilisé par le mode COSMOS M23 (3D Knowledge Space). Mode optionnel Phase 3 avec roadmap WebGPU. ## 📁 Gabarits de Sûreté d'Écriture...
 
 [2] scy_engine_threejs_plan.md   |   87 lignes
   Titre: <!--
@@ -1476,8 +1476,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/engine_webgpu ===
 
 [1] index.md   |   18 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGINE_WEBGPU
-  Resume: # 🗺️ INDEX LOCAL : ENGINE_WEBGPU Ce sous-répertoire documente le moteur de rendu **WebGPU** (standard W3C, D-PERF-006 Phase 3) — accès GPU moderne via Vulkan/Metal/D3D12. **Engine optionnel activé uniquement après feature detection navigateur.** Fast-path haute performance po...
+  Titre: # 🗺️ index LOCAL : ENGINE_WEBGPU
+  Resume: # 🗺️ index LOCAL : ENGINE_WEBGPU Ce sous-répertoire documente le moteur de rendu **WebGPU** (standard W3C, D-PERF-006 Phase 3) — accès GPU moderne via Vulkan/Metal/D3D12. **Engine optionnel activé uniquement après feature detection navigateur.** Fast-path haute performance po...
 
 [2] scy_engine_webgpu_plan.md   |   94 lignes
   Titre: <!--
@@ -1502,8 +1502,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/fisheye_lens ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : FISHEYE_LENS
-  Resume: # 🗺️ INDEX LOCAL : FISHEYE_LENS Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **fisheye_lens**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en c...
+  Titre: # 🗺️ index LOCAL : FISHEYE_LENS
+  Resume: # 🗺️ index LOCAL : FISHEYE_LENS Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **fisheye_lens**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en c...
 
 [2] scy_fisheye_lens_plan.md   |   68 lignes
   Titre: <!--
@@ -1530,8 +1530,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/lens_system ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : LENS_SYSTEM
-  Resume: # 🗺️ INDEX LOCAL : LENS_SYSTEM Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **lens_system**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en cré...
+  Titre: # 🗺️ index LOCAL : LENS_SYSTEM
+  Resume: # 🗺️ index LOCAL : LENS_SYSTEM Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **lens_system**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en cré...
 
 [2] scy_lens_system_plan.md   |   75 lignes
   Titre: <!--
@@ -1552,8 +1552,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_00_base_knowledge_base ===
 
 [1] index.md   |   15 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_00 — BASE KNOWLEDGE BASE
-  Resume: # 🗺️ INDEX LOCAL : MODE_00 — BASE KNOWLEDGE BASE Ce sous-répertoire documente le **MODE 0 : Base Knowledge Base (L'Espace Universel)** de COSMOS v4. Vue d'ensemble de toute la base de connaissances de l'utilisateur sous forme de graphe massif GPU. ## 📁 Gabarits de Sûreté d'É...
+  Titre: # 🗺️ index LOCAL : MODE_00 — BASE KNOWLEDGE BASE
+  Resume: # 🗺️ index LOCAL : MODE_00 — BASE KNOWLEDGE BASE Ce sous-répertoire documente le **MODE 0 : Base Knowledge Base (L'Espace Universel)** de COSMOS v4. Vue d'ensemble de toute la base de connaissances de l'utilisateur sous forme de graphe massif GPU. ## 📁 Gabarits de Sûreté d'É...
 
 [2] scy_mode_00_plan.md   |   44 lignes
   Titre: <!--
@@ -1574,8 +1574,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_01_lexical_tags ===
 
 [1] index.md   |   4 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_01 — LEXICAL TAGS
-  Resume: # 🗺️ INDEX LOCAL : MODE_01 — LEXICAL TAGS MODE 1 : Lexical Tags (La Taxonomie Plate). Nuage/liste de tags textuels par domaine. Moteur : HTML/CSS Tailwind + react-window. Fichiers : scy_mode_01_spec/plan/tasks/tests.md. Moteur : natif DOM (réf. s00_architecture_standards).
+  Titre: # 🗺️ index LOCAL : MODE_01 — LEXICAL TAGS
+  Resume: # 🗺️ index LOCAL : MODE_01 — LEXICAL TAGS MODE 1 : Lexical Tags (La Taxonomie Plate). Nuage/liste de tags textuels par domaine. Moteur : HTML/CSS Tailwind + react-window. Fichiers : scy_mode_01_spec/plan/tasks/tests.md. Moteur : natif DOM (réf. s00_architecture_standards).
 
 [2] scy_mode_01_plan.md   |   36 lignes
   Titre: <!--
@@ -1596,8 +1596,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_02_knowledge_graph_projet ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_02 — KNOWLEDGE GRAPH PROJET
-  Resume: # 🗺️ INDEX LOCAL : MODE_02 — KNOWLEDGE GRAPH PROJET MODE 2 : Knowledge Graph Projet (L'Espace d'Étude). Graphe d'étude principal <50 000 nœuds. Moteur : @antv/g6 v5 (D-RENDER-001). Fichiers : scy_mode_02_spec/plan/tasks/tests.md.
+  Titre: # 🗺️ index LOCAL : MODE_02 — KNOWLEDGE GRAPH PROJET
+  Resume: # 🗺️ index LOCAL : MODE_02 — KNOWLEDGE GRAPH PROJET MODE 2 : Knowledge Graph Projet (L'Espace d'Étude). Graphe d'étude principal <50 000 nœuds. Moteur : @antv/g6 v5 (D-RENDER-001). Fichiers : scy_mode_02_spec/plan/tasks/tests.md.
 
 [2] scy_mode_02_plan.md   |   36 lignes
   Titre: <!--
@@ -1618,8 +1618,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_03_mindmap ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_03 — MINDMAP
-  Resume: # 🗺️ INDEX LOCAL : MODE_03 — MINDMAP MODE 3 : MindMap (La Vue Arborescente). Arbre radial hiérarchique à racine unique. Moteur : @antv/g6 v5 (Radial Tree Layout, D-RENDER-001). Fichiers : scy_mode_03_spec/plan/tasks/tests.md.
+  Titre: # 🗺️ index LOCAL : MODE_03 — MINDMAP
+  Resume: # 🗺️ index LOCAL : MODE_03 — MINDMAP MODE 3 : MindMap (La Vue Arborescente). Arbre radial hiérarchique à racine unique. Moteur : @antv/g6 v5 (Radial Tree Layout, D-RENDER-001). Fichiers : scy_mode_03_spec/plan/tasks/tests.md.
 
 [2] scy_mode_03_plan.md   |   36 lignes
   Titre: <!--
@@ -1640,8 +1640,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_04_roadmap_ascent ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_04 — ROADMAP ASCENT
-  Resume: # 🗺️ INDEX LOCAL : MODE_04 — ROADMAP ASCENT MODE 4 : Roadmap ASCENT (Le Chemin de Cursus). DAG de cursus avec nœuds de progression. Moteur : @xyflow/react v12 (D-RENDER-001, D-RENDER-004). Fichiers : scy_mode_04_spec/plan/tasks/tests.md.
+  Titre: # 🗺️ index LOCAL : MODE_04 — ROADMAP ASCENT
+  Resume: # 🗺️ index LOCAL : MODE_04 — ROADMAP ASCENT MODE 4 : Roadmap ASCENT (Le Chemin de Cursus). DAG de cursus avec nœuds de progression. Moteur : @xyflow/react v12 (D-RENDER-001, D-RENDER-004). Fichiers : scy_mode_04_spec/plan/tasks/tests.md.
 
 [2] scy_mode_04_plan.md   |   36 lignes
   Titre: <!--
@@ -1662,8 +1662,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_05_concepts_grid ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_05 — CONCEPTS GRID
-  Resume: # 🗺️ INDEX LOCAL : MODE_05 — CONCEPTS GRID MODE 5 : Concepts Grid (La Vue Tableur). Table virtualisée des attributs concepts. Moteur : TanStack Table v8 + @tanstack/react-virtual (réf. engine_tanstack_table). Fichiers : scy_mode_05_spec/plan/tasks/tests.md.
+  Titre: # 🗺️ index LOCAL : MODE_05 — CONCEPTS GRID
+  Resume: # 🗺️ index LOCAL : MODE_05 — CONCEPTS GRID MODE 5 : Concepts Grid (La Vue Tableur). Table virtualisée des attributs concepts. Moteur : TanStack Table v8 + @tanstack/react-virtual (réf. engine_tanstack_table). Fichiers : scy_mode_05_spec/plan/tasks/tests.md.
 
 [2] scy_mode_05_plan.md   |   36 lignes
   Titre: <!--
@@ -1684,8 +1684,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_06_timeline ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_06 — TIMELINE
-  Resume: # 🗺️ INDEX LOCAL : MODE_06 — TIMELINE MODE 6 : Timeline (La Vue Chronologique). Axe temporel horizontal d'événements sémantiques. Moteur : React Custom Renderer + react-spring. Fichiers : scy_mode_06_spec/plan/tasks/tests.md.
+  Titre: # 🗺️ index LOCAL : MODE_06 — TIMELINE
+  Resume: # 🗺️ index LOCAL : MODE_06 — TIMELINE MODE 6 : Timeline (La Vue Chronologique). Axe temporel horizontal d'événements sémantiques. Moteur : React Custom Renderer + react-spring. Fichiers : scy_mode_06_spec/plan/tasks/tests.md.
 
 [2] scy_mode_06_plan.md   |   36 lignes
   Titre: <!--
@@ -1706,8 +1706,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_07_statistics ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_07 — STATISTICS
-  Resume: # 🗺️ INDEX LOCAL : MODE_07 — STATISTICS MODE 7 : Statistics (La Vue de Performance). Graphiques analytiques de rétention/performance. Moteur : recharts v2 (réf. engine_recharts). Fichiers : scy_mode_07_spec/plan/tasks/tests.md.
+  Titre: # 🗺️ index LOCAL : MODE_07 — STATISTICS
+  Resume: # 🗺️ index LOCAL : MODE_07 — STATISTICS MODE 7 : Statistics (La Vue de Performance). Graphiques analytiques de rétention/performance. Moteur : recharts v2 (réf. engine_recharts). Fichiers : scy_mode_07_spec/plan/tasks/tests.md.
 
 [2] scy_mode_07_plan.md   |   36 lignes
   Titre: <!--
@@ -1728,8 +1728,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_08_dataflow_neuron_chains ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_08 — DATAFLOW NEURON-CHAINS
-  Resume: # 🗺️ INDEX LOCAL : MODE_08 — DATAFLOW NEURON-CHAINS MODE 8 : DataFlow NEURON-CHAINS (La Vue Pipeline). Flux d'exécution des agents NEURON-CHAINS en streaming. Moteur : @xyflow/react v12 (D-RENDER-001/004). Fichiers : scy_mode_08_spec/plan/tasks/tests.md.
+  Titre: # 🗺️ index LOCAL : MODE_08 — DATAFLOW NEURON-CHAINS
+  Resume: # 🗺️ index LOCAL : MODE_08 — DATAFLOW NEURON-CHAINS MODE 8 : DataFlow NEURON-CHAINS (La Vue Pipeline). Flux d'exécution des agents NEURON-CHAINS en streaming. Moteur : @xyflow/react v12 (D-RENDER-001/004). Fichiers : scy_mode_08_spec/plan/tasks/tests.md.
 
 [2] scy_mode_08_plan.md   |   36 lignes
   Titre: <!--
@@ -1750,8 +1750,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_09_concept_map ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_09 — CONCEPT MAP
-  Resume: # 🗺️ INDEX LOCAL : MODE_09 — CONCEPT MAP MODE 9 : Concept Map (La Cartographie Sémantique). Graphe non-arborescent multi-parents avec arêtes étiquetées (relations typées). Moteur : @antv/g6 v5 (ForceAtlas2 async, D-RENDER-001). Fichiers : scy_mode_09_spec/plan/tasks/tests.md....
+  Titre: # 🗺️ index LOCAL : MODE_09 — CONCEPT MAP
+  Resume: # 🗺️ index LOCAL : MODE_09 — CONCEPT MAP MODE 9 : Concept Map (La Cartographie Sémantique). Graphe non-arborescent multi-parents avec arêtes étiquetées (relations typées). Moteur : @antv/g6 v5 (ForceAtlas2 async, D-RENDER-001). Fichiers : scy_mode_09_spec/plan/tasks/tests.md....
 
 [2] scy_mode_09_plan.md   |   36 lignes
   Titre: <!--
@@ -1772,8 +1772,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_10_sunburst ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_10 — SUNBURST HIÉRARCHIQUE
-  Resume: # 🗺️ INDEX LOCAL : MODE_10 — SUNBURST HIÉRARCHIQUE MODE 10 : Sunburst Hiérarchique (La Taxonomie Radiale). Anneaux concentriques par niveau hiérarchique. Moteur : @antv/g2 v5 (D-RENDER-006). Fichiers : scy_mode_10_spec/plan/tasks/tests.md. UX : D-UX-MODES-002.
+  Titre: # 🗺️ index LOCAL : MODE_10 — SUNBURST HIÉRARCHIQUE
+  Resume: # 🗺️ index LOCAL : MODE_10 — SUNBURST HIÉRARCHIQUE MODE 10 : Sunburst Hiérarchique (La Taxonomie Radiale). Anneaux concentriques par niveau hiérarchique. Moteur : @antv/g2 v5 (D-RENDER-006). Fichiers : scy_mode_10_spec/plan/tasks/tests.md. UX : D-UX-MODES-002.
 
 [2] scy_mode_10_plan.md   |   36 lignes
   Titre: <!--
@@ -1794,8 +1794,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_11_treemap ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_11 — TREEMAP CONCEPTUEL
-  Resume: # 🗺️ INDEX LOCAL : MODE_11 — TREEMAP CONCEPTUEL MODE 11 : Treemap Conceptuel (L'Allocation de Connaissance). Rectangles imbriqués ∝ volume cartes. Moteur : @antv/g2 v5 (D-RENDER-006). Fichiers : scy_mode_11_spec/plan/tasks/tests.md. UX : D-UX-MODES-003.
+  Titre: # 🗺️ index LOCAL : MODE_11 — TREEMAP CONCEPTUEL
+  Resume: # 🗺️ index LOCAL : MODE_11 — TREEMAP CONCEPTUEL MODE 11 : Treemap Conceptuel (L'Allocation de Connaissance). Rectangles imbriqués ∝ volume cartes. Moteur : @antv/g2 v5 (D-RENDER-006). Fichiers : scy_mode_11_spec/plan/tasks/tests.md. UX : D-UX-MODES-003.
 
 [2] scy_mode_11_plan.md   |   36 lignes
   Titre: <!--
@@ -1816,8 +1816,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_12_chord ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_12 — CHORD DIAGRAM
-  Resume: # 🗺️ INDEX LOCAL : MODE_12 — CHORD DIAGRAM MODE 12 : Chord Diagram (La Vue de Co-occurrence). Rubans de co-occurrence entre concepts. Moteur : nivo Chord (D-RENDER-007). Fichiers : scy_mode_12_spec/plan/tasks/tests.md. UX : D-UX-MODES-004.
+  Titre: # 🗺️ index LOCAL : MODE_12 — CHORD DIAGRAM
+  Resume: # 🗺️ index LOCAL : MODE_12 — CHORD DIAGRAM MODE 12 : Chord Diagram (La Vue de Co-occurrence). Rubans de co-occurrence entre concepts. Moteur : nivo Chord (D-RENDER-007). Fichiers : scy_mode_12_spec/plan/tasks/tests.md. UX : D-UX-MODES-004.
 
 [2] scy_mode_12_plan.md   |   36 lignes
   Titre: <!--
@@ -1838,8 +1838,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_13_sankey ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_13 — SANKEY / ALLUVIAL
-  Resume: # 🗺️ INDEX LOCAL : MODE_13 — SANKEY / ALLUVIAL MODE 13 : Sankey / Alluvial (La Trajectoire d'Apprentissage). Flux de progression par étapes. Moteur : nivo Sankey (D-RENDER-007). Fichiers : scy_mode_13_spec/plan/tasks/tests.md. UX : D-UX-MODES-005.
+  Titre: # 🗺️ index LOCAL : MODE_13 — SANKEY / ALLUVIAL
+  Resume: # 🗺️ index LOCAL : MODE_13 — SANKEY / ALLUVIAL MODE 13 : Sankey / Alluvial (La Trajectoire d'Apprentissage). Flux de progression par étapes. Moteur : nivo Sankey (D-RENDER-007). Fichiers : scy_mode_13_spec/plan/tasks/tests.md. UX : D-UX-MODES-005.
 
 [2] scy_mode_13_plan.md   |   36 lignes
   Titre: <!--
@@ -1860,8 +1860,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_14_radar ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_14 — RADAR COMPARAISON
-  Resume: # 🗺️ INDEX LOCAL : MODE_14 — RADAR COMPARAISON MODE 14 : Radar Comparaison (Le Profil Multidimensionnel). Polygone SMI 5 dimensions. Moteur : recharts v2 (réf. engine_recharts). Fichiers : scy_mode_14_spec/plan/tasks/tests.md. UX : D-UX-MODES-006.
+  Titre: # 🗺️ index LOCAL : MODE_14 — RADAR COMPARAISON
+  Resume: # 🗺️ index LOCAL : MODE_14 — RADAR COMPARAISON MODE 14 : Radar Comparaison (Le Profil Multidimensionnel). Polygone SMI 5 dimensions. Moteur : recharts v2 (réf. engine_recharts). Fichiers : scy_mode_14_spec/plan/tasks/tests.md. UX : D-UX-MODES-006.
 
 [2] scy_mode_14_plan.md   |   36 lignes
   Titre: <!--
@@ -1882,8 +1882,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_15_parallel_coordinates ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_15 — PARALLEL COORDINATES
-  Resume: # 🗺️ INDEX LOCAL : MODE_15 — PARALLEL COORDINATES MODE 15 : Parallel Coordinates (Le Filtre Haute Dimension). Axes parallèles + brushing interactif. Moteur : d3 v7 (D-RENDER-008). Fichiers : scy_mode_15_spec/plan/tasks/tests.md. UX : D-UX-MODES-007.
+  Titre: # 🗺️ index LOCAL : MODE_15 — PARALLEL COORDINATES
+  Resume: # 🗺️ index LOCAL : MODE_15 — PARALLEL COORDINATES MODE 15 : Parallel Coordinates (Le Filtre Haute Dimension). Axes parallèles + brushing interactif. Moteur : d3 v7 (D-RENDER-008). Fichiers : scy_mode_15_spec/plan/tasks/tests.md. UX : D-UX-MODES-007.
 
 [2] scy_mode_15_plan.md   |   36 lignes
   Titre: <!--
@@ -1904,8 +1904,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_16_heatmap ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_16 — HEATMAP MATRICIELLE
-  Resume: # 🗺️ INDEX LOCAL : MODE_16 — HEATMAP MATRICIELLE MODE 16 : Heatmap Matricielle (La Matrice de Corrélation). Grille de similarité cosinus concepts. Moteur : nivo Heatmap (D-RENDER-007). Fichiers : scy_mode_16_spec/plan/tasks/tests.md. UX : D-UX-MODES-008.
+  Titre: # 🗺️ index LOCAL : MODE_16 — HEATMAP MATRICIELLE
+  Resume: # 🗺️ index LOCAL : MODE_16 — HEATMAP MATRICIELLE MODE 16 : Heatmap Matricielle (La Matrice de Corrélation). Grille de similarité cosinus concepts. Moteur : nivo Heatmap (D-RENDER-007). Fichiers : scy_mode_16_spec/plan/tasks/tests.md. UX : D-UX-MODES-008.
 
 [2] scy_mode_16_plan.md   |   36 lignes
   Titre: <!--
@@ -1926,8 +1926,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_17_argument_map ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_17 — ARGUMENT MAP
-  Resume: # 🗺️ INDEX LOCAL : MODE_17 — ARGUMENT MAP MODE 17 : Argument Map (La Vue Dialectique). Thèse + supports/réfutations éditables. Moteur : @xyflow/react v12 (D-RENDER-001/004). Fichiers : scy_mode_17_spec/plan/tasks/tests.md. UX : D-UX-MODES-009.
+  Titre: # 🗺️ index LOCAL : MODE_17 — ARGUMENT MAP
+  Resume: # 🗺️ index LOCAL : MODE_17 — ARGUMENT MAP MODE 17 : Argument Map (La Vue Dialectique). Thèse + supports/réfutations éditables. Moteur : @xyflow/react v12 (D-RENDER-001/004). Fichiers : scy_mode_17_spec/plan/tasks/tests.md. UX : D-UX-MODES-009.
 
 [2] scy_mode_17_plan.md   |   36 lignes
   Titre: <!--
@@ -1948,8 +1948,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_18_causal_loop ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_18 — CAUSAL LOOP DIAGRAM
-  Resume: # 🗺️ INDEX LOCAL : MODE_18 — CAUSAL LOOP DIAGRAM MODE 18 : Causal Loop Diagram (La Vue Dynamique). Boucles causales polarisées (+/-) simulables. Moteur : @antv/g6 v5 (D-RENDER-001). Fichiers : scy_mode_18_spec/plan/tasks/tests.md. UX : D-UX-MODES-010.
+  Titre: # 🗺️ index LOCAL : MODE_18 — CAUSAL LOOP DIAGRAM
+  Resume: # 🗺️ index LOCAL : MODE_18 — CAUSAL LOOP DIAGRAM MODE 18 : Causal Loop Diagram (La Vue Dynamique). Boucles causales polarisées (+/-) simulables. Moteur : @antv/g6 v5 (D-RENDER-001). Fichiers : scy_mode_18_spec/plan/tasks/tests.md. UX : D-UX-MODES-010.
 
 [2] scy_mode_18_plan.md   |   36 lignes
   Titre: <!--
@@ -1970,8 +1970,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_19_circle_packing ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_19 — CIRCLE PACKING
-  Resume: # 🗺️ INDEX LOCAL : MODE_19 — CIRCLE PACKING MODE 19 : Circle Packing (La Classification Imbriquée). Bulles concentriques imbriquées. Moteur : nivo Circle-packing (D-RENDER-007). Fichiers : scy_mode_19_spec/plan/tasks/tests.md. UX : D-UX-MODES-011.
+  Titre: # 🗺️ index LOCAL : MODE_19 — CIRCLE PACKING
+  Resume: # 🗺️ index LOCAL : MODE_19 — CIRCLE PACKING MODE 19 : Circle Packing (La Classification Imbriquée). Bulles concentriques imbriquées. Moteur : nivo Circle-packing (D-RENDER-007). Fichiers : scy_mode_19_spec/plan/tasks/tests.md. UX : D-UX-MODES-011.
 
 [2] scy_mode_19_plan.md   |   36 lignes
   Titre: <!--
@@ -1992,8 +1992,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_20_arc_diagram ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_20 — ARC DIAGRAM
-  Resume: # 🗺️ INDEX LOCAL : MODE_20 — ARC DIAGRAM MODE 20 : Arc Diagram (La Vue de Flux Linéaire). Nœuds alignés + arcs géométriques. Moteur : d3 v7 (D-RENDER-008). Fichiers : scy_mode_20_spec/plan/tasks/tests.md. UX : D-UX-MODES-012.
+  Titre: # 🗺️ index LOCAL : MODE_20 — ARC DIAGRAM
+  Resume: # 🗺️ index LOCAL : MODE_20 — ARC DIAGRAM MODE 20 : Arc Diagram (La Vue de Flux Linéaire). Nœuds alignés + arcs géométriques. Moteur : d3 v7 (D-RENDER-008). Fichiers : scy_mode_20_spec/plan/tasks/tests.md. UX : D-UX-MODES-012.
 
 [2] scy_mode_20_plan.md   |   36 lignes
   Titre: <!--
@@ -2014,8 +2014,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_21_hierarchical_edge_bundling ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_21 — HIERARCHICAL EDGE BUNDLING
-  Resume: # 🗺️ INDEX LOCAL : MODE_21 — HIERARCHICAL EDGE BUNDLING MODE 21 : Hierarchical Edge Bundling (Le Désencombrement). Faisceaux d'arêtes tendus le long d'une hiérarchie. Moteur : d3 v7 (D-RENDER-008). Fichiers : scy_mode_21_spec/plan/tasks/tests.md. UX : D-UX-MODES-013.
+  Titre: # 🗺️ index LOCAL : MODE_21 — HIERARCHICAL EDGE BUNDLING
+  Resume: # 🗺️ index LOCAL : MODE_21 — HIERARCHICAL EDGE BUNDLING MODE 21 : Hierarchical Edge Bundling (Le Désencombrement). Faisceaux d'arêtes tendus le long d'une hiérarchie. Moteur : d3 v7 (D-RENDER-008). Fichiers : scy_mode_21_spec/plan/tasks/tests.md. UX : D-UX-MODES-013.
 
 [2] scy_mode_21_plan.md   |   36 lignes
   Titre: <!--
@@ -2036,8 +2036,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_22_semantic_zoom ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_22 — SEMANTIC ZOOM GRAPH
-  Resume: # 🗺️ INDEX LOCAL : MODE_22 — SEMANTIC ZOOM GRAPH MODE 22 : Semantic Zoom Graph (La Révélation Progressive). Exploration multi-échelle 3 niveaux de zoom sémantique. Moteur : @cosmograph/cosmos v3 (D-RENDER-001). Fichiers : scy_mode_22_spec/plan/tasks/tests.md. UX : D-UX-MODES-...
+  Titre: # 🗺️ index LOCAL : MODE_22 — SEMANTIC ZOOM GRAPH
+  Resume: # 🗺️ index LOCAL : MODE_22 — SEMANTIC ZOOM GRAPH MODE 22 : Semantic Zoom Graph (La Révélation Progressive). Exploration multi-échelle 3 niveaux de zoom sémantique. Moteur : @cosmograph/cosmos v3 (D-RENDER-001). Fichiers : scy_mode_22_spec/plan/tasks/tests.md. UX : D-UX-MODES-...
 
 [2] scy_mode_22_plan.md   |   36 lignes
   Titre: <!--
@@ -2058,8 +2058,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_23_3d_knowledge_space ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_23 — 3D KNOWLEDGE SPACE
-  Resume: # 🗺️ INDEX LOCAL : MODE_23 — 3D KNOWLEDGE SPACE MODE 23 : 3D Knowledge Space (L'Espace Immersif). Espace sémantique 3D (palais de mémoire). Moteur : three.js (D-RENDER-009, optionnel Phase 3). Fichiers : scy_mode_23_spec/plan/tasks/tests.md. UX : D-UX-MODES-015.
+  Titre: # 🗺️ index LOCAL : MODE_23 — 3D KNOWLEDGE SPACE
+  Resume: # 🗺️ index LOCAL : MODE_23 — 3D KNOWLEDGE SPACE MODE 23 : 3D Knowledge Space (L'Espace Immersif). Espace sémantique 3D (palais de mémoire). Moteur : three.js (D-RENDER-009, optionnel Phase 3). Fichiers : scy_mode_23_spec/plan/tasks/tests.md. UX : D-UX-MODES-015.
 
 [2] scy_mode_23_plan.md   |   36 lignes
   Titre: <!--
@@ -2080,8 +2080,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_24_voronoi ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_24 — VORONOI CONCEPT MAP
-  Resume: # 🗺️ INDEX LOCAL : MODE_24 — VORONOI CONCEPT MAP MODE 24 : Voronoi Concept Map (La Vue Territoriale). Cellules polygonales territoriales ∝ concept. Moteur : d3 v7 + d3-delaunay (D-RENDER-008). Fichiers : scy_mode_24_spec/plan/tasks/tests.md. UX : D-UX-MODES-016.
+  Titre: # 🗺️ index LOCAL : MODE_24 — VORONOI CONCEPT MAP
+  Resume: # 🗺️ index LOCAL : MODE_24 — VORONOI CONCEPT MAP MODE 24 : Voronoi Concept Map (La Vue Territoriale). Cellules polygonales territoriales ∝ concept. Moteur : d3 v7 + d3-delaunay (D-RENDER-008). Fichiers : scy_mode_24_spec/plan/tasks/tests.md. UX : D-UX-MODES-016.
 
 [2] scy_mode_24_plan.md   |   36 lignes
   Titre: <!--
@@ -2102,8 +2102,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/mode_25_knowledge_cards ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : MODE_25 — KNOWLEDGE CARDS 🔴 CRITIQUE
-  Resume: # 🗺️ INDEX LOCAL : MODE_25 — KNOWLEDGE CARDS 🔴 CRITIQUE MODE 25 : Knowledge Cards (Le Dashboard Spatial Interactif). Cartes riches éditables + pipelines animés. Moteur : @xyflow/react v12 (D-RENDER-001). Fichiers : scy_mode_25_spec/plan/tasks/tests.md. UX : D-UX-MODES-017. �...
+  Titre: # 🗺️ index LOCAL : MODE_25 — KNOWLEDGE CARDS 🔴 CRITIQUE
+  Resume: # 🗺️ index LOCAL : MODE_25 — KNOWLEDGE CARDS 🔴 CRITIQUE MODE 25 : Knowledge Cards (Le Dashboard Spatial Interactif). Cartes riches éditables + pipelines animés. Moteur : @xyflow/react v12 (D-RENDER-001). Fichiers : scy_mode_25_spec/plan/tasks/tests.md. UX : D-UX-MODES-017. �...
 
 [2] scy_mode_25_plan.md   |   36 lignes
   Titre: <!--
@@ -2136,8 +2136,8 @@ Total: 610 fichiers Markdown
 === s04_scy_cosmos_visualization_engine/rendering_physics ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : RENDERING_PHYSICS
-  Resume: # 🗺️ INDEX LOCAL : RENDERING_PHYSICS Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **rendering_physics**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
+  Titre: # 🗺️ index LOCAL : RENDERING_PHYSICS
+  Resume: # 🗺️ index LOCAL : RENDERING_PHYSICS Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **rendering_physics**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
 
 [2] scy_brain_graph_rendering_specs.md   |   493 lignes
   Titre: <!--
@@ -2166,8 +2166,8 @@ Total: 610 fichiers Markdown
 === s05_apex_retention_system ===
 
 [1] index.md   |   10 lignes
-  Titre: # 🗺️ INDEX : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX
-  Resume: # 🗺️ INDEX : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX Ce répertoire gère les entraînements actifs, le planificateur FSRS, et l'écosystème de création d'examens complexes. ## 📁 Répertoire des Fichiers - **scheduler_fsrs/index.md** : Algorithme central FSRS 5.0. - **fl...
+  Titre: # 🗺️ index : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX
+  Resume: # 🗺️ index : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX Ce répertoire gère les entraînements actifs, le planificateur FSRS, et l'écosystème de création d'examens complexes. ## 📁 Répertoire des Fichiers - **scheduler_fsrs/index.md** : Algorithme central FSRS 5.0. - **fl...
 
 [2] spec_and_patterns.md   |   94 lignes
   Titre: <!--
@@ -2176,8 +2176,8 @@ Total: 610 fichiers Markdown
 === s05_apex_retention_system/flashcards_apex ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : FLASHCARDS_APEX
-  Resume: # 🗺️ INDEX LOCAL : FLASHCARDS_APEX Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **flashcards_apex**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémental...
+  Titre: # 🗺️ index LOCAL : FLASHCARDS_APEX
+  Resume: # 🗺️ index LOCAL : FLASHCARDS_APEX Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **flashcards_apex**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémental...
 
 [2] scy_flashcards_apex_plan.md   |   58 lignes
   Titre: <!--
@@ -2210,8 +2210,8 @@ Total: 610 fichiers Markdown
 === s05_apex_retention_system/scheduler_fsrs ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : SCHEDULER_FSRS
-  Resume: # 🗺️ INDEX LOCAL : SCHEDULER_FSRS Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **scheduler_fsrs**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale ...
+  Titre: # 🗺️ index LOCAL : SCHEDULER_FSRS
+  Resume: # 🗺️ index LOCAL : SCHEDULER_FSRS Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **scheduler_fsrs**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale ...
 
 [2] scy_scheduler_fsrs_plan.md   |   62 lignes
   Titre: <!--
@@ -2232,8 +2232,8 @@ Total: 610 fichiers Markdown
 === s05_apex_retention_system/student_ai_teach_back ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : STUDENT_AI_TEACH_BACK
-  Resume: # 🗺️ INDEX LOCAL : STUDENT_AI_TEACH_BACK Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **student_ai_teach_back**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
+  Titre: # 🗺️ index LOCAL : STUDENT_AI_TEACH_BACK
+  Resume: # 🗺️ index LOCAL : STUDENT_AI_TEACH_BACK Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **student_ai_teach_back**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
 
 [2] scy_student_ai_teach_back_specs.md   |   77 lignes
   Titre: <!--
@@ -2242,8 +2242,8 @@ Total: 610 fichiers Markdown
 === s05_apex_retention_system/surveyjs_exam_runner ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : SURVEYJS_EXAM_RUNNER
-  Resume: # 🗺️ INDEX LOCAL : SURVEYJS_EXAM_RUNNER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **surveyjs_exam_runner**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière i...
+  Titre: # 🗺️ index LOCAL : SURVEYJS_EXAM_RUNNER
+  Resume: # 🗺️ index LOCAL : SURVEYJS_EXAM_RUNNER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **surveyjs_exam_runner**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière i...
 
 [2] scy_cognitive_exam_design_specs.md   |   146 lignes
   Titre: <!--
@@ -2262,8 +2262,8 @@ Total: 610 fichiers Markdown
 === s06_scy_brain_rag_assistant ===
 
 [1] index.md   |   8 lignes
-  Titre: # 🗺️ INDEX : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL
-  Resume: # 🗺️ INDEX : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL Ce répertoire contient l'interfaçage de l'assistant socratique central (Professor AI) connecté au RAG vectoriel de Zilliz. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Spécifications de RAG hybride,...
+  Titre: # 🗺️ index : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL
+  Resume: # 🗺️ index : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL Ce répertoire contient l'interfaçage de l'assistant socratique central (Professor AI) connecté au RAG vectoriel de Zilliz. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Spécifications de RAG hybride,...
 
 [2] scy_brain_rag_retrieval_specs.md   |   85 lignes
   Titre: <!--
@@ -2276,8 +2276,8 @@ Total: 610 fichiers Markdown
 === s06_scy_brain_rag_assistant/advanced_chat_gen ===
 
 [1] index.md   |   11 lignes
-  Titre: # 🗺️ INDEX LOCAL : ADVANCED_CHAT_GEN
-  Resume: # 🗺️ INDEX LOCAL : ADVANCED_CHAT_GEN Ce sous-répertoire documente le **BRAIN Advanced Chat Gen** — le chat agentique complet (§7.7bis v2) avec deux modes (Normal + Agentique). Génère des livrables visualisables (fichiers, présentations PowerPoint G13, rapports, veilles). ## �...
+  Titre: # 🗺️ index LOCAL : ADVANCED_CHAT_GEN
+  Resume: # 🗺️ index LOCAL : ADVANCED_CHAT_GEN Ce sous-répertoire documente le **BRAIN Advanced Chat Gen** — le chat agentique complet (§7.7bis v2) avec deux modes (Normal + Agentique). Génère des livrables visualisables (fichiers, présentations PowerPoint G13, rapports, veilles). ## �...
 
 [2] scy_advanced_chat_combined.md   |   56 lignes
   Titre: <!--
@@ -2290,8 +2290,8 @@ Total: 610 fichiers Markdown
 === s06_scy_brain_rag_assistant/brain_onboarding ===
 
 [1] index.md   |   11 lignes
-  Titre: # 🗺️ INDEX LOCAL : BRAIN_ONBOARDING
-  Resume: # 🗺️ INDEX LOCAL : BRAIN_ONBOARDING Ce sous-répertoire documente l'**Onboarding Gamifié BRAIN** (§7.7ter v2) — flow d'inscription gamifié réduisant la friction et maximisant la conversion trial→signup. Mode Guest (Phase 0) + flow complet (Phase 1). ## 📁 Gabarits de Sûreté d'...
+  Titre: # 🗺️ index LOCAL : BRAIN_ONBOARDING
+  Resume: # 🗺️ index LOCAL : BRAIN_ONBOARDING Ce sous-répertoire documente l'**Onboarding Gamifié BRAIN** (§7.7ter v2) — flow d'inscription gamifié réduisant la friction et maximisant la conversion trial→signup. Mode Guest (Phase 0) + flow complet (Phase 1). ## 📁 Gabarits de Sûreté d'...
 
 [2] scy_brain_onboarding_combined.md   |   60 lignes
   Titre: <!--
@@ -2316,8 +2316,8 @@ Total: 610 fichiers Markdown
 === s06_scy_brain_rag_assistant/professor_ai ===
 
 [1] index.md   |   11 lignes
-  Titre: # 🗺️ INDEX LOCAL : PROFESSOR_AI
-  Resume: # 🗺️ INDEX LOCAL : PROFESSOR_AI Ce sous-répertoire documente le **Professor AI** — l'IA centrale accompagnatrice de SCY-BRAIN (§7.7 v2). Guide l'utilisateur à chaque niveau du parcours ASCENT, vulgarise les concepts difficiles, sélectionne auto le ton (T41 ELI5 → T42 ELI PhD)...
+  Titre: # 🗺️ index LOCAL : PROFESSOR_AI
+  Resume: # 🗺️ index LOCAL : PROFESSOR_AI Ce sous-répertoire documente le **Professor AI** — l'IA centrale accompagnatrice de SCY-BRAIN (§7.7 v2). Guide l'utilisateur à chaque niveau du parcours ASCENT, vulgarise les concepts difficiles, sélectionne auto le ton (T41 ELI5 → T42 ELI PhD)...
 
 [2] scy_professor_ai_combined.md   |   65 lignes
   Titre: <!--
@@ -2330,8 +2330,8 @@ Total: 610 fichiers Markdown
 === s06_scy_brain_rag_assistant/triple_retrieval_rrf ===
 
 [1] index.md   |   14 lignes
-  Titre: # 🗺️ INDEX LOCAL : TRIPLE_RETRIEVAL_RRF
-  Resume: # 🗺️ INDEX LOCAL : TRIPLE_RETRIEVAL_RRF Ce sous-répertoire documente le **Triple Retrieval + RRF Fusion** de SCY-BRAIN — la recherche hybride (Dense Vector + BM25 Sparse + Graph Traversal) consolidée par Reciprocal Rank Fusion. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY R...
+  Titre: # 🗺️ index LOCAL : TRIPLE_RETRIEVAL_RRF
+  Resume: # 🗺️ index LOCAL : TRIPLE_RETRIEVAL_RRF Ce sous-répertoire documente le **Triple Retrieval + RRF Fusion** de SCY-BRAIN — la recherche hybride (Dense Vector + BM25 Sparse + Graph Traversal) consolidée par Reciprocal Rank Fusion. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY R...
 
 [2] scy_triple_retrieval_combined.md   |   61 lignes
   Titre: <!--
@@ -2344,8 +2344,8 @@ Total: 610 fichiers Markdown
 === s07_scy_imprint_cognitive ===
 
 [1] index.md   |   8 lignes
-  Titre: # 🗺️ INDEX : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT)
-  Resume: # 🗺️ INDEX : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT) Ce répertoire gère l'amorçage de mémorisation de Pareto de SCY Forge et l'écriture physique. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Spécification d'exigence d'écriture manuscrite et d'étude d'éty...
+  Titre: # 🗺️ index : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT)
+  Resume: # 🗺️ index : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT) Ce répertoire gère l'amorçage de mémorisation de Pareto de SCY Forge et l'écriture physique. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Spécification d'exigence d'écriture manuscrite et d'étude d'éty...
 
 [2] scy_imprint_leech_verse_spec.md   |   123 lignes
   Titre: <!--
@@ -2358,8 +2358,8 @@ Total: 610 fichiers Markdown
 === s07_scy_imprint_cognitive/cre_engine ===
 
 [1] index.md   |   4 lignes
-  Titre: # 🗺️ INDEX LOCAL : CRE_ENGINE
-  Resume: # 🗺️ INDEX LOCAL : CRE_ENGINE **CRE (Cognitive Register Engine)** — les 5 crans adaptatifs de distillation cognitive (PRD §7.8). Cran 1 (200-300 mots) → Cran 5 (50-65 mots, cristallisation finale 5-7 insights). Fichiers : scy_cre_engine_spec.md / scy_cre_engine_combined.md. R...
+  Titre: # 🗺️ index LOCAL : CRE_ENGINE
+  Resume: # 🗺️ index LOCAL : CRE_ENGINE **CRE (Cognitive Register Engine)** — les 5 crans adaptatifs de distillation cognitive (PRD §7.8). Cran 1 (200-300 mots) → Cran 5 (50-65 mots, cristallisation finale 5-7 insights). Fichiers : scy_cre_engine_spec.md / scy_cre_engine_combined.md. R...
 
 [2] scy_cre_engine_combined.md   |   39 lignes
   Titre: <!--
@@ -2372,8 +2372,8 @@ Total: 610 fichiers Markdown
 === s07_scy_imprint_cognitive/empreinte_vocabulaire ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : EMPREINTE_VOCABULAIRE
-  Resume: # 🗺️ INDEX LOCAL : EMPREINTE_VOCABULAIRE **L'Empreinte Vocabulaire (IMPRINT Linguistics)** — module de mémorisation de vocabulaire d'élite (10 mots complexes/rares/stratégiques, fiches étymologiques, ancrage manuscrit). PRD §7.8, feature v2.5 🔴 CRITIQUE.
+  Titre: # 🗺️ index LOCAL : EMPREINTE_VOCABULAIRE
+  Resume: # 🗺️ index LOCAL : EMPREINTE_VOCABULAIRE **L'Empreinte Vocabulaire (IMPRINT Linguistics)** — module de mémorisation de vocabulaire d'élite (10 mots complexes/rares/stratégiques, fiches étymologiques, ancrage manuscrit). PRD §7.8, feature v2.5 🔴 CRITIQUE.
 
 [2] scy_empreinte_vocabulaire_combined.md   |   39 lignes
   Titre: <!--
@@ -2386,8 +2386,8 @@ Total: 610 fichiers Markdown
 === s07_scy_imprint_cognitive/garniture_tree_renderer ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : GARNITURE_TREE_RENDERER
-  Resume: # 🗺️ INDEX LOCAL : GARNITURE_TREE_RENDERER **Garniture Engine + Tree Renderer** — extraction 5-7 insights (Miller) + génération arbre ASCII conceptuel reproductible manuscrit (max 3 niveaux, <5 mots/nœud). PRD §7.8.
+  Titre: # 🗺️ index LOCAL : GARNITURE_TREE_RENDERER
+  Resume: # 🗺️ index LOCAL : GARNITURE_TREE_RENDERER **Garniture Engine + Tree Renderer** — extraction 5-7 insights (Miller) + génération arbre ASCII conceptuel reproductible manuscrit (max 3 niveaux, <5 mots/nœud). PRD §7.8.
 
 [2] scy_garniture_tree_combined.md   |   39 lignes
   Titre: <!--
@@ -2400,8 +2400,8 @@ Total: 610 fichiers Markdown
 === s08_scy_reader_suite ===
 
 [1] index.md   |   8 lignes
-  Titre: # 🗺️ INDEX : MODULE 08 — READER SUITE & LECTURE ENRICHIE
-  Resume: # 🗺️ INDEX : MODULE 08 — READER SUITE & LECTURE ENRICHIE Ce répertoire régit le triptyque de lecture bionique, de pre-render skeletons et d'affichage KaTeX en local. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Guide technique du File Viewer bionique sans scinti...
+  Titre: # 🗺️ index : MODULE 08 — READER SUITE & LECTURE ENRICHIE
+  Resume: # 🗺️ index : MODULE 08 — READER SUITE & LECTURE ENRICHIE Ce répertoire régit le triptyque de lecture bionique, de pre-render skeletons et d'affichage KaTeX en local. ## 📁 Répertoire des Fichiers - **spec_and_patterns.md** : Guide technique du File Viewer bionique sans scinti...
 
 [2] spec_and_patterns.md   |   60 lignes
   Titre: <!--
@@ -2410,8 +2410,8 @@ Total: 610 fichiers Markdown
 === s08_scy_reader_suite/book_orchestrator ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : BOOK_ORCHESTRATOR
-  Resume: # 🗺️ INDEX LOCAL : BOOK_ORCHESTRATOR Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **book_orchestrator**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
+  Titre: # 🗺️ index LOCAL : BOOK_ORCHESTRATOR
+  Resume: # 🗺️ index LOCAL : BOOK_ORCHESTRATOR Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **book_orchestrator**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
 
 [2] scy_book_orchestrator_plan.md   |   57 lignes
   Titre: <!--
@@ -2442,8 +2442,8 @@ Total: 610 fichiers Markdown
 === s08_scy_reader_suite/export_formats ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : EXPORT_FORMATS
-  Resume: # 🗺️ INDEX LOCAL : EXPORT_FORMATS Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **export_formats**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale ...
+  Titre: # 🗺️ index LOCAL : EXPORT_FORMATS
+  Resume: # 🗺️ index LOCAL : EXPORT_FORMATS Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **export_formats**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale ...
 
 [2] scy_export_formats_specs.md   |   76 lignes
   Titre: <!--
@@ -2452,8 +2452,8 @@ Total: 610 fichiers Markdown
 === s08_scy_reader_suite/file_viewer ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : FILE_VIEWER
-  Resume: # 🗺️ INDEX LOCAL : FILE_VIEWER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **file_viewer**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en cré...
+  Titre: # 🗺️ index LOCAL : FILE_VIEWER
+  Resume: # 🗺️ index LOCAL : FILE_VIEWER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **file_viewer**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en cré...
 
 [2] scy_file_viewer_plan.md   |   51 lignes
   Titre: <!--
@@ -2474,8 +2474,8 @@ Total: 610 fichiers Markdown
 === s08_scy_reader_suite/page_gallery ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : PAGE_GALLERY
-  Resume: # 🗺️ INDEX LOCAL : PAGE_GALLERY Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **page_gallery**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en c...
+  Titre: # 🗺️ index LOCAL : PAGE_GALLERY
+  Resume: # 🗺️ index LOCAL : PAGE_GALLERY Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **page_gallery**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en c...
 
 [2] scy_page_gallery_plan.md   |   54 lignes
   Titre: <!--
@@ -2496,8 +2496,8 @@ Total: 610 fichiers Markdown
 === s08_scy_reader_suite/web_viewer ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : WEB_VIEWER
-  Resume: # 🗺️ INDEX LOCAL : WEB_VIEWER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **web_viewer**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en créan...
+  Titre: # 🗺️ index LOCAL : WEB_VIEWER
+  Resume: # 🗺️ index LOCAL : WEB_VIEWER Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **web_viewer**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en créan...
 
 [2] scy_web_viewer_plan.md   |   47 lignes
   Titre: <!--
@@ -2518,8 +2518,8 @@ Total: 610 fichiers Markdown
 === s09_harmonist_validation_gates ===
 
 [1] index.md   |   8 lignes
-  Titre: # 🗺️ INDEX : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS
-  Resume: # 🗺️ INDEX : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS Ce répertoire regroupe les verrous de sûreté logique interceptant les écritures de base de données d'apprentissage. ## 📁 Répertoire des Fichiers - **scy_prd_neuro_consolidation_blueprint.md** : Les schémas de DDL SQL...
+  Titre: # 🗺️ index : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS
+  Resume: # 🗺️ index : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS Ce répertoire regroupe les verrous de sûreté logique interceptant les écritures de base de données d'apprentissage. ## 📁 Répertoire des Fichiers - **scy_prd_neuro_consolidation_blueprint.md** : Les schémas de DDL SQL...
 
 [2] scy_harmonist_integration_blueprint.md   |   151 lignes
   Titre: <!--
@@ -2536,8 +2536,8 @@ Total: 610 fichiers Markdown
 === s09_harmonist_validation_gates/validation_gates ===
 
 [1] index.md   |   4 lignes
-  Titre: # 🗺️ INDEX LOCAL : VALIDATION_GATES
-  Resume: # 🗺️ INDEX LOCAL : VALIDATION_GATES Les **portes de validation Harmonist** — gates bloquantes de sûreté pédagogique et d'intégrité. PQS ≥ 88, signature Parcours B, compensation SAGA sur rejet. Fichiers : scy_validation_gates_spec.md / scy_validation_gates_combined.md. Réf. PR...
+  Titre: # 🗺️ index LOCAL : VALIDATION_GATES
+  Resume: # 🗺️ index LOCAL : VALIDATION_GATES Les **portes de validation Harmonist** — gates bloquantes de sûreté pédagogique et d'intégrité. PQS ≥ 88, signature Parcours B, compensation SAGA sur rejet. Fichiers : scy_validation_gates_spec.md / scy_validation_gates_combined.md. Réf. PR...
 
 [2] scy_validation_gates_combined.md   |   39 lignes
   Titre: <!--
@@ -2550,8 +2550,8 @@ Total: 610 fichiers Markdown
 === s10_normal_mode_ingestion ===
 
 [1] index.md   |   7 lignes
-  Titre: # 🗺️ INDEX : MODULE 10 — MODE NORMAL D'INGESTION
-  Resume: # 🗺️ INDEX : MODULE 10 — MODE NORMAL D'INGESTION Ce répertoire gère l'ingestion à la demande et la génération asynchrone par lots du Pack par Défaut. ## 📁 Répertoire des Fichiers - **scy_normal_mode_orchestration_specs.md** : Orchestration, description personnalisée et intég...
+  Titre: # 🗺️ index : MODULE 10 — MODE NORMAL D'INGESTION
+  Resume: # 🗺️ index : MODULE 10 — MODE NORMAL D'INGESTION Ce répertoire gère l'ingestion à la demande et la génération asynchrone par lots du Pack par Défaut. ## 📁 Répertoire des Fichiers - **scy_normal_mode_orchestration_specs.md** : Orchestration, description personnalisée et intég...
 
 [2] scy_normal_mode_orchestration_specs.md   |   357 lignes
   Titre: <!--
@@ -2564,8 +2564,8 @@ Total: 610 fichiers Markdown
 === s10_normal_mode_ingestion/normal_orchestration ===
 
 [1] index.md   |   3 lignes
-  Titre: # 🗺️ INDEX LOCAL : NORMAL_ORCHESTRATION
-  Resume: # 🗺️ INDEX LOCAL : NORMAL_ORCHESTRATION L'**orchestration du Mode Normal d'ingestion** — pipeline d'ingestion hors ASCENT (ingestion directe → COSMOS/APEX/BRAIN immédiats, 0$ attente). Réf. PRD §7.13.10, scy_normal_mode_orchestration_specs.md.
+  Titre: # 🗺️ index LOCAL : NORMAL_ORCHESTRATION
+  Resume: # 🗺️ index LOCAL : NORMAL_ORCHESTRATION L'**orchestration du Mode Normal d'ingestion** — pipeline d'ingestion hors ASCENT (ingestion directe → COSMOS/APEX/BRAIN immédiats, 0$ attente). Réf. PRD §7.13.10, scy_normal_mode_orchestration_specs.md.
 
 [2] scy_normal_orchestration_combined.md   |   39 lignes
   Titre: <!--
@@ -2578,8 +2578,8 @@ Total: 610 fichiers Markdown
 === s11_neuroscientific_engine ===
 
 [1] index.md   |   8 lignes
-  Titre: # 🗺️ INDEX : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ
-  Resume: # 🗺️ INDEX : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ Ce répertoire regroupe les calculs de décomposition de vitalité d'ENGRAM et de compétition synaptique. ## 📁 Répertoire des Fichiers - **scy_neuroscientific_engine_specs.md** : Équation sigmoïdale, résurrection act...
+  Titre: # 🗺️ index : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ
+  Resume: # 🗺️ index : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ Ce répertoire regroupe les calculs de décomposition de vitalité d'ENGRAM et de compétition synaptique. ## 📁 Répertoire des Fichiers - **scy_neuroscientific_engine_specs.md** : Équation sigmoïdale, résurrection act...
 
 [2] spec_and_patterns.md   |   60 lignes
   Titre: <!--
@@ -2588,8 +2588,8 @@ Total: 610 fichiers Markdown
 === s11_neuroscientific_engine/engram_decay_vitality ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ENGRAM_DECAY_VITALITY
-  Resume: # 🗺️ INDEX LOCAL : ENGRAM_DECAY_VITALITY Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engram_decay_vitality**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
+  Titre: # 🗺️ index LOCAL : ENGRAM_DECAY_VITALITY
+  Resume: # 🗺️ index LOCAL : ENGRAM_DECAY_VITALITY Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engram_decay_vitality**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
 
 [2] scy_engram_decay_vitality_plan.md   |   90 lignes
   Titre: <!--
@@ -2618,8 +2618,8 @@ Total: 610 fichiers Markdown
 === s11_neuroscientific_engine/forge_protocol ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : FORGE_PROTOCOL
-  Resume: # 🗺️ INDEX LOCAL : FORGE_PROTOCOL Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **forge_protocol**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale ...
+  Titre: # 🗺️ index LOCAL : FORGE_PROTOCOL
+  Resume: # 🗺️ index LOCAL : FORGE_PROTOCOL Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **forge_protocol**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale ...
 
 [2] scy_forge_protocol_plan.md   |   57 lignes
   Titre: <!--
@@ -2640,8 +2640,8 @@ Total: 610 fichiers Markdown
 === s11_neuroscientific_engine/friction_mode ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : FRICTION_MODE
-  Resume: # 🗺️ INDEX LOCAL : FRICTION_MODE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **friction_mode**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en...
+  Titre: # 🗺️ index LOCAL : FRICTION_MODE
+  Resume: # 🗺️ index LOCAL : FRICTION_MODE Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **friction_mode**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incrémentale en...
 
 [2] scy_friction_mode_plan.md   |   52 lignes
   Titre: <!--
@@ -2662,8 +2662,8 @@ Total: 610 fichiers Markdown
 === s11_neuroscientific_engine/synaptic_competition_rif ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : SYNAPTIC_COMPETITION_RIF
-  Resume: # 🗺️ INDEX LOCAL : SYNAPTIC_COMPETITION_RIF Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **synaptic_competition_rif**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de m...
+  Titre: # 🗺️ index LOCAL : SYNAPTIC_COMPETITION_RIF
+  Resume: # 🗺️ index LOCAL : SYNAPTIC_COMPETITION_RIF Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **synaptic_competition_rif**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de m...
 
 [2] scy_synaptic_competition_rif_plan.md   |   59 lignes
   Titre: <!--
@@ -2684,8 +2684,8 @@ Total: 610 fichiers Markdown
 === s12_b2b_creator_console ===
 
 [1] index.md   |   10 lignes
-  Titre: # 🗺️ INDEX : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B
-  Resume: # 🗺️ INDEX : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B Ce répertoire régit les tableaux de bord cohortes des formateurs de contenu, les règles de k-anonymat, et la monétisation SaaS API. ## 📁 Répertoire des Fichiers - **scy_b2b_expansion_strategy.md** : Stratégie SOP-to-S...
+  Titre: # 🗺️ index : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B
+  Resume: # 🗺️ index : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B Ce répertoire régit les tableaux de bord cohortes des formateurs de contenu, les règles de k-anonymat, et la monétisation SaaS API. ## 📁 Répertoire des Fichiers - **scy_b2b_expansion_strategy.md** : Stratégie SOP-to-S...
 
 [2] scy_pedagogical_manifesto.md   |   87 lignes
   Titre: <!--
@@ -2698,8 +2698,8 @@ Total: 610 fichiers Markdown
 === s12_b2b_creator_console/accreditation_roadmap ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : ACCREDITATION_ROADMAP
-  Resume: # 🗺️ INDEX LOCAL : ACCREDITATION_ROADMAP Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **accreditation_roadmap**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
+  Titre: # 🗺️ index LOCAL : ACCREDITATION_ROADMAP
+  Resume: # 🗺️ index LOCAL : ACCREDITATION_ROADMAP Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **accreditation_roadmap**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière...
 
 [2] scy_accreditation_roadmap.md   |   139 lignes
   Titre: <!--
@@ -2716,8 +2716,8 @@ Total: 610 fichiers Markdown
 === s12_b2b_creator_console/creator_dashboard ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : CREATOR_DASHBOARD
-  Resume: # 🗺️ INDEX LOCAL : CREATOR_DASHBOARD Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **creator_dashboard**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
+  Titre: # 🗺️ index LOCAL : CREATOR_DASHBOARD
+  Resume: # 🗺️ index LOCAL : CREATOR_DASHBOARD Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **creator_dashboard**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière incréme...
 
 [2] scy_b2b_expansion_strategy.md   |   174 lignes
   Titre: <!--
@@ -2734,8 +2734,8 @@ Total: 610 fichiers Markdown
 === s12_b2b_creator_console/mfg_api_monetization ===
 
 [1] index.md   |   13 lignes
-  Titre: # 🗺️ INDEX LOCAL : SCY_API_MONETIZATION
-  Resume: # 🗺️ INDEX LOCAL : SCY_API_MONETIZATION Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **scy_api_monetization**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière i...
+  Titre: # 🗺️ index LOCAL : SCY_API_MONETIZATION
+  Resume: # 🗺️ index LOCAL : SCY_API_MONETIZATION Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **scy_api_monetization**. ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ) Tout codage de cette sous-feature doit s'effectuer de manière i...
 
 [2] scy_api_monetization_combined.md   |   40 lignes
   Titre: <!--

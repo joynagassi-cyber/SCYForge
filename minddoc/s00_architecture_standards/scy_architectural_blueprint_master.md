@@ -107,7 +107,7 @@ Ce document est la **référence suprême et immuable** régissant l'intégralit
 | **Semantic Tree + DCID** | ✅ IN_MVP | Core agnostic, pont domain packs |
 | **Domain Pack Cyber (MITRE)** | ✅ IN_MVP | Contenu pré-généré, $0 LLM |
 | **ASCENT Plan C (18 agents)** | ✅ IN_MVP (13 agents) + POST_MVP (5 agents AG14-18) | Refactorisé via SemanticTreeProvider. AG14-LiveKit Voice, AG15-Gaming/Dual, AG16-Social Recruiting, AG17-Analytics Pipeline, AG18-Advanced Orchestration = POST_MVP |
-| **COSMOS V5 (VizSpec catalog)** | ✅ IN_MVP | Moteur de rendu intégré + catalog VizSpec[] (90 entrées). 6 viz noyau, intentions Use Case du domain pack. Architecture Plugin abandonnée (voir AUDIT_INCOHERENCES.md) |
+| **COSMOS V5 (VizSpec catalog)** | ✅ IN_MVP | Moteur de rendu intégré + catalog VizSpec[] (90 entrées). 6 viz noyau, intentions Use Case du domain pack. Architecture Plugin abandonnée (voir audit_incoherences.md) |
 | **APEX B11-B14** | ✅ IN_MVP | Cartes cyber (IOC, Kill Chain, Chain-of-Custody) |
 | **Tactical AI** | ✅ IN_MVP | DeepSeek V4 Free ($0) |
 | **SOC Manager Dashboard** | ✅ IN_MVP | Coverage, Gap Detection, Readiness Report |

@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C01_YOUTUBE_CORE
+# 🗺️ index LOCAL : C01_YOUTUBE_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c01_youtube_core**.
 

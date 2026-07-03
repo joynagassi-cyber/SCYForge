@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🟡 P1 — Nécessaire pour WP09 (Loop Engineering)
 > **Dépendances** : WP01 (types), WP03 (EventBus), WP07 (Autonomy Envelope)
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #6), `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` (D-026), `WORK_PACKAGE_03_EVENTBUS_CRATE.md`
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #6), `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` (D-026), `work_package_03_eventbus_crate.md`
 
 ---
 
@@ -18,8 +18,8 @@ Implémenter les **5 Cognitive Runtime Policies** : OutputPressure, CognitiveFri
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
 1. `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` — section D-026 (Cognitive Runtime Policies)
-2. `WORK_PACKAGE_03_EVENTBUS_CRATE.md` — EventType OutputPressureApplied, FrictionAdjusted
-3. `WORK_PACKAGE_07_AUTONOMY_ENVELOPE.md` — AutonomyMode + AlertClass
+2. `work_package_03_eventbus_crate.md` — EventType OutputPressureApplied, FrictionAdjusted
+3. `work_package_07_autonomy_envelope.md` — AutonomyMode + AlertClass
 
 ---
 

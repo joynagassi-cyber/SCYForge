@@ -1,4 +1,4 @@
-# AUDIT_DECISIONS.md — Table de toutes les décisions d'architecture
+# audit_decisions.md — Table de toutes les décisions d'architecture
 
 > **Phase 1** — Livrable d'audit documentaire
 > **Source** : `MASTER_AGENT_PROMPT_V2.md` §4.1.2
@@ -147,9 +147,9 @@
 | GFE-03 | 3 Mécanismes Émergence endogène — SME, Blending, Link Prediction | `scy_architectural_blueprint_master.md` D-021 section | 84 | P0 |
 | GFE-04 | Seed State Machine — POLLINATED → VIABLE / DORMANT → GERMINATING | `scy_architectural_blueprint_master.md` D-022 section | 85 | P0 |
 | GFE-05 | Vision Helm — Vecteur k-dim + graphe objectifs, align() = cosinus | `scy_architectural_blueprint_master.md` D-021 section | 84 | P0 |
-| PAT-01 | 3 Semantic Tree Instances — DomainPack, Organization, Learner (même type) | `PROJECT_CONTEXT.md` | 108 | P0 |
-| PAT-02 | Confidence = Source de vérité — mastery_score/status dérivés, jamais stockés | `PROJECT_CONTEXT.md` | 110 | P0 |
-| PAT-03 | Seed Lifecycle préservé — DORMANT ≠ mort, aucune Seed détruite | `PROJECT_CONTEXT.md` | 109 | P0 |
+| PAT-01 | 3 Semantic Tree Instances — DomainPack, Organization, Learner (même type) | `project_context.md` | 108 | P0 |
+| PAT-02 | Confidence = Source de vérité — mastery_score/status dérivés, jamais stockés | `project_context.md` | 110 | P0 |
+| PAT-03 | Seed Lifecycle préservé — DORMANT ≠ mort, aucune Seed détruite | `project_context.md` | 109 | P0 |
 | PAT-04 | 3 Pillars Architecture — ST+DCID, ASCENT, GFE | `scy_service_architecture_map.md` | multiple | P0 |
 | PAT-05 | 8 Cross-Service Transversal Services — Pattern obligatoire | `scy_service_architecture_map.md` | multiple | P0 |
 | PAT-06 | Services-Don't-Know-Consumers — Règle architecturale | `scy_service_architecture_map.md` | multiple | P0 |
@@ -163,17 +163,17 @@
 | DAT-03 | 4-Tier LLM Segregation — Free/Pro/Lite/Ultra locked | `pricing_tiers/scy_pricing_tiers_spec.md` | multiple | P0 |
 | DAT-04 | Electron Desktop + Rust Sidecar + SQLite WAL | `infrastructure_securite/scy_infra_sec_spec.md` | multiple | P0 |
 | DAT-05 | PostgreSQL RLS Multi-Tenant — Contractuel, violation = build stop | `infrastructure_securite/scy_infra_sec_spec.md` | multiple | P0 |
-| DAT-06 | Typestate Machine Pattern — États machines Rust type-safe | `WORK_PACKAGE_01_DCID_TRAITS.md` | multiple | P0 |
-| EVT-01 | 18 EventBus EventTypes — 18 événements typés, zéro générique | `WORK_PACKAGE_03_EVENTBUS_CRATE.md` | multiple | P0 |
-| EVT-02 | EventBus Trait Abstraction — InMemoryEventBus (MVP) + PostgresEventBus | `WORK_PACKAGE_03_EVENTBUS_CRATE.md` | multiple | P0 |
-| EVT-03 | EventValidationGate — 3 règles bloquantes (requires_reply, owner, rate limit) | `WORK_PACKAGE_03_EVENTBUS_CRATE.md` | multiple | P0 |
-| EVT-04 | Subscriber Read-Only Rule — Mutation impossible depuis subscriber | `WORK_PACKAGE_03_EVENTBUS_CRATE.md` | multiple | P0 |
-| EVT-05 | Unsubscribe Is Forbidden — Handlers live forever | `WORK_PACKAGE_03_EVENTBUS_CRATE.md` | multiple | P0 |
-| LOOP-01 | LoopEvaluator Pattern — evaluate() unifié, dispatche par niveau | `WORK_PACKAGE_09_LOOP_ENGINEERING.md` | multiple | P0 |
-| LOOP-02 | TriggerR2 — 4 kinds (Reschedule, Immediate, Sparring, Handoff) | `WORK_PACKAGE_09_LOOP_ENGINEERING.md` | multiple | P0 |
-| D9-01 | D9 Weighted Coverage — R1×R2×R3, target ≥80% | `WORK_PACKAGE_12_D9_COVERAGE.md` | multiple | P0 |
-| D9-02 | Era Multiplier — New2026 = +20% boost R2 | `WORK_PACKAGE_12_D9_COVERAGE.md` | multiple | P0 |
-| D9-03 | FidelityLevel L1-L4 — Déclaratif(0.25)→Compréhension(0.5)→Application(0.85)→Maîtrise(1.0) | `WORK_PACKAGE_12_D9_COVERAGE.md` | multiple | P0 |
+| DAT-06 | Typestate Machine Pattern — États machines Rust type-safe | `work_package_01_dcid_traits.md` | multiple | P0 |
+| EVT-01 | 18 EventBus EventTypes — 18 événements typés, zéro générique | `work_package_03_eventbus_crate.md` | multiple | P0 |
+| EVT-02 | EventBus Trait Abstraction — InMemoryEventBus (MVP) + PostgresEventBus | `work_package_03_eventbus_crate.md` | multiple | P0 |
+| EVT-03 | EventValidationGate — 3 règles bloquantes (requires_reply, owner, rate limit) | `work_package_03_eventbus_crate.md` | multiple | P0 |
+| EVT-04 | Subscriber Read-Only Rule — Mutation impossible depuis subscriber | `work_package_03_eventbus_crate.md` | multiple | P0 |
+| EVT-05 | Unsubscribe Is Forbidden — Handlers live forever | `work_package_03_eventbus_crate.md` | multiple | P0 |
+| LOOP-01 | LoopEvaluator Pattern — evaluate() unifié, dispatche par niveau | `work_package_09_loop_engineering.md` | multiple | P0 |
+| LOOP-02 | TriggerR2 — 4 kinds (Reschedule, Immediate, Sparring, Handoff) | `work_package_09_loop_engineering.md` | multiple | P0 |
+| D9-01 | D9 Weighted Coverage — R1×R2×R3, target ≥80% | `work_package_12_d9_coverage.md` | multiple | P0 |
+| D9-02 | Era Multiplier — New2026 = +20% boost R2 | `work_package_12_d9_coverage.md` | multiple | P0 |
+| D9-03 | FidelityLevel L1-L4 — Déclaratif(0.25)→Compréhension(0.5)→Application(0.85)→Maîtrise(1.0) | `work_package_12_d9_coverage.md` | multiple | P0 |
 
 ---
 
@@ -204,4 +204,4 @@
 
 ---
 
-*AUDIT_DECISIONS.md — SCY Forge — V1.0 — 2026-07-03*
+*audit_decisions.md — SCY Forge — V1.0 — 2026-07-03*

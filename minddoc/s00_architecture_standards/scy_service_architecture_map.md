@@ -513,7 +513,7 @@ Les specs que nous avons écrites restent **valables sur le comportement** (le "
 
 Ce document est le **pont** entre les specs (le "quoi") et les 5 documents de codage (le "comment"). Il doit être lu **avant** :
 1. `AGENTS.md` (instructions permanentes pour l'agent)
-2. `PROJECT_STRUCTURE.md` (arborescence réelle du code)
-3. `BUILD_COMMANDS.md` (commandes build/test/lint)
-4. `IMPLEMENTATION_ORDER.md` (ordre séquencé des sprints)
-5. `CODE_STYLE.md` (conventions de code)
+2. `project_structure.md` (arborescence réelle du code)
+3. `build_commands.md` (commandes build/test/lint)
+4. `implementation_order.md` (ordre séquencé des sprints)
+5. `code_style.md` (conventions de code)

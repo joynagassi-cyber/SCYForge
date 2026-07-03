@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C09_SCIENCE_CORE
+# 🗺️ index LOCAL : C09_SCIENCE_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c09_science_core**.
 

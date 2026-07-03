@@ -10,7 +10,7 @@ Date: 2026-07-02
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\_INVENTAIRE.md
 - **Lignes:** 1992
 - **Titre:** === (root) ===
-- **Resume:** === (root) === [1] BUILD_COMMANDS.md  (212 lignes) Titre: <!-- Resume: <!-- BEACHHEAD PIVOT v2.0 - UNKNOWN Module non classifi�. Source de v�rit� pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 --> # SCY FORGE - BUILD COMMANDS --- ## ??? BEACHHEAD SCOPE - Cyber SOC/Blue-Team MVP > **R�f�rence**... [2] CODE_STYLE.md  (406 l...
+- **Resume:** === (root) === [1] build_commands.md  (212 lignes) Titre: <!-- Resume: <!-- BEACHHEAD PIVOT v2.0 - UNKNOWN Module non classifi�. Source de v�rit� pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 --> # SCY FORGE - BUILD COMMANDS --- ## ??? BEACHHEAD SCOPE - Cyber SOC/Blue-Team MVP > **R�f�rence**... [2] code_style.md  (406 l...
 
 ### [2] _INVENTAIRE_COMPLET.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\_INVENTAIRE_COMPLET.md
@@ -18,20 +18,20 @@ Date: 2026-07-02
 - **Titre:** INVENTAIRE COMPLET - TOUS LES FICHIERS .md DE MINDOC
 - **Resume:** INVENTAIRE COMPLET - TOUS LES FICHIERS .md DE MINDOC Total: 610 fichiers Markdown
 
-### [3] BUILD_COMMANDS.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\BUILD_COMMANDS.md
+### [3] build_commands.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\build_commands.md
 - **Lignes:** 212
 - **Titre:** <!--
 - **Resume:** <!-- BEACHHEAD PIVOT v2.0 — UNKNOWN Module non classifié. Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 -->
 
-### [4] CODE_STYLE.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\CODE_STYLE.md
+### [4] code_style.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\code_style.md
 - **Lignes:** 406
 - **Titre:** <!--
 - **Resume:** <!-- BEACHHEAD PIVOT v2.0 — UNKNOWN Module non classifié. Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 -->
 
-### [5] IMPLEMENTATION_ORDER.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\IMPLEMENTATION_ORDER.md
+### [5] implementation_order.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\implementation_order.md
 - **Lignes:** 265
 - **Titre:** <!--
 - **Resume:** <!-- BEACHHEAD PIVOT v2.0 — UNKNOWN Module non classifié. Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 -->
@@ -42,20 +42,20 @@ Date: 2026-07-02
 - **Titre:** # MindDoc — Index
 - **Resume:** # MindDoc — Index
 
-### [7] PROJECT_CONTEXT.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\PROJECT_CONTEXT.md
+### [7] project_context.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\project_context.md
 - **Lignes:** 236
-- **Titre:** # PROJECT_CONTEXT.md — Contexte SCY Forge
-- **Resume:** # PROJECT_CONTEXT.md — Contexte SCY Forge
+- **Titre:** # project_context.md — Contexte SCY Forge
+- **Resume:** # project_context.md — Contexte SCY Forge
 
-### [8] PROJECT_CONTEXT_SHORT.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\PROJECT_CONTEXT_SHORT.md
+### [8] project_context_SHORT.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\project_context_SHORT.md
 - **Lignes:** 27
-- **Titre:** # PROJECT_CONTEXT_SHORT.md — SCY Forge (2 min)
-- **Resume:** # PROJECT_CONTEXT_SHORT.md — SCY Forge (2 min)
+- **Titre:** # project_context_SHORT.md — SCY Forge (2 min)
+- **Resume:** # project_context_SHORT.md — SCY Forge (2 min)
 
-### [9] PROJECT_STRUCTURE.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\PROJECT_STRUCTURE.md
+### [9] project_structure.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\project_structure.md
 - **Lignes:** 450
 - **Titre:** <!--
 - **Resume:** <!-- BEACHHEAD PIVOT v2.0 — UNKNOWN Module non classifié. Source de vérité pivot : docs/SCYFORGE_PIVOT_ARCHITECTURE.md Date du pivot : 2026-07-01 -->
@@ -201,8 +201,8 @@ Date: 2026-07-02
 ### [28] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s00_prd\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES
-- **Resume:** # 🗺️ INDEX : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES
+- **Titre:** # 🗺️ index : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES
+- **Resume:** # 🗺️ index : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES
 
 ### [29] scy_epics_and_stories.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s00_prd\scy_epics_and_stories.md
@@ -258,8 +258,8 @@ Date: 2026-07-02
 ### [37] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c01_youtube_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C01_YOUTUBE_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C01_YOUTUBE_CORE
+- **Titre:** # 🗺️ index LOCAL : C01_YOUTUBE_CORE
+- **Resume:** # 🗺️ index LOCAL : C01_YOUTUBE_CORE
 
 ### [38] scy_youtube_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c01_youtube_core\scy_youtube_core_plan.md
@@ -291,8 +291,8 @@ Date: 2026-07-02
 ### [42] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c02_web_article_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C02_WEB_ARTICLE_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C02_WEB_ARTICLE_CORE
+- **Titre:** # 🗺️ index LOCAL : C02_WEB_ARTICLE_CORE
+- **Resume:** # 🗺️ index LOCAL : C02_WEB_ARTICLE_CORE
 
 ### [43] scy_web_article_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c02_web_article_core\scy_web_article_core_plan.md
@@ -330,8 +330,8 @@ Date: 2026-07-02
 ### [48] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c03_podcast_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C03_PODCAST_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C03_PODCAST_CORE
+- **Titre:** # 🗺️ index LOCAL : C03_PODCAST_CORE
+- **Resume:** # 🗺️ index LOCAL : C03_PODCAST_CORE
 
 ### [49] scy_c03_podcast_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c03_podcast_core\scy_c03_podcast_core_plan.md
@@ -363,8 +363,8 @@ Date: 2026-07-02
 ### [53] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c04_academic_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C04_ACADEMIC_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C04_ACADEMIC_CORE
+- **Titre:** # 🗺️ index LOCAL : C04_ACADEMIC_CORE
+- **Resume:** # 🗺️ index LOCAL : C04_ACADEMIC_CORE
 
 ### [54] scy_c04_academic_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c04_academic_core\scy_c04_academic_core_plan.md
@@ -396,8 +396,8 @@ Date: 2026-07-02
 ### [58] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c05_google_drive_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C05_GOOGLE_DRIVE_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C05_GOOGLE_DRIVE_CORE
+- **Titre:** # 🗺️ index LOCAL : C05_GOOGLE_DRIVE_CORE
+- **Resume:** # 🗺️ index LOCAL : C05_GOOGLE_DRIVE_CORE
 
 ### [59] scy_c05_google_drive_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c05_google_drive_core\scy_c05_google_drive_core_plan.md
@@ -429,8 +429,8 @@ Date: 2026-07-02
 ### [63] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c06_financial_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C06_FINANCIAL_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C06_FINANCIAL_CORE
+- **Titre:** # 🗺️ index LOCAL : C06_FINANCIAL_CORE
+- **Resume:** # 🗺️ index LOCAL : C06_FINANCIAL_CORE
 
 ### [64] scy_c06_financial_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c06_financial_core\scy_c06_financial_core_plan.md
@@ -462,8 +462,8 @@ Date: 2026-07-02
 ### [68] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c07_twitter_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C07_TWITTER_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C07_TWITTER_CORE
+- **Titre:** # 🗺️ index LOCAL : C07_TWITTER_CORE
+- **Resume:** # 🗺️ index LOCAL : C07_TWITTER_CORE
 
 ### [69] scy_c07_twitter_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c07_twitter_core\scy_c07_twitter_core_plan.md
@@ -495,8 +495,8 @@ Date: 2026-07-02
 ### [73] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c08_wikipedia_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C08_WIKIPEDIA_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C08_WIKIPEDIA_CORE
+- **Titre:** # 🗺️ index LOCAL : C08_WIKIPEDIA_CORE
+- **Resume:** # 🗺️ index LOCAL : C08_WIKIPEDIA_CORE
 
 ### [74] scy_c08_wikipedia_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c08_wikipedia_core\scy_c08_wikipedia_core_plan.md
@@ -528,8 +528,8 @@ Date: 2026-07-02
 ### [78] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c09_science_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C09_SCIENCE_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C09_SCIENCE_CORE
+- **Titre:** # 🗺️ index LOCAL : C09_SCIENCE_CORE
+- **Resume:** # 🗺️ index LOCAL : C09_SCIENCE_CORE
 
 ### [79] scy_c09_science_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c09_science_core\scy_c09_science_core_plan.md
@@ -561,8 +561,8 @@ Date: 2026-07-02
 ### [83] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c10_tiktok_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C10_TIKTOK_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C10_TIKTOK_CORE
+- **Titre:** # 🗺️ index LOCAL : C10_TIKTOK_CORE
+- **Resume:** # 🗺️ index LOCAL : C10_TIKTOK_CORE
 
 ### [84] scy_c10_tiktok_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c10_tiktok_core\scy_c10_tiktok_core_plan.md
@@ -594,8 +594,8 @@ Date: 2026-07-02
 ### [88] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c11_reddit_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C11_REDDIT_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C11_REDDIT_CORE
+- **Titre:** # 🗺️ index LOCAL : C11_REDDIT_CORE
+- **Resume:** # 🗺️ index LOCAL : C11_REDDIT_CORE
 
 ### [89] scy_c11_reddit_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c11_reddit_core\scy_c11_reddit_core_plan.md
@@ -627,8 +627,8 @@ Date: 2026-07-02
 ### [93] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c12_epub_core\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C12_EPUB_CORE
-- **Resume:** # 🗺️ INDEX LOCAL : C12_EPUB_CORE
+- **Titre:** # 🗺️ index LOCAL : C12_EPUB_CORE
+- **Resume:** # 🗺️ index LOCAL : C12_EPUB_CORE
 
 ### [94] scy_c12_epub_core_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c12_epub_core\scy_c12_epub_core_plan.md
@@ -660,8 +660,8 @@ Date: 2026-07-02
 ### [98] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c13_anki_import_export\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : C13_ANKI_IMPORT_EXPORT
-- **Resume:** # 🗺️ INDEX LOCAL : C13_ANKI_IMPORT_EXPORT
+- **Titre:** # 🗺️ index LOCAL : C13_ANKI_IMPORT_EXPORT
+- **Resume:** # 🗺️ index LOCAL : C13_ANKI_IMPORT_EXPORT
 
 ### [99] scy_c13_anki_import_export_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\c13_anki_import_export\scy_c13_anki_import_export_plan.md
@@ -693,8 +693,8 @@ Date: 2026-07-02
 ### [103] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\index.md
 - **Lignes:** 16
-- **Titre:** # 🗺️ INDEX : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES
-- **Resume:** # 🗺️ INDEX : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES
+- **Titre:** # 🗺️ index : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES
+- **Resume:** # 🗺️ index : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES
 
 ### [104] spec_and_patterns.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_ingestion_cores\spec_and_patterns.md
@@ -705,20 +705,20 @@ Date: 2026-07-02
 
 ## s01_semantic_tree
 
-### [105] SCY_EVENTBUS_SCHEMAS.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_semantic_tree\SCY_EVENTBUS_SCHEMAS.md
+### [105] scy_eventbus_schemas.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_semantic_tree\scy_eventbus_schemas.md
 - **Lignes:** 616
 - **Titre:** # SCY FORGE — EVENTBUS SCHEMAS & CONTRACTS (RFC-2119)
 - **Resume:** # SCY FORGE — EVENTBUS SCHEMAS & CONTRACTS (RFC-2119) **Document ID** : S01_EVENTBUS_SCHEMAS **Date** : 2026-07-01 **Statut** : 🟢 NORMATIF — Réf pour toute implémentation EventBus **Pilier** : Pilier 1 (Semantic Tree) + Pilier 2 (ASCENT) + Pilier 3 (GFE)
 
-### [106] SCY_FORMULAS.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_semantic_tree\SCY_FORMULAS.md
+### [106] scy_formulas.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_semantic_tree\scy_formulas.md
 - **Lignes:** 385
 - **Titre:** # SCY FORGE — FORMULAS & CONSTANTS (CANONICAL)
 - **Resume:** # SCY FORGE — FORMULAS & CONSTANTS (CANONICAL) **Document ID** : S01_FORMULAS **Date** : 2026-07-01 **Statut** : 🟢 NORMATIF — Source de vérité pour toutes les formules **Pilier** : Pilier 1 (Semantic Tree) + Pilier 2 (ASCENT/APEX) + Pilier 3 (GFE)
 
-### [107] SCY_STATE_MACHINES.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_semantic_tree\SCY_STATE_MACHINES.md
+### [107] scy_state_machines.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s01_semantic_tree\scy_state_machines.md
 - **Lignes:** 533
 - **Titre:** # SCY FORGE — MACHINES À ÉTATS (STATE MACHINES)
 - **Resume:** # SCY FORGE — MACHINES À ÉTATS (STATE MACHINES) **Document ID** : S01_STATE_MACHINES **Date** : 2026-07-01 **Statut** : 🟢 NORMATIF — Réf pour toute implémentation de machines à états **Pilier** : Pilier 1 (Semantic Tree + DCID) + Pilier 3 (GFE)
@@ -729,8 +729,8 @@ Date: 2026-07-02
 ### [108] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\anti_hallucination\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : ANTI_HALLUCINATION
-- **Resume:** # 🗺️ INDEX LOCAL : ANTI_HALLUCINATION Les **3 couches anti-hallucination** + **score de confiance par section**. Réf. PRD §5.4, NC-003 (anti-hallucination 3 couches vs vérification post).
+- **Titre:** # 🗺️ index LOCAL : ANTI_HALLUCINATION
+- **Resume:** # 🗺️ index LOCAL : ANTI_HALLUCINATION Les **3 couches anti-hallucination** + **score de confiance par section**. Réf. PRD §5.4, NC-003 (anti-hallucination 3 couches vs vérification post).
 
 ### [109] scy_anti_hallucination_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\anti_hallucination\scy_anti_hallucination_combined.md
@@ -750,8 +750,8 @@ Date: 2026-07-02
 ### [111] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\apex_agent\index.md
 - **Lignes:** 12
-- **Titre:** # 🗺️ INDEX LOCAL : APEX_AGENT
-- **Resume:** # 🗺️ INDEX LOCAL : APEX_AGENT
+- **Titre:** # 🗺️ index LOCAL : APEX_AGENT
+- **Resume:** # 🗺️ index LOCAL : APEX_AGENT
 
 ### [112] scy_apex_agent_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\apex_agent\scy_apex_agent_plan.md
@@ -783,8 +783,8 @@ Date: 2026-07-02
 ### [116] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_alpha\index.md
 - **Lignes:** 4
-- **Titre:** # 🗺️ INDEX LOCAL : CHAIN_ALPHA
-- **Resume:** # 🗺️ INDEX LOCAL : CHAIN_ALPHA Chaîne **ALPHA — Extraction & Synthèse** (MVP). 3 agents : ALPHA-1 Extracteur Brut, ALPHA-2 Chunker Intelligent, ALPHA-3 Résumeur Multi-Niveaux. Pipeline MapReduce L0-L4. Fichiers : `scy_chain_alpha_spec/plan/tasks/tests.md`. Réf. PRD §5.3, §7.3. Décision NC-009 (Pipeline Pattern).
+- **Titre:** # 🗺️ index LOCAL : CHAIN_ALPHA
+- **Resume:** # 🗺️ index LOCAL : CHAIN_ALPHA Chaîne **ALPHA — Extraction & Synthèse** (MVP). 3 agents : ALPHA-1 Extracteur Brut, ALPHA-2 Chunker Intelligent, ALPHA-3 Résumeur Multi-Niveaux. Pipeline MapReduce L0-L4. Fichiers : `scy_chain_alpha_spec/plan/tasks/tests.md`. Réf. PRD §5.3, §7.3. Décision NC-009 (Pipeline Pattern).
 
 ### [117] scy_chain_alpha_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_alpha\scy_chain_alpha_plan.md
@@ -816,8 +816,8 @@ Date: 2026-07-02
 ### [121] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_beta\index.md
 - **Lignes:** 4
-- **Titre:** # 🗺️ INDEX LOCAL : CHAIN_BETA
-- **Resume:** # 🗺️ INDEX LOCAL : CHAIN_BETA Chaîne **BETA — Structuration** (MVP). 3 agents : BETA-1 Taxonomiste (10 domaines), BETA-2 Extracteur Relations, BETA-3 Architecte Hiérarchie (PageRank). Fichiers : `scy_chain_beta_spec/plan/tasks/tests.md`. Réf. PRD §5.3, §7.3.
+- **Titre:** # 🗺️ index LOCAL : CHAIN_BETA
+- **Resume:** # 🗺️ index LOCAL : CHAIN_BETA Chaîne **BETA — Structuration** (MVP). 3 agents : BETA-1 Taxonomiste (10 domaines), BETA-2 Extracteur Relations, BETA-3 Architecte Hiérarchie (PageRank). Fichiers : `scy_chain_beta_spec/plan/tasks/tests.md`. Réf. PRD §5.3, §7.3.
 
 ### [122] scy_chain_beta_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_beta\scy_chain_beta_plan.md
@@ -849,8 +849,8 @@ Date: 2026-07-02
 ### [126] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_delta\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : CHAIN_DELTA
-- **Resume:** # 🗺️ INDEX LOCAL : CHAIN_DELTA Chaîne **DELTA — Validation** (V1). DELTA-1 Fact-Checker, DELTA-2 Auditeur Cohérence, DELTA-3 Validateur Citations. Réf. PRD §5.3, §5.4 (anti-hallucination couche 2).
+- **Titre:** # 🗺️ index LOCAL : CHAIN_DELTA
+- **Resume:** # 🗺️ index LOCAL : CHAIN_DELTA Chaîne **DELTA — Validation** (V1). DELTA-1 Fact-Checker, DELTA-2 Auditeur Cohérence, DELTA-3 Validateur Citations. Réf. PRD §5.3, §5.4 (anti-hallucination couche 2).
 
 ### [127] scy_chain_delta_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_delta\scy_chain_delta_combined.md
@@ -870,8 +870,8 @@ Date: 2026-07-02
 ### [129] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_epsilon\index.md
 - **Lignes:** 4
-- **Titre:** # 🗺️ INDEX LOCAL : CHAIN_EPSILON
-- **Resume:** # 🗺️ INDEX LOCAL : CHAIN_EPSILON Chaîne **EPSILON — Génération Documents** (MVP). 3 agents : EPSILON-1 Cartes Révision (5 types), EPSILON-2 Exercices (Template Gold), EPSILON-3 QCM (distracteurs intelligents). Fichiers : `scy_chain_epsilon_spec/plan/tasks/tests.md`. Réf. PRD §5.3, §7.3. Liens : s05 flashcards_apex.
+- **Titre:** # 🗺️ index LOCAL : CHAIN_EPSILON
+- **Resume:** # 🗺️ index LOCAL : CHAIN_EPSILON Chaîne **EPSILON — Génération Documents** (MVP). 3 agents : EPSILON-1 Cartes Révision (5 types), EPSILON-2 Exercices (Template Gold), EPSILON-3 QCM (distracteurs intelligents). Fichiers : `scy_chain_epsilon_spec/plan/tasks/tests.md`. Réf. PRD §5.3, §7.3. Liens : s05 flashcards_apex.
 
 ### [130] scy_chain_epsilon_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_epsilon\scy_chain_epsilon_plan.md
@@ -903,8 +903,8 @@ Date: 2026-07-02
 ### [134] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_eta\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : CHAIN_ETA
-- **Resume:** # 🗺️ INDEX LOCAL : CHAIN_ETA Chaîne **ETA — Export Final** (V2). ETA-1 Formateur Multi-Formats (9 formats), ETA-2 Enrichisseur Métadonnées (Dublin Core), ETA-3 JSON Cognitif 360° (12 dimensions). Réf. PRD §5.3, §7.9.
+- **Titre:** # 🗺️ index LOCAL : CHAIN_ETA
+- **Resume:** # 🗺️ index LOCAL : CHAIN_ETA Chaîne **ETA — Export Final** (V2). ETA-1 Formateur Multi-Formats (9 formats), ETA-2 Enrichisseur Métadonnées (Dublin Core), ETA-3 JSON Cognitif 360° (12 dimensions). Réf. PRD §5.3, §7.9.
 
 ### [135] scy_chain_eta_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_eta\scy_chain_eta_combined.md
@@ -924,8 +924,8 @@ Date: 2026-07-02
 ### [137] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_gamma\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : CHAIN_GAMMA
-- **Resume:** # 🗺️ INDEX LOCAL : CHAIN_GAMMA Chaîne **GAMMA — Enrichissement** (V1). GAMMA-1 Contextualiseur, GAMMA-2 Analogies, GAMMA-3 Exemples. Réf. PRD §5.3.
+- **Titre:** # 🗺️ index LOCAL : CHAIN_GAMMA
+- **Resume:** # 🗺️ index LOCAL : CHAIN_GAMMA Chaîne **GAMMA — Enrichissement** (V1). GAMMA-1 Contextualiseur, GAMMA-2 Analogies, GAMMA-3 Exemples. Réf. PRD §5.3.
 
 ### [138] scy_chain_gamma_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_gamma\scy_chain_gamma_combined.md
@@ -945,8 +945,8 @@ Date: 2026-07-02
 ### [140] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_zeta\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : CHAIN_ZETA
-- **Resume:** # 🗺️ INDEX LOCAL : CHAIN_ZETA Chaîne **ZETA — Révision Qualité** (V2). ZETA-1 Harmoniseur Style, ZETA-2 Optimiseur Clarté, ZETA-3 Adaptateur Tons (T01-T50). Réf. PRD §5.3.
+- **Titre:** # 🗺️ index LOCAL : CHAIN_ZETA
+- **Resume:** # 🗺️ index LOCAL : CHAIN_ZETA Chaîne **ZETA — Révision Qualité** (V2). ZETA-1 Harmoniseur Style, ZETA-2 Optimiseur Clarté, ZETA-3 Adaptateur Tons (T01-T50). Réf. PRD §5.3.
 
 ### [141] scy_chain_zeta_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\chain_zeta\scy_chain_zeta_combined.md
@@ -1002,8 +1002,8 @@ Date: 2026-07-02
 ### [148] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\index.md
 - **Lignes:** 7
-- **Titre:** # 🗺️ INDEX : MODULE 02 — NEURON-CHAINS & APEX-AGENT
-- **Resume:** # 🗺️ INDEX : MODULE 02 — NEURON-CHAINS & APEX-AGENT
+- **Titre:** # 🗺️ index : MODULE 02 — NEURON-CHAINS & APEX-AGENT
+- **Resume:** # 🗺️ index : MODULE 02 — NEURON-CHAINS & APEX-AGENT
 
 
 ## s02_neuron_chains_apex_agent/integrations_services
@@ -1083,8 +1083,8 @@ Date: 2026-07-02
 ### [158] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\tools_18\index.md
 - **Lignes:** 4
-- **Titre:** # 🗺️ INDEX LOCAL : TOOLS_18
-- **Resume:** # 🗺️ INDEX LOCAL : TOOLS_18 Ce sous-répertoire documente les **18 tools natifs Rust** (T01-T18) des NEURON-CHAINS, organisés en 5 groupes. **14 sur 18 ne consomment AUCUN token LLM externe.** Réf. PRD §5.3. > ⚠️ La numérotation PRD (18 tools T01-T18) est **authoritative** sur `spec_and_patterns.md` (16 tools, numérotation différente).
+- **Titre:** # 🗺️ index LOCAL : TOOLS_18
+- **Resume:** # 🗺️ index LOCAL : TOOLS_18 Ce sous-répertoire documente les **18 tools natifs Rust** (T01-T18) des NEURON-CHAINS, organisés en 5 groupes. **14 sur 18 ne consomment AUCUN token LLM externe.** Réf. PRD §5.3. > ⚠️ La numérotation PRD (18 tools T01-T18) est **authoritative** sur `spec_and_patterns.md` (16 tools, numérotation différente).
 
 ### [159] scy_tools_18_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s02_neuron_chains_apex_agent\tools_18\scy_tools_18_combined.md
@@ -1104,8 +1104,8 @@ Date: 2026-07-02
 ### [161] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag01_goal_interpreter\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG01_GOAL_INTERPRETER
-- **Resume:** # 🗺️ INDEX LOCAL : AG01_GOAL_INTERPRETER
+- **Titre:** # 🗺️ index LOCAL : AG01_GOAL_INTERPRETER
+- **Resume:** # 🗺️ index LOCAL : AG01_GOAL_INTERPRETER
 
 ### [162] scy_ag01_goal_interpreter_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag01_goal_interpreter\scy_ag01_goal_interpreter_plan.md
@@ -1137,8 +1137,8 @@ Date: 2026-07-02
 ### [166] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag02_content_scout\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG02_CONTENT_SCOUT
-- **Resume:** # 🗺️ INDEX LOCAL : AG02_CONTENT_SCOUT
+- **Titre:** # 🗺️ index LOCAL : AG02_CONTENT_SCOUT
+- **Resume:** # 🗺️ index LOCAL : AG02_CONTENT_SCOUT
 
 ### [167] scy_ag02_content_scout_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag02_content_scout\scy_ag02_content_scout_plan.md
@@ -1170,8 +1170,8 @@ Date: 2026-07-02
 ### [171] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag03_dag_architect\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG03_DAG_ARCHITECT
-- **Resume:** # 🗺️ INDEX LOCAL : AG03_DAG_ARCHITECT
+- **Titre:** # 🗺️ index LOCAL : AG03_DAG_ARCHITECT
+- **Resume:** # 🗺️ index LOCAL : AG03_DAG_ARCHITECT
 
 ### [172] scy_ag03_dag_architect_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag03_dag_architect\scy_ag03_dag_architect_plan.md
@@ -1203,8 +1203,8 @@ Date: 2026-07-02
 ### [176] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag04_learning_conductor\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG04_LEARNING_CONDUCTOR
-- **Resume:** # 🗺️ INDEX LOCAL : AG04_LEARNING_CONDUCTOR
+- **Titre:** # 🗺️ index LOCAL : AG04_LEARNING_CONDUCTOR
+- **Resume:** # 🗺️ index LOCAL : AG04_LEARNING_CONDUCTOR
 
 ### [177] scy_ag04_learning_conductor_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag04_learning_conductor\scy_ag04_learning_conductor_plan.md
@@ -1236,8 +1236,8 @@ Date: 2026-07-02
 ### [181] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag05_performance_analyzer\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG05_PERFORMANCE_ANALYZER
-- **Resume:** # 🗺️ INDEX LOCAL : AG05_PERFORMANCE_ANALYZER
+- **Titre:** # 🗺️ index LOCAL : AG05_PERFORMANCE_ANALYZER
+- **Resume:** # 🗺️ index LOCAL : AG05_PERFORMANCE_ANALYZER
 
 ### [182] scy_ag05_performance_analyzer_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag05_performance_analyzer\scy_ag05_performance_analyzer_plan.md
@@ -1269,8 +1269,8 @@ Date: 2026-07-02
 ### [186] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag06_adaptive_router\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG06_ADAPTIVE_ROUTER
-- **Resume:** # 🗺️ INDEX LOCAL : AG06_ADAPTIVE_ROUTER
+- **Titre:** # 🗺️ index LOCAL : AG06_ADAPTIVE_ROUTER
+- **Resume:** # 🗺️ index LOCAL : AG06_ADAPTIVE_ROUTER
 
 ### [187] scy_ag06_adaptive_router_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag06_adaptive_router\scy_ag06_adaptive_router_plan.md
@@ -1302,8 +1302,8 @@ Date: 2026-07-02
 ### [191] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag07_drift_guardian\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG07_DRIFT_GUARDIAN
-- **Resume:** # 🗺️ INDEX LOCAL : AG07_DRIFT_GUARDIAN
+- **Titre:** # 🗺️ index LOCAL : AG07_DRIFT_GUARDIAN
+- **Resume:** # 🗺️ index LOCAL : AG07_DRIFT_GUARDIAN
 
 ### [192] scy_ag07_drift_guardian_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag07_drift_guardian\scy_ag07_drift_guardian_plan.md
@@ -1335,8 +1335,8 @@ Date: 2026-07-02
 ### [196] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag08_engagement_amplifier\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG08_ENGAGEMENT_AMPLIFIER
-- **Resume:** # 🗺️ INDEX LOCAL : AG08_ENGAGEMENT_AMPLIFIER
+- **Titre:** # 🗺️ index LOCAL : AG08_ENGAGEMENT_AMPLIFIER
+- **Resume:** # 🗺️ index LOCAL : AG08_ENGAGEMENT_AMPLIFIER
 
 ### [197] scy_ag08_engagement_amplifier_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag08_engagement_amplifier\scy_ag08_engagement_amplifier_plan.md
@@ -1368,8 +1368,8 @@ Date: 2026-07-02
 ### [201] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag09_skill_certifier\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG09_SKILL_CERTIFIER
-- **Resume:** # 🗺️ INDEX LOCAL : AG09_SKILL_CERTIFIER
+- **Titre:** # 🗺️ index LOCAL : AG09_SKILL_CERTIFIER
+- **Resume:** # 🗺️ index LOCAL : AG09_SKILL_CERTIFIER
 
 ### [202] scy_ag09_skill_certifier_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag09_skill_certifier\scy_ag09_skill_certifier_plan.md
@@ -1410,8 +1410,8 @@ Date: 2026-07-02
 ### [207] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag10_chronicle\index.md
 - **Lignes:** 10
-- **Titre:** # 🗺️ INDEX LOCAL : AG10_CHRONICLE
-- **Resume:** # 🗺️ INDEX LOCAL : AG10_CHRONICLE
+- **Titre:** # 🗺️ index LOCAL : AG10_CHRONICLE
+- **Resume:** # 🗺️ index LOCAL : AG10_CHRONICLE
 
 ### [208] scy_ag10_chronicle_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag10_chronicle\scy_ag10_chronicle_plan.md
@@ -1467,8 +1467,8 @@ Date: 2026-07-02
 ### [216] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag11_arena\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG11_ARENA
-- **Resume:** # 🗺️ INDEX LOCAL : AG11_ARENA
+- **Titre:** # 🗺️ index LOCAL : AG11_ARENA
+- **Resume:** # 🗺️ index LOCAL : AG11_ARENA
 
 ### [217] scy_ag11_arena_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag11_arena\scy_ag11_arena_plan.md
@@ -1500,8 +1500,8 @@ Date: 2026-07-02
 ### [221] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag12_visual_critic\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG12_VISUAL_CRITIC
-- **Resume:** # 🗺️ INDEX LOCAL : AG12_VISUAL_CRITIC
+- **Titre:** # 🗺️ index LOCAL : AG12_VISUAL_CRITIC
+- **Resume:** # 🗺️ index LOCAL : AG12_VISUAL_CRITIC
 
 ### [222] scy_ag12_visual_critic_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag12_visual_critic\scy_ag12_visual_critic_plan.md
@@ -1533,8 +1533,8 @@ Date: 2026-07-02
 ### [226] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag13_cognitive_validator\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : AG13_COGNITIVE_VALIDATOR
-- **Resume:** # 🗺️ INDEX LOCAL : AG13_COGNITIVE_VALIDATOR
+- **Titre:** # 🗺️ index LOCAL : AG13_COGNITIVE_VALIDATOR
+- **Resume:** # 🗺️ index LOCAL : AG13_COGNITIVE_VALIDATOR
 
 ### [227] scy_ag13_cognitive_validator_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag13_cognitive_validator\scy_ag13_cognitive_validator_plan.md
@@ -1575,8 +1575,8 @@ Date: 2026-07-02
 ### [232] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag15_axiomatizer\index.md
 - **Lignes:** 15
-- **Titre:** # 🗺️ INDEX LOCAL : AG15_AXIOMATIZER
-- **Resume:** # 🗺️ INDEX LOCAL : AG15_AXIOMATIZER
+- **Titre:** # 🗺️ index LOCAL : AG15_AXIOMATIZER
+- **Resume:** # 🗺️ index LOCAL : AG15_AXIOMATIZER
 
 ### [233] scy_ag15_axiomatizer_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ag15_axiomatizer\scy_ag15_axiomatizer_plan.md
@@ -1653,8 +1653,8 @@ Date: 2026-07-02
 ### [243] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ascent_qa_committee\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ASCENT_QA_COMMITTEE
-- **Resume:** # 🗺️ INDEX LOCAL : ASCENT_QA_COMMITTEE
+- **Titre:** # 🗺️ index LOCAL : ASCENT_QA_COMMITTEE
+- **Resume:** # 🗺️ index LOCAL : ASCENT_QA_COMMITTEE
 
 ### [244] scy_ascent_hitl_proxy_sme_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\ascent_qa_committee\scy_ascent_hitl_proxy_sme_plan.md
@@ -1722,8 +1722,8 @@ Date: 2026-07-02
 ### [254] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\dag_display_modes\index.md
 - **Lignes:** 30
-- **Titre:** # 🗺️ INDEX : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT
-- **Resume:** # 🗺️ INDEX : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT
+- **Titre:** # 🗺️ index : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT
+- **Resume:** # 🗺️ index : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT
 
 
 ## s03_ascent_pipeline_agents/dag_display_modes/kanban_board
@@ -1773,8 +1773,8 @@ Date: 2026-07-02
 ### [260] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\index.md
 - **Lignes:** 11
-- **Titre:** # 🗺️ INDEX : MODULE 03 — ASCENT PIPELINE & WORKFLOWS
-- **Resume:** # 🗺️ INDEX : MODULE 03 — ASCENT PIPELINE & WORKFLOWS
+- **Titre:** # 🗺️ index : MODULE 03 — ASCENT PIPELINE & WORKFLOWS
+- **Resume:** # 🗺️ index : MODULE 03 — ASCENT PIPELINE & WORKFLOWS
 
 
 ## s03_ascent_pipeline_agents/onboarding_flow
@@ -1782,8 +1782,8 @@ Date: 2026-07-02
 ### [261] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\onboarding_flow\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ONBOARDING_FLOW
-- **Resume:** # 🗺️ INDEX LOCAL : ONBOARDING_FLOW
+- **Titre:** # 🗺️ index LOCAL : ONBOARDING_FLOW
+- **Resume:** # 🗺️ index LOCAL : ONBOARDING_FLOW
 
 ### [262] scy_brain_onboarding_spec.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_ascent_pipeline_agents\onboarding_flow\scy_brain_onboarding_spec.md
@@ -1842,8 +1842,8 @@ Date: 2026-07-02
 
 ## s03_generative_forest_engine
 
-### [270] SCY_GFE_PARAMETERS.md
-- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_generative_forest_engine\SCY_GFE_PARAMETERS.md
+### [270] scy_gfe_parameters.md
+- **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s03_generative_forest_engine\scy_gfe_parameters.md
 - **Lignes:** 1010
 - **Titre:** # SCY FORGE — GFE PARAMETERS & ALGORITHMS (PILIER 3)
 - **Resume:** # SCY FORGE — GFE PARAMETERS & ALGORITHMS (PILIER 3) **Document ID** : S03_GFE_PARAMETERS **Date** : 2026-07-01 **Statut** : 🟡 EN REVISION — Soumis à HITL utilisateur **Pilier** : Pilier 3 (Generative Forest Engine)
@@ -1872,8 +1872,8 @@ Date: 2026-07-02
 ### [273] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_cosmograph\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_COSMOGRAPH
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_COSMOGRAPH
+- **Titre:** # 🗺️ index LOCAL : ENGINE_COSMOGRAPH
+- **Resume:** # 🗺️ index LOCAL : ENGINE_COSMOGRAPH
 
 ### [274] scy_engine_cosmograph_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_cosmograph\scy_engine_cosmograph_plan.md
@@ -1905,8 +1905,8 @@ Date: 2026-07-02
 ### [278] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_d3\index.md
 - **Lignes:** 12
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_D3
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_D3
+- **Titre:** # 🗺️ index LOCAL : ENGINE_D3
+- **Resume:** # 🗺️ index LOCAL : ENGINE_D3
 
 ### [279] scy_engine_d3_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_d3\scy_engine_d3_plan.md
@@ -1938,8 +1938,8 @@ Date: 2026-07-02
 ### [283] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_g2\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_G2
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_G2
+- **Titre:** # 🗺️ index LOCAL : ENGINE_G2
+- **Resume:** # 🗺️ index LOCAL : ENGINE_G2
 
 ### [284] scy_engine_g2_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_g2\scy_engine_g2_plan.md
@@ -1971,8 +1971,8 @@ Date: 2026-07-02
 ### [288] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_g6\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_G6
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_G6
+- **Titre:** # 🗺️ index LOCAL : ENGINE_G6
+- **Resume:** # 🗺️ index LOCAL : ENGINE_G6
 
 ### [289] scy_engine_g6_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_g6\scy_engine_g6_plan.md
@@ -2004,8 +2004,8 @@ Date: 2026-07-02
 ### [293] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_nivo\index.md
 - **Lignes:** 15
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_NIVO
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_NIVO
+- **Titre:** # 🗺️ index LOCAL : ENGINE_NIVO
+- **Resume:** # 🗺️ index LOCAL : ENGINE_NIVO
 
 ### [294] scy_engine_nivo_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_nivo\scy_engine_nivo_plan.md
@@ -2037,8 +2037,8 @@ Date: 2026-07-02
 ### [298] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_react_flow\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_REACT_FLOW
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_REACT_FLOW
+- **Titre:** # 🗺️ index LOCAL : ENGINE_REACT_FLOW
+- **Resume:** # 🗺️ index LOCAL : ENGINE_REACT_FLOW
 
 ### [299] scy_engine_react_flow_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_react_flow\scy_engine_react_flow_plan.md
@@ -2070,8 +2070,8 @@ Date: 2026-07-02
 ### [303] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_recharts\index.md
 - **Lignes:** 12
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_RECHARTS
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_RECHARTS
+- **Titre:** # 🗺️ index LOCAL : ENGINE_RECHARTS
+- **Resume:** # 🗺️ index LOCAL : ENGINE_RECHARTS
 
 ### [304] scy_engine_recharts_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_recharts\scy_engine_recharts_plan.md
@@ -2103,8 +2103,8 @@ Date: 2026-07-02
 ### [308] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_statistical\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_STATISTICAL
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_STATISTICAL
+- **Titre:** # 🗺️ index LOCAL : ENGINE_STATISTICAL
+- **Resume:** # 🗺️ index LOCAL : ENGINE_STATISTICAL
 
 ### [309] scy_engine_statistical_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_statistical\scy_engine_statistical_plan.md
@@ -2136,8 +2136,8 @@ Date: 2026-07-02
 ### [313] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_tanstack_table\index.md
 - **Lignes:** 12
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_TANSTACK_TABLE
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_TANSTACK_TABLE
+- **Titre:** # 🗺️ index LOCAL : ENGINE_TANSTACK_TABLE
+- **Resume:** # 🗺️ index LOCAL : ENGINE_TANSTACK_TABLE
 
 ### [314] scy_engine_tanstack_table_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_tanstack_table\scy_engine_tanstack_table_plan.md
@@ -2169,8 +2169,8 @@ Date: 2026-07-02
 ### [318] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_threejs\index.md
 - **Lignes:** 12
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_THREEJS
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_THREEJS
+- **Titre:** # 🗺️ index LOCAL : ENGINE_THREEJS
+- **Resume:** # 🗺️ index LOCAL : ENGINE_THREEJS
 
 ### [319] scy_engine_threejs_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_threejs\scy_engine_threejs_plan.md
@@ -2202,8 +2202,8 @@ Date: 2026-07-02
 ### [323] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_webgpu\index.md
 - **Lignes:** 18
-- **Titre:** # 🗺️ INDEX LOCAL : ENGINE_WEBGPU
-- **Resume:** # 🗺️ INDEX LOCAL : ENGINE_WEBGPU Ce sous-répertoire documente le moteur de rendu **WebGPU** (standard W3C, D-PERF-006 Phase 3) — accès GPU moderne via Vulkan/Metal/D3D12. **Engine optionnel activé uniquement après feature detection navigateur.** Fast-path haute performance pour M0, M22 et M23, avec fallback WebGL 2 automatique.
+- **Titre:** # 🗺️ index LOCAL : ENGINE_WEBGPU
+- **Resume:** # 🗺️ index LOCAL : ENGINE_WEBGPU Ce sous-répertoire documente le moteur de rendu **WebGPU** (standard W3C, D-PERF-006 Phase 3) — accès GPU moderne via Vulkan/Metal/D3D12. **Engine optionnel activé uniquement après feature detection navigateur.** Fast-path haute performance pour M0, M22 et M23, avec fallback WebGL 2 automatique.
 
 ### [324] scy_engine_webgpu_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\engine_webgpu\scy_engine_webgpu_plan.md
@@ -2241,8 +2241,8 @@ Date: 2026-07-02
 ### [329] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\fisheye_lens\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : FISHEYE_LENS
-- **Resume:** # 🗺️ INDEX LOCAL : FISHEYE_LENS
+- **Titre:** # 🗺️ index LOCAL : FISHEYE_LENS
+- **Resume:** # 🗺️ index LOCAL : FISHEYE_LENS
 
 ### [330] scy_fisheye_lens_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\fisheye_lens\scy_fisheye_lens_plan.md
@@ -2283,8 +2283,8 @@ Date: 2026-07-02
 ### [335] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\index.md
 - **Lignes:** 12
-- **Titre:** # 🗺️ INDEX : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS
-- **Resume:** # 🗺️ INDEX : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS
+- **Titre:** # 🗺️ index : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS
+- **Resume:** # 🗺️ index : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS
 
 
 ## s04_scy_cosmos_visualization_engine/lens_system
@@ -2292,8 +2292,8 @@ Date: 2026-07-02
 ### [336] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\lens_system\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : LENS_SYSTEM
-- **Resume:** # 🗺️ INDEX LOCAL : LENS_SYSTEM
+- **Titre:** # 🗺️ index LOCAL : LENS_SYSTEM
+- **Resume:** # 🗺️ index LOCAL : LENS_SYSTEM
 
 ### [337] scy_lens_system_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\lens_system\scy_lens_system_plan.md
@@ -2325,8 +2325,8 @@ Date: 2026-07-02
 ### [341] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_00_base_knowledge_base\index.md
 - **Lignes:** 15
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_00 — BASE KNOWLEDGE BASE
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_00 — BASE KNOWLEDGE BASE
+- **Titre:** # 🗺️ index LOCAL : MODE_00 — BASE KNOWLEDGE BASE
+- **Resume:** # 🗺️ index LOCAL : MODE_00 — BASE KNOWLEDGE BASE
 
 ### [342] scy_mode_00_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_00_base_knowledge_base\scy_mode_00_plan.md
@@ -2358,8 +2358,8 @@ Date: 2026-07-02
 ### [346] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_01_lexical_tags\index.md
 - **Lignes:** 4
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_01 — LEXICAL TAGS
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_01 — LEXICAL TAGS MODE 1 : Lexical Tags (La Taxonomie Plate). Nuage/liste de tags textuels par domaine. Moteur : HTML/CSS Tailwind + `react-window`. Fichiers : `scy_mode_01_spec/plan/tasks/tests.md`. Moteur : natif DOM (réf. `s00_architecture_standards`).
+- **Titre:** # 🗺️ index LOCAL : MODE_01 — LEXICAL TAGS
+- **Resume:** # 🗺️ index LOCAL : MODE_01 — LEXICAL TAGS MODE 1 : Lexical Tags (La Taxonomie Plate). Nuage/liste de tags textuels par domaine. Moteur : HTML/CSS Tailwind + `react-window`. Fichiers : `scy_mode_01_spec/plan/tasks/tests.md`. Moteur : natif DOM (réf. `s00_architecture_standards`).
 
 ### [347] scy_mode_01_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_01_lexical_tags\scy_mode_01_plan.md
@@ -2391,8 +2391,8 @@ Date: 2026-07-02
 ### [351] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_02_knowledge_graph_projet\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_02 — KNOWLEDGE GRAPH PROJET
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_02 — KNOWLEDGE GRAPH PROJET MODE 2 : Knowledge Graph Projet (L'Espace d'Étude). Graphe d'étude principal <50 000 nœuds. Moteur : `@antv/g6` v5 (D-RENDER-001). Fichiers : `scy_mode_02_spec/plan/tasks/tests.md`.
+- **Titre:** # 🗺️ index LOCAL : MODE_02 — KNOWLEDGE GRAPH PROJET
+- **Resume:** # 🗺️ index LOCAL : MODE_02 — KNOWLEDGE GRAPH PROJET MODE 2 : Knowledge Graph Projet (L'Espace d'Étude). Graphe d'étude principal <50 000 nœuds. Moteur : `@antv/g6` v5 (D-RENDER-001). Fichiers : `scy_mode_02_spec/plan/tasks/tests.md`.
 
 ### [352] scy_mode_02_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_02_knowledge_graph_projet\scy_mode_02_plan.md
@@ -2424,8 +2424,8 @@ Date: 2026-07-02
 ### [356] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_03_mindmap\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_03 — MINDMAP
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_03 — MINDMAP MODE 3 : MindMap (La Vue Arborescente). Arbre radial hiérarchique à racine unique. Moteur : `@antv/g6` v5 (Radial Tree Layout, D-RENDER-001). Fichiers : `scy_mode_03_spec/plan/tasks/tests.md`.
+- **Titre:** # 🗺️ index LOCAL : MODE_03 — MINDMAP
+- **Resume:** # 🗺️ index LOCAL : MODE_03 — MINDMAP MODE 3 : MindMap (La Vue Arborescente). Arbre radial hiérarchique à racine unique. Moteur : `@antv/g6` v5 (Radial Tree Layout, D-RENDER-001). Fichiers : `scy_mode_03_spec/plan/tasks/tests.md`.
 
 ### [357] scy_mode_03_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_03_mindmap\scy_mode_03_plan.md
@@ -2457,8 +2457,8 @@ Date: 2026-07-02
 ### [361] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_04_roadmap_ascent\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_04 — ROADMAP ASCENT
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_04 — ROADMAP ASCENT MODE 4 : Roadmap ASCENT (Le Chemin de Cursus). DAG de cursus avec nœuds de progression. Moteur : `@xyflow/react` v12 (D-RENDER-001, D-RENDER-004). Fichiers : `scy_mode_04_spec/plan/tasks/tests.md`.
+- **Titre:** # 🗺️ index LOCAL : MODE_04 — ROADMAP ASCENT
+- **Resume:** # 🗺️ index LOCAL : MODE_04 — ROADMAP ASCENT MODE 4 : Roadmap ASCENT (Le Chemin de Cursus). DAG de cursus avec nœuds de progression. Moteur : `@xyflow/react` v12 (D-RENDER-001, D-RENDER-004). Fichiers : `scy_mode_04_spec/plan/tasks/tests.md`.
 
 ### [362] scy_mode_04_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_04_roadmap_ascent\scy_mode_04_plan.md
@@ -2490,8 +2490,8 @@ Date: 2026-07-02
 ### [366] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_05_concepts_grid\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_05 — CONCEPTS GRID
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_05 — CONCEPTS GRID MODE 5 : Concepts Grid (La Vue Tableur). Table virtualisée des attributs concepts. Moteur : TanStack Table v8 + `@tanstack/react-virtual` (réf. `engine_tanstack_table`). Fichiers : `scy_mode_05_spec/plan/tasks/tests.md`.
+- **Titre:** # 🗺️ index LOCAL : MODE_05 — CONCEPTS GRID
+- **Resume:** # 🗺️ index LOCAL : MODE_05 — CONCEPTS GRID MODE 5 : Concepts Grid (La Vue Tableur). Table virtualisée des attributs concepts. Moteur : TanStack Table v8 + `@tanstack/react-virtual` (réf. `engine_tanstack_table`). Fichiers : `scy_mode_05_spec/plan/tasks/tests.md`.
 
 ### [367] scy_mode_05_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_05_concepts_grid\scy_mode_05_plan.md
@@ -2523,8 +2523,8 @@ Date: 2026-07-02
 ### [371] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_06_timeline\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_06 — TIMELINE
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_06 — TIMELINE MODE 6 : Timeline (La Vue Chronologique). Axe temporel horizontal d'événements sémantiques. Moteur : React Custom Renderer + `react-spring`. Fichiers : `scy_mode_06_spec/plan/tasks/tests.md`.
+- **Titre:** # 🗺️ index LOCAL : MODE_06 — TIMELINE
+- **Resume:** # 🗺️ index LOCAL : MODE_06 — TIMELINE MODE 6 : Timeline (La Vue Chronologique). Axe temporel horizontal d'événements sémantiques. Moteur : React Custom Renderer + `react-spring`. Fichiers : `scy_mode_06_spec/plan/tasks/tests.md`.
 
 ### [372] scy_mode_06_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_06_timeline\scy_mode_06_plan.md
@@ -2556,8 +2556,8 @@ Date: 2026-07-02
 ### [376] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_07_statistics\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_07 — STATISTICS
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_07 — STATISTICS MODE 7 : Statistics (La Vue de Performance). Graphiques analytiques de rétention/performance. Moteur : `recharts` v2 (réf. `engine_recharts`). Fichiers : `scy_mode_07_spec/plan/tasks/tests.md`.
+- **Titre:** # 🗺️ index LOCAL : MODE_07 — STATISTICS
+- **Resume:** # 🗺️ index LOCAL : MODE_07 — STATISTICS MODE 7 : Statistics (La Vue de Performance). Graphiques analytiques de rétention/performance. Moteur : `recharts` v2 (réf. `engine_recharts`). Fichiers : `scy_mode_07_spec/plan/tasks/tests.md`.
 
 ### [377] scy_mode_07_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_07_statistics\scy_mode_07_plan.md
@@ -2589,8 +2589,8 @@ Date: 2026-07-02
 ### [381] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_08_dataflow_neuron_chains\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_08 — DATAFLOW NEURON-CHAINS
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_08 — DATAFLOW NEURON-CHAINS MODE 8 : DataFlow NEURON-CHAINS (La Vue Pipeline). Flux d'exécution des agents NEURON-CHAINS en streaming. Moteur : `@xyflow/react` v12 (D-RENDER-001/004). Fichiers : `scy_mode_08_spec/plan/tasks/tests.md`.
+- **Titre:** # 🗺️ index LOCAL : MODE_08 — DATAFLOW NEURON-CHAINS
+- **Resume:** # 🗺️ index LOCAL : MODE_08 — DATAFLOW NEURON-CHAINS MODE 8 : DataFlow NEURON-CHAINS (La Vue Pipeline). Flux d'exécution des agents NEURON-CHAINS en streaming. Moteur : `@xyflow/react` v12 (D-RENDER-001/004). Fichiers : `scy_mode_08_spec/plan/tasks/tests.md`.
 
 ### [382] scy_mode_08_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_08_dataflow_neuron_chains\scy_mode_08_plan.md
@@ -2622,8 +2622,8 @@ Date: 2026-07-02
 ### [386] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_09_concept_map\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_09 — CONCEPT MAP
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_09 — CONCEPT MAP MODE 9 : Concept Map (La Cartographie Sémantique). Graphe non-arborescent multi-parents avec arêtes étiquetées (relations typées). Moteur : `@antv/g6` v5 (ForceAtlas2 async, D-RENDER-001). Fichiers : `scy_mode_09_spec/plan/tasks/tests.md`. UX : D-UX-MODES-001.
+- **Titre:** # 🗺️ index LOCAL : MODE_09 — CONCEPT MAP
+- **Resume:** # 🗺️ index LOCAL : MODE_09 — CONCEPT MAP MODE 9 : Concept Map (La Cartographie Sémantique). Graphe non-arborescent multi-parents avec arêtes étiquetées (relations typées). Moteur : `@antv/g6` v5 (ForceAtlas2 async, D-RENDER-001). Fichiers : `scy_mode_09_spec/plan/tasks/tests.md`. UX : D-UX-MODES-001.
 
 ### [387] scy_mode_09_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_09_concept_map\scy_mode_09_plan.md
@@ -2655,8 +2655,8 @@ Date: 2026-07-02
 ### [391] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_10_sunburst\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_10 — SUNBURST HIÉRARCHIQUE
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_10 — SUNBURST HIÉRARCHIQUE MODE 10 : Sunburst Hiérarchique (La Taxonomie Radiale). Anneaux concentriques par niveau hiérarchique. Moteur : `@antv/g2` v5 (D-RENDER-006). Fichiers : `scy_mode_10_spec/plan/tasks/tests.md`. UX : D-UX-MODES-002.
+- **Titre:** # 🗺️ index LOCAL : MODE_10 — SUNBURST HIÉRARCHIQUE
+- **Resume:** # 🗺️ index LOCAL : MODE_10 — SUNBURST HIÉRARCHIQUE MODE 10 : Sunburst Hiérarchique (La Taxonomie Radiale). Anneaux concentriques par niveau hiérarchique. Moteur : `@antv/g2` v5 (D-RENDER-006). Fichiers : `scy_mode_10_spec/plan/tasks/tests.md`. UX : D-UX-MODES-002.
 
 ### [392] scy_mode_10_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_10_sunburst\scy_mode_10_plan.md
@@ -2688,8 +2688,8 @@ Date: 2026-07-02
 ### [396] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_11_treemap\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_11 — TREEMAP CONCEPTUEL
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_11 — TREEMAP CONCEPTUEL MODE 11 : Treemap Conceptuel (L'Allocation de Connaissance). Rectangles imbriqués ∝ volume cartes. Moteur : `@antv/g2` v5 (D-RENDER-006). Fichiers : `scy_mode_11_spec/plan/tasks/tests.md`. UX : D-UX-MODES-003.
+- **Titre:** # 🗺️ index LOCAL : MODE_11 — TREEMAP CONCEPTUEL
+- **Resume:** # 🗺️ index LOCAL : MODE_11 — TREEMAP CONCEPTUEL MODE 11 : Treemap Conceptuel (L'Allocation de Connaissance). Rectangles imbriqués ∝ volume cartes. Moteur : `@antv/g2` v5 (D-RENDER-006). Fichiers : `scy_mode_11_spec/plan/tasks/tests.md`. UX : D-UX-MODES-003.
 
 ### [397] scy_mode_11_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_11_treemap\scy_mode_11_plan.md
@@ -2721,8 +2721,8 @@ Date: 2026-07-02
 ### [401] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_12_chord\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_12 — CHORD DIAGRAM
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_12 — CHORD DIAGRAM MODE 12 : Chord Diagram (La Vue de Co-occurrence). Rubans de co-occurrence entre concepts. Moteur : `nivo` Chord (D-RENDER-007). Fichiers : `scy_mode_12_spec/plan/tasks/tests.md`. UX : D-UX-MODES-004.
+- **Titre:** # 🗺️ index LOCAL : MODE_12 — CHORD DIAGRAM
+- **Resume:** # 🗺️ index LOCAL : MODE_12 — CHORD DIAGRAM MODE 12 : Chord Diagram (La Vue de Co-occurrence). Rubans de co-occurrence entre concepts. Moteur : `nivo` Chord (D-RENDER-007). Fichiers : `scy_mode_12_spec/plan/tasks/tests.md`. UX : D-UX-MODES-004.
 
 ### [402] scy_mode_12_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_12_chord\scy_mode_12_plan.md
@@ -2754,8 +2754,8 @@ Date: 2026-07-02
 ### [406] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_13_sankey\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_13 — SANKEY / ALLUVIAL
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_13 — SANKEY / ALLUVIAL MODE 13 : Sankey / Alluvial (La Trajectoire d'Apprentissage). Flux de progression par étapes. Moteur : `nivo` Sankey (D-RENDER-007). Fichiers : `scy_mode_13_spec/plan/tasks/tests.md`. UX : D-UX-MODES-005.
+- **Titre:** # 🗺️ index LOCAL : MODE_13 — SANKEY / ALLUVIAL
+- **Resume:** # 🗺️ index LOCAL : MODE_13 — SANKEY / ALLUVIAL MODE 13 : Sankey / Alluvial (La Trajectoire d'Apprentissage). Flux de progression par étapes. Moteur : `nivo` Sankey (D-RENDER-007). Fichiers : `scy_mode_13_spec/plan/tasks/tests.md`. UX : D-UX-MODES-005.
 
 ### [407] scy_mode_13_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_13_sankey\scy_mode_13_plan.md
@@ -2787,8 +2787,8 @@ Date: 2026-07-02
 ### [411] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_14_radar\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_14 — RADAR COMPARAISON
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_14 — RADAR COMPARAISON MODE 14 : Radar Comparaison (Le Profil Multidimensionnel). Polygone SMI 5 dimensions. Moteur : `recharts` v2 (réf. `engine_recharts`). Fichiers : `scy_mode_14_spec/plan/tasks/tests.md`. UX : D-UX-MODES-006.
+- **Titre:** # 🗺️ index LOCAL : MODE_14 — RADAR COMPARAISON
+- **Resume:** # 🗺️ index LOCAL : MODE_14 — RADAR COMPARAISON MODE 14 : Radar Comparaison (Le Profil Multidimensionnel). Polygone SMI 5 dimensions. Moteur : `recharts` v2 (réf. `engine_recharts`). Fichiers : `scy_mode_14_spec/plan/tasks/tests.md`. UX : D-UX-MODES-006.
 
 ### [412] scy_mode_14_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_14_radar\scy_mode_14_plan.md
@@ -2820,8 +2820,8 @@ Date: 2026-07-02
 ### [416] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_15_parallel_coordinates\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_15 — PARALLEL COORDINATES
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_15 — PARALLEL COORDINATES MODE 15 : Parallel Coordinates (Le Filtre Haute Dimension). Axes parallèles + brushing interactif. Moteur : `d3` v7 (D-RENDER-008). Fichiers : `scy_mode_15_spec/plan/tasks/tests.md`. UX : D-UX-MODES-007.
+- **Titre:** # 🗺️ index LOCAL : MODE_15 — PARALLEL COORDINATES
+- **Resume:** # 🗺️ index LOCAL : MODE_15 — PARALLEL COORDINATES MODE 15 : Parallel Coordinates (Le Filtre Haute Dimension). Axes parallèles + brushing interactif. Moteur : `d3` v7 (D-RENDER-008). Fichiers : `scy_mode_15_spec/plan/tasks/tests.md`. UX : D-UX-MODES-007.
 
 ### [417] scy_mode_15_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_15_parallel_coordinates\scy_mode_15_plan.md
@@ -2853,8 +2853,8 @@ Date: 2026-07-02
 ### [421] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_16_heatmap\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_16 — HEATMAP MATRICIELLE
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_16 — HEATMAP MATRICIELLE MODE 16 : Heatmap Matricielle (La Matrice de Corrélation). Grille de similarité cosinus concepts. Moteur : `nivo` Heatmap (D-RENDER-007). Fichiers : `scy_mode_16_spec/plan/tasks/tests.md`. UX : D-UX-MODES-008.
+- **Titre:** # 🗺️ index LOCAL : MODE_16 — HEATMAP MATRICIELLE
+- **Resume:** # 🗺️ index LOCAL : MODE_16 — HEATMAP MATRICIELLE MODE 16 : Heatmap Matricielle (La Matrice de Corrélation). Grille de similarité cosinus concepts. Moteur : `nivo` Heatmap (D-RENDER-007). Fichiers : `scy_mode_16_spec/plan/tasks/tests.md`. UX : D-UX-MODES-008.
 
 ### [422] scy_mode_16_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_16_heatmap\scy_mode_16_plan.md
@@ -2886,8 +2886,8 @@ Date: 2026-07-02
 ### [426] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_17_argument_map\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_17 — ARGUMENT MAP
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_17 — ARGUMENT MAP MODE 17 : Argument Map (La Vue Dialectique). Thèse + supports/réfutations éditables. Moteur : `@xyflow/react` v12 (D-RENDER-001/004). Fichiers : `scy_mode_17_spec/plan/tasks/tests.md`. UX : D-UX-MODES-009.
+- **Titre:** # 🗺️ index LOCAL : MODE_17 — ARGUMENT MAP
+- **Resume:** # 🗺️ index LOCAL : MODE_17 — ARGUMENT MAP MODE 17 : Argument Map (La Vue Dialectique). Thèse + supports/réfutations éditables. Moteur : `@xyflow/react` v12 (D-RENDER-001/004). Fichiers : `scy_mode_17_spec/plan/tasks/tests.md`. UX : D-UX-MODES-009.
 
 ### [427] scy_mode_17_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_17_argument_map\scy_mode_17_plan.md
@@ -2919,8 +2919,8 @@ Date: 2026-07-02
 ### [431] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_18_causal_loop\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_18 — CAUSAL LOOP DIAGRAM
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_18 — CAUSAL LOOP DIAGRAM MODE 18 : Causal Loop Diagram (La Vue Dynamique). Boucles causales polarisées (+/-) simulables. Moteur : `@antv/g6` v5 (D-RENDER-001). Fichiers : `scy_mode_18_spec/plan/tasks/tests.md`. UX : D-UX-MODES-010.
+- **Titre:** # 🗺️ index LOCAL : MODE_18 — CAUSAL LOOP DIAGRAM
+- **Resume:** # 🗺️ index LOCAL : MODE_18 — CAUSAL LOOP DIAGRAM MODE 18 : Causal Loop Diagram (La Vue Dynamique). Boucles causales polarisées (+/-) simulables. Moteur : `@antv/g6` v5 (D-RENDER-001). Fichiers : `scy_mode_18_spec/plan/tasks/tests.md`. UX : D-UX-MODES-010.
 
 ### [432] scy_mode_18_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_18_causal_loop\scy_mode_18_plan.md
@@ -2952,8 +2952,8 @@ Date: 2026-07-02
 ### [436] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_19_circle_packing\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_19 — CIRCLE PACKING
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_19 — CIRCLE PACKING MODE 19 : Circle Packing (La Classification Imbriquée). Bulles concentriques imbriquées. Moteur : `nivo` Circle-packing (D-RENDER-007). Fichiers : `scy_mode_19_spec/plan/tasks/tests.md`. UX : D-UX-MODES-011.
+- **Titre:** # 🗺️ index LOCAL : MODE_19 — CIRCLE PACKING
+- **Resume:** # 🗺️ index LOCAL : MODE_19 — CIRCLE PACKING MODE 19 : Circle Packing (La Classification Imbriquée). Bulles concentriques imbriquées. Moteur : `nivo` Circle-packing (D-RENDER-007). Fichiers : `scy_mode_19_spec/plan/tasks/tests.md`. UX : D-UX-MODES-011.
 
 ### [437] scy_mode_19_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_19_circle_packing\scy_mode_19_plan.md
@@ -2985,8 +2985,8 @@ Date: 2026-07-02
 ### [441] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_20_arc_diagram\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_20 — ARC DIAGRAM
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_20 — ARC DIAGRAM MODE 20 : Arc Diagram (La Vue de Flux Linéaire). Nœuds alignés + arcs géométriques. Moteur : `d3` v7 (D-RENDER-008). Fichiers : `scy_mode_20_spec/plan/tasks/tests.md`. UX : D-UX-MODES-012.
+- **Titre:** # 🗺️ index LOCAL : MODE_20 — ARC DIAGRAM
+- **Resume:** # 🗺️ index LOCAL : MODE_20 — ARC DIAGRAM MODE 20 : Arc Diagram (La Vue de Flux Linéaire). Nœuds alignés + arcs géométriques. Moteur : `d3` v7 (D-RENDER-008). Fichiers : `scy_mode_20_spec/plan/tasks/tests.md`. UX : D-UX-MODES-012.
 
 ### [442] scy_mode_20_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_20_arc_diagram\scy_mode_20_plan.md
@@ -3018,8 +3018,8 @@ Date: 2026-07-02
 ### [446] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_21_hierarchical_edge_bundling\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_21 — HIERARCHICAL EDGE BUNDLING
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_21 — HIERARCHICAL EDGE BUNDLING MODE 21 : Hierarchical Edge Bundling (Le Désencombrement). Faisceaux d'arêtes tendus le long d'une hiérarchie. Moteur : `d3` v7 (D-RENDER-008). Fichiers : `scy_mode_21_spec/plan/tasks/tests.md`. UX : D-UX-MODES-013.
+- **Titre:** # 🗺️ index LOCAL : MODE_21 — HIERARCHICAL EDGE BUNDLING
+- **Resume:** # 🗺️ index LOCAL : MODE_21 — HIERARCHICAL EDGE BUNDLING MODE 21 : Hierarchical Edge Bundling (Le Désencombrement). Faisceaux d'arêtes tendus le long d'une hiérarchie. Moteur : `d3` v7 (D-RENDER-008). Fichiers : `scy_mode_21_spec/plan/tasks/tests.md`. UX : D-UX-MODES-013.
 
 ### [447] scy_mode_21_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_21_hierarchical_edge_bundling\scy_mode_21_plan.md
@@ -3051,8 +3051,8 @@ Date: 2026-07-02
 ### [451] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_22_semantic_zoom\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_22 — SEMANTIC ZOOM GRAPH
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_22 — SEMANTIC ZOOM GRAPH MODE 22 : Semantic Zoom Graph (La Révélation Progressive). Exploration multi-échelle 3 niveaux de zoom sémantique. Moteur : `@cosmograph/cosmos` v3 (D-RENDER-001). Fichiers : `scy_mode_22_spec/plan/tasks/tests.md`. UX : D-UX-MODES-014.
+- **Titre:** # 🗺️ index LOCAL : MODE_22 — SEMANTIC ZOOM GRAPH
+- **Resume:** # 🗺️ index LOCAL : MODE_22 — SEMANTIC ZOOM GRAPH MODE 22 : Semantic Zoom Graph (La Révélation Progressive). Exploration multi-échelle 3 niveaux de zoom sémantique. Moteur : `@cosmograph/cosmos` v3 (D-RENDER-001). Fichiers : `scy_mode_22_spec/plan/tasks/tests.md`. UX : D-UX-MODES-014.
 
 ### [452] scy_mode_22_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_22_semantic_zoom\scy_mode_22_plan.md
@@ -3084,8 +3084,8 @@ Date: 2026-07-02
 ### [456] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_23_3d_knowledge_space\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_23 — 3D KNOWLEDGE SPACE
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_23 — 3D KNOWLEDGE SPACE MODE 23 : 3D Knowledge Space (L'Espace Immersif). Espace sémantique 3D (palais de mémoire). Moteur : `three.js` (D-RENDER-009, optionnel Phase 3). Fichiers : `scy_mode_23_spec/plan/tasks/tests.md`. UX : D-UX-MODES-015.
+- **Titre:** # 🗺️ index LOCAL : MODE_23 — 3D KNOWLEDGE SPACE
+- **Resume:** # 🗺️ index LOCAL : MODE_23 — 3D KNOWLEDGE SPACE MODE 23 : 3D Knowledge Space (L'Espace Immersif). Espace sémantique 3D (palais de mémoire). Moteur : `three.js` (D-RENDER-009, optionnel Phase 3). Fichiers : `scy_mode_23_spec/plan/tasks/tests.md`. UX : D-UX-MODES-015.
 
 ### [457] scy_mode_23_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_23_3d_knowledge_space\scy_mode_23_plan.md
@@ -3117,8 +3117,8 @@ Date: 2026-07-02
 ### [461] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_24_voronoi\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_24 — VORONOI CONCEPT MAP
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_24 — VORONOI CONCEPT MAP MODE 24 : Voronoi Concept Map (La Vue Territoriale). Cellules polygonales territoriales ∝ concept. Moteur : `d3` v7 + `d3-delaunay` (D-RENDER-008). Fichiers : `scy_mode_24_spec/plan/tasks/tests.md`. UX : D-UX-MODES-016.
+- **Titre:** # 🗺️ index LOCAL : MODE_24 — VORONOI CONCEPT MAP
+- **Resume:** # 🗺️ index LOCAL : MODE_24 — VORONOI CONCEPT MAP MODE 24 : Voronoi Concept Map (La Vue Territoriale). Cellules polygonales territoriales ∝ concept. Moteur : `d3` v7 + `d3-delaunay` (D-RENDER-008). Fichiers : `scy_mode_24_spec/plan/tasks/tests.md`. UX : D-UX-MODES-016.
 
 ### [462] scy_mode_24_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_24_voronoi\scy_mode_24_plan.md
@@ -3150,8 +3150,8 @@ Date: 2026-07-02
 ### [466] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_25_knowledge_cards\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : MODE_25 — KNOWLEDGE CARDS 🔴 CRITIQUE
-- **Resume:** # 🗺️ INDEX LOCAL : MODE_25 — KNOWLEDGE CARDS 🔴 CRITIQUE MODE 25 : Knowledge Cards (Le Dashboard Spatial Interactif). Cartes riches éditables + pipelines animés. Moteur : `@xyflow/react` v12 (D-RENDER-001). Fichiers : `scy_mode_25_spec/plan/tasks/tests.md`. UX : D-UX-MODES-017. 🔴 Mode d'apprentissage ultime.
+- **Titre:** # 🗺️ index LOCAL : MODE_25 — KNOWLEDGE CARDS 🔴 CRITIQUE
+- **Resume:** # 🗺️ index LOCAL : MODE_25 — KNOWLEDGE CARDS 🔴 CRITIQUE MODE 25 : Knowledge Cards (Le Dashboard Spatial Interactif). Cartes riches éditables + pipelines animés. Moteur : `@xyflow/react` v12 (D-RENDER-001). Fichiers : `scy_mode_25_spec/plan/tasks/tests.md`. UX : D-UX-MODES-017. 🔴 Mode d'apprentissage ultime.
 
 ### [467] scy_mode_25_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\mode_25_knowledge_cards\scy_mode_25_plan.md
@@ -3201,8 +3201,8 @@ Date: 2026-07-02
 ### [473] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\rendering_physics\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : RENDERING_PHYSICS
-- **Resume:** # 🗺️ INDEX LOCAL : RENDERING_PHYSICS
+- **Titre:** # 🗺️ index LOCAL : RENDERING_PHYSICS
+- **Resume:** # 🗺️ index LOCAL : RENDERING_PHYSICS
 
 ### [474] scy_brain_graph_rendering_specs.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s04_scy_cosmos_visualization_engine\rendering_physics\scy_brain_graph_rendering_specs.md
@@ -3282,8 +3282,8 @@ Date: 2026-07-02
 ### [484] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\flashcards_apex\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : FLASHCARDS_APEX
-- **Resume:** # 🗺️ INDEX LOCAL : FLASHCARDS_APEX
+- **Titre:** # 🗺️ index LOCAL : FLASHCARDS_APEX
+- **Resume:** # 🗺️ index LOCAL : FLASHCARDS_APEX
 
 ### [485] scy_flashcards_apex_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\flashcards_apex\scy_flashcards_apex_plan.md
@@ -3315,8 +3315,8 @@ Date: 2026-07-02
 ### [489] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\index.md
 - **Lignes:** 10
-- **Titre:** # 🗺️ INDEX : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX
-- **Resume:** # 🗺️ INDEX : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX
+- **Titre:** # 🗺️ index : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX
+- **Resume:** # 🗺️ index : MODULE 05 — SYSTÈME DE RÉTENTION ET EXAMENS APEX
 
 
 ## s05_apex_retention_system/miroir_cognitif
@@ -3342,8 +3342,8 @@ Date: 2026-07-02
 ### [492] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\scheduler_fsrs\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : SCHEDULER_FSRS
-- **Resume:** # 🗺️ INDEX LOCAL : SCHEDULER_FSRS
+- **Titre:** # 🗺️ index LOCAL : SCHEDULER_FSRS
+- **Resume:** # 🗺️ index LOCAL : SCHEDULER_FSRS
 
 ### [493] scy_scheduler_fsrs_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\scheduler_fsrs\scy_scheduler_fsrs_plan.md
@@ -3384,8 +3384,8 @@ Date: 2026-07-02
 ### [498] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\student_ai_teach_back\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : STUDENT_AI_TEACH_BACK
-- **Resume:** # 🗺️ INDEX LOCAL : STUDENT_AI_TEACH_BACK
+- **Titre:** # 🗺️ index LOCAL : STUDENT_AI_TEACH_BACK
+- **Resume:** # 🗺️ index LOCAL : STUDENT_AI_TEACH_BACK
 
 ### [499] scy_student_ai_teach_back_specs.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\student_ai_teach_back\scy_student_ai_teach_back_specs.md
@@ -3399,8 +3399,8 @@ Date: 2026-07-02
 ### [500] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\surveyjs_exam_runner\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : SURVEYJS_EXAM_RUNNER
-- **Resume:** # 🗺️ INDEX LOCAL : SURVEYJS_EXAM_RUNNER
+- **Titre:** # 🗺️ index LOCAL : SURVEYJS_EXAM_RUNNER
+- **Resume:** # 🗺️ index LOCAL : SURVEYJS_EXAM_RUNNER
 
 ### [501] scy_cognitive_exam_design_specs.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s05_apex_retention_system\surveyjs_exam_runner\scy_cognitive_exam_design_specs.md
@@ -3429,8 +3429,8 @@ Date: 2026-07-02
 ### [504] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\advanced_chat_gen\index.md
 - **Lignes:** 11
-- **Titre:** # 🗺️ INDEX LOCAL : ADVANCED_CHAT_GEN
-- **Resume:** # 🗺️ INDEX LOCAL : ADVANCED_CHAT_GEN Ce sous-répertoire documente le **BRAIN Advanced Chat Gen** — le chat agentique complet (§7.7bis v2) avec deux modes (Normal + Agentique). Génère des livrables visualisables (fichiers, présentations PowerPoint G13, rapports, veilles).
+- **Titre:** # 🗺️ index LOCAL : ADVANCED_CHAT_GEN
+- **Resume:** # 🗺️ index LOCAL : ADVANCED_CHAT_GEN Ce sous-répertoire documente le **BRAIN Advanced Chat Gen** — le chat agentique complet (§7.7bis v2) avec deux modes (Normal + Agentique). Génère des livrables visualisables (fichiers, présentations PowerPoint G13, rapports, veilles).
 
 ### [505] scy_advanced_chat_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\advanced_chat_gen\scy_advanced_chat_combined.md
@@ -3450,8 +3450,8 @@ Date: 2026-07-02
 ### [507] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\brain_onboarding\index.md
 - **Lignes:** 11
-- **Titre:** # 🗺️ INDEX LOCAL : BRAIN_ONBOARDING
-- **Resume:** # 🗺️ INDEX LOCAL : BRAIN_ONBOARDING Ce sous-répertoire documente l'**Onboarding Gamifié BRAIN** (§7.7ter v2) — flow d'inscription gamifié réduisant la friction et maximisant la conversion trial→signup. Mode Guest (Phase 0) + flow complet (Phase 1).
+- **Titre:** # 🗺️ index LOCAL : BRAIN_ONBOARDING
+- **Resume:** # 🗺️ index LOCAL : BRAIN_ONBOARDING Ce sous-répertoire documente l'**Onboarding Gamifié BRAIN** (§7.7ter v2) — flow d'inscription gamifié réduisant la friction et maximisant la conversion trial→signup. Mode Guest (Phase 0) + flow complet (Phase 1).
 
 ### [508] scy_brain_onboarding_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\brain_onboarding\scy_brain_onboarding_combined.md
@@ -3480,8 +3480,8 @@ Date: 2026-07-02
 ### [511] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\index.md
 - **Lignes:** 8
-- **Titre:** # 🗺️ INDEX : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL
-- **Resume:** # 🗺️ INDEX : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL
+- **Titre:** # 🗺️ index : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL
+- **Resume:** # 🗺️ index : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL
 
 
 ## s06_scy_brain_rag_assistant/live_web_search
@@ -3498,8 +3498,8 @@ Date: 2026-07-02
 ### [513] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\professor_ai\index.md
 - **Lignes:** 11
-- **Titre:** # 🗺️ INDEX LOCAL : PROFESSOR_AI
-- **Resume:** # 🗺️ INDEX LOCAL : PROFESSOR_AI Ce sous-répertoire documente le **Professor AI** — l'IA centrale accompagnatrice de SCY-BRAIN (§7.7 v2). Guide l'utilisateur à chaque niveau du parcours ASCENT, vulgarise les concepts difficiles, sélectionne auto le ton (T41 ELI5 → T42 ELI PhD) selon le Starter Evaluator.
+- **Titre:** # 🗺️ index LOCAL : PROFESSOR_AI
+- **Resume:** # 🗺️ index LOCAL : PROFESSOR_AI Ce sous-répertoire documente le **Professor AI** — l'IA centrale accompagnatrice de SCY-BRAIN (§7.7 v2). Guide l'utilisateur à chaque niveau du parcours ASCENT, vulgarise les concepts difficiles, sélectionne auto le ton (T41 ELI5 → T42 ELI PhD) selon le Starter Evaluator.
 
 ### [514] scy_professor_ai_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\professor_ai\scy_professor_ai_combined.md
@@ -3534,8 +3534,8 @@ Date: 2026-07-02
 ### [518] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\triple_retrieval_rrf\index.md
 - **Lignes:** 14
-- **Titre:** # 🗺️ INDEX LOCAL : TRIPLE_RETRIEVAL_RRF
-- **Resume:** # 🗺️ INDEX LOCAL : TRIPLE_RETRIEVAL_RRF Ce sous-répertoire documente le **Triple Retrieval + RRF Fusion** de SCY-BRAIN — la recherche hybride (Dense Vector + BM25 Sparse + Graph Traversal) consolidée par Reciprocal Rank Fusion.
+- **Titre:** # 🗺️ index LOCAL : TRIPLE_RETRIEVAL_RRF
+- **Resume:** # 🗺️ index LOCAL : TRIPLE_RETRIEVAL_RRF Ce sous-répertoire documente le **Triple Retrieval + RRF Fusion** de SCY-BRAIN — la recherche hybride (Dense Vector + BM25 Sparse + Graph Traversal) consolidée par Reciprocal Rank Fusion.
 
 ### [519] scy_triple_retrieval_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s06_scy_brain_rag_assistant\triple_retrieval_rrf\scy_triple_retrieval_combined.md
@@ -3555,8 +3555,8 @@ Date: 2026-07-02
 ### [521] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s07_scy_imprint_cognitive\cre_engine\index.md
 - **Lignes:** 4
-- **Titre:** # 🗺️ INDEX LOCAL : CRE_ENGINE
-- **Resume:** # 🗺️ INDEX LOCAL : CRE_ENGINE **CRE (Cognitive Register Engine)** — les 5 crans adaptatifs de distillation cognitive (PRD §7.8). Cran 1 (200-300 mots) → Cran 5 (50-65 mots, cristallisation finale 5-7 insights). Fichiers : `scy_cre_engine_spec.md` / `scy_cre_engine_combined.md`. Réf. PRD §7.8, D-OPT-014 (FORGE). Liens : s07 IMPRINT, s11 forge_pr...
+- **Titre:** # 🗺️ index LOCAL : CRE_ENGINE
+- **Resume:** # 🗺️ index LOCAL : CRE_ENGINE **CRE (Cognitive Register Engine)** — les 5 crans adaptatifs de distillation cognitive (PRD §7.8). Cran 1 (200-300 mots) → Cran 5 (50-65 mots, cristallisation finale 5-7 insights). Fichiers : `scy_cre_engine_spec.md` / `scy_cre_engine_combined.md`. Réf. PRD §7.8, D-OPT-014 (FORGE). Liens : s07 IMPRINT, s11 forge_pr...
 
 ### [522] scy_cre_engine_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s07_scy_imprint_cognitive\cre_engine\scy_cre_engine_combined.md
@@ -3576,8 +3576,8 @@ Date: 2026-07-02
 ### [524] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s07_scy_imprint_cognitive\empreinte_vocabulaire\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : EMPREINTE_VOCABULAIRE
-- **Resume:** # 🗺️ INDEX LOCAL : EMPREINTE_VOCABULAIRE **L'Empreinte Vocabulaire (IMPRINT Linguistics)** — module de mémorisation de vocabulaire d'élite (10 mots complexes/rares/stratégiques, fiches étymologiques, ancrage manuscrit). PRD §7.8, feature v2.5 🔴 CRITIQUE.
+- **Titre:** # 🗺️ index LOCAL : EMPREINTE_VOCABULAIRE
+- **Resume:** # 🗺️ index LOCAL : EMPREINTE_VOCABULAIRE **L'Empreinte Vocabulaire (IMPRINT Linguistics)** — module de mémorisation de vocabulaire d'élite (10 mots complexes/rares/stratégiques, fiches étymologiques, ancrage manuscrit). PRD §7.8, feature v2.5 🔴 CRITIQUE.
 
 ### [525] scy_empreinte_vocabulaire_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s07_scy_imprint_cognitive\empreinte_vocabulaire\scy_empreinte_vocabulaire_combined.md
@@ -3597,8 +3597,8 @@ Date: 2026-07-02
 ### [527] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s07_scy_imprint_cognitive\garniture_tree_renderer\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : GARNITURE_TREE_RENDERER
-- **Resume:** # 🗺️ INDEX LOCAL : GARNITURE_TREE_RENDERER **Garniture Engine + Tree Renderer** — extraction 5-7 insights (Miller) + génération arbre ASCII conceptuel reproductible manuscrit (max 3 niveaux, <5 mots/nœud). PRD §7.8.
+- **Titre:** # 🗺️ index LOCAL : GARNITURE_TREE_RENDERER
+- **Resume:** # 🗺️ index LOCAL : GARNITURE_TREE_RENDERER **Garniture Engine + Tree Renderer** — extraction 5-7 insights (Miller) + génération arbre ASCII conceptuel reproductible manuscrit (max 3 niveaux, <5 mots/nœud). PRD §7.8.
 
 ### [528] scy_garniture_tree_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s07_scy_imprint_cognitive\garniture_tree_renderer\scy_garniture_tree_combined.md
@@ -3618,8 +3618,8 @@ Date: 2026-07-02
 ### [530] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s07_scy_imprint_cognitive\index.md
 - **Lignes:** 8
-- **Titre:** # 🗺️ INDEX : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT)
-- **Resume:** # 🗺️ INDEX : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT)
+- **Titre:** # 🗺️ index : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT)
+- **Resume:** # 🗺️ index : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT)
 
 ### [531] scy_imprint_leech_verse_spec.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s07_scy_imprint_cognitive\scy_imprint_leech_verse_spec.md
@@ -3639,8 +3639,8 @@ Date: 2026-07-02
 ### [533] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\book_orchestrator\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : BOOK_ORCHESTRATOR
-- **Resume:** # 🗺️ INDEX LOCAL : BOOK_ORCHESTRATOR
+- **Titre:** # 🗺️ index LOCAL : BOOK_ORCHESTRATOR
+- **Resume:** # 🗺️ index LOCAL : BOOK_ORCHESTRATOR
 
 ### [534] scy_book_orchestrator_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\book_orchestrator\scy_book_orchestrator_plan.md
@@ -3687,8 +3687,8 @@ Date: 2026-07-02
 ### [540] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\export_formats\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : EXPORT_FORMATS
-- **Resume:** # 🗺️ INDEX LOCAL : EXPORT_FORMATS
+- **Titre:** # 🗺️ index LOCAL : EXPORT_FORMATS
+- **Resume:** # 🗺️ index LOCAL : EXPORT_FORMATS
 
 ### [541] scy_export_formats_specs.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\export_formats\scy_export_formats_specs.md
@@ -3702,8 +3702,8 @@ Date: 2026-07-02
 ### [542] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\file_viewer\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : FILE_VIEWER
-- **Resume:** # 🗺️ INDEX LOCAL : FILE_VIEWER
+- **Titre:** # 🗺️ index LOCAL : FILE_VIEWER
+- **Resume:** # 🗺️ index LOCAL : FILE_VIEWER
 
 ### [543] scy_file_viewer_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\file_viewer\scy_file_viewer_plan.md
@@ -3735,8 +3735,8 @@ Date: 2026-07-02
 ### [547] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\index.md
 - **Lignes:** 8
-- **Titre:** # 🗺️ INDEX : MODULE 08 — READER SUITE & LECTURE ENRICHIE
-- **Resume:** # 🗺️ INDEX : MODULE 08 — READER SUITE & LECTURE ENRICHIE
+- **Titre:** # 🗺️ index : MODULE 08 — READER SUITE & LECTURE ENRICHIE
+- **Resume:** # 🗺️ index : MODULE 08 — READER SUITE & LECTURE ENRICHIE
 
 
 ## s08_scy_reader_suite/page_gallery
@@ -3744,8 +3744,8 @@ Date: 2026-07-02
 ### [548] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\page_gallery\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : PAGE_GALLERY
-- **Resume:** # 🗺️ INDEX LOCAL : PAGE_GALLERY
+- **Titre:** # 🗺️ index LOCAL : PAGE_GALLERY
+- **Resume:** # 🗺️ index LOCAL : PAGE_GALLERY
 
 ### [549] scy_page_gallery_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\page_gallery\scy_page_gallery_plan.md
@@ -3786,8 +3786,8 @@ Date: 2026-07-02
 ### [554] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\web_viewer\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : WEB_VIEWER
-- **Resume:** # 🗺️ INDEX LOCAL : WEB_VIEWER
+- **Titre:** # 🗺️ index LOCAL : WEB_VIEWER
+- **Resume:** # 🗺️ index LOCAL : WEB_VIEWER
 
 ### [555] scy_web_viewer_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s08_scy_reader_suite\web_viewer\scy_web_viewer_plan.md
@@ -3819,8 +3819,8 @@ Date: 2026-07-02
 ### [559] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s09_harmonist_validation_gates\index.md
 - **Lignes:** 8
-- **Titre:** # 🗺️ INDEX : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS
-- **Resume:** # 🗺️ INDEX : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS
+- **Titre:** # 🗺️ index : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS
+- **Resume:** # 🗺️ index : MODULE 09 — HARMONIST & PORTES DE VALIDATIONS
 
 ### [560] scy_harmonist_integration_blueprint.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s09_harmonist_validation_gates\scy_harmonist_integration_blueprint.md
@@ -3846,8 +3846,8 @@ Date: 2026-07-02
 ### [563] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s09_harmonist_validation_gates\validation_gates\index.md
 - **Lignes:** 4
-- **Titre:** # 🗺️ INDEX LOCAL : VALIDATION_GATES
-- **Resume:** # 🗺️ INDEX LOCAL : VALIDATION_GATES Les **portes de validation Harmonist** — gates bloquantes de sûreté pédagogique et d'intégrité. PQS ≥ 88, signature Parcours B, compensation SAGA sur rejet. Fichiers : `scy_validation_gates_spec.md` / `scy_validation_gates_combined.md`. Réf. PRD §9, `scy_prd_neuro_consolidation_blueprint.md`, `scy_harmonist_i...
+- **Titre:** # 🗺️ index LOCAL : VALIDATION_GATES
+- **Resume:** # 🗺️ index LOCAL : VALIDATION_GATES Les **portes de validation Harmonist** — gates bloquantes de sûreté pédagogique et d'intégrité. PQS ≥ 88, signature Parcours B, compensation SAGA sur rejet. Fichiers : `scy_validation_gates_spec.md` / `scy_validation_gates_combined.md`. Réf. PRD §9, `scy_prd_neuro_consolidation_blueprint.md`, `scy_harmonist_i...
 
 ### [564] scy_validation_gates_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s09_harmonist_validation_gates\validation_gates\scy_validation_gates_combined.md
@@ -3867,8 +3867,8 @@ Date: 2026-07-02
 ### [566] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s10_normal_mode_ingestion\index.md
 - **Lignes:** 7
-- **Titre:** # 🗺️ INDEX : MODULE 10 — MODE NORMAL D'INGESTION
-- **Resume:** # 🗺️ INDEX : MODULE 10 — MODE NORMAL D'INGESTION
+- **Titre:** # 🗺️ index : MODULE 10 — MODE NORMAL D'INGESTION
+- **Resume:** # 🗺️ index : MODULE 10 — MODE NORMAL D'INGESTION
 
 
 ## s10_normal_mode_ingestion/normal_orchestration
@@ -3876,8 +3876,8 @@ Date: 2026-07-02
 ### [567] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s10_normal_mode_ingestion\normal_orchestration\index.md
 - **Lignes:** 3
-- **Titre:** # 🗺️ INDEX LOCAL : NORMAL_ORCHESTRATION
-- **Resume:** # 🗺️ INDEX LOCAL : NORMAL_ORCHESTRATION L'**orchestration du Mode Normal d'ingestion** — pipeline d'ingestion hors ASCENT (ingestion directe → COSMOS/APEX/BRAIN immédiats, 0$ attente). Réf. PRD §7.13.10, `scy_normal_mode_orchestration_specs.md`.
+- **Titre:** # 🗺️ index LOCAL : NORMAL_ORCHESTRATION
+- **Resume:** # 🗺️ index LOCAL : NORMAL_ORCHESTRATION L'**orchestration du Mode Normal d'ingestion** — pipeline d'ingestion hors ASCENT (ingestion directe → COSMOS/APEX/BRAIN immédiats, 0$ attente). Réf. PRD §7.13.10, `scy_normal_mode_orchestration_specs.md`.
 
 ### [568] scy_normal_orchestration_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s10_normal_mode_ingestion\normal_orchestration\scy_normal_orchestration_combined.md
@@ -3912,8 +3912,8 @@ Date: 2026-07-02
 ### [572] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\engram_decay_vitality\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ENGRAM_DECAY_VITALITY
-- **Resume:** # 🗺️ INDEX LOCAL : ENGRAM_DECAY_VITALITY
+- **Titre:** # 🗺️ index LOCAL : ENGRAM_DECAY_VITALITY
+- **Resume:** # 🗺️ index LOCAL : ENGRAM_DECAY_VITALITY
 
 ### [573] scy_engram_decay_vitality_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\engram_decay_vitality\scy_engram_decay_vitality_plan.md
@@ -3957,8 +3957,8 @@ Date: 2026-07-02
 ### [579] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\forge_protocol\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : FORGE_PROTOCOL
-- **Resume:** # 🗺️ INDEX LOCAL : FORGE_PROTOCOL
+- **Titre:** # 🗺️ index LOCAL : FORGE_PROTOCOL
+- **Resume:** # 🗺️ index LOCAL : FORGE_PROTOCOL
 
 ### [580] scy_forge_protocol_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\forge_protocol\scy_forge_protocol_plan.md
@@ -3990,8 +3990,8 @@ Date: 2026-07-02
 ### [584] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\friction_mode\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : FRICTION_MODE
-- **Resume:** # 🗺️ INDEX LOCAL : FRICTION_MODE
+- **Titre:** # 🗺️ index LOCAL : FRICTION_MODE
+- **Resume:** # 🗺️ index LOCAL : FRICTION_MODE
 
 ### [585] scy_friction_mode_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\friction_mode\scy_friction_mode_plan.md
@@ -4023,8 +4023,8 @@ Date: 2026-07-02
 ### [589] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\index.md
 - **Lignes:** 8
-- **Titre:** # 🗺️ INDEX : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ
-- **Resume:** # 🗺️ INDEX : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ
+- **Titre:** # 🗺️ index : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ
+- **Resume:** # 🗺️ index : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ
 
 ### [590] spec_and_patterns.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\spec_and_patterns.md
@@ -4038,8 +4038,8 @@ Date: 2026-07-02
 ### [591] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\synaptic_competition_rif\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : SYNAPTIC_COMPETITION_RIF
-- **Resume:** # 🗺️ INDEX LOCAL : SYNAPTIC_COMPETITION_RIF
+- **Titre:** # 🗺️ index LOCAL : SYNAPTIC_COMPETITION_RIF
+- **Resume:** # 🗺️ index LOCAL : SYNAPTIC_COMPETITION_RIF
 
 ### [592] scy_synaptic_competition_rif_plan.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s11_neuroscientific_engine\synaptic_competition_rif\scy_synaptic_competition_rif_plan.md
@@ -4071,8 +4071,8 @@ Date: 2026-07-02
 ### [596] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s12_b2b_creator_console\accreditation_roadmap\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : ACCREDITATION_ROADMAP
-- **Resume:** # 🗺️ INDEX LOCAL : ACCREDITATION_ROADMAP
+- **Titre:** # 🗺️ index LOCAL : ACCREDITATION_ROADMAP
+- **Resume:** # 🗺️ index LOCAL : ACCREDITATION_ROADMAP
 
 ### [597] scy_accreditation_roadmap.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s12_b2b_creator_console\accreditation_roadmap\scy_accreditation_roadmap.md
@@ -4098,8 +4098,8 @@ Date: 2026-07-02
 ### [600] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s12_b2b_creator_console\creator_dashboard\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : CREATOR_DASHBOARD
-- **Resume:** # 🗺️ INDEX LOCAL : CREATOR_DASHBOARD
+- **Titre:** # 🗺️ index LOCAL : CREATOR_DASHBOARD
+- **Resume:** # 🗺️ index LOCAL : CREATOR_DASHBOARD
 
 ### [601] scy_b2b_expansion_strategy.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s12_b2b_creator_console\creator_dashboard\scy_b2b_expansion_strategy.md
@@ -4125,8 +4125,8 @@ Date: 2026-07-02
 ### [604] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s12_b2b_creator_console\index.md
 - **Lignes:** 10
-- **Titre:** # 🗺️ INDEX : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B
-- **Resume:** # 🗺️ INDEX : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B
+- **Titre:** # 🗺️ index : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B
+- **Resume:** # 🗺️ index : MODULE 12 — CONSOLE CRÉATEUR & STRATÉGIE B2B
 
 
 ## s12_b2b_creator_console/mfg_api_monetization
@@ -4134,8 +4134,8 @@ Date: 2026-07-02
 ### [605] index.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s12_b2b_creator_console\mfg_api_monetization\index.md
 - **Lignes:** 13
-- **Titre:** # 🗺️ INDEX LOCAL : SCY_API_MONETIZATION
-- **Resume:** # 🗺️ INDEX LOCAL : SCY_API_MONETIZATION
+- **Titre:** # 🗺️ index LOCAL : SCY_API_MONETIZATION
+- **Resume:** # 🗺️ index LOCAL : SCY_API_MONETIZATION
 
 ### [606] scy_api_monetization_combined.md
 - **Chemin:** C:\Users\joyda\ZCodeProject\UsersjoydaZCodeProjectSCYForge\minddoc\s12_b2b_creator_console\mfg_api_monetization\scy_api_monetization_combined.md

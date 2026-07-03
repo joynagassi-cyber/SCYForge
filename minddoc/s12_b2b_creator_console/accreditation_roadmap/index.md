@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ACCREDITATION_ROADMAP
+# 🗺️ index LOCAL : ACCREDITATION_ROADMAP
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **accreditation_roadmap**.
 

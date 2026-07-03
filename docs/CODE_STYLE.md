@@ -719,7 +719,7 @@ CREATE TABLE scy_example (
 );
 
 -- Index partiel (WHERE deleted_at IS NULL = performances)
-CREATE INDEX idx_example_user
+CREATE index idx_example_user
     ON scy_example(user_id, created_at DESC)
     WHERE deleted_at IS NULL;
 

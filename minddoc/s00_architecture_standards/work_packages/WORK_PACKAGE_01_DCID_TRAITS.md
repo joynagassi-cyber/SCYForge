@@ -20,9 +20,9 @@ Implémenter les **traits DCID** dans `backend_rs/crates/scy-shared/src/ports.rs
 1. `MASTER_AGENT_PROMPT.md` — entier
 2. `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` — sections D-019, D-020, D-024
 3. `minddoc/s00_architecture_standards/scy_service_architecture_map.md` — sections Règle 4, Règle 5
-4. `minddoc/s01_semantic_tree/SCY_STATE_MACHINES.md` — sections 9 (provider×owner_kind) et 10 (inheritance)
-5. `minddoc/s01_semantic_tree/SCY_EVENTBUS_SCHEMAS.md` — sections TreeOp events
-6. `minddoc/s03_generative_forest_engine/SCY_GFE_PARAMETERS.md` — sections 12.4 (provider×owner_kind matrix)
+4. `minddoc/s01_semantic_tree/scy_state_machines.md` — sections 9 (provider×owner_kind) et 10 (inheritance)
+5. `minddoc/s01_semantic_tree/scy_eventbus_schemas.md` — sections TreeOp events
+6. `minddoc/s03_generative_forest_engine/scy_gfe_parameters.md` — sections 12.4 (provider×owner_kind matrix)
 
 ---
 
@@ -336,7 +336,7 @@ pub enum TreeOp {
 
 ```rust
 //! Types des nœuds sémantiques et états d'apprenant.
-//! Référence : SCY_STATE_MACHINES.md (SM-1), D-011, D-024.
+//! Référence : scy_state_machines.md (SM-1), D-011, D-024.
 
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;

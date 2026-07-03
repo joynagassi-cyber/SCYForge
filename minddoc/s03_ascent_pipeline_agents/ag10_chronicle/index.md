@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG10_CHRONICLE
+# 🗺️ index LOCAL : AG10_CHRONICLE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag10_chronicle** (L'agent compagnon quotidien).
 

@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG07_DRIFT_GUARDIAN
+# 🗺️ index LOCAL : AG07_DRIFT_GUARDIAN
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag07_drift_guardian**.
 

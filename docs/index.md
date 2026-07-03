@@ -4,11 +4,11 @@
 
 - **[AGENT_GUIDE.md](./AGENT_GUIDE.md)** - Règles et séquence de lecture pour coder dans SCYForge
 - **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Services, dépendances et ordre d'implémentation
-- **[BUILD_COMMANDS.md](./BUILD_COMMANDS.md)** - Commandes build, test, lint par stack (Rust / TS / React)
-- **[CODE_STYLE.md](./CODE_STYLE.md)** - Conventions de code par langage
+- **[build_commands.md](./build_commands.md)** - Commandes build, test, lint par stack (Rust / TS / React)
+- **[code_style.md](./code_style.md)** - Conventions de code par langage
 - **[DATA_MODEL.md](./DATA_MODEL.md)** - Tables PostgreSQL, indexes, contraintes et mapping services
-- **[IMPLEMENTATION_ORDER.md](./IMPLEMENTATION_ORDER.md)** - Séquence bottom-up des modules
-- **[PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md)** - Arborescence autorisée et périmètre des dossiers
+- **[implementation_order.md](./implementation_order.md)** - Séquence bottom-up des modules
+- **[project_structure.md](./project_structure.md)** - Arborescence autorisée et périmètre des dossiers
 - **[ROUTES.md](./ROUTES.md)** - Routes HTTP/MCP, contrats et responsabilités par service
 - **[WORKFLOWS.md](./WORKFLOWS.md)** - Workflows par rôle et mode opérationnel
 - **[index.md](./index.md)** - Ce fichier
@@ -48,7 +48,7 @@
 - **[SCYFORGE_GENERATIVE_TREE_POLLINATION_SEED.md](./SCYFORGE_GENERATIVE_TREE_POLLINATION_SEED.md)** - Moteur de créativité générative : pollination + seed
 - **[SCYFORGE_GENERATIVE_ENGINE_LOGICAL_MODEL.md](./SCYFORGE_GENERATIVE_ENGINE_LOGICAL_MODEL.md)** - Modèle logique du moteur génératif (pollination, viabilité, provenance W3C)
 - **[SCYFORGE_GENERATIVE_ENGINE_MATH_FORMALIZATION.md](./SCYFORGE_GENERATIVE_ENGINE_MATH_FORMALIZATION.md)** - Formalisation mathématique (distance hybride, fonction viabilité)
-- **[SCYFORGE_GENERATIVE_BETH_STACK_INDEX.md](./SCYFORGE_GENERATIVE_BETH_STACK_INDEX.md)** - Stack Beth : index et glossaire notation
+- **[SCYFORGE_GENERATIVE_BETH_STACK_index.md](./SCYFORGE_GENERATIVE_BETH_STACK_index.md)** - Stack Beth : index et glossaire notation
 
 ### BETH — Validateur de tronc
 - **[SCYFORGE_BETH_LOGICAL_REPRESENTATION_CYBER.md](./SCYFORGE_BETH_LOGICAL_REPRESENTATION_CYBER.md)** - Représentation logique Datalog des premiers principes cyber
@@ -63,7 +63,7 @@
 ### Architecture COSMOS (visualisation)
 > **Note** : l'architecture Plugin (docs A/B/C) a été abandonnée au profit de COSMOS v5 (moteur de rendu intégré + VizSpec catalog).
 
-- **[SCYFORGE_COSMOS_V5_VIZSPEC_CATALOG.md](./SCYFORGE_COSMOS_V5_VIZSPEC_CATALOG.md)** - Architecture COSMOS v5 active : VizSpec catalog (90 entrées), intent resolver, 6 viz noyau, use case intentions par domain pack
+- **[scyforge_cosmos_v5_vizspec_catalog.md](./scyforge_cosmos_v5_vizspec_catalog.md)** - Architecture COSMOS v5 active : VizSpec catalog (90 entrées), intent resolver, 6 viz noyau, use case intentions par domain pack
 - **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_A_CORE.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_A_CORE.md)** - [ARCHIVÉ] Référence historique — noyau Plugin COSMOS
 - **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_B_CYBER.md)** - [ARCHIVÉ] Référence historique — Plugin Cyber
 - **[SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md](./SCYFORGE_COSMOS_PLUGIN_INFRASTRUCTURE_C_ARBORIZATION.md)** - [ARCHIVÉ] Référence historique — Arborization Plugin
@@ -73,6 +73,7 @@
 
 ### Architecture pivot & beachhead cyber
 - **[SCYFORGE_PIVOT_ARCHITECTURE.md](./SCYFORGE_PIVOT_ARCHITECTURE.md)** - Pivot architecture : ce qui change, ce qui est éliminé, séquence MVP beachhead
+- **[SCYFORGE_SHORT_TERM_VALIDATION_ASCENT_TREE_GFE.md](./SCYFORGE_SHORT_TERM_VALIDATION_ASCENT_TREE_GFE.md)** - Protocole court terme pour valider ASCENT, Semantic Tree et GFE sans les 11 cores
 - **[SCYFORGE_C4_MODEL.md](./SCYFORGE_C4_MODEL.md)** - C4 model (Context / Container / Component / Deployment)
 - **[SCYFORGE_SEQUENCE_DIAGRAMS.md](./SCYFORGE_SEQUENCE_DIAGRAMS.md)** - Diagrammes séquence onboarding + pack loader + ARENA
 - **[SCYFORGE_13_AGENTS_REFACTOR_PLAN_00_OVERVIEW.md](./SCYFORGE_13_AGENTS_REFACTOR_PLAN_00_OVERVIEW.md)** - Plan C refactor : overview et objectifs

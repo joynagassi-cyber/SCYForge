@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_D3
+# 🗺️ index LOCAL : ENGINE_D3
 
 Ce sous-répertoire documente le moteur de rendu **d3 v7** (D-RENDER-008) — contrôle bas niveau pour visualisations custom — utilisé par les modes COSMOS M15 (Parallel Coordinates), M20 (Arc Diagram), M21 (Hierarchical Edge Bundling) et M24 (Voronoi Concept Map).
 

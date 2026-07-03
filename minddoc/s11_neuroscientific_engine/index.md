@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ
+# 🗺️ index : MODULE 11 — MOTEUR NEUROSCIENTIFIQUE DE VITALITÉ
 
 Ce répertoire regroupe les calculs de décomposition de vitalité d'ENGRAM et de compétition synaptique.
 

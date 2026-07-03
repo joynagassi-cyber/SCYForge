@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG12_VISUAL_CRITIC
+# 🗺️ index LOCAL : AG12_VISUAL_CRITIC
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag12_visual_critic**.
 

@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Bloquant pour WP06 (Seed) et WP12 (D9 Coverage)
 > **Dépendances** : WP01 (types), WP02 (migrations), WP03 (EventBus), WP04 (PackProviders)
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #5 EventBus), `WORK_PACKAGE_02_SQL_MIGRATIONS.md`, `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` (§12)
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #5 EventBus), `work_package_02_sql_migrations.md`, `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` (§12)
 
 ---
 
@@ -17,10 +17,10 @@ Implémenter l'adapter Postgres pour `SemanticTreeProvider` — le trait PRIMARY
 
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
-1. `WORK_PACKAGE_01_DCID_TRAITS.md` — SemanticTreeProvider trait + contraintes
-2. `WORK_PACKAGE_02_SQL_MIGRATIONS.md` — schema DB exact (colonnes, indexes, triggers)
-3. `WORK_PACKAGE_03_EVENTBUS_CRATE.md` — EventBus trait + 18 événements
-4. `WORK_PACKAGE_04_PACK_PROVIDERS.md` — PackConfigProvider résolution cascade
+1. `work_package_01_dcid_traits.md` — SemanticTreeProvider trait + contraintes
+2. `work_package_02_sql_migrations.md` — schema DB exact (colonnes, indexes, triggers)
+3. `work_package_03_eventbus_crate.md` — EventBus trait + 18 événements
+4. `work_package_04_pack_providers.md` — PackConfigProvider résolution cascade
 
 ---
 

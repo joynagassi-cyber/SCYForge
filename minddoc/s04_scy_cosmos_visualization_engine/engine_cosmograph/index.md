@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_COSMOGRAPH
+# 🗺️ index LOCAL : ENGINE_COSMOGRAPH
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_cosmograph**.
 

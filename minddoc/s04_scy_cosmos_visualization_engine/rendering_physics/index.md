@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : RENDERING_PHYSICS
+# 🗺️ index LOCAL : RENDERING_PHYSICS
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **rendering_physics**.
 

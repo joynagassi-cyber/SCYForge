@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : FISHEYE_LENS
+# 🗺️ index LOCAL : FISHEYE_LENS
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **fisheye_lens**.
 

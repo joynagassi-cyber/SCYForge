@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : SYNAPTIC_COMPETITION_RIF
+# 🗺️ index LOCAL : SYNAPTIC_COMPETITION_RIF
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **synaptic_competition_rif**.
 

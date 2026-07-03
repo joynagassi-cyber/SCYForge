@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C07_TWITTER_CORE
+# 🗺️ index LOCAL : C07_TWITTER_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c07_twitter_core**.
 

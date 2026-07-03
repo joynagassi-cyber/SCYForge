@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : WEB_VIEWER
+# 🗺️ index LOCAL : WEB_VIEWER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **web_viewer**.
 

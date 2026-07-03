@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C13_ANKI_IMPORT_EXPORT
+# 🗺️ index LOCAL : C13_ANKI_IMPORT_EXPORT
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c13_anki_import_export**.
 

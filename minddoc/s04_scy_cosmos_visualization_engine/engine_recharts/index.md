@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_RECHARTS
+# 🗺️ index LOCAL : ENGINE_RECHARTS
 
 Ce sous-répertoire documente le moteur de rendu **recharts v2** — graphiques statistiques déclaratifs SVG — utilisé par les modes COSMOS M7 (Statistics) et M14 (Radar Comparaison).
 

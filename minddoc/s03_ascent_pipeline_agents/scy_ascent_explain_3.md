@@ -828,11 +828,11 @@ CREATE TABLE scy_arena_proof_records (
 );
 
 -- Indexes
-CREATE INDEX idx_arena_sessions_user ON scy_arena_sessions(user_id, goal_id);
-CREATE INDEX idx_arena_sessions_status ON scy_arena_sessions(status, created_at);
-CREATE INDEX idx_arena_personas_domain ON scy_arena_personas(domain, difficulty_level);
-CREATE INDEX idx_chronicle_memory_user ON scy_chronicle_memory(user_id);
-CREATE INDEX idx_chronicle_disruptions_user ON scy_chronicle_disruptions(user_id, created_at DESC);
+CREATE index idx_arena_sessions_user ON scy_arena_sessions(user_id, goal_id);
+CREATE index idx_arena_sessions_status ON scy_arena_sessions(status, created_at);
+CREATE index idx_arena_personas_domain ON scy_arena_personas(domain, difficulty_level);
+CREATE index idx_chronicle_memory_user ON scy_chronicle_memory(user_id);
+CREATE index idx_chronicle_disruptions_user ON scy_chronicle_disruptions(user_id, created_at DESC);
 ```
 
 ---

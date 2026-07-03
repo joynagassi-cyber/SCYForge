@@ -266,7 +266,7 @@ export const SurveyJSFormRunner: React.FC<SurveyJSFormRunnerProps> = ({
 
   return (
     <div className="scy-exam-workspace flex gap-6 w-full h-full p-6 bg-slate-950 text-slate-100 relative">
-      {/* 🧭 NAVIGATION INDEX LATÉRAL (Le GPS de l'Examen) */}
+      {/* 🧭 NAVIGATION index LATÉRAL (Le GPS de l'Examen) */}
       <div className="scy-exam-gps-index w-72 flex flex-col gap-4 p-4 rounded-xl border border-white/5 bg-white/[0.02] backdrop-blur-md">
         <h3 className="text-sm font-bold text-violet-400 tracking-wide uppercase">Index de l'Examen</h3>
         <p className="text-xs text-slate-400">Naviguez librement et marquez les questions d'un signet pour y revenir.</p>

@@ -1,4 +1,4 @@
-# DECISIONS_MASTER.md — Toutes les décisions d'architecture unifiées
+# decisions_master.md — Toutes les décisions d'architecture unifiées
 
 > **Phase 2** — Livrable d'unification
 > **Source** : Consolidation de `scy_architectural_blueprint_master.md` + tous les documents d'architecture
@@ -453,10 +453,10 @@
 1. **NC-004 gap** : Numérotation incomplète. Vérifier dans `scy_prd_part_3_neuron_chains.md`.
 2. **D-COSMOS-001 à 011** : Définis dans `scy_prd_part_3_neuron_chains.md`. Extraire et fusionner ici.
 3. **D-OPT-001 à 008** : Référencés dans WASM spec mais non définis dans blueprint master. À localiser.
-4. **D-OPT-013/014/015/016/017** : Référencés dans `IMPLEMENTATION_ORDER.md` mais non définis. À localiser.
+4. **D-OPT-013/014/015/016/017** : Référencés dans `implementation_order.md` mais non définis. À localiser.
 5. **D-OPT-020/021/023/024/025/027/028/030/039/040/041/042/044/045/046/047** : Numéros sautés. À vérifier si gaps intentionnels.
 
 ---
 
-*DECISIONS_MASTER.md — SCY Forge — V1.0 — 2026-07-03*
+*decisions_master.md — SCY Forge — V1.0 — 2026-07-03*
 *Référence unique de toutes les décisions d'architecture SCY Forge*

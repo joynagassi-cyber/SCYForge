@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : FILE_VIEWER
+# 🗺️ index LOCAL : FILE_VIEWER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **file_viewer**.
 

@@ -11,10 +11,10 @@
 SCYForge/                          ← Dépôt Git MindDoc.git (specs + code)
 ├── AGENTS.md                      ← Instructions permanentes pour l'agent
 ├── docs/                          ← Documents de codage (ce dossier)
-│   ├── PROJECT_STRUCTURE.md       ← CE FICHIER
-│   ├── BUILD_COMMANDS.md
-│   ├── IMPLEMENTATION_ORDER.md
-│   ├── CODE_STYLE.md
+│   ├── project_structure.md       ← CE FICHIER
+│   ├── build_commands.md
+│   ├── implementation_order.md
+│   ├── code_style.md
 │   ├── DEPENDENCY_MANIFEST.md     ← Manifeste des dépendances (crates/npm/sidecars)
 │   └── AUDIT_STRUCTURE.md         ← Audit structurel (référence)
 │

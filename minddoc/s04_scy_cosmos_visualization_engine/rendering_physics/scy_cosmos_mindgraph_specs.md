@@ -111,7 +111,7 @@ CREATE TABLE scy_cosmos_mindgraph_edges (
 );
 
 -- Indexations du MindGraph pour requêtes de parcours sous-millisecondes
-CREATE INDEX idx_mindgraph_source ON scy_cosmos_mindgraph_edges(source_type, source_id);
-CREATE INDEX idx_mindgraph_target ON scy_cosmos_mindgraph_edges(target_type, target_id);
-CREATE INDEX idx_mindgraph_relation ON scy_cosmos_mindgraph_edges(relation_type);
+CREATE index idx_mindgraph_source ON scy_cosmos_mindgraph_edges(source_type, source_id);
+CREATE index idx_mindgraph_target ON scy_cosmos_mindgraph_edges(target_type, target_id);
+CREATE index idx_mindgraph_relation ON scy_cosmos_mindgraph_edges(relation_type);
 ```

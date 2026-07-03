@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG02_CONTENT_SCOUT
+# 🗺️ index LOCAL : AG02_CONTENT_SCOUT
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag02_content_scout**.
 

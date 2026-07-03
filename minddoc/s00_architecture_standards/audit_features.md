@@ -1,4 +1,4 @@
-# AUDIT_FEATURES.md — Table de toutes les features MVP et Post-MVP
+# audit_features.md — Table de toutes les features MVP et Post-MVP
 
 > **Phase 1** — Livrable d'audit documentaire
 > **Source** : `MASTER_AGENT_PROMPT_V2.md` §4.1.3

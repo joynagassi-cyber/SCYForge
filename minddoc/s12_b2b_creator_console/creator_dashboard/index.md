@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : CREATOR_DASHBOARD
+# 🗺️ index LOCAL : CREATOR_DASHBOARD
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **creator_dashboard**.
 

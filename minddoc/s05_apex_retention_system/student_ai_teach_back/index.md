@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : STUDENT_AI_TEACH_BACK
+# 🗺️ index LOCAL : STUDENT_AI_TEACH_BACK
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **student_ai_teach_back**.
 

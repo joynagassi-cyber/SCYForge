@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C08_WIKIPEDIA_CORE
+# 🗺️ index LOCAL : C08_WIKIPEDIA_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c08_wikipedia_core**.
 

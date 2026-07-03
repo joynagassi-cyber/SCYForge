@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Bloquant pour WP12 (D9 Coverage) et WP14 (Cyber Pack)
 > **Dépendances** : WP01 (DCID traits, DomainFilterProvider), WP06 (Seed types), WP10 (Provider matrix)
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #1), `minddoc/s03_generative_forest_engine/SCY_GFE_PARAMETERS.md` (§4.7 C1-C7), `WORK_PACKAGE_01_DCID_TRAITS.md`, `WORK_PACKAGE_06_SEED_STATUS.md`
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #1), `minddoc/s03_generative_forest_engine/scy_gfe_parameters.md` (§4.7 C1-C7), `work_package_01_dcid_traits.md`, `work_package_06_seed_status.md`
 
 ---
 
@@ -17,9 +17,9 @@ Implémenter le **validateur C1-C7** pour les Seeds de la GFE. Chaque Seed candi
 
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
-1. `minddoc/s03_generative_forest_engine/SCY_GFE_PARAMETERS.md` — §4.7 (C1-C7 Seed Validation Hook)
-2. `WORK_PACKAGE_01_DCID_TRAITS.md` — DomainFilterProvider trait + C1C7Violation
-3. `WORK_PACKAGE_06_SEED_STATUS.md` — Seed types + ViabilityProfile
+1. `minddoc/s03_generative_forest_engine/scy_gfe_parameters.md` — §4.7 (C1-C7 Seed Validation Hook)
+2. `work_package_01_dcid_traits.md` — DomainFilterProvider trait + C1C7Violation
+3. `work_package_06_seed_status.md` — Seed types + ViabilityProfile
 
 ---
 
@@ -119,7 +119,7 @@ pub struct C1C7Result {
 
 ```rust
 //! Validateur C1-C7 pour les Seeds GFE.
-//! Référence: SCY_GFE_PARAMETERS.md §4.7, D-024.
+//! Référence: scy_gfe_parameters.md §4.7, D-024.
 
 pub struct C1C7Validator {
     strict_mode: bool,

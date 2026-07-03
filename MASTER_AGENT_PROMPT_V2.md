@@ -200,10 +200,10 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
    - Recommandation (supprimer, reporter, clarifier, unifier)
 
 **Livrables** :
-- `minddoc/s00_architecture_standards/AUDIT_DECISIONS.md` — Table de toutes les décisions avec source
-- `minddoc/s00_architecture_standards/AUDIT_FEATURES.md` — Table de toutes les features MVP/Post-MVP
-- `minddoc/s00_architecture_standards/AUDIT_PATTERNS.md` — Table de tous les patterns
-- `minddoc/s00_architecture_standards/AUDIT_INCOHERENCES.md` — Rapport d'incohérences avec recommandations
+- `minddoc/s00_architecture_standards/audit_decisions.md` — Table de toutes les décisions avec source
+- `minddoc/s00_architecture_standards/audit_features.md` — Table de toutes les features MVP/Post-MVP
+- `minddoc/s00_architecture_standards/audit_patterns.md` — Table de tous les patterns
+- `minddoc/s00_architecture_standards/audit_incoherences.md` — Rapport d'incohérences avec recommandations
 
 **Critère de sortie** : Tu présentes le rapport à l'humain. L'humain valide chaque incohérence : **supprimer** / **reporter Post-MVP** / **conserver et clarifier**.
 
@@ -222,13 +222,13 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
    - Un fichier obsolète à supprimer
 2.3. **Décomposer** : Pour chaque fichier >500 lignes, proposer un découpage en sections logiques.
 2.4. **Restructurer** : Créer l'arborescence cible de `minddoc/s00_architecture_standards/`.
-2.5. **Architecturer** : Créer un `INDEX.md` dans `minddoc/s00_architecture_standards/` qui sert de navigation.
+2.5. **Architecturer** : Créer un `index.md` dans `minddoc/s00_architecture_standards/` qui sert de navigation.
 2.6. **Unifier** : Normaliser la notation des décisions (D-xxx, AP-xxx, NC-xxx, FLY-xxx, ARC-xxx, D-OPT-xxx, etc.).
 
 **Livrables** :
-- `minddoc/s00_architecture_standards/INDEX.md` — Navigation centralisée
-- `minddoc/s00_architecture_standards/DECISIONS_MASTER.md` — Toutes les décisions unifiées
-- `minddoc/s00_architecture_standards/PATTERNS_MASTER.md` — Tous les patterns unifiés
+- `minddoc/s00_architecture_standards/index.md` — Navigation centralisée
+- `minddoc/s00_architecture_standards/decisions_master.md` — Toutes les décisions unifiées
+- `minddoc/s00_architecture_standards/patterns_master.md` — Tous les patterns unifiés
 - Rapport de migration (quels fichiers ont été déplacés, fusionnés, supprimés)
 
 **Critère de sortie** : Toute l'architecture vit dans `minddoc/s00_architecture_standards/`. Rien d'autre ailleurs. L'humain valide chaque déplacement/suppression.
@@ -332,18 +332,18 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 5.5. **Architecturer** : Créer les fichiers de référence pour le code futur :
    - `docs/ROADMAP_MVP_28J.md` — Roadmap jour-par-jour
    - `docs/DEPENDENCIES.md` — Graphe de dépendances entre crates
-   - `docs/BUILD_COMMANDS.md` — Commandes de build/test par crate
-   - `docs/CODE_STYLE.md` — Conventions Rust/TS/React/SQL
-   - `docs/PROJECT_STRUCTURE.md` — Arborescence cible finale
+   - `docs/build_commands.md` — Commandes de build/test par crate
+   - `docs/code_style.md` — Conventions Rust/TS/React/SQL
+   - `docs/project_structure.md` — Arborescence cible finale
 
 5.6. **Unifier** : Déplacer/Migrer TOUS les fichiers de `docs/` vers `minddoc/` sauf les fichiers purement opérationnels.
 
 **Livrables** :
 - `docs/ROADMAP_MVP_28J.md` — Sprint 0 à 3, jour par jour
 - `docs/DEPENDENCIES.md` — Ordre bottom-up des crates
-- `docs/BUILD_COMMANDS.md` — Commandes par stack
-- `docs/CODE_STYLE.md` — Conventions de code
-- `docs/PROJECT_STRUCTURE.md` — Arborescence cible
+- `docs/build_commands.md` — Commandes par stack
+- `docs/code_style.md` — Conventions de code
+- `docs/project_structure.md` — Arborescence cible
 - Rapport de migration `docs/` → `minddoc/`
 
 **Critère de sortie** : `docs/` ne contient PLUS que des fichiers purement opérationnels. Tout le reste est dans `minddoc/`. L'humain valide.
@@ -367,8 +367,8 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 
 **Livrables** :
 - Racine du projet nettoyée
-- `minddoc/s99_migration_logs/MIGRATION_LOG.md` — Historique de tous les déplacements
-- `minddoc/s00_architecture_standards/INDEX.md` mis à jour
+- `minddoc/s99_migration_logs/migration_log.md` — Historique de tous les déplacements
+- `minddoc/s00_architecture_standards/index.md` mis à jour
 
 **Critère de sortie** : Racine = code + config uniquement. Toute la doc est dans `minddoc/`. L'humain valide chaque déplacement.
 
@@ -376,7 +376,7 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 
 ### PHASE 7 — CRÉATION DU CONTEXTE PROJET PARTAGEABLE
 
-**Objectif** : Créer un fichier `PROJECT_CONTEXT.md` qui permet à un nouvel agent de comprendre SCY Forge en 10 minutes.
+**Objectif** : Créer un fichier `project_context.md` qui permet à un nouvel agent de comprendre SCY Forge en 10 minutes.
 
 **Méthode** :
 7.1. **Décomposer** : Extraire les informations essentielles de tous les documents unifiés.
@@ -393,14 +393,14 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
    - Features MVP vs Post-MVP
    - Ordre d'implémentation (bottom-up)
    - Comment travailler sur ce projet (méthode, formats, templates)
-7.4. **Unifier** : S'assurer que le PROJECT_CONTEXT.md est cohérent avec tous les documents de référence.
+7.4. **Unifier** : S'assurer que le project_context.md est cohérent avec tous les documents de référence.
 7.5. **Valider** : Soumettre à l'humain pour validation.
 
 **Livrables** :
-- `minddoc/PROJECT_CONTEXT.md` — Contexte projet partageable (10 min de lecture)
-- `minddoc/PROJECT_CONTEXT_SHORT.md` — Version ultra-courte (2 min de lecture) pour agents pressés
+- `minddoc/project_context.md` — Contexte projet partageable (10 min de lecture)
+- `minddoc/project_context_SHORT.md` — Version ultra-courte (2 min de lecture) pour agents pressés
 
-**Critère de sortie** : Un autre agent peut lire `PROJECT_CONTEXT.md` et comprendre SCY Forge sans lire d'autre document. L'humain valide.
+**Critère de sortie** : Un autre agent peut lire `project_context.md` et comprendre SCY Forge sans lire d'autre document. L'humain valide.
 
 ---
 
@@ -423,7 +423,7 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
    - Livrables attendus
    - Critère de sortie
    - Validation humaine requise
-8.6. **Unifier** : S'assurer que le prompt est cohérent avec `PROJECT_CONTEXT.md` et tous les documents de référence.
+8.6. **Unifier** : S'assurer que le prompt est cohérent avec `project_context.md` et tous les documents de référence.
 
 **Livrables** :
 - `MASTER_AGENT_PROMPT_V2.md` — Ce fichier, version finale
@@ -441,7 +441,7 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 9.1. **Explorer** : Lire tous les documents produits dans P1-P8.
 9.2. **Comparer** : Pour chaque décision, vérifier qu'elle est représentée de la même manière dans tous les documents.
 9.3. **Analyser** : Vérifier que :
-   - Toutes les décisions D-xxx sont dans DECISIONS_MASTER.md
+   - Toutes les décisions D-xxx sont dans decisions_master.md
    - Toutes les features MVP ont un WP
    - Toutes les WP sont dans la roadmap
    - Le PRD MVP ne contient aucune feature Post-MVP
@@ -477,7 +477,7 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 - [ ] Toutes les features MVP ont un WP complet (spec + plan + tasks + tests)
 - [ ] Le PRD MVP est consolidé et validé
 - [ ] La roadmap 28 jours est définie et validée
-- [ ] Le PROJECT_CONTEXT.md est complet et validé
+- [ ] Le project_context.md est complet et validé
 - [ ] Le prompt agent V2 est validé
 - [ ] La structure `minddoc/` est logique et navigable
 - [ ] Aucun fichier `.md` parasite à la racine du projet
@@ -549,7 +549,7 @@ Pour chaque décision prise :
 ### 5.4 Traçabilité
 
 Toute modification de la structure documentaire est tracée dans :
-`minddoc/s99_migration_logs/MIGRATION_LOG.md`
+`minddoc/s99_migration_logs/migration_log.md`
 
 Format :
 ```markdown
@@ -593,9 +593,9 @@ Pour TOUTE action, vérifie :
 minddoc/sXX_nom_module/
 ├── index.md                          # Navigation du module
 ├── SCY_PATTERNS.md                   # Patterns spécifiques au module
-├── SCY_STATE_MACHINES.md             # Machines à états (si applicable)
-├── SCY_EVENTBUS_SCHEMAS.md           # Schémas EventBus (si applicable)
-├── SCY_FORMULAS.md                   # Formules mathématiques (si applicable)
+├── scy_state_machines.md             # Machines à états (si applicable)
+├── scy_eventbus_schemas.md           # Schémas EventBus (si applicable)
+├── scy_formulas.md                   # Formules mathématiques (si applicable)
 ├── scy_feature_spec.md               # Spécification fonctionnelle
 ├── scy_feature_plan.md               # Plan d'implémentation
 ├── scy_feature_tasks.md              # Tâches atomiques
@@ -606,13 +606,13 @@ minddoc/sXX_nom_module/
 
 ```
 minddoc/s00_architecture_standards/
-├── INDEX.md                          # Navigation centralisée (LIRE EN PREMIER)
-├── AUDIT_DECISIONS.md                # Table de toutes les décisions
-├── AUDIT_FEATURES.md                 # Table de toutes les features
-├── AUDIT_PATTERNS.md                 # Table de tous les patterns
-├── AUDIT_INCOHERENCES.md             # Rapport d'incohérences
-├── DECISIONS_MASTER.md               # Décisions unifiées (D-xxx, AP-xxx, etc.)
-├── PATTERNS_MASTER.md                # Patterns unifiés (EventBus, DCID, GFE, etc.)
+├── index.md                          # Navigation centralisée (LIRE EN PREMIER)
+├── audit_decisions.md                # Table de toutes les décisions
+├── audit_features.md                 # Table de toutes les features
+├── audit_patterns.md                 # Table de tous les patterns
+├── audit_incoherences.md             # Rapport d'incohérences
+├── decisions_master.md               # Décisions unifiées (D-xxx, AP-xxx, etc.)
+├── patterns_master.md                # Patterns unifiés (EventBus, DCID, GFE, etc.)
 ├── VALIDATION_CROISEE.md             # Rapport de validation finale
 ├── scy_architectural_blueprint_master.md  # Blueprint master consolidé
 ├── scy_service_architecture_map.md       # Cartographie des services
@@ -626,7 +626,7 @@ minddoc/s00_architecture_standards/
 │   ├── WP03_EVENTBUS_CRATE.md
 │   └── ...
 └── s99_migration_logs/                     # Logs de migration documentaire
-    └── MIGRATION_LOG.md
+    └── migration_log.md
 ```
 
 ### 6.3 Template de Work Package
@@ -719,14 +719,14 @@ P10 (Go/No-Go) → [Décision finale]
 
 ### 8.2 Si tu es un autre type d'agent
 
-1. **Lire `PROJECT_CONTEXT.md`** pour comprendre le projet en 10 minutes.
+1. **Lire `project_context.md`** pour comprendre le projet en 10 minutes.
 2. **Lire la phase correspondante** dans ce fichier.
 3. **Suivre la méthode** définie pour cette phase.
 4. **Soumettre à validation** après chaque livrable.
 
 ### 8.3 Si tu es un humain
 
-1. **Lire `PROJECT_CONTEXT.md`** pour avoir une vue synthétique du projet.
+1. **Lire `project_context.md`** pour avoir une vue synthétique du projet.
 2. **Lire la phase correspondante** dans ce fichier pour savoir ce que l'agent va faire.
 3. **Valider chaque livrable** avant de passer à la phase suivante.
 4. **Corriger/ajuster** si nécessaire.
@@ -752,7 +752,7 @@ P10 (Go/No-Go) → [Décision finale]
 - ✅ Documenter chaque incohérence avec source A + source B
 - ✅ Présenter chaque proposition avec justification
 - ✅ Attendre la validation humaine avant d'agir
-- ✅ Tracer chaque action dans MIGRATION_LOG.md
+- ✅ Tracer chaque action dans migration_log.md
 - ✅ Rester dans le périmètre documentaire
 
 ---
@@ -775,7 +775,7 @@ Si tu es bloqué :
 | Version | Date | Auteur | Changements |
 |---------|------|--------|-------------|
 | V1.0 | 2026-07-02 | JOY | Version initiale (MASTER_AGENT_PROMPT.md) |
-| V2.0 | 2026-07-02 | JOY + Claude | Refonte complète : 10 phases, zéro code, focus documentation, PROJECT_CONTEXT.md |
+| V2.0 | 2026-07-02 | JOY + Claude | Refonte complète : 10 phases, zéro code, focus documentation, project_context.md |
 
 ---
 

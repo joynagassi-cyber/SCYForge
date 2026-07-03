@@ -1,4 +1,4 @@
-# 🗺️ INDEX : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT
+# 🗺️ index : DAG DISPLAY MODES — Les 3 Vues du DAG ASCENT
 
 Ce répertoire documente les **3 vues complémentaires d'affichage** du DAG ASCENT généré. Chaque vue offre une perspective différente sur le parcours d'apprentissage. L'utilisateur bascule entre les 3 via un sélecteur.
 

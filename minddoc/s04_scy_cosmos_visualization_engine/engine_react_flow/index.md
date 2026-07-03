@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_REACT_FLOW
+# 🗺️ index LOCAL : ENGINE_REACT_FLOW
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_react_flow**.
 

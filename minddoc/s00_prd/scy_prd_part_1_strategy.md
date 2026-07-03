@@ -866,7 +866,7 @@ CREATE TABLE scy_outbox (
   published_at TIMESTAMPTZ,
   status TEXT DEFAULT 'pending' -- pending | published | failed
 );
-CREATE INDEX idx_outbox_pending ON scy_outbox(status, created_at)
+CREATE index idx_outbox_pending ON scy_outbox(status, created_at)
   WHERE status = 'pending';
 ```
 
@@ -934,7 +934,7 @@ SELECT
 FROM ascent_nodes n
 GROUP BY n.user_id, n.goal_id;
 
-CREATE UNIQUE INDEX idx_mv_smi ON mv_user_smi_summary(user_id, goal_id);
+CREATE UNIQUE index idx_mv_smi ON mv_user_smi_summary(user_id, goal_id);
 ```
 
 ---

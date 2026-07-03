@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : BRAIN_ONBOARDING
+# 🗺️ index LOCAL : BRAIN_ONBOARDING
 Ce sous-répertoire documente l'**Onboarding Gamifié BRAIN** (§7.7ter v2) — flow d'inscription gamifié réduisant la friction et maximisant la conversion trial→signup. Mode Guest (Phase 0) + flow complet (Phase 1).
 
 ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ)

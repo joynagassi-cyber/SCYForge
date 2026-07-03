@@ -1109,15 +1109,15 @@ CREATE TABLE scy_apex_leeches (
 );
 
 -- Indexes APEX critiques
-CREATE INDEX idx_cards_next_review ON scy_apex_cards(user_id, next_review_at)
+CREATE index idx_cards_next_review ON scy_apex_cards(user_id, next_review_at)
   WHERE deleted_at IS NULL AND is_suspended = false AND is_buried = false;
-CREATE INDEX idx_cards_leech ON scy_apex_cards(user_id, is_leech)
+CREATE index idx_cards_leech ON scy_apex_cards(user_id, is_leech)
   WHERE is_leech = true;
-CREATE INDEX idx_cards_node ON scy_apex_cards(node_id)
+CREATE index idx_cards_node ON scy_apex_cards(node_id)
   WHERE node_id IS NOT NULL;
-CREATE INDEX idx_reviews_card_time ON scy_apex_reviews(card_id, reviewed_at DESC);
-CREATE INDEX idx_sessions_user ON scy_apex_sessions(user_id, started_at DESC);
-CREATE INDEX idx_mirror_user ON scy_apex_mirror_responses(user_id, responded_at DESC);
+CREATE index idx_reviews_card_time ON scy_apex_reviews(card_id, reviewed_at DESC);
+CREATE index idx_sessions_user ON scy_apex_sessions(user_id, started_at DESC);
+CREATE index idx_mirror_user ON scy_apex_mirror_responses(user_id, responded_at DESC);
 ```
 
 ---

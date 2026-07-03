@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT)
+# 🗺️ index : MODULE 07 — COGNITIVE TRANSFER ENGINE (IMPRINT)
 
 Ce répertoire gère l'amorçage de mémorisation de Pareto de SCY Forge et l'écriture physique.
 

@@ -395,7 +395,7 @@ CREATE TABLE scy_example (
 );
 
 -- Index performance
-CREATE INDEX idx_example_user ON scy_example(user_id, created_at DESC)
+CREATE index idx_example_user ON scy_example(user_id, created_at DESC)
     WHERE deleted_at IS NULL;
 
 -- RLS (Row Level Security — OBLIGATOIRE)

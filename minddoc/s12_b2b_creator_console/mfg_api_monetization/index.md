@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : SCY_API_MONETIZATION
+# 🗺️ index LOCAL : SCY_API_MONETIZATION
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **scy_api_monetization**.
 

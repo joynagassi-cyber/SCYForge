@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : LENS_SYSTEM
+# 🗺️ index LOCAL : LENS_SYSTEM
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **lens_system**.
 

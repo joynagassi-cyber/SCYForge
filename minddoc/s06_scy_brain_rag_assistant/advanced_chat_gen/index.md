@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ADVANCED_CHAT_GEN
+# 🗺️ index LOCAL : ADVANCED_CHAT_GEN
 Ce sous-répertoire documente le **BRAIN Advanced Chat Gen** — le chat agentique complet (§7.7bis v2) avec deux modes (Normal + Agentique). Génère des livrables visualisables (fichiers, présentations PowerPoint G13, rapports, veilles).
 
 ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ)

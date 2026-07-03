@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : FRICTION_MODE
+# 🗺️ index LOCAL : FRICTION_MODE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **friction_mode**.
 

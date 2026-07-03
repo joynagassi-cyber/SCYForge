@@ -233,8 +233,8 @@ CREATE TABLE scy_constructive_alignment_checks (
 );
 
 -- Index pour la console de modération administrative
-CREATE INDEX idx_qa_audits_node ON scy_course_qa_audits(node_id);
-CREATE INDEX idx_qa_reviews_audit ON scy_qa_agent_reviews(audit_id, agent_code);
+CREATE index idx_qa_audits_node ON scy_course_qa_audits(node_id);
+CREATE index idx_qa_reviews_audit ON scy_qa_agent_reviews(audit_id, agent_code);
 ```
 
 ---

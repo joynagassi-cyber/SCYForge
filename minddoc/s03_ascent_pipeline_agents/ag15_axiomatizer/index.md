@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG15_AXIOMATIZER
+# 🗺️ index LOCAL : AG15_AXIOMATIZER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de l'agent **AG15_AXIOMATIZER (AGENT-15)** — L'Axiomatiseur de Connaissances.
 

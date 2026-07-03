@@ -76,7 +76,7 @@ Le **NORMAL-MODE-DEFAULT-ORCHESTRATOR** s'exécute sur le backend Mastra TypeScr
                      Conversion instantanée en Markdown (Docling)
                                           │
                                           ▼
-                  [ PHASE 2 : INDEXATION VECTORIELLE ET GRAPHE ]
+                  [ PHASE 2 : indexATION VECTORIELLE ET GRAPHE ]
                Stockage sémantique Zilliz et Graphe temporel Graphiti
                                           │
                                           ▼
@@ -299,8 +299,8 @@ CREATE TABLE scy_project_deliverables (
 );
 
 -- Index pour accélérer le rendu des loteries de livrables
-CREATE INDEX idx_proj_suggestions ON scy_project_suggestions(project_id);
-CREATE INDEX idx_proj_deliverables_status ON scy_project_deliverables(project_id, status);
+CREATE index idx_proj_suggestions ON scy_project_suggestions(project_id);
+CREATE index idx_proj_deliverables_status ON scy_project_deliverables(project_id, status);
 ```
 
 ---

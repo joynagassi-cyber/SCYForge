@@ -341,9 +341,9 @@ CREATE TABLE scy_synaptic_pruning_log (
 );
 
 -- Index pour calculs de température en tâche de fond
-CREATE INDEX idx_vitality_user_score ON scy_synaptic_vitality(user_id, vitality_score);
-CREATE INDEX idx_engram_user_dormant ON scy_engram_vault(user_id, dormant_since);
-CREATE INDEX idx_forge_user_node ON scy_forge_attempts(user_id, node_id);
+CREATE index idx_vitality_user_score ON scy_synaptic_vitality(user_id, vitality_score);
+CREATE index idx_engram_user_dormant ON scy_engram_vault(user_id, dormant_since);
+CREATE index idx_forge_user_node ON scy_forge_attempts(user_id, node_id);
 ```
 
 ---

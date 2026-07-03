@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : PROFESSOR_AI
+# 🗺️ index LOCAL : PROFESSOR_AI
 Ce sous-répertoire documente le **Professor AI** — l'IA centrale accompagnatrice de SCY-BRAIN (§7.7 v2). Guide l'utilisateur à chaque niveau du parcours ASCENT, vulgarise les concepts difficiles, sélectionne auto le ton (T41 ELI5 → T42 ELI PhD) selon le Starter Evaluator.
 
 ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ)

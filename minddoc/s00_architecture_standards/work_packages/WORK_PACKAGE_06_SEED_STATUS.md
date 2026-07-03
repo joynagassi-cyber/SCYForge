@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Bloquant pour WP11 (C1-C7 Validator) et WP12 (D9 Coverage)
 > **Dépendances** : WP01 (types), WP02 (migrations), WP03 (EventBus), WP04 (PackProviders)
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #4 EventBus), `minddoc/s03_generative_forest_engine/SCY_GFE_PARAMETERS.md` (§12), `WORK_PACKAGE_01_DCID_TRAITS.md`
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #4 EventBus), `minddoc/s03_generative_forest_engine/scy_gfe_parameters.md` (§12), `work_package_01_dcid_traits.md`
 
 ---
 
@@ -17,10 +17,10 @@ Implémenter le lifecycle complet du **Seed** dans la GFE (Generative Forest Eng
 
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
-1. `minddoc/s03_generative_forest_engine/SCY_GFE_PARAMETERS.md` — sections 4.7 (C1-C7), 4.8 (seed_hash), 4.9 (Post-Germination D9), 12 (SeedStatus SM-2, Seed struct, compute_seed_hash)
-2. `WORK_PACKAGE_01_DCID_TRAITS.md` — SemanticTreeProvider trait + DomainFilterProvider
-3. `WORK_PACKAGE_02_SQL_MIGRATIONS.md` — schema DB, trigram index
-4. `WORK_PACKAGE_03_EVENTBUS_CRATE.md` — EventType SeedPlanted/SeedPollinated/SeedScored/SeedStatusChanged
+1. `minddoc/s03_generative_forest_engine/scy_gfe_parameters.md` — sections 4.7 (C1-C7), 4.8 (seed_hash), 4.9 (Post-Germination D9), 12 (SeedStatus SM-2, Seed struct, compute_seed_hash)
+2. `work_package_01_dcid_traits.md` — SemanticTreeProvider trait + DomainFilterProvider
+3. `work_package_02_sql_migrations.md` — schema DB, trigram index
+4. `work_package_03_eventbus_crate.md` — EventType SeedPlanted/SeedPollinated/SeedScored/SeedStatusChanged
 
 ---
 
@@ -65,7 +65,7 @@ POLLINATED ──[germination_trigger]──► VIABLE
 
 ## 5. Types Rust à implémenter
 
-### 5.1 `SeedStatus` (déjà dans SCY_GFE_PARAMETERS.md, rappel)
+### 5.1 `SeedStatus` (déjà dans scy_gfe_parameters.md, rappel)
 
 ```rust
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]
@@ -78,7 +78,7 @@ pub enum SeedStatus {
 }
 ```
 
-### 5.2 `Seed` (déjà dans SCY_GFE_PARAMETERS.md, rappel)
+### 5.2 `Seed` (déjà dans scy_gfe_parameters.md, rappel)
 
 ```rust
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -185,7 +185,7 @@ pub enum ExpansionPolicy {
 
 ---
 
-### 5.4 `compute_seed_hash` (déjà dans SCY_GFE_PARAMETERS.md, rappel)
+### 5.4 `compute_seed_hash` (déjà dans scy_gfe_parameters.md, rappel)
 
 ```rust
 pub fn compute_seed_hash(
@@ -217,7 +217,7 @@ pub fn compute_seed_hash(
 -- ============================================================
 -- V004 — GFE Seeds Table
 -- Crée: scy_seeds
--- Référence: SCY_GFE_PARAMETERS.md §12, D-024, WP06
+-- Référence: scy_gfe_parameters.md §12, D-024, WP06
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS scy_seeds (
@@ -240,12 +240,12 @@ CREATE TABLE IF NOT EXISTS scy_seeds (
 
 -- ── Indexes ──
 
-CREATE INDEX IF NOT EXISTS idx_seeds_hash ON scy_seeds (seed_hash);
-CREATE INDEX IF NOT EXISTS idx_seeds_tree ON scy_seeds (tree_id);
-CREATE INDEX IF NOT EXISTS idx_seeds_status ON scy_seeds (status);
-CREATE INDEX IF NOT EXISTS idx_seeds_org ON scy_seeds (organization_id);
-CREATE INDEX IF NOT EXISTS idx_seeds_pack ON scy_seeds (domain_pack_id);
-CREATE INDEX IF NOT EXISTS idx_seeds_parents
+CREATE index IF NOT EXISTS idx_seeds_hash ON scy_seeds (seed_hash);
+CREATE index IF NOT EXISTS idx_seeds_tree ON scy_seeds (tree_id);
+CREATE index IF NOT EXISTS idx_seeds_status ON scy_seeds (status);
+CREATE index IF NOT EXISTS idx_seeds_org ON scy_seeds (organization_id);
+CREATE index IF NOT EXISTS idx_seeds_pack ON scy_seeds (domain_pack_id);
+CREATE index IF NOT EXISTS idx_seeds_parents
     ON scy_seeds USING GIN ((parenthood->'parent_a'), (parenthood->'parent_b'));
 
 -- ── Fonction — validaiton seed_hash automatique ──
@@ -321,7 +321,7 @@ DROP TABLE IF EXISTS scy_seeds CASCADE;
 
 ```rust
 //! Repository Postgres pour Seed lifecycle.
-//! Référence: WP06, SCY_GFE_PARAMETERS.md §12.
+//! Référence: WP06, scy_gfe_parameters.md §12.
 
 use async_trait::async_trait;
 use sqlx::PgPool;

@@ -626,10 +626,10 @@ CREATE TABLE scy_brain_chat_deliverables (
 );
 
 -- Index
-CREATE INDEX idx_clar_sessions_user ON scy_clarification_sessions(user_id, created_at DESC);
-CREATE INDEX idx_starter_eval_user  ON scy_starter_evaluations(user_id, created_at DESC);
-CREATE INDEX idx_brain_sugg_node    ON scy_brain_suggestions(node_id, created_at DESC);
-CREATE INDEX idx_brain_chat_user    ON scy_brain_chat_sessions(user_id, created_at DESC);
+CREATE index idx_clar_sessions_user ON scy_clarification_sessions(user_id, created_at DESC);
+CREATE index idx_starter_eval_user  ON scy_starter_evaluations(user_id, created_at DESC);
+CREATE index idx_brain_sugg_node    ON scy_brain_suggestions(node_id, created_at DESC);
+CREATE index idx_brain_chat_user    ON scy_brain_chat_sessions(user_id, created_at DESC);
 ```
 
 ---

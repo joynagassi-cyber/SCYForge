@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : MODE_00 — BASE KNOWLEDGE BASE
+# 🗺️ index LOCAL : MODE_00 — BASE KNOWLEDGE BASE
 
 Ce sous-répertoire documente le **MODE 0 : Base Knowledge Base (L'Espace Universel)** de COSMOS v4. Vue d'ensemble de toute la base de connaissances de l'utilisateur sous forme de graphe massif GPU.
 

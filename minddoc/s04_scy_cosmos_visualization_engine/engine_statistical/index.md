@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_STATISTICAL
+# 🗺️ index LOCAL : ENGINE_STATISTICAL
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **engine_statistical**.
 

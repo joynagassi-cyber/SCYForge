@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES
+# 🗺️ index : MODULE 01 — INGESTION & 11 CORES MULTI-SOURCES
 
 Ce répertoire regroupe les spécifications de plomberie et d'interfaçage de nos 11 Cores d'ingestion à la demande.
 

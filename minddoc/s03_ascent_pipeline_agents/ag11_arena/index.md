@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG11_ARENA
+# 🗺️ index LOCAL : AG11_ARENA
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag11_arena**.
 

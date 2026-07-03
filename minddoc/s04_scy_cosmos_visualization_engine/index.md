@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS
+# 🗺️ index : MODULE 04 — MOTEUR DE VISUALISATION SCY-COSMOS
 
 Ce répertoire régit la visualisation spatiale et l'organisation du savoir en 2D axial horizontal et en 3D volumétrique.
 

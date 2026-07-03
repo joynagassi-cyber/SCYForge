@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 08 — READER SUITE & LECTURE ENRICHIE
+# 🗺️ index : MODULE 08 — READER SUITE & LECTURE ENRICHIE
 
 Ce répertoire régit le triptyque de lecture bionique, de pre-render skeletons et d'affichage KaTeX en local.
 

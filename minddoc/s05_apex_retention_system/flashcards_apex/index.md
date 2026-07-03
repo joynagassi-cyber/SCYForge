@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : FLASHCARDS_APEX
+# 🗺️ index LOCAL : FLASHCARDS_APEX
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **flashcards_apex**.
 

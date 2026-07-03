@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : FORGE_PROTOCOL
+# 🗺️ index LOCAL : FORGE_PROTOCOL
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **forge_protocol**.
 

@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_TANSTACK_TABLE
+# 🗺️ index LOCAL : ENGINE_TANSTACK_TABLE
 
 Ce sous-répertoire documente le moteur de rendu **TanStack Table v8** (+ `@tanstack/react-virtual`) — tableur virtualisé — utilisé par le mode COSMOS M5 (Concepts Grid).
 

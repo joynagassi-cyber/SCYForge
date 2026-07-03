@@ -19,9 +19,9 @@ Implémenter le **Domain Pack `cyber`** — le premier beachhead de SCY Forge. C
 
 1. `C:\Users\joyda\Downloads\SCYFORGE_CYBER_ONTOLOGY.md` — v1.3 complet (CYBER_ONTOLOGY)
 2. `C:\Users\joyda\Downloads\SCYFORGE_FEATURE_REPORT.md` — §4.1 (9 providers)
-3. `WORK_PACKAGE_01_DCID_TRAITS.md` — 9 traits DCID
-4. `WORK_PACKAGE_10_PROVIDER_MATRIX.md` — matrice provider×owner_kind
-5. `WORK_PACKAGE_11_C1C7_VALIDATOR.md` — validation C1-C7
+3. `work_package_01_dcid_traits.md` — 9 traits DCID
+4. `work_package_10_provider_matrix.md` — matrice provider×owner_kind
+5. `work_package_11_c1c7_validator.md` — validation C1-C7
 
 ---
 

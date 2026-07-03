@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL
+# 🗺️ index : MODULE 06 — SCY-BRAIN ET ASSISTANT CONVERSATIONNEL
 
 Ce répertoire contient l'interfaçage de l'assistant socratique central (Professor AI) connecté au RAG vectoriel de Zilliz.
 

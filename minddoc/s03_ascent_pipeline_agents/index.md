@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 03 — ASCENT PIPELINE & WORKFLOWS
+# 🗺️ index : MODULE 03 — ASCENT PIPELINE & WORKFLOWS
 
 Ce répertoire regroupe l'orchestration des 13 agents de parcours de SCY Forge, l'expérience utilisateur cognitive active et les protocoles d'expertises scientifiques.
 

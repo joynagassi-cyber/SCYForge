@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C10_TIKTOK_CORE
+# 🗺️ index LOCAL : C10_TIKTOK_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c10_tiktok_core**.
 

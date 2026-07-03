@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG13_COGNITIVE_VALIDATOR
+# 🗺️ index LOCAL : AG13_COGNITIVE_VALIDATOR
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag13_cognitive_validator**.
 

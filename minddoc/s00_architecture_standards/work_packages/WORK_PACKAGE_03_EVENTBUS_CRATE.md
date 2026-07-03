@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Fondation bloquante pour WP05 (adapter Postgres), WP06-WP14
 > **Dépendances** : WP01 (DCID traits) doit exister
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #5 EventBus), `WORK_PACKAGE_01_DCID_TRAITS.md` (traits EventBus), `WORK_PACKAGE_05_POSTGRES_ADAPTER.md` (EventBus event persistence), `docs/SCYFORGE_SEQUENCE_DIAGRAMS.md` (flots d'événements)
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #5 EventBus), `work_package_01_dcid_traits.md` (traits EventBus), `work_package_05_postgres_adapter.md` (EventBus event persistence), `docs/SCYFORGE_SEQUENCE_DIAGRAMS.md` (flots d'événements)
 
 ---
 
@@ -17,8 +17,8 @@ Implémenter le crate **`scy-eventbus`** : système de communication asynchrone 
 
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
-1. `WORK_PACKAGE_01_DCID_TRAITS.md` — EventBus trait + Subscriber trait + contraintes DCID
-2. `WORK_PACKAGE_05_POSTGRES_ADAPTER.md` — EventBus event persistence (DLQ) + `scy_event_log`
+1. `work_package_01_dcid_traits.md` — EventBus trait + Subscriber trait + contraintes DCID
+2. `work_package_05_postgres_adapter.md` — EventBus event persistence (DLQ) + `scy_event_log`
 3. `docs/SCYFORGE_SEQUENCE_DIAGRAMS.md` — flots d'événements complet (TreeOp, Scenario, Mastery, Seed)
 4. `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` — D-010 (Observer Pattern/EventBus)
 

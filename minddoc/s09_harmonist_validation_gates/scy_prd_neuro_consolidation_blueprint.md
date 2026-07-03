@@ -356,7 +356,7 @@ CREATE TABLE scy_creator_clarifications (
 );
 
 -- Index pour accélérer le tableau de bord créateur
-CREATE INDEX idx_creator_insights_cohort ON scy_creator_insights(cohort_id, status);
+CREATE index idx_creator_insights_cohort ON scy_creator_insights(cohort_id, status);
 
 -- == COUCHE SÛRETÉ D'HARMONIST (TRANS_LOGS) ==
 CREATE TABLE scy_agent_decisions (
@@ -380,11 +380,11 @@ CREATE TABLE scy_llm_spend_log (
     created_at      INTEGER NOT NULL
 );
 
--- == INDEXATIONS D'OPTIMISATION ==
-CREATE INDEX idx_vitality_search ON scy_synaptic_vitality(user_id, vitality_score DESC);
-CREATE INDEX idx_deliverables_status ON scy_project_deliverables(project_id, status);
-CREATE INDEX idx_spend_user_date ON scy_llm_spend_log(user_id, created_at DESC);
-CREATE INDEX idx_engram_vault_active ON scy_engram_vault(user_id, dormant_since);
+-- == indexATIONS D'OPTIMISATION ==
+CREATE index idx_vitality_search ON scy_synaptic_vitality(user_id, vitality_score DESC);
+CREATE index idx_deliverables_status ON scy_project_deliverables(project_id, status);
+CREATE index idx_spend_user_date ON scy_llm_spend_log(user_id, created_at DESC);
+CREATE index idx_engram_vault_active ON scy_engram_vault(user_id, dormant_since);
 ```
 
 ---
@@ -536,11 +536,11 @@ CREATE TABLE scy_hitl_proxy_audits (
 );
 
 -- Index d'optimisation de l'Axiomatizer
-CREATE INDEX idx_procedural_traces_domain ON scy_procedural_traces(domain_category);
-CREATE INDEX idx_axioms_global ON scy_axioms(domain_category, is_global);
-CREATE INDEX idx_goals_pathway ON scy_ascent_goals(user_id, pathway_type);
-CREATE INDEX idx_hitl_audits_node ON scy_hitl_proxy_audits(node_id);
+CREATE index idx_procedural_traces_domain ON scy_procedural_traces(domain_category);
+CREATE index idx_axioms_global ON scy_axioms(domain_category, is_global);
+CREATE index idx_goals_pathway ON scy_ascent_goals(user_id, pathway_type);
+CREATE index idx_hitl_audits_node ON scy_hitl_proxy_audits(node_id);
 
 -- Index pour la console de modération administrative
-CREATE INDEX idx_qa_audits_node ON scy_course_qa_audits(node_id);
-CREATE INDEX idx_qa_reviews_audit ON scy_qa_agent_reviews(audit_id, agent_code);
+CREATE index idx_qa_audits_node ON scy_course_qa_audits(node_id);
+CREATE index idx_qa_reviews_audit ON scy_qa_agent_reviews(audit_id, agent_code);

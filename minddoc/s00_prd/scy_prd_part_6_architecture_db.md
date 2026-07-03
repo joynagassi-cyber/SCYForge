@@ -391,14 +391,14 @@ CREATE TABLE scy_arena_skill_proof (
 );
 
 -- Indexes CHRONICLE & ARENA
-CREATE INDEX idx_chronicle_memory_user ON scy_chronicle_memory(user_id);
-CREATE INDEX idx_chronicle_disruptions_user ON scy_chronicle_disruptions(user_id, created_at DESC);
-CREATE INDEX idx_chronicle_plans_user ON scy_chronicle_plans(user_id, goal_id);
-CREATE INDEX idx_chronicle_conversations_user ON scy_chronicle_conversations(user_id, created_at DESC);
-CREATE INDEX idx_arena_sessions_user ON scy_arena_sessions(user_id, goal_id, status);
-CREATE INDEX idx_arena_sessions_domain ON scy_arena_sessions(domain, difficulty_level);
-CREATE INDEX idx_arena_personas_domain ON scy_arena_personas(domain, difficulty_level);
-CREATE INDEX idx_arena_skill_proof_user ON scy_arena_skill_proof(user_id, goal_id);
+CREATE index idx_chronicle_memory_user ON scy_chronicle_memory(user_id);
+CREATE index idx_chronicle_disruptions_user ON scy_chronicle_disruptions(user_id, created_at DESC);
+CREATE index idx_chronicle_plans_user ON scy_chronicle_plans(user_id, goal_id);
+CREATE index idx_chronicle_conversations_user ON scy_chronicle_conversations(user_id, created_at DESC);
+CREATE index idx_arena_sessions_user ON scy_arena_sessions(user_id, goal_id, status);
+CREATE index idx_arena_sessions_domain ON scy_arena_sessions(domain, difficulty_level);
+CREATE index idx_arena_personas_domain ON scy_arena_personas(domain, difficulty_level);
+CREATE index idx_arena_skill_proof_user ON scy_arena_skill_proof(user_id, goal_id);
 ```
 
 ### 8.4bis Nouvelles Tables Cyber Beachhead (Domain Packs & Semantic Tree)
@@ -457,7 +457,7 @@ CREATE TABLE scy_semantic_trees (
 );
 
 -- Index GIN sur root_nodes pour requêtes "est-ce que ce nœud est racine ?"
-CREATE INDEX idx_semantic_trees_root_nodes ON scy_semantic_trees USING GIN(root_nodes);
+CREATE index idx_semantic_trees_root_nodes ON scy_semantic_trees USING GIN(root_nodes);
 
 CREATE TABLE scy_semantic_tree_nodes (
   id UUID PRIMARY KEY DEFAULT gen_uuid_v7(),
@@ -567,7 +567,7 @@ CREATE TABLE scy_seeds (
 );
 
 -- Seeds par organization (pour Seed Explorer dashboard)
-CREATE INDEX idx_seeds_org_status ON scy_seeds(organization_id, status, created_at DESC);
+CREATE index idx_seeds_org_status ON scy_seeds(organization_id, status, created_at DESC);
 
 -- ═══════════════════════════════════════════════════
 -- TREE OPERATIONS — Log des opérations Plant/Graft/Test/Prune/Myelinate
@@ -586,21 +586,21 @@ CREATE TABLE scy_tree_operations (
 );
 
 -- ═══════════════════════════════════════════════════
--- INDEXES — Tables Cyber Beachhead
+-- indexES — Tables Cyber Beachhead
 -- ═══════════════════════════════════════════════════
 
-CREATE INDEX idx_domain_packs_org ON scy_domain_packs(organization_id, pack_key);
-CREATE INDEX idx_role_subtrees_pack ON scy_role_subtrees(domain_pack_id, role_key);
-CREATE INDEX idx_semantic_trees_pack ON scy_semantic_trees(domain_pack_id, owner_kind);
-CREATE INDEX idx_tree_nodes_tree ON scy_semantic_tree_nodes(tree_id, depth, node_kind);
-CREATE INDEX idx_tree_edges_tree ON scy_tree_edges(tree_id, edge_kind);
-CREATE INDEX idx_learner_states_learner ON scy_learner_node_states(learner_id, tree_id, mastery_score);
-CREATE INDEX idx_scenario_instances_org ON scy_scenario_instances(organization_id, learner_id, status);
-CREATE INDEX idx_mastery_evals_learner ON scy_mastery_evaluations(learner_id, tree_id, node_id);
-CREATE INDEX idx_tree_ops_tree ON scy_tree_operations(tree_id, created_at DESC);
+CREATE index idx_domain_packs_org ON scy_domain_packs(organization_id, pack_key);
+CREATE index idx_role_subtrees_pack ON scy_role_subtrees(domain_pack_id, role_key);
+CREATE index idx_semantic_trees_pack ON scy_semantic_trees(domain_pack_id, owner_kind);
+CREATE index idx_tree_nodes_tree ON scy_semantic_tree_nodes(tree_id, depth, node_kind);
+CREATE index idx_tree_edges_tree ON scy_tree_edges(tree_id, edge_kind);
+CREATE index idx_learner_states_learner ON scy_learner_node_states(learner_id, tree_id, mastery_score);
+CREATE index idx_scenario_instances_org ON scy_scenario_instances(organization_id, learner_id, status);
+CREATE index idx_mastery_evals_learner ON scy_mastery_evaluations(learner_id, tree_id, node_id);
+CREATE index idx_tree_ops_tree ON scy_tree_operations(tree_id, created_at DESC);
 
 -- Full-text search (cyber pack content scenarios)
-CREATE INDEX idx_scenario_fts ON scy_scenario_instances USING gin(to_tsvector('english', scenario_config::text));
+CREATE index idx_scenario_fts ON scy_scenario_instances USING gin(to_tsvector('english', scenario_config::text));
 ```
 
 ---
@@ -621,19 +621,19 @@ CREATE INDEX idx_scenario_fts ON scy_scenario_instances USING gin(to_tsvector('e
 
 ```sql
 -- Performance queries fréquentes
-CREATE INDEX idx_sources_user_status ON scy_sources(user_id, status);
-CREATE INDEX idx_sources_hash ON scy_sources(content_hash); -- Déduplication
-CREATE INDEX idx_documents_user ON scy_documents(user_id, created_at DESC);
-CREATE INDEX idx_concepts_user_smi ON scy_concepts(user_id, smi_score DESC);
-CREATE INDEX idx_cards_next_review ON scy_apex_cards(user_id, next_review_at) WHERE deleted_at IS NULL;
-CREATE INDEX idx_ascent_nodes_goal ON scy_ascent_nodes(goal_id, status);
-CREATE INDEX idx_agent_decisions_user ON scy_agent_decisions(user_id, goal_id, created_at DESC);
-CREATE INDEX idx_llm_spend_user ON scy_llm_spend_log(user_id, created_at DESC);
-CREATE INDEX idx_shared_cache_hash ON scy_shared_content_cache(content_hash);
-CREATE INDEX idx_shared_cache_domain ON scy_shared_content_cache(goal_domain, reuse_count DESC);
+CREATE index idx_sources_user_status ON scy_sources(user_id, status);
+CREATE index idx_sources_hash ON scy_sources(content_hash); -- Déduplication
+CREATE index idx_documents_user ON scy_documents(user_id, created_at DESC);
+CREATE index idx_concepts_user_smi ON scy_concepts(user_id, smi_score DESC);
+CREATE index idx_cards_next_review ON scy_apex_cards(user_id, next_review_at) WHERE deleted_at IS NULL;
+CREATE index idx_ascent_nodes_goal ON scy_ascent_nodes(goal_id, status);
+CREATE index idx_agent_decisions_user ON scy_agent_decisions(user_id, goal_id, created_at DESC);
+CREATE index idx_llm_spend_user ON scy_llm_spend_log(user_id, created_at DESC);
+CREATE index idx_shared_cache_hash ON scy_shared_content_cache(content_hash);
+CREATE index idx_shared_cache_domain ON scy_shared_content_cache(goal_domain, reuse_count DESC);
 
 -- Full-text search
-CREATE INDEX idx_documents_fts ON scy_documents USING gin(to_tsvector('english', content));
+CREATE index idx_documents_fts ON scy_documents USING gin(to_tsvector('english', content));
 
 -- Vector similarity déportée sur Zilliz Cloud (Milvus) pour soulager PostgreSQL
 -- Milvus Lite (.db local via pip/rest) utilisé en local pour le cache sémantique Desktop/Offline (Unification de code 100% avec le Cloud)

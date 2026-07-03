@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : PAGE_GALLERY
+# 🗺️ index LOCAL : PAGE_GALLERY
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **page_gallery**.
 

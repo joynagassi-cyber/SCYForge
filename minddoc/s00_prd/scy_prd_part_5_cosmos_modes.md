@@ -429,7 +429,7 @@ CREATE TABLE scy_deck_shares (
   created_at INTEGER NOT NULL,
   expires_at INTEGER NULL                  -- NULL = jamais
 );
-CREATE INDEX idx_deck_shares_token ON scy_deck_shares(share_token);
+CREATE index idx_deck_shares_token ON scy_deck_shares(share_token);
 ```
 
 #### Niveau 2 — Marketplace de Decks (Phase 3) ✅
@@ -939,12 +939,12 @@ CREATE TABLE scy_deck_shares (
 );
 
 -- Index Reader Suite
-CREATE INDEX idx_reader_sessions_user ON scy_reader_sessions(user_id, source_id);
-CREATE INDEX idx_reader_annotations_source ON scy_reader_annotations(user_id, source_id);
-CREATE INDEX idx_book_orchestrations_user ON scy_book_orchestrations(user_id, created_at DESC);
-CREATE INDEX idx_reader_suite_sessions_user ON scy_reader_suite_sessions(user_id, document_id);
-CREATE INDEX idx_deck_shares_token ON scy_deck_shares(share_token);
-CREATE INDEX idx_deck_shares_public ON scy_deck_shares(visibility, resource_type) WHERE visibility = 'public';
+CREATE index idx_reader_sessions_user ON scy_reader_sessions(user_id, source_id);
+CREATE index idx_reader_annotations_source ON scy_reader_annotations(user_id, source_id);
+CREATE index idx_book_orchestrations_user ON scy_book_orchestrations(user_id, created_at DESC);
+CREATE index idx_reader_suite_sessions_user ON scy_reader_suite_sessions(user_id, document_id);
+CREATE index idx_deck_shares_token ON scy_deck_shares(share_token);
+CREATE index idx_deck_shares_public ON scy_deck_shares(visibility, resource_type) WHERE visibility = 'public';
 ```
 
 ---

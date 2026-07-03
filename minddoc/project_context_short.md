@@ -1,4 +1,4 @@
-# PROJECT_CONTEXT_SHORT.md — SCY Forge (2 min)
+# project_context_SHORT.md — SCY Forge (2 min)
 
 **Quoi** : Plateforme d'apprentissage agentique. L'utilisateur déclare un objectif → agents IA orchestrent ingestion, génération, rétention, certification.
 **Promesse** : "Zéro friction. Règle des 2 clics."

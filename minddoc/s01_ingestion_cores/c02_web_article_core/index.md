@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C02_WEB_ARTICLE_CORE
+# 🗺️ index LOCAL : C02_WEB_ARTICLE_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c02_web_article_core** (Le Core d'Ingestion Web & Articles).
 

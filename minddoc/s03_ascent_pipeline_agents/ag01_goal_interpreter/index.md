@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG01_GOAL_INTERPRETER
+# 🗺️ index LOCAL : AG01_GOAL_INTERPRETER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag01_goal_interpreter**.
 

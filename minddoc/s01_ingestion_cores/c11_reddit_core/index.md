@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : C11_REDDIT_CORE
+# 🗺️ index LOCAL : C11_REDDIT_CORE
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **c11_reddit_core**.
 

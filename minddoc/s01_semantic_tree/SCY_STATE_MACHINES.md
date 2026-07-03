@@ -474,7 +474,7 @@ Typestate Pattern (compile-time) réservé pour les 5 opérations canoniques du 
 
 ```sql
 -- LearnerNodeState : UNIQUE par learner+tree+node
-CREATE UNIQUE INDEX idx_learner_node_unique 
+CREATE UNIQUE index idx_learner_node_unique 
     ON scy_learner_node_states(learner_id, tree_id, node_id);
 
 -- TreeEdge : superseded_at immuable (pas de UPDATE autorisé)

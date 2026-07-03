@@ -1,4 +1,4 @@
-# 🗺️ INDEX : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES
+# 🗺️ index : MODULE 00 — PRD CONSOLIDÉ & EXIGENCES MAÎTRES
 
 Ce répertoire regroupe le PRD de production découpé en sections sémantiques de moins de 1000 lignes pour éviter les pannes de contexte et d'attention des agents IA.
 

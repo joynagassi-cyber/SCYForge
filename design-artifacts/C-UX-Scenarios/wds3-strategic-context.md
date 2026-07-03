@@ -55,7 +55,7 @@ _Version : 1.0 — Gelé après approbation_
 
 ## 4. Cartographie fonctionnelle (15 modules)
 
-> Vue synthèse. Pour les specs détaillées → `minddoc/PROJECT_STRUCTURE.md`
+> Vue synthèse. Pour les specs détaillées → `minddoc/project_structure.md`
 
 ```
 SCY FORGE — ARCHITECTURE MODULAIRE
@@ -286,10 +286,10 @@ WDS — ROADMAP GLOBALE
 | Data Model | `docs/DATA_MODEL.md` |
 | Routes & APIs | `docs/ROUTES.md` |
 | Workflows | `docs/WORKFLOWS.md` |
-| Project Structure | `minddoc/PROJECT_STRUCTURE.md` |
+| Project Structure | `minddoc/project_structure.md` |
 | Design System | `minddoc/s00_design/scy_design_system.md` |
 | Experience Design | `minddoc/s00_design/scy_experience_design.md` |
-| Build Commands | `minddoc/BUILD_COMMANDS.md` |
-| Implementation Order | `minddoc/IMPLEMENTATION_ORDER.md` |
-| Code Style | `minddoc/CODE_STYLE.md` |
+| Build Commands | `minddoc/build_commands.md` |
+| Implementation Order | `minddoc/implementation_order.md` |
+| Code Style | `minddoc/code_style.md` |
 | CRATES standards | `minddoc/s00_architecture_standards/crates_standards/scy_crates_standards_spec.md` |

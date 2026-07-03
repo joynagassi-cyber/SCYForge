@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG08_ENGAGEMENT_AMPLIFIER
+# 🗺️ index LOCAL : AG08_ENGAGEMENT_AMPLIFIER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag08_engagement_amplifier**.
 

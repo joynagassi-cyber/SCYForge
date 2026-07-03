@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Bloquant pour le déploiement (ValidationGuard, Autonomy Envelope)
 > **Dépendances** : WP01 (types), WP02 (migrations), WP03 (EventBus), WP06 (Seed)
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #8), `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` (§15), `docs/SCYFORGE_DEPLOYMENT_PROFILES_SPEC.md`, `WORK_PACKAGE_02_SQL_MIGRATIONS.md`
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #8), `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` (§15), `docs/SCYFORGE_DEPLOYMENT_PROFILES_SPEC.md`, `work_package_02_sql_migrations.md`
 
 ---
 
@@ -19,8 +19,8 @@ Implémenter l"Autonomy Envelope — la couche de sécurité défensive qui rég
 
 1. `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` — §15 (Autonomy Envelope spec complète)
 2. `docs/SCYFORGE_DEPLOYMENT_PROFILES_SPEC.md` — §4 (Autonomy Envelope ceilings par profile)
-3. `WORK_PACKAGE_02_SQL_MIGRATIONS.md` — pattern de migration SQL
-4. `WORK_PACKAGE_03_EVENTBUS_CRATE.md` — EventType OutputPressureApplied, FrictionAdjusted
+3. `work_package_02_sql_migrations.md` — pattern de migration SQL
+4. `work_package_03_eventbus_crate.md` — EventType OutputPressureApplied, FrictionAdjusted
 
 ---
 
@@ -286,10 +286,10 @@ CREATE TABLE IF NOT EXISTS scy_autonomy_logs (
 );
 
 -- ── Indexes ──
-CREATE INDEX IF NOT EXISTS idx_autonomy_logs_envelope ON scy_autonomy_logs (envelope_id);
-CREATE INDEX IF NOT EXISTS idx_autonomy_logs_timestamp ON scy_autonomy_logs (timestamp DESC);
-CREATE INDEX IF NOT EXISTS idx_autonomy_logs_outcome ON scy_autonomy_logs (outcome);
-CREATE INDEX IF NOT EXISTS idx_autonomy_logs_alert_risk
+CREATE index IF NOT EXISTS idx_autonomy_logs_envelope ON scy_autonomy_logs (envelope_id);
+CREATE index IF NOT EXISTS idx_autonomy_logs_timestamp ON scy_autonomy_logs (timestamp DESC);
+CREATE index IF NOT EXISTS idx_autonomy_logs_outcome ON scy_autonomy_logs (outcome);
+CREATE index IF NOT EXISTS idx_autonomy_logs_alert_risk
     ON scy_autonomy_logs (alert_class, risk_level);
 
 -- ── RLS ──

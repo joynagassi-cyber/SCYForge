@@ -19,7 +19,7 @@ Créer les migrations SQL `migrations/seed_*_postgres/` qui définissent les tab
 
 1. `MASTER_AGENT_PROMPT.md` — sections Architecture cible, Code conventions (UUID v7, INTEGER timestamps, RLS)
 2. `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` — D-019 (Semantic Tree), D-024
-3. `minddoc/s01_semantic_tree/SCY_STATE_MACHINES.md` — SM-1, SM-4 (LearnerNodeState)
+3. `minddoc/s01_semantic_tree/scy_state_machines.md` — SM-1, SM-4 (LearnerNodeState)
 4. `docs/SCYFORGE_PIVOT_ARCHITECTURE.md` — §12 (D9 Coverage), §16 (MEDIATOR)
 
 ---
@@ -128,7 +128,7 @@ DROP TABLE IF EXISTS scy_semantic_trees CASCADE;
 -- ============================================================
 -- V002 — Learner State + Pack Config
 -- Crée: scy_learner_node_states, scy_pack_configs
--- Référence: D-011, D-024, SCY_STATE_MACHINES.md (SM-1, SM-4)
+-- Référence: D-011, D-024, scy_state_machines.md (SM-1, SM-4)
 -- ============================================================
 
 -- ── scy_learner_node_states ──
@@ -370,60 +370,60 @@ CREATE TRIGGER trg_tree_edge_immutable
 -- ── 7. Indexes ──
 
 -- Semantic Trees
-CREATE INDEX IF NOT EXISTS idx_semantic_trees_owner
+CREATE index IF NOT EXISTS idx_semantic_trees_owner
     ON scy_semantic_trees (owner_kind, owner_id);
 
-CREATE INDEX IF NOT EXISTS idx_semantic_trees_domain_pack
+CREATE index IF NOT EXISTS idx_semantic_trees_domain_pack
     ON scy_semantic_trees (domain_pack);
 
 -- Semantic Nodes
-CREATE INDEX IF NOT EXISTS idx_semantic_nodes_tree
+CREATE index IF NOT EXISTS idx_semantic_nodes_tree
     ON scy_semantic_nodes (tree_id);
 
-CREATE INDEX IF NOT EXISTS idx_semantic_nodes_kind
+CREATE index IF NOT EXISTS idx_semantic_nodes_kind
     ON scy_semantic_nodes (node_kind);
 
-CREATE INDEX IF NOT EXISTS idx_semantic_nodes_domain_ref
+CREATE index IF NOT EXISTS idx_semantic_nodes_domain_ref
     ON scy_semantic_nodes USING GIN (domain_ref);
 
-CREATE INDEX IF NOT EXISTS idx_semantic_nodes_metadata
+CREATE index IF NOT EXISTS idx_semantic_nodes_metadata
     ON scy_semantic_nodes USING GIN (metadata);
 
 -- Tree Edges
-CREATE INDEX IF NOT EXISTS idx_tree_edges_tree
+CREATE index IF NOT EXISTS idx_tree_edges_tree
     ON scy_tree_edges (tree_id);
 
-CREATE INDEX IF NOT EXISTS idx_tree_edges_from
+CREATE index IF NOT EXISTS idx_tree_edges_from
     ON scy_tree_edges (from_node);
 
-CREATE INDEX IF NOT EXISTS idx_tree_edges_to
+CREATE index IF NOT EXISTS idx_tree_edges_to
     ON scy_tree_edges (to_node);
 
-CREATE INDEX IF NOT EXISTS idx_tree_edges_kind
+CREATE index IF NOT EXISTS idx_tree_edges_kind
     ON scy_tree_edges (kind);
 
-CREATE INDEX IF NOT EXISTS idx_tree_edges_live
+CREATE index IF NOT EXISTS idx_tree_edges_live
     ON scy_tree_edges (tree_id, kind)
     WHERE superseded_at IS NULL;
 
 -- Learner Node States
-CREATE INDEX IF NOT EXISTS idx_learner_node_states_learner
+CREATE index IF NOT EXISTS idx_learner_node_states_learner
     ON scy_learner_node_states (learner_id);
 
-CREATE INDEX IF NOT EXISTS idx_learner_node_states_tree
+CREATE index IF NOT EXISTS idx_learner_node_states_tree
     ON scy_learner_node_states (tree_id);
 
-CREATE INDEX IF NOT EXISTS idx_learner_node_states_status
+CREATE index IF NOT EXISTS idx_learner_node_states_status
     ON scy_learner_node_states (status);
 
-CREATE INDEX IF NOT EXISTS idx_learner_node_states_confidence
+CREATE index IF NOT EXISTS idx_learner_node_states_confidence
     ON scy_learner_node_states (confidence DESC);
 
 -- Pack Configs
-CREATE INDEX IF NOT EXISTS idx_pack_configs_owner
+CREATE index IF NOT EXISTS idx_pack_configs_owner
     ON scy_pack_configs (owner_kind, owner_id);
 
-CREATE INDEX IF NOT EXISTS idx_pack_configs_domain_pack
+CREATE index IF NOT EXISTS idx_pack_configs_domain_pack
     ON scy_pack_configs (domain_pack);
 
 -- ── 8. Row Level Security (RLS) ──
@@ -477,23 +477,23 @@ DROP FUNCTION IF EXISTS resolve_pack_config(UUID, TEXT, TEXT);
 DROP FUNCTION IF EXISTS validate_cyber_seed(TEXT, TEXT[], JSONB, JSONB);
 DROP FUNCTION IF EXISTS prevent_tree_edge_update();
 
-DROP INDEX IF EXISTS idx_pack_configs_domain_pack;
-DROP INDEX IF EXISTS idx_pack_configs_owner;
-DROP INDEX IF EXISTS idx_learner_node_states_confidence;
-DROP INDEX IF EXISTS idx_learner_node_states_status;
-DROP INDEX IF EXISTS idx_learner_node_states_tree;
-DROP INDEX IF EXISTS idx_learner_node_states_learner;
-DROP INDEX IF EXISTS idx_semantic_nodes_domain_ref;
-DROP INDEX IF EXISTS idx_semantic_nodes_metadata;
-DROP INDEX IF EXISTS idx_semantic_nodes_kind;
-DROP INDEX IF EXISTS idx_semantic_nodes_tree;
-DROP INDEX IF EXISTS idx_tree_edges_kind;
-DROP INDEX IF EXISTS idx_tree_edges_live;
-DROP INDEX IF EXISTS idx_tree_edges_to;
-DROP INDEX IF EXISTS idx_tree_edges_from;
-DROP INDEX IF EXISTS idx_tree_edges_tree;
-DROP INDEX IF EXISTS idx_semantic_trees_domain_pack;
-DROP INDEX IF EXISTS idx_semantic_trees_owner;
+DROP index IF EXISTS idx_pack_configs_domain_pack;
+DROP index IF EXISTS idx_pack_configs_owner;
+DROP index IF EXISTS idx_learner_node_states_confidence;
+DROP index IF EXISTS idx_learner_node_states_status;
+DROP index IF EXISTS idx_learner_node_states_tree;
+DROP index IF EXISTS idx_learner_node_states_learner;
+DROP index IF EXISTS idx_semantic_nodes_domain_ref;
+DROP index IF EXISTS idx_semantic_nodes_metadata;
+DROP index IF EXISTS idx_semantic_nodes_kind;
+DROP index IF EXISTS idx_semantic_nodes_tree;
+DROP index IF EXISTS idx_tree_edges_kind;
+DROP index IF EXISTS idx_tree_edges_live;
+DROP index IF EXISTS idx_tree_edges_to;
+DROP index IF EXISTS idx_tree_edges_from;
+DROP index IF EXISTS idx_tree_edges_tree;
+DROP index IF EXISTS idx_semantic_trees_domain_pack;
+DROP index IF EXISTS idx_semantic_trees_owner;
 ```
 
 ---

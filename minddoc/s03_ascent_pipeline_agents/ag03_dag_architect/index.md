@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG03_DAG_ARCHITECT
+# 🗺️ index LOCAL : AG03_DAG_ARCHITECT
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag03_dag_architect**.
 

@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ENGINE_WEBGPU
+# 🗺️ index LOCAL : ENGINE_WEBGPU
 Ce sous-répertoire documente le moteur de rendu **WebGPU** (standard W3C, D-PERF-006 Phase 3) — accès GPU moderne via Vulkan/Metal/D3D12. **Engine optionnel activé uniquement après feature detection navigateur.** Fast-path haute performance pour M0, M22 et M23, avec fallback WebGL 2 automatique.
 
 ## 📁 Gabarits de Sûreté d'Écriture (MANDATORY READ)

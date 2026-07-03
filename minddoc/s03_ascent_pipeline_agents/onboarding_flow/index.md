@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : ONBOARDING_FLOW
+# 🗺️ index LOCAL : ONBOARDING_FLOW
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **onboarding_flow**.
 

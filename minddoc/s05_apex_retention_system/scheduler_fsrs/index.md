@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : SCHEDULER_FSRS
+# 🗺️ index LOCAL : SCHEDULER_FSRS
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **scheduler_fsrs**.
 

@@ -3,7 +3,7 @@
 > **Statut** : À implémenter
 > **Priorité** : 🔴 P0 — Bloquant pour WP14+ (orchestration Mastra, ARENA simulation)
 > **Dépendances** : WP01 (types), WP03 (EventBus), WP07 (Autonomy Envelope), WP08 (Cognitive Policies)
-> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #6), `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` (D-025, D-026), `WORK_PACKAGE_03_EVENTBUS_CRATE.md`
+> **Références** : `MASTER_AGENT_PROMPT.md` (Règle #6), `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` (D-025, D-026), `work_package_03_eventbus_crate.md`
 
 ---
 
@@ -18,9 +18,9 @@ Implémenter le système **Loop Engineering** de SCY Forge : 4 boucles imbriqué
 ## 2. Contexte (lis ABSOLUMENT ceci avant de coder)
 
 1. `minddoc/s00_architecture_standards/scy_architectural_blueprint_master.md` — section D-025 (Loop Engineering) et D-026 (Cognitive Runtime Policies)
-2. `WORK_PACKAGE_03_EVENTBUS_CRATE.md` — EventType LoopEvaluated, TriggerHit, SparringProposed, SparringExecuted, SpyReportReceived
-3. `WORK_PACKAGE_07_AUTONOMY_ENVELOPE.md` — AlertClass, AutonomyMode
-4. `WORK_PACKAGE_08_COGNITIVE_POLICIES.md` — OutputPressure, Sparring config
+2. `work_package_03_eventbus_crate.md` — EventType LoopEvaluated, TriggerHit, SparringProposed, SparringExecuted, SpyReportReceived
+3. `work_package_07_autonomy_envelope.md` — AlertClass, AutonomyMode
+4. `work_package_08_cognitive_policies.md` — OutputPressure, Sparring config
 
 ---
 

@@ -320,9 +320,9 @@ CREATE TABLE scy_chronicle_chat_reviews (
   reviewed_at INTEGER NOT NULL
 );
 
-CREATE INDEX idx_health_log_user ON scy_chronicle_health_log(user_id, logged_at DESC);
-CREATE INDEX idx_resurrections_user ON scy_chronicle_resurrections(user_id, status);
-CREATE INDEX idx_milestones_user ON scy_chronicle_milestones(user_id, milestone_type);
+CREATE index idx_health_log_user ON scy_chronicle_health_log(user_id, logged_at DESC);
+CREATE index idx_resurrections_user ON scy_chronicle_resurrections(user_id, status);
+CREATE index idx_milestones_user ON scy_chronicle_milestones(user_id, milestone_type);
 ```
 
 ---

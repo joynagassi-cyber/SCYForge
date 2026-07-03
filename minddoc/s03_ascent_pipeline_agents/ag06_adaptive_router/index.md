@@ -1,4 +1,4 @@
-# 🗺️ INDEX LOCAL : AG06_ADAPTIVE_ROUTER
+# 🗺️ index LOCAL : AG06_ADAPTIVE_ROUTER
 
 Ce sous-répertoire gère l'implémentation spécifique et les tests de sûreté de la sous-feature **ag06_adaptive_router**.
 

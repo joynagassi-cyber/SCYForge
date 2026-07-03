@@ -73,7 +73,6 @@
 
 ### Architecture pivot & beachhead cyber
 - **[SCYFORGE_PIVOT_ARCHITECTURE.md](./SCYFORGE_PIVOT_ARCHITECTURE.md)** - Pivot architecture : ce qui change, ce qui est éliminé, séquence MVP beachhead
-- **[SCYFORGE_SHORT_TERM_VALIDATION_ASCENT_TREE_GFE.md](./SCYFORGE_SHORT_TERM_VALIDATION_ASCENT_TREE_GFE.md)** - Protocole court terme pour valider ASCENT, Semantic Tree et GFE sans les 11 cores
 - **[SCYFORGE_C4_MODEL.md](./SCYFORGE_C4_MODEL.md)** - C4 model (Context / Container / Component / Deployment)
 - **[SCYFORGE_SEQUENCE_DIAGRAMS.md](./SCYFORGE_SEQUENCE_DIAGRAMS.md)** - Diagrammes séquence onboarding + pack loader + ARENA
 - **[SCYFORGE_13_AGENTS_REFACTOR_PLAN_00_OVERVIEW.md](./SCYFORGE_13_AGENTS_REFACTOR_PLAN_00_OVERVIEW.md)** - Plan C refactor : overview et objectifs

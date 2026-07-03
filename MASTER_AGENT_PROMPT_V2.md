@@ -495,6 +495,18 @@ frontend_react/ → React (COSMOS, APEX UI, Reader Suite, Dashboard)
 
 ## 5. RÈGLES DE COMPORTEMENT (APPLIQUABLES À TOUTES LES PHASES)
 
+### 5.0 COMMIT + PUSH APRÈS CHAQUE PHASE (NON-NÉGOCIABLE)
+
+**Tu COMMITTES et PUSHES après CHAQUE phase terminée et validée par l'humain.**
+
+Méthode :
+1. `git add -A`
+2. `git commit -m "P[X]: [description phase] — [livrables clés]"`
+3. `git push origin [branch]`
+4. Confirmer le commit hash à l'humain
+
+Règle d'or : **Zéro perte de travail.** Si le PC s'éteint, le travail est sur GitHub.
+
 ### 5.1 Validation humaine systématique
 
 **Tu ne fais JAMAIS une modification sans validation humaine explicite.**

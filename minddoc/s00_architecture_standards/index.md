@@ -28,7 +28,13 @@
 ```
 s00_architecture_standards/
 ├── INDEX.md                          ← CE FICHIER — Navigation centralisée (LIRE EN PREMIER)
+├── AUDIT_DECISIONS.md                ← P1 — Table de toutes les décisions D-xxx/AP-xxx/NC-xxx/FLY-xxx/ARC-xxx/D-OPT-xxx (120 décisions)
+├── AUDIT_FEATURES.md                 ← P1 — Table de toutes les features MVP/Post-MVP (155+ features)
+├── AUDIT_PATTERNS.md                 ← P1 — Table de tous les patterns architecturaux (144 patterns)
 ├── AUDIT_INCOHERENCES.md             ← P1 — Rapport d'incohérences (12 incohérences, corrections appliquées)
+├── DECISIONS_MASTER.md               ← P2 — Toutes les décisions unifiées (140 décisions consolidées)
+├── PATTERNS_MASTER.md                ← P2 — Tous les patterns unifiés (144 patterns, zéro doublon)
+├── VALIDATION_CROISEE.md             ← P9 — Rapport de validation finale
 │
 ├── 📋 STANDARDS FONDAMENTAUX
 │   ├── scy_architectural_blueprint_master.md    ← D-001 à D-040+ — Toutes les décisions d'architecture consolidées

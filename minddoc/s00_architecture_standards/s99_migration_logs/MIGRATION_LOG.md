@@ -25,7 +25,7 @@
 | 2026-07-03 | Créé | — | `minddoc/s00_architecture_standards/patterns_master.md` | Phase 2 — Patterns unifiés consolidés sans doublons |
 | 2026-07-03 | Créé | — | `minddoc/s00_architecture_standards/index.md` | Phase 2.5 — Navigation centralisée (complété depuis version minimale) |
 | 2026-07-03 | Renommé (42 fichiers) | `WORK_PACKAGE_*.md` + `AUDIT_*.md` + `INDEX.md` + etc. | `work_package_*.md` + `audit_*.md` + `index.md` + etc. | Convention snake_case pour tous les noms de fichiers .md |
-| 2026-07-03 | Mis à jour | 187 fichiers .md | Références internes mises à jour | Toutes les références vers anciens noms majuscules remplacées par lowercase |
+| 2026-07-03 | Restauré | `docs/scyforge_short_term_validation_ascent_tree_gfe.md` | — | Fichier supprimé par erreur lors du rename massif — restauré depuis commit précédent |
 
 ---
 
